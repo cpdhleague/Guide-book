@@ -1,4 +1,4 @@
----
+
 # This tells Jekyll to use the "splash" layout
 layout: splash
 
@@ -14,31 +14,22 @@ header:
 # This is the "three thumbnails" section
 feature_row:
   - image_path: /assets/images/article-3.jpg
-    alt: "thumbnail 1 description"
-    title: "Feature One"
-    excerpt: "This is a short description for your first feature. Link to an article!"
+    excerpt: "Latest Video: Simic Freed Combos"
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
+    btn_label: "Listen In"
+    btn_class: "btn--primary"
   - image_path: /assets/images/article-1.jpg
-    alt: "thumbnail 2 description"
-    title: "Feature Two"
-    excerpt: "This links to a page on your site. Maybe a guide or a decklist."
+    excerpt: "Jalepeno Paupers rate the latest commanders and commons"
     url: "http://youtube.com/watch?v=V3U9jNNc6qw&t=3837s"
+    btn_label: "Watch Now"
+    btn_class: "btn--primary"
   - image_path: /assets/images/article-2.jpg
-    alt: "thumbnail 3 description"
-    title: "Feature Three"
-    excerpt: "This can link to an external site, like a YouTube video."
+    excerpt: "DeckedOut plays PDH"
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
----
+    btn_label: "Watch Now"
+    btn_class: "btn--primary"
 
 {% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
-
-{% include feature_row id="feature_row2" type="left" %}
-
-{% include feature_row id="feature_row3" type="right" %}
-
-{% include feature_row id="feature_row4" type="center" %}
 
 ## Welcome to the CPDH.guide
 

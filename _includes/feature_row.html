@@ -1,1 +1,38 @@
+{% comment %}
+  Usage:
+  {% include feature_row %}
+{% endcomment %}
 
+{% if page.feature_row %}
+  {% if page.feature_row.first.image_path %}
+    <div class="feature__row--images">
+  {% else %}
+    <div class="feature__row--no-images">
+  {% endif %}
+  {% for item in page.feature_row %}
+    <div class="feature__item" {% if item.image_path %}style="flex-basis: 33.33333%"{% endif %}>
+      <div class="feature__item__content-wrapper">
+        {% if item.image_path %}
+          <div class="feature__item-image">
+            <a href="{{ item.url | relative_url }}" class="feature__item-image-link">
+              <img
+                src="{{ item.image_path | relative_url }}"
+                alt="{{ item.alt | escape }}"
+                class="feature__item-image"
+              >
+            </a>
+          </div>
+        {% endif %}
+        <div class="feature__item-content">
+          {% if item.title %}
+            <h3 class="feature__item-title">{{ item.title | markdownify }}</h3>
+          {% endif %}
+          {% if item.excerpt %}
+            <p class="feature__item-excerpt">{{ item.excerpt | markdownify }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+{% endif %}

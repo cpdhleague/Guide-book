@@ -7,27 +7,23 @@ permalink: /
 header:
   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
   overlay_filter: 0.0
+  title: " "
+  excerpt: " "
   actions:
-    - label: "CPDH Meta Data"
+    - label: "View Metagame Data"
       url: "/about/"
 
 # This is the "three thumbnails" section
 feature_row:
   - image_path: /assets/images/article-3.jpg
-    excerpt: "Latest Video: Simic Freed Combos"
+    title: "Latest Video: Simic Freed Combos"
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
-    btn_label: "Listen In"
-    btn_class: "btn--primary"
   - image_path: /assets/images/article-1.jpg
-    excerpt: "Jalepeno Paupers rate the latest commanders and commons"
+    title: "Jalepeno Paupers Rates Latest Commanders"
     url: "http://youtube.com/watch?v=V3U9jNNc6qw&t=3837s"
-    btn_label: "Watch Now"
-    btn_class: "btn--primary"
   - image_path: /assets/images/article-2.jpg
-    excerpt: "DeckedOut plays PDH"
+    title: "DeckedOut plays PDH"
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
-    btn_label: "Watch Now"
-    btn_class: "btn--primary"
 ---
 
 {% include feature_row %}

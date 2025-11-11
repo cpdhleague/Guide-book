@@ -6,7 +6,7 @@ layout: splash
 permalink: /
 header:
   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
-  overlay_filter: 0.0 # (0.0 - 1.0) optional, darkens image for readability
+  overlay_filter: 0.0
   actions:
     - label: "CPDH Meta Data"
       url: "/about/"

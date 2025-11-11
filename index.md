@@ -1,4 +1,7 @@
 ---
+title: " "
+seo_title: "CPDH.guide | Pauper Commander Resources"
+
 # This tells Jekyll to use the "splash" layout
 layout: splash
 
@@ -20,6 +23,7 @@ feature_row:
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
   - image_path: /assets/images/article-1.jpg
     title: "Jalepeno Paupers Rates Latest Commanders"
+    url: "https://www.youtube.com/watch?v=V3U9jNNc6qw&t=3840s"
   - image_path: /assets/images/article-2.jpg
     title: "DeckedOut plays PDH"
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"

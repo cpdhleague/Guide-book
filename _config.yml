@@ -16,11 +16,10 @@
 title: CPDH.guide
 email:
 description: "CPDH.guide offers clear data and resources for Pauper Commander (cPDH) to help you build better decks."
-skin: "dark"
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: default
-search: true
+minimal_mistakes_skin: dark
+search: false
 
 # Build settings
 markdown: kramdown

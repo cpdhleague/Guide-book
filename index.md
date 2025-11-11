@@ -1,4 +1,4 @@
-
+---
 # This tells Jekyll to use the "splash" layout
 layout: splash
 
@@ -28,6 +28,7 @@ feature_row:
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
     btn_label: "Watch Now"
     btn_class: "btn--primary"
+---
 
 {% include feature_row id="intro" type="center" %}
 

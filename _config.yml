@@ -20,6 +20,7 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: dark
 logo: /assets/images/favicon.png
+logo: /assets/images/favicon.png
 search: false
 
 # Build settings

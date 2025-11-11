@@ -13,21 +13,21 @@ header:
 
 # This is the "three thumbnails" section
 feature_row:
-  - image_path: /assets/images/Do (1).jpg
+  - image_path: /assets/images/article-3.jpg
     alt: "thumbnail 1 description"
     title: "Feature One"
     excerpt: "This is a short description for your first feature. Link to an article!"
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/maxresdefault.jpg
+  - image_path: /assets/images/article-1.jpg
     alt: "thumbnail 2 description"
     title: "Feature Two"
     excerpt: "This links to a page on your site. Maybe a guide or a decklist."
     url: "http://youtube.com/watch?v=V3U9jNNc6qw&t=3837s"
     btn_label: "See Guide"
     btn_class: "btn--primary"
-  - image_path: /assets/images/maxresdefault (1).jpg
+  - image_path: /assets/images/article-2.jpg
     alt: "thumbnail 3 description"
     title: "Feature Three"
     excerpt: "This can link to an external site, like a YouTube video."

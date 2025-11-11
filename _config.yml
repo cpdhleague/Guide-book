@@ -19,8 +19,7 @@ description: "CPDH.guide offers clear data and resources for Pauper Commander (c
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: dark
-logo: /assets/images/favicon.png
-logo: /assets/images/favicon.png
+favicon: /assets/images/favicon.ico
 search: false
 
 # Build settings

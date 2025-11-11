@@ -30,6 +30,16 @@ feature_row:
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
 ---
 
+{% include feature_row id="intro" type="center" %}
+
+{% include feature_row %}
+
+{% include feature_row id="feature_row2" type="left" %}
+
+{% include feature_row id="feature_row3" type="right" %}
+
+{% include feature_row id="feature_row4" type="center" %}
+
 ## Welcome to the CPDH.guide
 
 This is your regular page content. You can write anything you want here in Markdown, and it will appear **below** the three thumbnails.

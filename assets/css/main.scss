@@ -10,17 +10,12 @@
 
 /* --- Your Custom CSS Rules Below --- */
 
-/* 2. Hide the logo image in the masthead */
-.masthead__logo {
-  display: none;
-}
-
 /* 3. Center the feature row titles */
 .feature__item-title {
-  text-align: center;
+  text-align: center !important;
 }
 
 /* 4. Set a minimum height for the splash page header */
 .page__hero--overlay {
-  min-height: 60vh;
+  min-height: 45vh;
 }

@@ -12,6 +12,8 @@
   {% for item in page.feature_row %}
     <div class="feature__item" {% if item.image_path %}style="flex-basis: 33.33333%"{% endif %}>
       <div class="feature__item__content-wrapper">
+        
+        {% comment %} --- This part makes the image clickable --- {% endcomment %}
         {% if item.image_path %}
           <div class="feature__item-image">
             <a href="{{ item.url | relative_url }}" class="feature__item-image-link">
@@ -23,10 +25,16 @@
             </a>
           </div>
         {% endif %}
+        
         <div class="feature__item-content">
+
+          {% comment %} --- This part makes the title clickable --- {% endcomment %}
           {% if item.title %}
-            <h3 class="feature__item-title">{{ item.title | markdownify }}</h3>
+            <h3 class="feature__item-title">
+              <a href="{{ item.url | relative_url }}">{{ item.title | markdownify }}</a>
+            </h3>
           {% endif %}
+
           {% if item.excerpt %}
             <p class="feature__item-excerpt">{{ item.excerpt | markdownify }}</p>
           {% endif %}

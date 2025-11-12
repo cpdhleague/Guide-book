@@ -1,4 +1,6 @@
 ---
+title: " "
+seo_title: " "
 
 # This tells Jekyll to use the "splash" layout
 layout: splash

@@ -1,18 +1,26 @@
 ---
+# This empty Front Matter is required to tell Jekyll to process this file
 ---
 
-// Import the theme's styles (this is critical)
+/* --- Do not edit above this line --- */
+
+/* 1. Import the theme's styles (this is critical) */
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
-/* --- Your Custom CSS --- */
+/* --- Your Custom CSS Rules Below --- */
 
-// This targets the header button block
-.page__hero-actions {
-  margin-top: 8em; 
+/* 2. Hide the logo image in the masthead */
+.masthead__logo {
+  display: none;
 }
 
-/* Center the feature row titles */
+/* 3. Center the feature row titles */
 .feature__item-title {
   text-align: center;
+}
+
+/* 4. Set a minimum height for the splash page header */
+.page__hero--overlay {
+  min-height: 60vh;
 }

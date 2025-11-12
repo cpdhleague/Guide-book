@@ -12,10 +12,7 @@ header:
   overlay_filter: 0.0
   title: " "
   excerpt: " "
-  actions:
-    - label: "Metagame Data"
-      url: "/about/"
-
+  
 # This is the "three thumbnails" section
 feature_row:
   - image_path: /assets/images/article-3.jpg

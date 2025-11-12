@@ -1,5 +1,6 @@
 ---
 title: " "
+baseurl: "/Guide-book"
 
 # This tells Jekyll to use the "splash" layout
 layout: splash

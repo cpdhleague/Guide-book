@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 seo_title: "CPDH.guide | Pauper Commander Resources"
+title: "CPDH.guide | Pauper Commander Resources"
 email:
 description: "CPDH.guide offers clear data and resources for Pauper Commander (cPDH) to help you build better decks."
 twitter_username: username

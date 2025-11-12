@@ -26,7 +26,7 @@ feature_row:
 
 ## Welcome to the CPDH.guide
 
-This is your regular page content...
+This is your regular page content... more text
 
 This is your regular page content. You can write anything you want here in Markdown, and it will appear **below** the three thumbnails.
 

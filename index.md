@@ -1,6 +1,6 @@
 ---
-title: "CPDH.guide"
-seo_title: "CPDH.guide | Pauper Commander Resources"
+title: " "
+seo_title: "CPDH.guide"
 
 # This tells Jekyll to use the "splash" layout
 layout: splash

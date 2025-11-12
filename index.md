@@ -1,5 +1,5 @@
 ---
-title: "CPDH.guide"
+title: " "
 
 # This tells Jekyll to use the "splash" layout
 layout: splash

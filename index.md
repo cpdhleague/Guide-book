@@ -12,9 +12,7 @@ header:
   overlay_filter: 0.0
   title: " "
   excerpt: " "
-  actions:
-    - label: "View Metagame Data"
-      url: "/about/"
+
 
 # This is the "three thumbnails" section
 feature_row:

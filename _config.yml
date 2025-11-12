@@ -1,3 +1,5 @@
+
+baseurl: "/Guide-book"
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -21,6 +23,7 @@ github_username: username
 minimal_mistakes_skin: dark
 favicon: /assets/images/favicon-otra.png
 search: false
+
 
 # Build settings
 markdown: kramdown

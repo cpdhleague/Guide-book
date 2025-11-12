@@ -26,7 +26,7 @@ feature_row:
     url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
 ---
 
-{% include feature_row %}
+{% include_cached feature_row %}
 
 ## Welcome to the CPDH.guide
 

@@ -1,6 +1,5 @@
 ---
-title: " "
-seo_title: " "
+title: "CPDH.guide"
 
 # This tells Jekyll to use the "splash" layout
 layout: splash

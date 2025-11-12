@@ -14,7 +14,7 @@ header:
   excerpt: " "
   
 # This is the "three thumbnails" section
-feature_row:
+feature_row_test:
   - image_path: /assets/images/article-3.jpg
     title: "Latest Video: Simic Freed Combos"
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"

@@ -1,6 +1,6 @@
 main:
-  - title: "Statistics"
-    url: /stats/
+  - title: "Metagame"
+    url: /meta/
   - title: "Resources"
     url: /resources/
   - title: "Community"

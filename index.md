@@ -25,6 +25,7 @@ feature_row:
 </div>
 
 <br>
+---
 <br>
 
 <h2 style="text-align: left;">Welcome to CPDH.guide</h2>

@@ -1,5 +1,3 @@
-baseurl: "/Guide-book"
-
 ---
 title: "Resources"
 layout: single
@@ -10,8 +8,8 @@ Welcome to the main resource hub for cPDH. Here you'll find links to data, tools
 
 ## cPDH Resources
 
-* [**Content Creator Directory**](/resources/content-creators/)
-* [**Official PDH Rules**](/resources/pdh-rules/)
-* [**PDHREC & Other Tools**](/resources/other-resources/)
-* [**Decklist Library**](/resources/library/)
-* [**Upcoming Tournaments**](/resources/tournaments/)
+* [**Content Creator Directory**](/Guide-book/resources/content-creators/)
+* [**Official PDH Rules**](/Guide-book/resources/pdh-rules/)
+* [**PDHREC & Other Tools**](/Guide-book/resources/other-resources/)
+* [**Decklist Library**](/Guide-book/resources/library/)
+* [**Upcoming Tournaments**](/Guide-book/resources/tournaments/)

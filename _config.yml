@@ -61,9 +61,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Ginger Persolus"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "My awesome biography goes here."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -80,15 +80,18 @@ author:
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@cPDH"
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://discord.com/invite/UtgN272kpq"
+    - label: "Reddit"
+      icon: "fab fa-fw fa-reddit-alien"
+      url: "https://www.reddit.com/r/competitivepauperedh/"
+    - label: "Moxfield"
+      icon: "fab fa-fw fa-layer-group"
+      url: "https://moxfield.com/users/cPDHguide"
 
 defaults:
   # _posts

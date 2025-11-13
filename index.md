@@ -26,14 +26,6 @@ feature_row:
 
 <br>
 
-<h2 style="text-align: left;">Welcome to CPDH.guide</h2>
-
-This is a great direction. You're shifting the focus from "what is cPDH?" (which is abstract) to "what can this site *do for you*?" (which is practical and welcoming).
-
-Here is a draft for your new homepage intro, designed to replace the text currently in the body of your `index.md` file.
-
----
-
 ## Welcome to CPDH.guide
 
 Our primary mission is to provide the clear, actionable [**Metagame data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.

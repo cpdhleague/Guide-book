@@ -11,5 +11,5 @@ Welcome to the main resource hub for cPDH. Here you'll find links to data, tools
 * [**Content Creator Directory**](/resources/content-creators/)
 * [**Official PDH Rules**](/resources/pdh-rules/)
 * [**PDHREC & Other Tools**](/resources/other-resources/)
-* [**Decklist Library**](/resources/decklist-library/)
+* [**Decklist Library**](/resources/library/)
 * [**Upcoming Tournaments**](/resources/tournaments/)

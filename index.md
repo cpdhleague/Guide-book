@@ -28,11 +28,11 @@ feature_row:
 
 ## Welcome to CPDH.guide
 
-Our primary mission is to provide the clear, actionable [**Metagame Data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
+Our primary mission is to provide the clear, actionable [**Metagame Data**](/Guide-book/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
 
-But data is only half the story. CPDH.guide is also a [**Community**](/community/) hub. We're building a platform to celebrate the players and creators who make this format thrive. We'll be publishing community-driven articles and sharing the latest news and videos.
+But data is only half the story. CPDH.guide is also a [**Community**](/Guide-book/community/) hub. We're building a platform to celebrate the players and creators who make this format thrive. We'll be publishing community-driven articles and sharing the latest news and videos.
 
-In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead, including:
+In our [**Resources**](/Guide-book/resources/) section, you'll find everything you need to get started or get ahead, including:
 * The official PDH rules
 * Links to essential tools like PDHREC
 * A growing Decklist Library

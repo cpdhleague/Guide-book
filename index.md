@@ -24,11 +24,9 @@ feature_row:
 {% include_cached feature_row.html %}
 </div>
 
-<br>
 ---
 
-<h2 style="text-align: left;">Welcome to CPDH.guide</h2>
----
+## Welcome to CPDH.guide
 
 Our primary mission is to provide the clear, actionable [**Metagame data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
 

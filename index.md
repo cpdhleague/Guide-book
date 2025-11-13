@@ -24,10 +24,26 @@ feature_row:
 {% include_cached feature_row.html %}
 </div>
 
-## Welcome to the CPDH.guide
+<br>
 
-This is your regular page content... more text
+<h2 style="text-align: left;">Welcome to CPDH.guide</h2>
 
-This is your regular page content. You can write anything you want here in Markdown, and it will appear **below** the three thumbnails.
+This is a great direction. You're shifting the focus from "what is cPDH?" (which is abstract) to "what can this site *do for you*?" (which is practical and welcoming).
 
-You can add more text, links, or even other images here.
+Here is a draft for your new homepage intro, designed to replace the text currently in the body of your `index.md` file.
+
+---
+
+## Welcome to CPDH.guide
+
+Our primary mission is to provide the clear, actionable [**Metagame data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
+
+But data is only half the story. CPDH.guide is also a [**Community**](/community/) hub. We're building a platform to celebrate the players and creators who make this format thrive. We'll be publishing community-driven deck tech articles and sharing the latest news and videos.
+
+In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead, including:
+* The official PDH rules
+* Links to essential tools like PDHREC
+* A growing Decklist Library
+* A directory of PDH content creators
+
+Whether you're here to tune your latest deck or tune into the latest events, we're glad you're here. 

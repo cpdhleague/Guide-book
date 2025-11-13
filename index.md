@@ -10,10 +10,10 @@ header:
   excerpt: " "
 feature_row:
   - image_path: /assets/images/article-3.jpg
-    title: "Latest Video: Simic Freed Combos"
+    title: "Let's Talk w/ Puzzlebox - Simic Freed Combos"
     url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
   - image_path: /assets/images/article-1.jpg
-    title: "Jalepeno Paupers Rates Latest Commanders"
+    title: "Jalepeno Paupers Rate Spiderman Commanders"
     url: "https://www.youtube.com/watch?v=V3U9jNNc6qw&t=3840s"
   - image_path: /assets/images/article-2.jpg
     title: "DeckedOut plays PDH"
@@ -25,6 +25,7 @@ feature_row:
 </div>
 
 ---
+<br>
 
 ## Welcome to CPDH.guide
 

@@ -4,6 +4,11 @@ layout: splash
 permalink: /resources/
 ---
 
+
+
+
+## cPDH Resources
+
 Welcome to your cPDH toolkit! Whether you are a new recruit or a seasoned grinder, we’ve gathered the essential links to help you on your journey.
 
 If you're just starting out, the best place to begin is the [**Official PDH Rules**](https://pdhhomebase.com/rules/) page to get grounded in the format.

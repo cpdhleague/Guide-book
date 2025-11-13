@@ -1,7 +1,7 @@
 ---
-title: "PDH Rules"
+title: "Decklist Library"
 layout: splash
-permalink: /resources/pdh-rules/
+permalink: /resources/library/
 ---
 
 ## Welcome to the Decklist Library

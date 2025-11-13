@@ -1,7 +1,7 @@
 ---
-title: "cPDH Resources"
+title: "Meta Statistics"
 layout: splash
-permalink: /resources/
+permalink: /meta/
 ---
 
 The meta will be here eventually.

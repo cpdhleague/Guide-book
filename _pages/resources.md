@@ -1,3 +1,5 @@
+baseurl: "/Guide-book"
+
 ---
 title: "Resources"
 layout: single

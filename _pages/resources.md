@@ -1,6 +1,6 @@
 ---
 title: "cPDH Resources"
-layout: single
+layout: splash
 permalink: /resources/
 ---
 

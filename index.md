@@ -38,4 +38,4 @@ In our [**Resources**](/resources/) section, you'll find everything you need to 
 * A growing Decklist Library
 * A directory of PDH content creators
 
-Whether you're here to tune your latest deck or tune into the latest events, we're glad you're here. 
+Whether you're here to tune into our community or tune your latest deck, we're glad you're here. 

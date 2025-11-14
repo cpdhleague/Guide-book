@@ -8,7 +8,7 @@ permalink: /resources/library/
 
 This library features every commander to have placed in the Top 4 of a recorded cPDH tournament. To give you the most accurate data, each entry links directly to the pilot's original decklist where possible, giving you a direct look at what's winning.
 
-<table class="table table-bordered table-hover table-condensed">
+<table id="decklist-table" class="table table-bordered table-hover table-condensed">
 <thead><tr><th title="Field #1">COMMANDER</th>
 <th title="Field #2">IDENTITY</th>
 <th title="Field #3">STRATEGY</th>

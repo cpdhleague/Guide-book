@@ -527,8 +527,20 @@ This library features every commander to have placed in the Top 4 of a recorded 
 <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" defer></script>
 
 <script>
-  $(window).on("load", function () {
-    // This waits for ALL content (scripts, images) to load
-    $('#decklist-table').DataTable();
+  $(document).ready( function () {
+    $('#decklist-table').DataTable({
+      "columnDefs": [
+        {
+          // --- THIS IS THE PART YOU MUST EDIT ---
+          "targets": [ 3 ], // <-- Change 4 to your link column's number
+
+          "render": function ( data, type, row ) {
+            // 'data' is the raw URL text from the cell
+            // This returns a new, clickable HTML link
+            return '<a href="' + data + '" target="_blank">Decklist</a>';
+          }
+        }
+      ]
+    });
   } );
 </script>

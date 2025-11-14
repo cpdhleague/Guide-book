@@ -13,7 +13,7 @@ Welcome to your cPDH toolkit! Whether you are a new recruit or a seasoned grinde
 
 If you're just starting out, the best place to begin is the [**Official PDH Rules**](https://pdhhomebase.com/rules/) page to get grounded in the format.
 
-Searching for your next commander? [**PDHREC**](https://www.pdhrec.com/) is an incredible resource to explore what the community is brewing. You can also browse our growing [**Decklist Library**](/resources/library/) to see specific lists that have been battle-tested in tournaments.
+Searching for your next commander? [**PDHREC**](https://www.pdhrec.com/) is an incredible resource to explore what the community is brewing. You can also browse our growing [**Decklist Library**](/Guide-book/resources/library/) to see specific lists that have been battle-tested in tournaments.
 
 Once you have a few games under your belt, check out our [**Meta**](/Guide-book/meta/) page to analyze the stats and placements of top competitors. We also maintain a [**Content Creator Directory**](/Guide-book/resources/content-creators/) so you can find gameplay videos, podcasts, and discussions to level up your game.
 

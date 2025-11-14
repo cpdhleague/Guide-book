@@ -1,6 +1,6 @@
 ---
 title: "Decklist Library"
-layout: splash
+layout: single
 permalink: /resources/library/
 ---
 

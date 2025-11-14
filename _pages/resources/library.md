@@ -526,7 +526,8 @@ This library features every commander to have placed in the Top 4 of a recorded 
 <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js"></script>
 
 <script>
-  $(document).ready( function () {
+  $(window).on("load", function () {
+    // This waits for ALL content (scripts, images) to load
     $('#decklist-table').DataTable();
   } );
 </script>

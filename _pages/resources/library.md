@@ -8,4 +8,525 @@ permalink: /resources/library/
 
 This library features every commander to have placed in the Top 4 of a recorded cPDH tournament. To give you the most accurate data, each entry links directly to the pilot's original decklist where possible, giving you a direct look at what's winning.
 
-embed library looker from here
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">COMMANDER</th>
+<th title="Field #2">IDENTITY</th>
+<th title="Field #3">STRATEGY</th>
+<th title="Field #4">LINK</th>
+</tr></thead>
+<tbody><tr>
+<td>Abdel Adrian, Gorion&#39;s Ward + Agent of the Iron Throne</td>
+<td>Orzhov</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/ZUMlxGM5EEWu4gFtX-TzGg</td>
+</tr>
+<tr>
+<td>Abdel Adrian, Gorion&#39;s Ward + Agent of the Iron Throne</td>
+<td>Orzhov</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/Yr_wtHangUq7Lmhlli4fMw</td>
+</tr>
+<tr>
+<td>Abdel Adrian, Gorion&#39;s Ward + Sword Coast Sailor</td>
+<td>Azorius</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/bl8xsbwTsU-J0s1UZULYiQ</td>
+</tr>
+<tr>
+<td>Abdel Adrian, Gorion&#39;s Ward + Sword Coast Sailor</td>
+<td>Azorius</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/gobW0aiqQUGidavyGyw7_Q</td>
+</tr>
+<tr>
+<td>Arabella, Abandoned Doll</td>
+<td>Boros</td>
+<td>Aggro</td>
+<td>https://www.moxfield.com/decks/PZI5L9zmCEuOBznPDzrqJQ</td>
+</tr>
+<tr>
+<td>Ardenn, Intrepid Archaeologist + Malcolm, Keen-Eyed Navigator</td>
+<td>Azorius</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/OxGAVHRC8EmTbe4EBFL4Ig</td>
+</tr>
+<tr>
+<td>Bilbo, Retired Burglar</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/hSNg0sbuS0mlxLfeE8bUlA</td>
+</tr>
+<tr>
+<td>Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/Pu_fVLvYLUOxUfM6srUkow</td>
+</tr>
+<tr>
+<td>Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/ROR3Ll-bVU6L06KlOwZc2g</td>
+</tr>
+<tr>
+<td>Cadira, Caller of the Small</td>
+<td>Selesnya</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/an986JYA4ESWsy5iCtty1Q</td>
+</tr>
+<tr>
+<td>Cyberman Patrol</td>
+<td>Colorless</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/f2Pyemv2zk-uGi5atTXG4w</td>
+</tr>
+<tr>
+<td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+<td>Red</td>
+<td>Aggro</td>
+<td>https://moxfield.com/decks/Sv5hMA-I806ArpyKom7AAg</td>
+</tr>
+<tr>
+<td>Dargo, the Shipwrecker + Keskit, the Flesh Sculptor</td>
+<td>Rakdos</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/ldWBKTilHEStYfnztmdI_Q</td>
+</tr>
+<tr>
+<td>Dargo, the Shipwrecker + Keskit, the Flesh Sculptor</td>
+<td>Rakdos</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/CR0NHcwhUESrTax5qO2sJA</td>
+</tr>
+<tr>
+<td>Dargo, the Shipwrecker + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/VXn-nHJHCki5mCQHIX32Xg</td>
+</tr>
+<tr>
+<td>Disciple of Deceit</td>
+<td>Dimir</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/hAo1bvF2LUaGP1j0hyHzHg</td>
+</tr>
+<tr>
+<td>Disciple of Deceit</td>
+<td>Dimir</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/NnC5pANZI0SnuysrAvyOuw</td>
+</tr>
+<tr>
+<td>Diviner Spirit</td>
+<td>Blue</td>
+<td>Voltron</td>
+<td>https://www.moxfield.com/decks/NtDtHwhfF0WqVqEuaZ7EfA</td>
+</tr>
+<tr>
+<td>Erinis, Gloom Stalker + Street Urchin</td>
+<td>Gruul</td>
+<td>Control</td>
+<td>https://www.moxfield.com/decks/ONYzU8zGnE-vGql05-3KqQ</td>
+</tr>
+<tr>
+<td>Fynn, the Fangbearer</td>
+<td>Green</td>
+<td>Aggro</td>
+<td>https://moxfield.com/decks/HMve6vBIIk-QyT7_D_vxbA</td>
+</tr>
+<tr>
+<td>Ghost of Ramirez DePietro + Tormod, the Desecrator</td>
+<td>Dimir</td>
+<td>Control</td>
+<td>https://moxfield.com/decks/kPEgKbFNe0yZPXp5D0sB_A</td>
+</tr>
+<tr>
+<td>Gilanra, Caller of Wirewood + Numa, Joraga Chieftain</td>
+<td>Green</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/IaiX4ShuMUydmcxniMzCUg</td>
+</tr>
+<tr>
+<td>Glaring Fleshraker</td>
+<td>Colorless</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/UAIeiIOWok--5rpoi7kCrA</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/qp8i-fp01EOlRfSc4qXH0Q</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/9NynA609AkWFdJim94kKNg</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/BB45YbVrg06lj3Fc9C4C-w</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/S134dNSTy0SiFND5610K2Q</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/C2SPUw5rCEGYqyJnQ6nnqw?ut</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/LC5EhCv4W0-l34IyF8oxzg</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/sxzp3LVZT0mKm_WLaykXuQ</td>
+</tr>
+<tr>
+<td>Gretchen Titchwillow</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/C2SPUw5rCEGYqyJnQ6nnqw</td>
+</tr>
+<tr>
+<td>Gut, True Soul Zealot + Inspiring Leader</td>
+<td>Boros</td>
+<td>Aggro</td>
+<td>https://moxfield.com/decks/EBN9baXZ1E64jJWf05OvQw</td>
+</tr>
+<tr>
+<td>Halana, Kessig Ranger + Toggo, Goblin Weaponsmith</td>
+<td>Gruul</td>
+<td>Control</td>
+<td>https://moxfield.com/decks/PiP1I_YilEGElbJDaV-S3w</td>
+</tr>
+<tr>
+<td>Heartfire Hero</td>
+<td>Red</td>
+<td>Aggro</td>
+<td>https://moxfield.com/decks/1LCewKgqSEyu1INcOGAA0A</td>
+</tr>
+<tr>
+<td>Hollow Marauder</td>
+<td>Black</td>
+<td>Control</td>
+<td>https://www.moxfield.com/decks/eYZSyMKhK0u5XlNsbnanug</td>
+</tr>
+<tr>
+<td>Honest Rutstein</td>
+<td>Golgari</td>
+<td>Midrange</td>
+<td>https://topdeck.gg/deck/free-pauper-commander-tournament/UY3rayeh6UhzYDlIPUr0F1FVwyc2</td>
+</tr>
+<tr>
+<td>Horrid Shadowspinner</td>
+<td>Dimir</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/1CGT-HOhdEymjFyFGAcOeg</td>
+</tr>
+<tr>
+<td>Imoen, Mystic Trickster + Criminal Past</td>
+<td>Dimir</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/2--Ih4wTPkKJ8nxPnNSEnQ</td>
+</tr>
+<tr>
+<td>Juri, Master of the Revue</td>
+<td>Rakdos</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw</td>
+</tr>
+<tr>
+<td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/3FpPdVfP0U-Evf9m6QPXGA</td>
+</tr>
+<tr>
+<td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/oXbkSrbw1kKMnHJDnhNF3g</td>
+</tr>
+<tr>
+<td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/j1S3GhgWPkixFyvOXYYBVA</td>
+</tr>
+<tr>
+<td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/a6QRhLaha0-ZipO9E-ZBEQ</td>
+</tr>
+<tr>
+<td>Knotvine Mystic</td>
+<td>Naya</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/wpRRrpJJdEWczwF6S_PlUA</td>
+</tr>
+<tr>
+<td>Kutzil, Malamet Exemplar</td>
+<td>Selesnya</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/9tGroGXxD0Gy0WDQ6mTLxA</td>
+</tr>
+<tr>
+<td>Lagrella, the Magpie</td>
+<td>Bant</td>
+<td>Combo</td>
+<td>https://topdeck.gg/deck/free-pauper-commander-tournament/kB0YyPVCo8XWy4sVeZ3m3Wje98k1</td>
+</tr>
+<tr>
+<td>Lazav, Familiar Stranger</td>
+<td>Dimir</td>
+<td>Voltron</td>
+<td>https://moxfield.com/decks/xvyNpNC6A0aPNqMRGTLK9w</td>
+</tr>
+<tr>
+<td>Ley Weaver + Lore Weaver</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/aUJ-X8ltOkmbEdZSmKQ3zQ</td>
+</tr>
+<tr>
+<td>Ley Weaver + Lore Weaver</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/8JCLvQyWSEmV6wtnaA4qrQ</td>
+</tr>
+<tr>
+<td>Ley Weaver + Lore Weaver</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ</td>
+</tr>
+<tr>
+<td>Ley Weaver + Lore Weaver</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/3eI3t4xksUixg-fwPnVncA</td>
+</tr>
+<tr>
+<td>Lorehold Apprentice</td>
+<td>Boros</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/MY6Wv-mWnUmFwDSoAiv13Q</td>
+</tr>
+<tr>
+<td>Loyal Apprentice</td>
+<td>Red</td>
+<td>Aggro</td>
+<td>https://www.moxfield.com/decks/ufYjl-QfH0uvY-EugYNhAg</td>
+</tr>
+<tr>
+<td>Lumberknot</td>
+<td>Green</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/hyOgwcLUbE6OX8VRYkhttg</td>
+</tr>
+<tr>
+<td>Malcolm, Keen-Eyed Navigator + Rograkh, Son of Rohgahh</td>
+<td>Izzet</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/lEZAnF9uik6IdMeqY-JxoQ</td>
+</tr>
+<tr>
+<td>Mystic Enforcer</td>
+<td>Selesnya</td>
+<td>Voltron</td>
+<td>https://www.moxfield.com/decks/rXJ5AkJA8EeDC6MLE6vwiw</td>
+</tr>
+<tr>
+<td>Oji, the Exquisite Blade</td>
+<td>Azorius</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/XF_kbWFhXEC_u6i5p8spWA</td>
+</tr>
+<tr>
+<td>Patchwork Automaton</td>
+<td>Colorless</td>
+<td>Voltron</td>
+<td>https://www.moxfield.com/decks/8XK59D5RmUKlgrK_H4EkcA</td>
+</tr>
+<tr>
+<td>Raff, Weatherlight Stawart</td>
+<td>Azorius</td>
+<td>Control</td>
+<td>https://www.moxfield.com/decks/LSNefRJe20Ckf34lPfJPUw</td>
+</tr>
+<tr>
+<td>Rilsa Rael, Kingpin</td>
+<td>Dimir</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/ptDs_HP6mEyOJENDj2mE_A</td>
+</tr>
+<tr>
+<td>Risen Reef</td>
+<td>Simic</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/1sDi-9JZoEq9A7HFL4XegA</td>
+</tr>
+<tr>
+<td>Satyr Enchanter</td>
+<td>Selesnya</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/SaKWDQYvmE6iEsHJ_WJzpg</td>
+</tr>
+<tr>
+<td>Scholar of the Ages</td>
+<td>Blue</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/tmMplRiiQU6p6DzssHzy2g</td>
+</tr>
+<tr>
+<td>Shao Jun</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/YPbNuTKcLU24gZ7Z-uhzvA</td>
+</tr>
+<tr>
+<td>Shao Jun</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/abaRtSFfKEyuX5POke7MRA</td>
+</tr>
+<tr>
+<td>Sivriss, Nightmare Speaker + Cloakwood Hermit</td>
+<td>Golgari</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/AIn0u7bqc06raB-75tkLCg</td>
+</tr>
+<tr>
+<td>Skirmish Rhino</td>
+<td>Abzan</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/BW8_OJXw70KLvJstGhfTDQ</td>
+</tr>
+<tr>
+<td>Sphinx Summoner</td>
+<td>Dimir</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/fYZKUOMj_EqeNMCvH5leww</td>
+</tr>
+<tr>
+<td>Sprite Dragon</td>
+<td>Izzet</td>
+<td>Voltron</td>
+<td>https://www.moxfield.com/decks/mkvjgoEQwEanpo6EdAwuqQ</td>
+</tr>
+<tr>
+<td>Syr Konrad, the Grim</td>
+<td>Black</td>
+<td>Control</td>
+<td>https://moxfield.com/decks/wIJvB0XAfUeRsyK_DRVqoA</td>
+</tr>
+<tr>
+<td>Tatyova, Benthic Druid</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/7Jzp4PEWdU6iYRpDi9_GDQ</td>
+</tr>
+<tr>
+<td>Tatyova, Benthic Druid</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/7Jzp4PEWdU6iYRpDi9_GDQ</td>
+</tr>
+<tr>
+<td>Tatyova, Benthic Druid</td>
+<td>Simic</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/M3p9X9kVNUy7ZGhfQmeyQg</td>
+</tr>
+<tr>
+<td>Terravore</td>
+<td>Green</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/ypO7zk3rckmOdaMUppAN-A</td>
+</tr>
+<tr>
+<td>Teshar, Ancestor&#39;s Apostle</td>
+<td>White</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/ADy_WV-dlE2BVObDpDZBOQ</td>
+</tr>
+<tr>
+<td>Third Path Iconoclast</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/EQeyjAlsNESZzB6rboqgDg</td>
+</tr>
+<tr>
+<td>Third Path Iconoclast</td>
+<td>Izzet</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/H5YMtjnOPEGW6AcxlO_TIQ</td>
+</tr>
+<tr>
+<td>Trygon Prime</td>
+<td>Simic</td>
+<td>Midrange</td>
+<td>https://moxfield.com/decks/-67pN4-VfUyLlyVEAF8Hag</td>
+</tr>
+<tr>
+<td>Vhal, Candlekeep Researcher + Agent of the Shadow Thieves</td>
+<td>Dimir</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A</td>
+</tr>
+<tr>
+<td>Vizkopa Guildmage</td>
+<td>Orzhov</td>
+<td>Combo</td>
+<td>https://www.moxfield.com/decks/d3s7EXKyeEmy1A2livtmHQ</td>
+</tr>
+<tr>
+<td>Vizkopa Guildmage</td>
+<td>Orzhov</td>
+<td>Combo</td>
+<td>https://moxfield.com/decks/GMJDy-NfwUOyVfXqLCxtnw</td>
+</tr>
+<tr>
+<td>Wilson, Refined Grizzly + Far Traveler</td>
+<td>Selesnya</td>
+<td>Midrange</td>
+<td>https://www.moxfield.com/decks/tVgoCMX4C0yfHxDL7RpNAw</td>
+</tr>
+<tr>
+<td>Young Pyromancer</td>
+<td>Red</td>
+<td>Aggro</td>
+<td>https://www.moxfield.com/decks/mWP7zKIjXEOeylb-X-0jJg</td>
+</tr>
+<tr>
+<td>Zada, Hedron Grinder</td>
+<td>Red</td>
+<td>Aggro</td>
+<td>https://moxfield.com/decks/jWnufsB3SEuXFXfUjszZ3g</td>
+</tr>
+</tbody></table>
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready( function () {
+    $('#decklist-table').DataTable();
+  } );
+</script>

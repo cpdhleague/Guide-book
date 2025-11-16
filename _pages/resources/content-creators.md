@@ -8,8 +8,8 @@ permalink: /resources/content-creators/
 header:
   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
   overlay_filter: 0.0
-  title: "Content Creator Directory"
-  excerpt: "Discover the amazing creators building the PDH community."
+#  title: "Content Creator Directory"
+#  excerpt: "Discover the amazing creators building the PDH community."
 
 # ---
 # We define FOUR separate feature row data blocks here.
@@ -18,18 +18,15 @@ header:
 
 # Data for the first row
 creators_row_1:
-  - image_path: /assets/images/creator-1.jpg
-    title: "Creator One's YouTube"
-    url: "https://www.youtube.com/watch?v=..."
-    excerpt: "The best place for deck techs and paper gameplay."
-  - image_path: /assets/images/creator-2.jpg
-    title: "Creator Two's Twitch"
-    url: "https://www.twitch.tv/..."
-    excerpt: "Live streams every Friday night with community games."
-  - image_path: /assets/images/creator-3.jpg
-    title: "Creator Three's Blog"
-    url: "https://www.creator-blog.com/..."
-    excerpt: "In-depth articles and metagame analysis."
+  - image_path: /assets/images/pdhpod.png
+    title: "PDH Pod"
+    url: "https://open.spotify.com/show/55DyhZMhnn7z4SivHPiFVC?si=gzHUt6RKTnmAbtkdYDv0Ow&nd=1&dlsi=9a5666161b4b4e07"
+  - image_path: /assets/images/jajepenos.png
+    title: "Jalapeño Paupers"
+    url: "https://www.youtube.com/@JalapenoPaupersMTG/videos"
+  - image_path: /assets/images/pdhpod.png
+    title: "PDH Pod Stream"
+    url: "https://www.twitch.tv/thepdhpod"
 
 # Data for the second row
 creators_row_2:

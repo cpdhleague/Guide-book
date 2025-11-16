@@ -1,15 +1,22 @@
 {% comment %}
+  MODIFIED: This version can accept an 'id' parameter.
   Usage:
-  {% include feature_row %}
+  {% include feature_row id="my_data_block" %}
+  (It defaults to "feature_row" if no id is provided)
 {% endcomment %}
 
-{% if page.feature_row %}
-  {% if page.feature_row.first.image_path %}
+{% comment %} --- 1. Get the data block --- {% endcomment %}
+{%- assign feature_row_id = include.id | default: "feature_row" -%}
+{%- assign feature_row_data = page[feature_row_id] -%}
+
+{% comment %} --- 2. Render the data block (this is your original code) --- {% endcomment %}
+{% if feature_row_data %}
+  {% if feature_row_data.first.image_path %}
     <div class="feature__row--images">
   {% else %}
     <div class="feature__row--no-images">
   {% endif %}
-  {% for item in page.feature_row %}
+  {% for item in feature_row_data %}
     <div class="feature__item" {% if item.image_path %}style="flex-basis: 33.33333%"{% endif %}>
       <div class="feature__item__content-wrapper">
         

@@ -2,7 +2,7 @@
 # --- 1. YAML FRONT MATTER (THE DATA) ---
 title: "Content Creator Directory"
 layout: splash
-permalink: /directory/
+permalink: /content-creators/
 
 # Optional: Add a big header image, just like your index page
 header:

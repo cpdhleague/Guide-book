@@ -1,6 +1,6 @@
 ---
 # --- 1. YAML FRONT MATTER (THE DATA) ---
-title: "Content Creator Directory"
+title: " "
 layout: splash
 permalink: /resources/content-creators/
 

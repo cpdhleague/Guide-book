@@ -7,13 +7,13 @@ permalink: /resources/content-creators/
 # DATA BLOCK FOR THE FIRST ROW
 # -----------------------------------------------
 youtube_creators:
-  - image_path: /assets/images/placeholder.jpg
+  - image_path: /assets/images/pdhpod.png
     title: "PDH Pod"
     url: "https://open.spotify.com/show/55DyhZMhnn7z4SivHPiFVC?si=gzHUt6RKTnmAbtkdYDv0Ow&nd=1&dlsi=346108dcbba64a2b"
-  - image_path: /assets/images/placeholder.jpg
-    title: "Jalepeno Paupers"
+  - image_path: /assets/images/jajepenos.png
+    title: "Jalapeno Paupers"
     url: "https://www.youtube.com/@JalapenoPaupersMTG"
-  - image_path: /assets/images/placeholder.jpg
+  - image_path: /assets/images/pdhpod.png
     title: "PDH Pod Stream"
     url: "https://m.twitch.tv/thepdhpod/home"
 

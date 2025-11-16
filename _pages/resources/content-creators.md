@@ -1,6 +1,6 @@
 ---
 # --- 1. YAML FRONT MATTER (THE DATA) ---
-title: " "
+title: "Content Creator Directory"
 layout: splash
 permalink: /resources/content-creators/
 
@@ -8,8 +8,7 @@ permalink: /resources/content-creators/
 header:
   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
   overlay_filter: 0.0
-#  title: "Content Creator Directory"
-#  excerpt: "Discover the amazing creators building the PDH community."
+  title: " "
 
 # ---
 # We define FOUR separate feature row data blocks here.
@@ -18,13 +17,13 @@ header:
 
 # Data for the first row
 creators_row_1:
-  - image_path: /assets/images/pdhpod.png
+  - image_path: /assets/images/tpp-sq.jfif
     title: "PDH Pod"
     url: "https://open.spotify.com/show/55DyhZMhnn7z4SivHPiFVC?si=gzHUt6RKTnmAbtkdYDv0Ow&nd=1&dlsi=9a5666161b4b4e07"
-  - image_path: /assets/images/jajepenos.png
+  - image_path: /assets/images/jala-sq.jpg
     title: "Jalapeño Paupers"
     url: "https://www.youtube.com/@JalapenoPaupersMTG/videos"
-  - image_path: /assets/images/pdhpod.png
+  - image_path: /assets/images/tpp-sq.jfif
     title: "PDH Pod Stream"
     url: "https://www.twitch.tv/thepdhpod"
 

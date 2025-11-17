@@ -58,22 +58,22 @@ creators_row_4:
 
 ## Featured Creators
 
-{% include feature_row id="creators_row_1" %}
+{% include_cached feature_row.html id="creators_row_1" %}
 
 <div style="clear: both;"></div>
 
 ## Up & Coming Channels
 
-{% include feature_row id="creators_row_2" %}
+{% include_cached feature_row.html id="creators_row_2" %}
 
 <div style="clear: both;"></div>
 
 ## Community Streamers
 
-{% include feature_row id="creators_row_3" %}
+{% include_cached feature_row.html id="creators_row_3" %}
 
 <div style="clear: both;"></div>
 
 ## PDH Blogs and Articles
 
-{% include feature_row id="creators_row_4" %}
+{% include_cached feature_row.html id="creators_row_4" %}

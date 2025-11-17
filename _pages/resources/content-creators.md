@@ -5,10 +5,10 @@ layout: splash
 permalink: /resources/content-creators/
 
 # Optional: Add a big header image, just like your index page
-header:
-  overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
-  overlay_filter: 0.0
-  title: " "
+# header:
+#   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
+#  overlay_filter: 0.0
+#  title: " "
 
 # ---
 # We define FOUR separate feature row data blocks here.
@@ -30,18 +30,26 @@ creators_row_1:
 # Data for the second row
 creators_row_2:
   - image_path: /assets/images/creator-4.jpg
-    title: "Creator Four's Channel"
-    url: "https://www.youtube.com/watch?v=..."
+    title: "Lobbert"
+    url: "https://www.youtube.com/@lobbert8"
   - image_path: /assets/images/creator-5.jpg
-    title: "Creator Five's Stream"
-    url: "https://www.twitch.tv/..."
+    title: "Common Connoisseurs"
+    url: "https://www.youtube.com/@CommonConnoisseurs"
+  - image_path: /assets/images/creator-5.jpg
+    title: "Sanctuary PDH"
+    url: "https://www.youtube.com/@SanctuaryPDH/videos"
 
 # Data for the third row
 creators_row_3:
-  - image_path: /assets/images/creator-6.jpg
-    title: "Creator Six's YouTube"
-    url: "https://www.youtube.com/watch?v=..."
-    excerpt: "New to the scene, but putting out great content!"
+  - image_path: /assets/images/creator-4.jpg
+    title: "Lobbert"
+    url: "https://www.youtube.com/@lobbert8"
+  - image_path: /assets/images/creator-5.jpg
+    title: "Common Connoisseurs"
+    url: "https://www.youtube.com/@CommonConnoisseurs"
+  - image_path: /assets/images/creator-5.jpg
+    title: "Sanctuary PDH"
+    url: "https://www.youtube.com/@SanctuaryPDH/videos"
 
 # Data for the fourth row
 creators_row_4:

@@ -47,7 +47,7 @@ creators_row_3:
   - image_path: /assets/images/pstorm.jpg
     title: "Possibility Storm"
     url: "https://www.youtube.com/@thepossibilitystorm"
-  - image_path: /assets/images/twitch.png
+  - image_path: /assets/images/twitch.jpg
     title: "PDH Pals Stream"
     url: "https://www.twitch.tv/pdhpals?sr=a"
 

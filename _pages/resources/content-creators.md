@@ -35,7 +35,7 @@ creators_row_2:
   - image_path: /assets/images/comcon.jpg
     title: "Common Connoisseurs"
     url: "https://www.youtube.com/@CommonConnoisseurs"
-  - image_path: /assets/images/sanctuary.jpg
+  - image_path: /assets/images/sanctuary.png
     title: "Sanctuary PDH"
     url: "https://www.youtube.com/@SanctuaryPDH/videos"
 

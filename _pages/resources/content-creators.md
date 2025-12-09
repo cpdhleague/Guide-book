@@ -29,7 +29,7 @@ creators_row_1:
 
 # Data for the second row
 creators_row_2:
-  - image_path: /assets/images/lobbert.jpg
+  - image_path: /assets/images/lobbert.png
     title: "Lobbert"
     url: "https://www.youtube.com/@lobbert8"
   - image_path: /assets/images/comcon.jpg
@@ -41,27 +41,16 @@ creators_row_2:
 
 # Data for the third row
 creators_row_3:
-  - image_path: /assets/images/creator-4.jpg
-    title: "Lobbert"
-    url: "https://www.youtube.com/@lobbert8"
-  - image_path: /assets/images/creator-5.jpg
-    title: "Common Connoisseurs"
-    url: "https://www.youtube.com/@CommonConnoisseurs"
-  - image_path: /assets/images/creator-5.jpg
-    title: "Sanctuary PDH"
-    url: "https://www.youtube.com/@SanctuaryPDH/videos"
+  - image_path: /assets/images/omg.jpg
+    title: "One More Game"
+    url: "https://www.youtube.com/@Omgmtg"
+  - image_path: /assets/images/pstorm.jpg
+    title: "Possibility Storm"
+    url: "https://www.youtube.com/@thepossibilitystorm"
+  - image_path: /assets/images/twitch.png
+    title: "PDH Pals Stream"
+    url: "https://www.twitch.tv/pdhpals?sr=a"
 
-# Data for the fourth row
-creators_row_4:
-  - image_path: /assets/images/creator-7.jpg
-    title: "Creator Seven's Site"
-    url: "https://www.creator7.com/..."
-  - image_path: /assets/images/creator-8.jpg
-    title: "Creator Eight's Stream"
-    url: "https://www.twitch.tv/..."
-  - image_path: /assets/images/creator-9.jpg
-    title: "Creator Nine's Channel"
-    url: "https://www.youtube.com/watch?v=..."
 ---
 
 ## Featured Creators

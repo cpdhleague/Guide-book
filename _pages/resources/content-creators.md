@@ -72,23 +72,17 @@ creators_row_4:
 
 <div style="clear: both;"></div>
 
-## Up & Coming Channels
-
 <div>
 {% include_cached feature_row.html id="creators_row_2" %}
 </div>
 
 <div style="clear: both;"></div>
 
-## Community Streamers
-
 <div>
 {% include_cached feature_row.html id="creators_row_3" %}
 </div>
 
 <div style="clear: both;"></div>
-
-## PDH Blogs and Articles
 
 <div>
 {% include_cached feature_row.html id="creators_row_4" %}

@@ -29,13 +29,13 @@ creators_row_1:
 
 # Data for the second row
 creators_row_2:
-  - image_path: /assets/images/creator-4.jpg
+  - image_path: /assets/images/lobbert.jpg
     title: "Lobbert"
     url: "https://www.youtube.com/@lobbert8"
-  - image_path: /assets/images/creator-5.jpg
+  - image_path: /assets/images/comcon.jpg
     title: "Common Connoisseurs"
     url: "https://www.youtube.com/@CommonConnoisseurs"
-  - image_path: /assets/images/creator-5.jpg
+  - image_path: /assets/images/sanctuary.jpg
     title: "Sanctuary PDH"
     url: "https://www.youtube.com/@SanctuaryPDH/videos"
 

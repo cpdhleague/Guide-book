@@ -8,7 +8,7 @@ categories:
 excerpt: "Is focusing on the win condition the best way to build a competitive deck? Let's take a deeper dive into the minds of our Champions to find out."
 ---
 
-**By Adam B.**
+**By Adam**
 
 We hear it all the time: whenever someone starts pitching a new deck design, often, the listener starts off by asking the question: *“how does the deck win?”*
 

@@ -1,15 +1,10 @@
 ---
 title: "REPLACE THIS WITH YOUR CLICKABLE TITLE"
-date: 2025-12-11
+date: 2025-12-01
 layout: single
 classes: wide
 categories:
   - Deck Tech
-  - Gameplay
-  - Tournament Report
-tags:
-  - CommanderName
-  - Strategy
 header:
   overlay_image: /assets/images/YOUR-IMAGE.jpg
   overlay_filter: 0.5

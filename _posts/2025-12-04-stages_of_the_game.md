@@ -75,6 +75,6 @@ Ultimately, our goal at **cPDH.guide** is to empower players to make a more comp
 
 Now that the stage is set, dive into the deep end with our three-part breakdown:
 
-* **Part 1:** [The Early Game: Turns 0-3]({% link _posts/2025-12-03-early_game.md %})
-* **Part 2:** [The Mid-Game: Turns 4-6]({% link _posts/2025-12-02-mid_game.md %})
-* **Part 3:** [The Late Game: Turns 7+]({% link _posts/2025-12-01-late_game.md %})
+* **Part 1:** [The Early Game: Turns 0-3]({% link Guide-book/_posts/2025-12-03-early_game.md %})
+* **Part 2:** [The Mid-Game: Turns 4-6]({% link Guide-book/_posts/2025-12-02-mid_game.md %})
+* **Part 3:** [The Late Game: Turns 7+]({% link Guide-book/_posts/2025-12-01-late_game.md %})

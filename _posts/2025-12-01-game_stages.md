@@ -1,5 +1,5 @@
 ---
-title: "STAGES OF THE GAME"
+title: "STAGES OF THE GAME: THE LATE GAME"
 date: 2025-12-10
 layout: single
 classes: wide

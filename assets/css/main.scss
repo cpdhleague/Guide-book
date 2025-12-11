@@ -19,3 +19,15 @@
 .page__hero--overlay {
   min-height: 50vh;
 }
+
+
+/* 5. Custom class for shorter headers */
+.short-header .page__hero--overlay {
+  min-height: 250px !important;  /* Adjust this number to change the height */
+  height: auto;
+}
+
+.short-header .page__hero--overlay .wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

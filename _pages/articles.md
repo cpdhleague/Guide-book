@@ -9,7 +9,7 @@ header:
   excerpt: "Deep dives, deck techs, and tournament reports from the cPDH League."
 ---
 
-## Latest Posts
+## Latest Articles
 
 <div class="entries-grid">
   {% for post in site.posts limit:6 %}

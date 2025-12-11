@@ -1,7 +1,7 @@
 ---
 title: "STAGES OF THE GAME"
 date: 2025-12-04
-layout: single
+layout: splash
 classes: wide
 categories:
   - Game Guides

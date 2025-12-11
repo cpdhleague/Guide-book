@@ -5,8 +5,6 @@ layout: single
 classes: wide
 categories:
   - Opinion
-header:
-  teaser: /assets/images/cpdh.png
 excerpt: "The Stax archetype IS NOT named for Smokestack. Let’s explore the history of the archetype and what it actually looks like in cPDH."
 ---
 

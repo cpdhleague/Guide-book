@@ -1,6 +1,6 @@
 ---
 title: "The Viability of Stax in Competitive Pauper Commander"
-date: 2025-11-15
+date: 2025-12-05
 layout: single
 classes: wide
 categories:

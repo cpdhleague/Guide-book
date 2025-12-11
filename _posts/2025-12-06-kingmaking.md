@@ -1,7 +1,7 @@
 ---
 title: "Kingmaking in cPDH"
 date: 2025-12-06
-layout: single
+layout: splash
 classes: wide
 categories:
   - Opinion

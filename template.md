@@ -1,7 +1,7 @@
 ---
 title: "REPLACE THIS WITH YOUR CLICKABLE TITLE"
 date: 2025-12-01
-layout: single
+layout: splash
 classes: wide
 categories:
   - Deck Tech

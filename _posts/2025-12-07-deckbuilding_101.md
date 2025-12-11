@@ -43,7 +43,7 @@ What I find more intriguing is that he didn’t mention seeking a win at all; he
 
 A rising star of the format, winner of Sanctuary IV and most recently, Sanctuary VII: **Hollow Marauder**.
 
-![Hollow Marauder](/Guide-book/assets/images/hollow.jpg){: .align-center}
+<img src="/Guide-book/assets/images/hollow.jpg" alt="Description" style="width: 50%; display: block; margin: 0 auto;">
 
 In his [YouTube interview with Clay](https://youtu.be/Yy_l7X7y7us), pilot **PapaPauper** (the format’s 2nd highest ranked overall pilot), offers a jubilant exposé of how his deck flips “seeking the win” deck building premise on its head: 
 

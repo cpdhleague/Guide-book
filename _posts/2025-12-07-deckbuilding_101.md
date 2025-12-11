@@ -1,7 +1,7 @@
 ---
 title: "Deckbuilding 101: Focusing on Process over Outcome"
 date: 2025-12-07
-layout: single
+layout: splash
 classes: wide
 categories:
   - Game Guides

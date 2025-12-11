@@ -1,7 +1,7 @@
 ---
 title: "TURNS 1-3: THE EARLY GAME"
 date: 2025-12-03
-layout: single
+layout: splash
 classes: wide
 header:
   teaser: /assets/images/cpdh.phg

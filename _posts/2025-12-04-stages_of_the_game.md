@@ -8,7 +8,7 @@ categories:
 excerpt: "Turn 0 is a very unique and important space in the game... it is the only space where the 90-minute time limit isn’t applied to your actions."
 ---
 
-**By Adam B.**
+**By Adam**
 
 > “Magic: The Gathering is a masterpiece of strategy and intrigue; it's the best game, ever... ever created.”
 > — <cite>Post Malone</cite>

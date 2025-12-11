@@ -2,6 +2,7 @@
 title: "Articles & Guides"
 layout: splash
 permalink: /articles/
+classes: short-header
 header:
   overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
   overlay_filter: 0.5

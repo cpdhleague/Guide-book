@@ -24,7 +24,7 @@ Let's find out what our Champions of the format have done to achieve their succe
 
 Let’s begin with the most decorated deck in the format; our crowned cPDH GOAT: **Gretchen Titchwillow**.
 
-![Gretchen Titchwillow](/assets/images/gretchen.jpg){: .align-center}
+<img src="/assets/images/gretchen.jpg" alt="Description" style="width: 50%; display: block; margin: 0 auto;">
 
 At the time of this article, Gretchen Titchwillow boasts 8 Top-4 finishes with multiple pilots. On the surface, Gretchen in the command zone provides the player access to an outlet before the game begins. This gives the pilot access to its key component immediately, allowing this deck to be stacked with Simic’s abundant draw-and-ramp package. It's no wonder that a deck like Gretchen could simply outpace her opponents to victory, right?
 

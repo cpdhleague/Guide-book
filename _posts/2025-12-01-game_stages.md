@@ -7,7 +7,7 @@ categories:
   - Game Guides
 header:
   teaser: /assets/images/cpdh.phg
-excerpt: "Write 1-2 sentences here that summarize the article. This will appear on the main page and in your newsletter."
+excerpt: "Adam breaks down how to navigate and think about the Late Game."
 ---
 
 On January 10th, 49 BC, acting Governor of Gaul, and decorated General Gaius Julius Caesar was issued an order from his Senate to disband his army and return to Rome as a private citizen. He was promised glory, a credit for his triumph in expanding the rule of Rome after an arduous, bloody campaign that kept him and his men away from home for 10 years.

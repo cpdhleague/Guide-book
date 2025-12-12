@@ -35,7 +35,7 @@ except Exception as e:
 
 # --- 3. GENERATE CONTENT WITH GEMINI ---
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
 prompt = f"""
 You are an expert content writer for a competitive Pauper Commander (cPDH) website.

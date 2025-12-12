@@ -3,7 +3,7 @@ title: "TURNS 1-3: THE EARLY GAME"
 date: 2025-12-03
 layout: splash
 classes: wide
-permalink: /early-game/
+permalink: /early_game/
 header:
   teaser: /assets/images/cpdh.phg
 excerpt: "Adam breaks down how to navigate and think about the Early Game."

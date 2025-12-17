@@ -61,7 +61,7 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/8JCLvQyWSEmV6wtnaA4qrQ) |
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ) |
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](httpsMoxfield/decks/3eI3t4xksUixg-fwPnVncA) |
-| Long Feng, Grand Secretariat | Golgari | Combo | [Decklist]([httpsMoxfield/decks/3eI3t4xksUixg-fwPnVncA](https://topdeck.gg/deck/cpdh-commander-clash-2025/atJqz3FPb5R4oK7Vnfu67weNTb93)) |
+| Long Feng, Grand Secretariat | Golgari | Combo | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/atJqz3FPb5R4oK7Vnfu67weNTb93) |
 | Lorehold Apprentice | Boros | Midrange | [Decklist](https://www.moxfield.com/decks/MY6Wv-mWnUmFwDSoAiv13Q) |
 | Loyal Apprentice | Red | Aggro | [Decklist](https://www.moxfield.com/decks/ufYjl-QfH0uvY-EugYNhAg) |
 | Lumberknot | Green | Midrange | [Decklist](https://www.moxfield.com/decks/hyOgwcLUbE6OX8VRYkhttg) |

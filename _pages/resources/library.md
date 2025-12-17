@@ -61,6 +61,7 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/8JCLvQyWSEmV6wtnaA4qrQ) |
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ) |
 | Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](httpsMoxfield/decks/3eI3t4xksUixg-fwPnVncA) |
+| Long Feng, Grand Secretariat | Golgari | Combo | [Decklist]([httpsMoxfield/decks/3eI3t4xksUixg-fwPnVncA](https://topdeck.gg/deck/cpdh-commander-clash-2025/atJqz3FPb5R4oK7Vnfu67weNTb93)) |
 | Lorehold Apprentice | Boros | Midrange | [Decklist](https://www.moxfield.com/decks/MY6Wv-mWnUmFwDSoAiv13Q) |
 | Loyal Apprentice | Red | Aggro | [Decklist](https://www.moxfield.com/decks/ufYjl-QfH0uvY-EugYNhAg) |
 | Lumberknot | Green | Midrange | [Decklist](https://www.moxfield.com/decks/hyOgwcLUbE6OX8VRYkhttg) |
@@ -71,6 +72,7 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Raff, Weatherlight Stawart | Azorius | Control | [Decklist](https://www.moxfield.com/decks/LSNefRJe20Ckf34lPfJPUw) |
 | Rilsa Rael, Kingpin | Dimir | Midrange | [Decklist](https://www.moxfield.com/decks/ptDs_HP6mEyOJENDj2mE_A) |
 | Risen Reef | Simic | Midrange | [Decklist](https://www.moxfield.com/decks/1sDi-9JZoEq9A7HFL4XegA) |
+| Rocketeer Boostbuggy | Gruul | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/q9Ki57T7fEdJaMPol5rr0e2Znar2) |
 | Satyr Enchanter | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/SaKWDQYvmE6iEsHJ_WJzpg) |
 | Scholar of the Ages | Blue | Combo | [Decklist](https://moxfield.com/decks/tmMplRiiQU6p6DzssHzy2g) |
 | Shao Jun | Izzet | Midrange | [Decklist](https://moxfield.com/decks/YPbNuTKcLU24gZ7Z-uhzvA) |
@@ -85,9 +87,11 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Tatyova, Benthic Druid | Simic | Combo | [Decklist](https://moxfield.com/decks/M3p9X9kVNUy7ZGhfQmeyQg) |
 | Terravore | Green | Midrange | [Decklist](https://moxfield.com/decks/ypO7zk3rckmOdaMUppAN-A) |
 | Teshar, Ancestor's Apostle | White | Combo | [Decklist](https://www.moxfield.com/decks/ADy_WV-dlE2BVObDpDZBOQ) |
+| The Emperor of Palamecia // The Lord Master of Hell | Izzet | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/xA5c35JHdoefe1dH5RRJMPIerCG2) |
 | Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/EQeyjAlsNESZzB6rboqgDg) |
 | Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/H5YMtjnOPEGW6AcxlO_TIQ) |
 | Trygon Prime | Simic | Midrange | [Decklist](https://moxfield.com/decks/-67pN4-VfUyLlyVEAF8Hag) |
+| Veteran Beastrider | Selesnya | Midrange | [Decklist]([https://moxfield.com/decks/ypO7zk3rckmOdaMUppAN-A](https://topdeck.gg/deck/cpdh-commander-clash-2025/RF01KBbpm5h2JMkwqdzbDuLWKo12)) |
 | Vhal, Candlekeep Researcher + Agent of the Shadow Thieves | Dimir | Combo | [Decklist](https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A) |
 | Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://www.moxfield.com/decks/d3s7EXKyeEmy1A2livtmHQ) |
 | Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://moxfield.com/decks/GMJDy-NfwUOyVfXqLCxtnw) |

@@ -91,7 +91,7 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/EQeyjAlsNESZzB6rboqgDg) |
 | Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/H5YMtjnOPEGW6AcxlO_TIQ) |
 | Trygon Prime | Simic | Midrange | [Decklist](https://moxfield.com/decks/-67pN4-VfUyLlyVEAF8Hag) |
-| Veteran Beastrider | Selesnya | Midrange | [Decklist]([https://moxfield.com/decks/ypO7zk3rckmOdaMUppAN-A](https://topdeck.gg/deck/cpdh-commander-clash-2025/RF01KBbpm5h2JMkwqdzbDuLWKo12)) |
+| Veteran Beastrider | Selesnya | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/RF01KBbpm5h2JMkwqdzbDuLWKo12) |
 | Vhal, Candlekeep Researcher + Agent of the Shadow Thieves | Dimir | Combo | [Decklist](https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A) |
 | Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://www.moxfield.com/decks/d3s7EXKyeEmy1A2livtmHQ) |
 | Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://moxfield.com/decks/GMJDy-NfwUOyVfXqLCxtnw) |

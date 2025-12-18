@@ -4,7 +4,7 @@ baseurl: "/Guide-book"
 layout: splash
 permalink: /
 header:
-  overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.0
   title: " "
   excerpt: " "

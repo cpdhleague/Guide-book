@@ -8,20 +8,27 @@ header:
   overlay_filter: 0.0
   title: " "
   excerpt: " "
-feature_row:
-  - image_path: /assets/images/article-3.jpg
-    title: "Let's Talk w/ Puzzlebox - Simic Freed Combos"
-    url: "https://www.youtube.com/watch?v=53K8XJ0zF2o&t=902s"
-  - image_path: /assets/images/article-1.jpg
-    title: "Jalepeno Paupers Rate Spiderman Commanders"
-    url: "https://www.youtube.com/watch?v=V3U9jNNc6qw&t=3840s"
-  - image_path: /assets/images/article-2.jpg
-    title: "DeckedOut plays PDH"
-    url: "https://www.youtube.com/watch?v=nGpK-GfwWRI&t=446s"
+
 ---
 
 <div>
-{% include_cached feature_row.html %}
+<h3 class="archive__subtitle">Latest Articles</h3>
+
+<div class="entries-grid">
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% comment %} Check if the post has a teaser image defined {% endcomment %}
+    {% if post.header.teaser %}
+      {% include archive-single.html type="grid" %}
+      {% assign count = count | plus: 1 %}
+    {% endif %}
+    
+    {% comment %} Stop once we reach 3 posts {% endcomment %}
+    {% if count == 3 %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+</div>
 </div>
 
 <div style="clear: both;"></div>

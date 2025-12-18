@@ -4,7 +4,7 @@ layout: splash
 permalink: /articles/
 classes: short-header
 header:
-  overlay_image: /assets/images/Gemini_Generated_Image_bpu1z6bpu1z6bpu1.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   title: "Community Articles"
   excerpt: "Deep dives, deck techs, and tournament reports from the cPDH League."

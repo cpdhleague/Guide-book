@@ -10,48 +10,49 @@ header:
   excerpt: "Deep dives, deck techs, and tournament reports from the cPDH League."
 ---
 
-## Latest
+## Latest Articles
 
 <div class="feature__row--images">
-  {% assign count = 0 %}
   {% for post in site.posts %}
     
-    {% comment %} Only show posts that have a thumbnail {% endcomment %}
+    {% comment %} --- 1. Set Image (Use Teaser OR Fallback) --- {% endcomment %}
     {% if post.header.teaser %}
-      {% assign count = count | plus: 1 %}
-      
-      <div class="feature__item" style="flex-basis: 33.33333%;">
-        <div class="feature__item__content-wrapper">
-          
-          <div class="feature__item-image">
-            <a href="{{ post.url | relative_url }}" class="feature__item-image-link">
-              <img 
-                src="{{ post.header.teaser | relative_url }}" 
-                alt="{{ post.title | escape }}" 
-                class="feature__item-image"
-              >
-            </a>
-          </div>
+      {% assign post_image = post.header.teaser %}
+    {% else %}
+      {% assign post_image = "/assets/images/cpdh.png" %}
+    {% endif %}
 
-          <div class="feature__item-content">
-            <h3 class="feature__item-title">
-              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-            </h3>
-          </div>
-          
+    <div class="feature__item" style="flex-basis: 33.33333%;">
+      <div class="feature__item__content-wrapper">
+        
+        <div class="feature__item-image">
+          <a href="{{ post.url | relative_url }}" class="feature__item-image-link">
+            <img 
+              src="{{ post_image | relative_url }}" 
+              alt="{{ post.title | escape }}" 
+              class="feature__item-image"
+              style="aspect-ratio: 16/9; object-fit: cover;"
+            >
+          </a>
         </div>
+
+        <div class="feature__item-content">
+          <h3 class="feature__item-title">
+            <a href="{{ post.url | relative_url }}">
+              {% if post.title and post.title != "" %}
+                {{ post.title }}
+              {% else %}
+                Untitled Article
+              {% endif %}
+            </a>
+          </h3>
+        </div>
+        
       </div>
-    {% endif %}
-    
-    {% comment %} Stop after 9 posts to keep the grid even {% endcomment %}
-    {% if count == 9 %}
-      {% break %}
-    {% endif %}
+    </div>
     
   {% endfor %}
 </div>
-
-<div style="clear: both;"></div>
 
 <div style="clear: both;"></div>
 

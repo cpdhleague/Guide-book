@@ -11,12 +11,10 @@ header:
   overlay_image: /assets/images/ztTeaoCsM3E.jpg
   overlay_filter: 0.5
   teaser: /assets/images/ztTeaoCsM3E.jpg
-excerpt: "New cPDH content from The Creator. Watch it now!"
+excerpt: "New PDH content from The Jalapeno Paupers. Watch it now!"
 ---
 
-**The Creator** has released a new video! Check out the details below:
-
-> Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.
+**The Jalapeno Paupers** have released a new video! Check out the details below:
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
   <h3>Watch the Video</h3>

@@ -3,21 +3,8 @@ import sys
 import requests
 import re
 from datetime import datetime
-import json
-
-# --- IMPORTS WITH SAFETY CHECKS ---
-try:
-    from youtube_transcript_api import YouTubeTranscriptApi
-except ImportError:
-    print("⚠️ YouTube Transcript Library missing.")
-    YouTubeTranscriptApi = None
-
-try:
-    from google import genai
-    USE_NEW_LIB = True
-except ImportError:
-    import google.generativeai as genai_old
-    USE_NEW_LIB = False
+import google.generativeai as genai
+from youtube_transcript_api import YouTubeTranscriptApi
 
 # --- CONFIGURATION ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -34,7 +21,7 @@ def scrape_video_data(url):
     author = "The Creator"
     description = ""
     
-    # 1. Try oEmbed (Official YouTube API - Most Reliable for Author)
+    # 1. Try oEmbed (Official YouTube API)
     try:
         oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
         data = requests.get(oembed_url).json()
@@ -42,13 +29,12 @@ def scrape_video_data(url):
     except Exception as e:
         print(f"⚠️ oEmbed failed: {e}")
 
-    # 2. Try HTML Scraping for Description (Backup)
+    # 2. Try HTML Scraping for Description
     try:
-        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+        headers = {'User-Agent': 'Mozilla/5.0'}
         response = requests.get(url, headers=headers)
         html = response.text
         
-        # Scrape description
         desc_match = re.search(r'"shortDescription":"(.*?)"', html)
         if desc_match:
             description = desc_match.group(1).replace('\\n', '\n')
@@ -57,17 +43,14 @@ def scrape_video_data(url):
             if meta_desc:
                 description = meta_desc.group(1)
         
-        # Clean up generic YouTube garbage description
-        if "Enjoy the videos and music you love" in description:
-            description = ""
-            
-    except Exception as e:
-        print(f"⚠️ Scraping failed: {e}")
+        if "Enjoy the videos and music" in description:
+            description = ""     
+    except:
+        pass
 
     return author, description
 
 # --- MAIN START ---
-# Get arguments: URL is #1, Issue Title is #2
 try:
     issue_body = sys.argv[1]
     raw_issue_title = sys.argv[2] if len(sys.argv) > 2 else ""
@@ -95,80 +78,72 @@ print(f"Detected Channel: {channel_name}")
 
 # --- 3. GET TRANSCRIPT ---
 transcript_text = ""
-source_type = "None"
+has_transcript = False
 
-if YouTubeTranscriptApi:
-    try:
-        if hasattr(YouTubeTranscriptApi, 'list_transcripts'):
-            transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-            try:
-                transcript = transcript_list.find_transcript(['en'])
-            except:
-                transcript = transcript_list.find_generated_transcript(['en'])
-            fetched = transcript.fetch()
-            transcript_text = " ".join([t['text'] for t in fetched])
-        else:
-            fetched = YouTubeTranscriptApi.get_transcript(video_id)
-            transcript_text = " ".join([t['text'] for t in fetched])
-        
-        if len(transcript_text) > 50:
-            source_type = "Transcript"
-            print("✅ Transcript retrieved.")
-    except Exception as e:
-        print(f"⚠️ Transcript failed: {e}")
+try:
+    if hasattr(YouTubeTranscriptApi, 'list_transcripts'):
+        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
+        try:
+            transcript = transcript_list.find_transcript(['en'])
+        except:
+            transcript = transcript_list.find_generated_transcript(['en'])
+        fetched = transcript.fetch()
+        transcript_text = " ".join([t['text'] for t in fetched])
+    else:
+        fetched = YouTubeTranscriptApi.get_transcript(video_id)
+        transcript_text = " ".join([t['text'] for t in fetched])
+    
+    if len(transcript_text) > 50:
+        has_transcript = True
+        print("✅ Transcript retrieved.")
+except Exception as e:
+    print(f"⚠️ Transcript failed: {e}")
 
-# --- 4. PREPARE AI SOURCE ---
-if source_type == "Transcript":
-    source_text = f"TRANSCRIPT:\n{transcript_text[:12000]}"
-elif len(video_description) > 50:
-    source_text = f"VIDEO DESCRIPTION:\n{video_description}"
-    source_type = "Description"
-    print("⚠️ Using Description for AI.")
-else:
-    source_text = "No text available."
-    source_type = "Title Only"
+# --- 4. PREPARE AI SOURCES (Hybrid Approach) ---
+source_prompt_data = ""
 
-# --- 5. GENERATE CONTENT (Article + Excerpt) ---
+if len(video_description) > 50:
+    source_prompt_data += f"PRIMARY SOURCE (Use for accurate card names/context):\nVIDEO DESCRIPTION:\n{video_description}\n\n"
+
+if has_transcript:
+    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:15000]}"
+
+if not source_prompt_data:
+    source_prompt_data = "No text available. Please write a general summary based on the Title."
+
+# --- 5. GENERATE CONTENT ---
 base_prompt = f"""
 You are a writer for a competitive Pauper Commander (cPDH) website.
 Write a blog post about this video by {channel_name}.
 
 TITLE: {final_title}
-{source_text}
+
+{source_prompt_data}
 
 INSTRUCTIONS:
 1. First, write a 1-sentence "teaser" starting with the word "EXCERPT:".
-   - Example: "EXCERPT: {channel_name} breaks down the new ban list..."
-2. Then, write the full article.
-   - Summarize key points/plays.
-   - Tone: Enthusiastic and community-focused.
+   - Example: "EXCERPT: {channel_name} discusses the top 5 blue commons..."
+2. Then, write the full article (300-500 words).
+   - Use the DESCRIPTION for accurate card names and deck archetypes.
+   - Use the TRANSCRIPT to summarize the discussion or gameplay.
+   - Tone: Enthusiastic, knowledgeable, community-focused.
    - Do NOT use a H1 header (# Title) at the start.
-   - Length: 300-500 words.
 """
 
 article_body = ""
 excerpt_text = f"Check out this new video from {channel_name}!"
+source_type = "Hybrid (Description + Transcript)" if (len(video_description) > 50 and has_transcript) else "Single Source"
 
 try:
-    response_text = ""
-    if USE_NEW_LIB:
-        client = genai.Client(api_key=GEMINI_API_KEY)
-        try:
-            resp = client.models.generate_content(model='gemini-1.5-flash', contents=base_prompt)
-            response_text = resp.text
-        except:
-            resp = client.models.generate_content(model='gemini-pro', contents=base_prompt)
-            response_text = resp.text
-    else:
-        genai_old.configure(api_key=GEMINI_API_KEY)
-        try:
-            model = genai_old.GenerativeModel('gemini-1.5-flash-latest')
-            response_text = model.generate_content(base_prompt).text
-        except:
-            model = genai_old.GenerativeModel('gemini-pro')
-            response_text = model.generate_content(base_prompt).text
+    genai.configure(api_key=GEMINI_API_KEY)
+    
+    # UPDATED: Using the powerful 2.5-pro model
+    print("🤖 Attempting generation with gemini-2.5-pro...")
+    model = genai.GenerativeModel('gemini-2.5-pro')
+    
+    response = model.generate_content(base_prompt)
+    response_text = response.text
 
-    # Parse Excerpt vs Body
     if "EXCERPT:" in response_text:
         parts = response_text.split("EXCERPT:", 1)[1].split("\n", 1)
         excerpt_text = parts[0].strip()
@@ -178,14 +153,13 @@ try:
 
 except Exception as e:
     print(f"❌ AI Generation Failed: {e}")
-    # FALLBACK: Use Description if AI dies
+    # FALLBACK
     article_body = f"**{channel_name}** has released a new video! Check out the details below:\n\n"
     if video_description:
         article_body += "> " + video_description.replace("\n", "\n> ")
     else:
         article_body += "Watch the video below to learn more."
     
-    excerpt_text = f"New cPDH content from {channel_name}. Watch it now!"
     source_type = "Fallback (AI Failed)"
 
 # --- 6. DOWNLOAD THUMBNAIL ---

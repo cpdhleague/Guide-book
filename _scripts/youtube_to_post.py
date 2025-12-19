@@ -107,8 +107,8 @@ if len(video_description) > 50:
     source_prompt_data += f"PRIMARY SOURCE (Use for accurate card names/context):\nVIDEO DESCRIPTION:\n{video_description}\n\n"
 
 if has_transcript:
-    # Limit transcript to prevent token overflow on Flash models
-    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:20000]}"
+    # We use a safe token limit that fits both Pro (2M) and Flash (1M)
+    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:40000]}"
 
 if not source_prompt_data:
     source_prompt_data = "No text available. Please write a general summary based on the Title."
@@ -134,28 +134,33 @@ INSTRUCTIONS:
 
 article_body = ""
 excerpt_text = f"Check out this new video from {channel_name}!"
-source_type = "Hybrid (Description + Transcript)" if (len(video_description) > 50 and has_transcript) else "Single Source"
+source_type = "Single Source"
 
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     
-    # SWITCHED TO FLASH TO AVOID RATE LIMITS
-    print("🤖 Attempting generation with gemini-2.0-flash...")
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    # --- CASCADE STRATEGY ---
     
+    # ATTEMPT 1: The Ferrari (Gemini 2.5 Pro)
     try:
+        print("🤖 Attempting generation with PRIMARY model (gemini-2.5-pro)...")
+        model = genai.GenerativeModel('gemini-2.5-pro')
         response = model.generate_content(base_prompt)
         response_text = response.text
-    except Exception as e:
-        # Simple retry logic for 429 errors (wait 30s and try once more)
-        if "429" in str(e):
-            print("⚠️ Rate limit hit. Waiting 35 seconds to retry...")
-            time.sleep(35)
-            response = model.generate_content(base_prompt)
-            response_text = response.text
-        else:
-            raise e
+        source_type = "Gemini 2.5 Pro"
 
+    except Exception as e:
+        print(f"⚠️ Primary model failed or limit hit ({e}). Switching to FALLBACK...")
+        
+        # ATTEMPT 2: The Workhorse (Gemini 1.5 Flash)
+        print("🤖 Attempting generation with FALLBACK model (gemini-1.5-flash)...")
+        time.sleep(2) # Tiny pause to let API breathe
+        model = genai.GenerativeModel('gemini-1.5-flash')
+        response = model.generate_content(base_prompt)
+        response_text = response.text
+        source_type = "Gemini 1.5 Flash (Fallback)"
+
+    # PROCESS RESPONSE
     if "EXCERPT:" in response_text:
         parts = response_text.split("EXCERPT:", 1)[1].split("\n", 1)
         excerpt_text = parts[0].strip()
@@ -164,15 +169,15 @@ try:
         article_body = response_text
 
 except Exception as e:
-    print(f"❌ AI Generation Failed: {e}")
-    # FALLBACK
+    print(f"❌ AI Generation Failed completely: {e}")
+    # FALLBACK TO TEXT
     article_body = f"**{channel_name}** has released a new video! Check out the details below:\n\n"
     if video_description:
         article_body += "> " + video_description.replace("\n", "\n> ")
     else:
         article_body += "Watch the video below to learn more."
     
-    source_type = "Fallback (AI Failed)"
+    source_type = "Generic Text (AI Failed)"
 
 # --- 6. DOWNLOAD THUMBNAIL ---
 image_filename = f"{video_id}.jpg"

@@ -7,71 +7,108 @@ from datetime import datetime
 import re
 
 # --- CONFIGURATION ---
-# Get arguments from the command line (passed by GitHub Action)
-VIDEO_URL = sys.argv[1]
 GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
-# Extract Video ID
-video_id = VIDEO_URL.split("v=")[-1].split("&")[0]
-if "youtu.be" in VIDEO_URL:
-    video_id = VIDEO_URL.split("/")[-1].split("?")[0]
+# --- HELPER: FIND URL ---
+def find_youtube_url(text):
+    # Regex to find standard youtube or youtu.be links
+    match = re.search(r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([\w-]+))', text)
+    if match:
+        return match.group(1), match.group(2)
+    return None, None
 
-# --- 1. GET METADATA (Simple Scraping) ---
-# We use simple scraping to avoid heavy dependencies like yt-dlp for just a title
-response = requests.get(VIDEO_URL)
-html = response.text
+# Get arguments from the command line (Issue Body)
+issue_body = sys.argv[1]
+VIDEO_URL, video_id = find_youtube_url(issue_body)
+
+if not video_id:
+    print(f"❌ Error: No valid YouTube URL found in issue body: {issue_body}")
+    sys.exit(1)
+
+print(f"Processing Video ID: {video_id}")
+
+# --- 1. GET METADATA ---
 try:
-    title = re.search(r'<title>(.*?)</title>', html).group(1).replace(" - YouTube", "")
-except:
-    title = "New Video Post"
+    response = requests.get(VIDEO_URL)
+    html = response.text
+    title_match = re.search(r'<title>(.*?)</title>', html)
+    if title_match:
+        title = title_match.group(1).replace(" - YouTube", "")
+    else:
+        title = f"Video {video_id}"
+except Exception as e:
+    print(f"Warning: Could not scrape title ({e}). Using ID.")
+    title = f"Video {video_id}"
 
 # --- 2. GET TRANSCRIPT ---
 try:
     transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
     transcript_text = " ".join([t['text'] for t in transcript_list])
 except Exception as e:
-    print(f"Could not retrieve transcript: {e}")
+    print(f"⚠️ Could not retrieve transcript: {e}")
     transcript_text = "No transcript available. Please summarize based on the video title."
 
 # --- 3. GENERATE CONTENT WITH GEMINI ---
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
+try:
+    genai.configure(api_key=GEMINI_API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash') # Switched to stable model alias
 
-prompt = f"""
-You are an expert content writer for a competitive Pauper Commander (cPDH) website.
-Write a blog post based on this YouTube video transcript.
+    prompt = f"""
+    You are an expert content writer for a competitive Pauper Commander (cPDH) website.
+    Write a blog post based on this YouTube video transcript.
 
-VIDEO TITLE: {title}
-TRANSCRIPT: {transcript_text[:10000]} (truncated if too long)
+    VIDEO TITLE: {title}
+    TRANSCRIPT: {transcript_text[:12000]} (truncated)
 
-INSTRUCTIONS:
-1. Write a catchy, professional article summarizing the key points.
-2. If it's a gameplay video, highlight the key plays. If it's a deck tech, highlight the key cards.
-3. Keep it brief (approx 300-500 words).
-4. Tone: Enthusiastic, knowledgeable, community-focused.
-5. DO NOT include the Front Matter (YAML). Start directly with the content.
-6. Acknowledge the creator of the video.
-"""
+    INSTRUCTIONS:
+    1. Write a catchy, professional article summarizing the key points.
+    2. If it's a gameplay video, highlight the key plays. If it's a deck tech, highlight the key cards.
+    3. Keep it brief (approx 300-500 words).
+    4. Tone: Enthusiastic, knowledgeable, community-focused.
+    5. DO NOT include the Front Matter (YAML). Start directly with the content.
+    6. Acknowledge the creator of the video.
+    """
 
-response = model.generate_content(prompt)
-article_content = response.text
+    response = model.generate_content(prompt)
+    article_content = response.text
+except Exception as e:
+    print(f"❌ Gemini Error: {e}")
+    sys.exit(1)
 
-# --- 4. DOWNLOAD THUMBNAIL ---
+# --- 4. DOWNLOAD THUMBNAIL (Robust) ---
 image_filename = f"{video_id}.jpg"
 image_path = f"assets/images/{image_filename}"
-thumbnail_url = f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg"
 
-img_data = requests.get(thumbnail_url).content
-with open(image_path, 'wb') as handler:
-    handler.write(img_data)
+# Try Max Res first, then fallback to HQ
+thumb_urls = [
+    f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg",
+    f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg"
+]
+
+downloaded = False
+for url in thumb_urls:
+    try:
+        resp = requests.get(url)
+        if resp.status_code == 200:
+            with open(image_path, 'wb') as handler:
+                handler.write(resp.content)
+            print(f"✅ Downloaded thumbnail from: {url}")
+            downloaded = True
+            break
+    except:
+        continue
+
+if not downloaded:
+    print("⚠️ Warning: Could not download any thumbnail. Using default placeholder if available.")
 
 # --- 5. CREATE POST FILE ---
 date_str = datetime.now().strftime("%Y-%m-%d")
-safe_title = "".join([c for c in title if c.isalnum() or c in " -_"]).replace(" ", "-").lower()
+# Clean title strictly
+safe_title = re.sub(r'[^a-zA-Z0-9\s-_]', '', title).strip().replace(" ", "-").lower()
 filename = f"_posts/{date_str}-{safe_title}.md"
 
 front_matter = f"""---
-title: "{title}"
+title: "{title.replace('"', '\\"')}"
 date: {date_str}
 layout: single
 classes: 
@@ -95,7 +132,7 @@ excerpt: "New video content! Check out this breakdown of {title}."
 {article_content}
 """
 
-with open(filename, 'w') as f:
+with open(filename, 'w', encoding='utf-8') as f:
     f.write(front_matter)
 
 print(f"Successfully created post: {filename}")

@@ -51,7 +51,7 @@ except Exception as e:
 # --- 3. GENERATE CONTENT WITH GEMINI ---
 try:
     genai.configure(api_key=GEMINI_API_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash') # Switched to stable model alias
+    model = genai.GenerativeModel('gemini-1.5-flash')
 
     prompt = f"""
     You are an expert content writer for a competitive Pauper Commander (cPDH) website.
@@ -103,12 +103,15 @@ if not downloaded:
 
 # --- 5. CREATE POST FILE ---
 date_str = datetime.now().strftime("%Y-%m-%d")
-# Clean title strictly
+# Clean title strictly for filename
 safe_title = re.sub(r'[^a-zA-Z0-9\s-_]', '', title).strip().replace(" ", "-").lower()
 filename = f"_posts/{date_str}-{safe_title}.md"
 
+# Pre-escape the title for YAML (Fixing the f-string error)
+yaml_safe_title = title.replace('"', '\\"')
+
 front_matter = f"""---
-title: "{title.replace('"', '\\"')}"
+title: "{yaml_safe_title}"
 date: {date_str}
 layout: single
 classes: 

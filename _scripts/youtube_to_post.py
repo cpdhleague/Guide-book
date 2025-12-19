@@ -86,7 +86,7 @@ else:
 
 # --- 4. GENERATE CONTENT (5-Layer Cascade) ---
 base_prompt = f"""
-You are a writer for a competitive Pauper Commander (cPDH) website.
+You are a writer for a Pauper Commander (PDH) community website.
 Write a blog post about this video by {channel_name}.
 
 TITLE: {final_title}
@@ -94,10 +94,12 @@ TITLE: {final_title}
 {source_prompt_data}
 
 INSTRUCTIONS:
-1. First, write a 1-sentence "teaser" starting with the word "EXCERPT:".
-   - Example: "EXCERPT: {channel_name} discusses the top 5 blue commons..."
-2. Then, write the full article (300-500 words).
-   - Tone: Enthusiastic, knowledgeable, community-focused.
+1. First, write a VERY SHORT "teaser" (Max 12 words) starting with "EXCERPT:".
+   - Example: "EXCERPT: {channel_name} breaks down the new ban list."
+2. Then, write the full article (150-300 words).
+   - Keep it short and to the point.
+   - Only mention "cPDH" (Competitive) if it is explicitly in the Title or Description. Otherwise, just refer to it as PDH or Pauper Commander.
+   - Tone: Excited, community-focused, and encouraging. Focus on the joy of seeing people play the format. Avoid sounding like an expert analyzing the gameplay.
    - Do NOT use a H1 header (# Title) at the start.
 """
 

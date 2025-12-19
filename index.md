@@ -14,19 +14,53 @@ header:
 <div>
 <h3 class="archive__subtitle">Latest Articles</h3>
 
-<div class="entries-grid">
+<div class="feature__row--images">
+  
   {% assign count = 0 %}
   {% for post in site.posts %}
-    {% comment %} Check if the post has a teaser image defined {% endcomment %}
+    
+    {% comment %} 1. Check if post has an image {% endcomment %}
     {% if post.header.teaser %}
-      {% include archive-single.html type="grid" %}
       {% assign count = count | plus: 1 %}
+      
+      <div class="feature__item" style="flex-basis: 33.33333%;">
+        <div class="feature__item__content-wrapper">
+          
+          <div class="feature__item-image">
+            <a href="{{ post.url | relative_url }}" class="feature__item-image-link">
+              <img 
+                src="{{ post.header.teaser | relative_url }}" 
+                alt="{{ post.title | escape }}" 
+                class="feature__item-image"
+              >
+            </a>
+          </div>
+
+          <div class="feature__item-content">
+            <h3 class="feature__item-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            
+            {% if post.excerpt %}
+              <div class="feature__item-excerpt">
+                {{ post.excerpt | markdownify }}
+              </div>
+            {% endif %}
+            
+            <p>
+              <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
+            </p>
+          </div>
+          
+        </div>
+      </div>
     {% endif %}
     
-    {% comment %} Stop once we reach 3 posts {% endcomment %}
+    {% comment %} 2. Stop after 3 posts {% endcomment %}
     {% if count == 3 %}
       {% break %}
     {% endif %}
+    
   {% endfor %}
 </div>
 </div>

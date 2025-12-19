@@ -1,7 +1,7 @@
 import os
 import sys
 import requests
-import google.generativeai as genai
+from google import genai
 from youtube_transcript_api import YouTubeTranscriptApi
 from datetime import datetime
 import re
@@ -44,17 +44,16 @@ except Exception as e:
     print(f"Warning: Could not scrape title ({e}). Using ID.")
     title = f"Video {video_id}"
 
-# --- 2. GET TRANSCRIPT (Robust Method) ---
+# --- 2. GET TRANSCRIPT ---
 transcript_text = "No transcript available. Summary will be based on title only."
 try:
-    # Use list_transcripts which is more robust than get_transcript
+    # This requires youtube-transcript-api >= 0.6.0
     transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
     
     # Try to find an English transcript (manual or generated)
     try:
         transcript = transcript_list.find_transcript(['en'])
     except:
-        # Fallback to any available transcript
         transcript = transcript_list.find_generated_transcript(['en'])
     
     fetched_transcript = transcript.fetch()
@@ -64,11 +63,10 @@ try:
 except Exception as e:
     print(f"⚠️ Could not retrieve transcript: {e}")
 
-# --- 3. GENERATE CONTENT WITH GEMINI (With Fallback) ---
+# --- 3. GENERATE CONTENT (New 'google-genai' Library) ---
 try:
-    genai.configure(api_key=GEMINI_API_KEY)
+    client = genai.Client(api_key=GEMINI_API_KEY)
     
-    # Define the prompt outside so we can reuse it
     base_prompt = f"""
     You are an expert content writer for a competitive Pauper Commander (cPDH) website.
     Write a blog post based on this YouTube video transcript.
@@ -85,21 +83,15 @@ try:
     6. Acknowledge the creator of the video.
     """
 
-    try:
-        # Attempt 1: Try the Flash model (Fast & Cheap)
-        print("🤖 Attempting generation with gemini-1.5-flash...")
-        model = genai.GenerativeModel('gemini-1.5-flash')
-        response = model.generate_content(base_prompt)
-        article_content = response.text
-    except Exception as e:
-        print(f"⚠️ Flash model failed ({e}). Switching to gemini-pro...")
-        # Attempt 2: Fallback to Pro (Standard)
-        model = genai.GenerativeModel('gemini-pro')
-        response = model.generate_content(base_prompt)
-        article_content = response.text
+    print("🤖 Attempting generation with gemini-1.5-flash...")
+    response = client.models.generate_content(
+        model='gemini-1.5-flash',
+        contents=base_prompt
+    )
+    article_content = response.text
 
 except Exception as e:
-    print(f"❌ Critical Gemini Error: {e}")
+    print(f"❌ Gemini Error: {e}")
     sys.exit(1)
 
 # --- 4. DOWNLOAD THUMBNAIL ---

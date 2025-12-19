@@ -31,13 +31,6 @@ def find_youtube_url(text):
         return match.group(1), match.group(2)
     return None, None
 
-# --- HELPER: CLEAN TEXT ---
-def clean_text(text):
-    if not text: return ""
-    # Remove HTML tags and weird whitespace
-    text = re.sub(r'<[^>]+>', '', text)
-    return " ".join(text.split())
-
 # --- MAIN START ---
 # Get arguments
 try:
@@ -100,19 +93,23 @@ if YouTubeTranscriptApi:
             fetched = transcript.fetch()
             transcript_text = " ".join([t['text'] for t in fetched])
         
-        # METHOD B: The Old Way (get_transcript) - Fallback for old libraries
+        # METHOD B: The Old Way (get_transcript)
         else:
             print("⚠️ Using legacy transcript method...")
-            fetched = YouTubeTranscriptApi.get_transcript(video_id)
-            transcript_text = " ".join([t['text'] for t in fetched])
+            try:
+                fetched = YouTubeTranscriptApi.get_transcript(video_id)
+                transcript_text = " ".join([t['text'] for t in fetched])
+            except AttributeError:
+                # If even get_transcript is missing/broken in the old lib
+                print("⚠️ Legacy method failed: attribute missing.")
             
-        print("✅ Transcript retrieved successfully.")
+        if transcript_text:
+            print("✅ Transcript retrieved successfully.")
         
     except Exception as e:
         print(f"⚠️ Transcript failed: {e}")
 
 # --- 3. PREPARE CONTENT SOURCE ---
-# If transcript failed, use Description. If that fails, abort.
 if len(transcript_text) > 50:
     source_text = f"TRANSCRIPT:\n{transcript_text[:12000]}"
     print("Using Transcript for generation.")
@@ -158,18 +155,25 @@ try:
             
     else: # Old Library Fallback
         genai_old.configure(api_key=GEMINI_API_KEY)
-        try:
-            model = genai_old.GenerativeModel('gemini-1.5-flash')
-            response = model.generate_content(base_prompt)
-            article_content = response.text
-        except:
-            model = genai_old.GenerativeModel('gemini-pro')
-            response = model.generate_content(base_prompt)
-            article_content = response.text
+        # List of models to try in order
+        models_to_try = ['gemini-1.5-flash-latest', 'gemini-1.5-flash', 'gemini-pro']
+        
+        for model_name in models_to_try:
+            try:
+                print(f"🤖 Attempting generation with {model_name}...")
+                model = genai_old.GenerativeModel(model_name)
+                response = model.generate_content(base_prompt)
+                article_content = response.text
+                break # Success!
+            except Exception as e:
+                print(f"⚠️ {model_name} failed: {e}")
+        
+        if not article_content:
+            raise Exception("All models failed.")
 
 except Exception as e:
     print(f"❌ Gemini Generation Failed: {e}")
-    # Last resort fallback text so the script doesn't crash the workflow
+    # Last resort fallback so the script finishes
     article_content = f"Check out this new video: **{title}**!\n\n(Automated summary could not be generated. Please watch the video above.)"
 
 # --- 5. DOWNLOAD THUMBNAIL ---
@@ -199,9 +203,11 @@ if not downloaded:
 
 # --- 6. CREATE POST FILE ---
 date_str = datetime.now().strftime("%Y-%m-%d")
-safe_title = re.sub(r'[^a-zA-Z0-9\s-_]', '', title).strip().replace(" ", "-").lower()
-filename = f"_posts/{date_str}-{safe_title}.md"
 
+# FIX: Regex hyphen moved to the end to prevent "bad character range" error
+safe_title = re.sub(r'[^a-zA-Z0-9\s_-]', '', title).strip().replace(" ", "-").lower()
+
+filename = f"_posts/{date_str}-{safe_title}.md"
 yaml_safe_title = title.replace('"', '\\"')
 
 front_matter = f"""---

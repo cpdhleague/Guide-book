@@ -23,7 +23,7 @@ header:
     {% if post.header.teaser %}
       {% assign count = count | plus: 1 %}
       
-      <div class="feature__item" style="flex-basis: 33.33333%;">
+      <div class="feature__item" style="flex-basis: 33.33333%; margin-bottom: 30px;">
         <div class="feature__item__content-wrapper">
           
           <div class="feature__item-image">
@@ -37,7 +37,7 @@ header:
           </div>
 
           <div class="feature__item-content">
-            <h3 class="feature__item-title">
+            <h3 class="feature__item-title" style="margin-top: 0.5rem; margin-bottom: 0;">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
           </div>
@@ -53,6 +53,8 @@ header:
     
   {% endfor %}
 </div>
+
+<div style="clear: both;"></div>
 </div>
 
 <div style="clear: both;"></div>

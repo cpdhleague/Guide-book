@@ -19,7 +19,7 @@ header:
   {% assign count = 0 %}
   {% for post in site.posts %}
     
-    {% comment %} 1. Check if post has an image {% endcomment %}
+    {% comment %} Check if post has an image {% endcomment %}
     {% if post.header.teaser %}
       {% assign count = count | plus: 1 %}
       
@@ -40,23 +40,13 @@ header:
             <h3 class="feature__item-title">
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             </h3>
-            
-            {% if post.excerpt %}
-              <div class="feature__item-excerpt">
-                {{ post.excerpt | markdownify }}
-              </div>
-            {% endif %}
-            
-            <p>
-              <a href="{{ post.url | relative_url }}" class="btn btn--primary">Read More</a>
-            </p>
           </div>
           
         </div>
       </div>
     {% endif %}
     
-    {% comment %} 2. Stop after 3 posts {% endcomment %}
+    {% comment %} Stop after 3 posts {% endcomment %}
     {% if count == 3 %}
       {% break %}
     {% endif %}

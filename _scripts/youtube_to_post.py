@@ -107,8 +107,8 @@ if len(video_description) > 50:
     source_prompt_data += f"PRIMARY SOURCE (Use for accurate card names/context):\nVIDEO DESCRIPTION:\n{video_description}\n\n"
 
 if has_transcript:
-    # We use a safe token limit that fits both Pro (2M) and Flash (1M)
-    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:40000]}"
+    # 2.0 Flash has a HUGE context window (1M tokens), so we can send the whole transcript easily
+    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:50000]}"
 
 if not source_prompt_data:
     source_prompt_data = "No text available. Please write a general summary based on the Title."
@@ -152,13 +152,14 @@ try:
     except Exception as e:
         print(f"⚠️ Primary model failed or limit hit ({e}). Switching to FALLBACK...")
         
-        # ATTEMPT 2: The Workhorse (Gemini 1.5 Flash)
-        print("🤖 Attempting generation with FALLBACK model (gemini-1.5-flash)...")
-        time.sleep(2) # Tiny pause to let API breathe
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        # ATTEMPT 2: The Workhorse (Gemini 2.0 Flash)
+        # We verified this model exists in your list!
+        print("🤖 Attempting generation with FALLBACK model (gemini-2.0-flash)...")
+        time.sleep(2) 
+        model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(base_prompt)
         response_text = response.text
-        source_type = "Gemini 1.5 Flash (Fallback)"
+        source_type = "Gemini 2.0 Flash (Fallback)"
 
     # PROCESS RESPONSE
     if "EXCERPT:" in response_text:

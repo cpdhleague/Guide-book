@@ -31,25 +31,24 @@ def find_youtube_url(text):
 
 # --- HELPER: SCRAPE METADATA (Author & Description) ---
 def scrape_video_data(url):
-    headers = {'User-Agent': 'Mozilla/5.0'}
+    author = "The Creator"
+    description = ""
+    
+    # 1. Try oEmbed (Official YouTube API - Most Reliable for Author)
     try:
+        oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
+        data = requests.get(oembed_url).json()
+        author = data.get("author_name", author)
+    except Exception as e:
+        print(f"⚠️ oEmbed failed: {e}")
+
+    # 2. Try HTML Scraping for Description (Backup)
+    try:
+        headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
         response = requests.get(url, headers=headers)
         html = response.text
         
-        # 1. Author/Channel Name (Best Effort)
-        author = "The Creator"
-        # Try JSON structure first (most reliable)
-        author_match = re.search(r'"author":"(.*?)"', html)
-        if author_match:
-            author = author_match.group(1)
-        else:
-            # Try meta tag
-            meta_author = re.search(r'<link itemprop="name" content="(.*?)">', html)
-            if meta_author:
-                author = meta_author.group(1)
-
-        # 2. Description
-        description = ""
+        # Scrape description
         desc_match = re.search(r'"shortDescription":"(.*?)"', html)
         if desc_match:
             description = desc_match.group(1).replace('\\n', '\n')
@@ -57,11 +56,15 @@ def scrape_video_data(url):
             meta_desc = re.search(r'<meta name="description" content="(.*?)">', html)
             if meta_desc:
                 description = meta_desc.group(1)
-
-        return author, description
+        
+        # Clean up generic YouTube garbage description
+        if "Enjoy the videos and music you love" in description:
+            description = ""
+            
     except Exception as e:
         print(f"⚠️ Scraping failed: {e}")
-        return "The Creator", ""
+
+    return author, description
 
 # --- MAIN START ---
 # Get arguments: URL is #1, Issue Title is #2
@@ -81,7 +84,6 @@ if not video_id:
 print(f"Processing Video ID: {video_id}")
 
 # --- 1. DETERMINE TITLE ---
-# Use the Issue Title (removing "Video:" prefix) if available
 if "Video:" in raw_issue_title:
     final_title = raw_issue_title.replace("Video:", "").strip()
 else:
@@ -127,7 +129,6 @@ else:
     source_type = "Title Only"
 
 # --- 5. GENERATE CONTENT (Article + Excerpt) ---
-# We ask for a specific format: "EXCERPT: [text] \n\n [Article]"
 base_prompt = f"""
 You are a writer for a competitive Pauper Commander (cPDH) website.
 Write a blog post about this video by {channel_name}.
@@ -137,7 +138,7 @@ TITLE: {final_title}
 
 INSTRUCTIONS:
 1. First, write a 1-sentence "teaser" starting with the word "EXCERPT:".
-   - Example: "EXCERPT: {channel_name} breaks down the new ban list and its impact on cPDH."
+   - Example: "EXCERPT: {channel_name} breaks down the new ban list..."
 2. Then, write the full article.
    - Summarize key points/plays.
    - Tone: Enthusiastic and community-focused.
@@ -180,7 +181,6 @@ except Exception as e:
     # FALLBACK: Use Description if AI dies
     article_body = f"**{channel_name}** has released a new video! Check out the details below:\n\n"
     if video_description:
-        # Format description as a blockquote
         article_body += "> " + video_description.replace("\n", "\n> ")
     else:
         article_body += "Watch the video below to learn more."
@@ -209,8 +209,6 @@ filename = f"_posts/{date_str}-{safe_title}.md"
 yaml_title = final_title.replace('"', '\\"')
 yaml_excerpt = excerpt_text.replace('"', '\\"')
 
-# Clean up layout: Video at the BOTTOM, Centered
-# Using 'layout: splash' and 'classes: wide' per user request
 file_content = f"""---
 title: "{yaml_title}"
 date: {date_str}

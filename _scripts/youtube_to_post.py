@@ -5,6 +5,7 @@ import re
 from datetime import datetime
 import google.generativeai as genai
 from youtube_transcript_api import YouTubeTranscriptApi
+import time
 
 # --- CONFIGURATION ---
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
@@ -106,7 +107,8 @@ if len(video_description) > 50:
     source_prompt_data += f"PRIMARY SOURCE (Use for accurate card names/context):\nVIDEO DESCRIPTION:\n{video_description}\n\n"
 
 if has_transcript:
-    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:15000]}"
+    # Limit transcript to prevent token overflow on Flash models
+    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:20000]}"
 
 if not source_prompt_data:
     source_prompt_data = "No text available. Please write a general summary based on the Title."
@@ -137,12 +139,22 @@ source_type = "Hybrid (Description + Transcript)" if (len(video_description) > 5
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     
-    # UPDATED: Using the powerful 2.5-pro model
-    print("🤖 Attempting generation with gemini-2.5-pro...")
-    model = genai.GenerativeModel('gemini-2.5-pro')
+    # SWITCHED TO FLASH TO AVOID RATE LIMITS
+    print("🤖 Attempting generation with gemini-2.0-flash...")
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
-    response = model.generate_content(base_prompt)
-    response_text = response.text
+    try:
+        response = model.generate_content(base_prompt)
+        response_text = response.text
+    except Exception as e:
+        # Simple retry logic for 429 errors (wait 30s and try once more)
+        if "429" in str(e):
+            print("⚠️ Rate limit hit. Waiting 35 seconds to retry...")
+            time.sleep(35)
+            response = model.generate_content(base_prompt)
+            response_text = response.text
+        else:
+            raise e
 
     if "EXCERPT:" in response_text:
         parts = response_text.split("EXCERPT:", 1)[1].split("\n", 1)

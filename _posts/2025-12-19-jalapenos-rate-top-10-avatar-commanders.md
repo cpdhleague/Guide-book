@@ -14,7 +14,7 @@ header:
 excerpt: "New PDH content from The Jalapeno Paupers. Watch it now!"
 ---
 
-**The Jalapeno Paupers** have released a new video! Check out the details below:
+**The Jalapeno Paupers** have released their top list for TLA and TLE!
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
   <h3>Watch the Video</h3>

@@ -30,11 +30,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           # Extract URL from issue body and Title from issue title
-          #VIDEO_URL="${{ github.event.issue.body }}"
-          #ISSUE_TITLE="${{ github.event.issue.title }}"
-          #python _scripts/youtube_to_post.py "$VIDEO_URL" "$ISSUE_TITLE"
-          pip install google-generativeai # Ensure lib is there
-          python _scripts/check_models.py
+          VIDEO_URL="${{ github.event.issue.body }}"
+          ISSUE_TITLE="${{ github.event.issue.title }}"
+          python _scripts/youtube_to_post.py "$VIDEO_URL" "$ISSUE_TITLE"
 
       - name: Commit and Push
         run: |

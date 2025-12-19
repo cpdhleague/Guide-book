@@ -4,7 +4,6 @@ import requests
 import re
 from datetime import datetime
 import google.generativeai as genai
-from youtube_transcript_api import YouTubeTranscriptApi
 import time
 
 # --- CONFIGURATION ---
@@ -27,8 +26,7 @@ def scrape_video_data(url):
         oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
         data = requests.get(oembed_url).json()
         author = data.get("author_name", author)
-    except Exception as e:
-        print(f"⚠️ oEmbed failed: {e}")
+    except: pass
 
     # 2. Try HTML Scraping for Description
     try:
@@ -46,8 +44,7 @@ def scrape_video_data(url):
         
         if "Enjoy the videos and music" in description:
             description = ""     
-    except:
-        pass
+    except: pass
 
     return author, description
 
@@ -77,43 +74,17 @@ else:
 channel_name, video_description = scrape_video_data(VIDEO_URL)
 print(f"Detected Channel: {channel_name}")
 
-# --- 3. GET TRANSCRIPT ---
-transcript_text = ""
-has_transcript = False
-
-try:
-    if hasattr(YouTubeTranscriptApi, 'list_transcripts'):
-        transcript_list = YouTubeTranscriptApi.list_transcripts(video_id)
-        try:
-            transcript = transcript_list.find_transcript(['en'])
-        except:
-            transcript = transcript_list.find_generated_transcript(['en'])
-        fetched = transcript.fetch()
-        transcript_text = " ".join([t['text'] for t in fetched])
-    else:
-        fetched = YouTubeTranscriptApi.get_transcript(video_id)
-        transcript_text = " ".join([t['text'] for t in fetched])
-    
-    if len(transcript_text) > 50:
-        has_transcript = True
-        print("✅ Transcript retrieved.")
-except Exception as e:
-    print(f"⚠️ Transcript failed: {e}")
-
-# --- 4. PREPARE AI SOURCES (Hybrid Approach) ---
+# --- 3. PREPARE AI SOURCE (Description Only) ---
 source_prompt_data = ""
 
-if len(video_description) > 50:
-    source_prompt_data += f"PRIMARY SOURCE (Use for accurate card names/context):\nVIDEO DESCRIPTION:\n{video_description}\n\n"
+if len(video_description) > 20:
+    source_prompt_data = f"VIDEO DESCRIPTION:\n{video_description}"
+    print("✅ Using Video Description.")
+else:
+    source_prompt_data = "No description available. Please write a general summary based on the Title."
+    print("⚠️ No Description found. Using Title only.")
 
-if has_transcript:
-    # 2.0 Flash has a HUGE context window (1M tokens), so we can send the whole transcript easily
-    source_prompt_data += f"SECONDARY SOURCE (Use for narrative flow):\nTRANSCRIPT:\n{transcript_text[:50000]}"
-
-if not source_prompt_data:
-    source_prompt_data = "No text available. Please write a general summary based on the Title."
-
-# --- 5. GENERATE CONTENT ---
+# --- 4. GENERATE CONTENT (5-Layer Cascade) ---
 base_prompt = f"""
 You are a writer for a competitive Pauper Commander (cPDH) website.
 Write a blog post about this video by {channel_name}.
@@ -126,59 +97,65 @@ INSTRUCTIONS:
 1. First, write a 1-sentence "teaser" starting with the word "EXCERPT:".
    - Example: "EXCERPT: {channel_name} discusses the top 5 blue commons..."
 2. Then, write the full article (300-500 words).
-   - Use the DESCRIPTION for accurate card names and deck archetypes.
-   - Use the TRANSCRIPT to summarize the discussion or gameplay.
    - Tone: Enthusiastic, knowledgeable, community-focused.
    - Do NOT use a H1 header (# Title) at the start.
 """
 
 article_body = ""
 excerpt_text = f"Check out this new video from {channel_name}!"
-source_type = "Single Source"
+source_type = "Fallback"
+ai_success = False
+
+# THE LIST: Ranked by Quality (Best -> Worst)
+models_to_try = [
+    'gemini-2.5-pro',                    # 1. The Ferrari
+    'gemini-2.0-flash',                  # 2. The Modern Standard
+    'gemini-flash-latest',               # 3. The Workhorse (1.5 Flash)
+    'gemini-2.0-flash-lite-preview-02-05', # 4. The Backup
+    'gemini-2.0-flash-lite'              # 5. The Safety Net
+]
 
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     
-    # --- CASCADE STRATEGY ---
-    
-    # ATTEMPT 1: The Ferrari (Gemini 2.5 Pro)
-    try:
-        print("🤖 Attempting generation with PRIMARY model (gemini-2.5-pro)...")
-        model = genai.GenerativeModel('gemini-2.5-pro')
-        response = model.generate_content(base_prompt)
-        response_text = response.text
-        source_type = "Gemini 2.5 Pro"
-
-    except Exception as e:
-        print(f"⚠️ Primary model failed or limit hit ({e}). Switching to FALLBACK...")
-        
-        # ATTEMPT 2: The Workhorse (Gemini 2.0 Flash)
-        # We verified this model exists in your list!
-        print("🤖 Attempting generation with FALLBACK model (gemini-2.0-flash)...")
-        time.sleep(2) 
-        model = genai.GenerativeModel('gemini-2.0-flash')
-        response = model.generate_content(base_prompt)
-        response_text = response.text
-        source_type = "Gemini 2.0 Flash (Fallback)"
-
-    # PROCESS RESPONSE
-    if "EXCERPT:" in response_text:
-        parts = response_text.split("EXCERPT:", 1)[1].split("\n", 1)
-        excerpt_text = parts[0].strip()
-        article_body = parts[1].strip()
-    else:
-        article_body = response_text
+    for model_name in models_to_try:
+        try:
+            print(f"🤖 Attempting generation with {model_name}...")
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(base_prompt)
+            response_text = response.text
+            
+            # If we get here, it worked!
+            source_type = f"AI Success ({model_name})"
+            ai_success = True
+            
+            # Parse response
+            if "EXCERPT:" in response_text:
+                parts = response_text.split("EXCERPT:", 1)[1].split("\n", 1)
+                excerpt_text = parts[0].strip()
+                article_body = parts[1].strip()
+            else:
+                article_body = response_text
+            
+            # Break the loop since we succeeded
+            break 
+            
+        except Exception as e:
+            print(f"⚠️ {model_name} failed ({e}). Trying next...")
+            time.sleep(1) # Tiny pause before retry
 
 except Exception as e:
-    print(f"❌ AI Generation Failed completely: {e}")
-    # FALLBACK TO TEXT
+    print(f"❌ Critical Error in AI loop: {e}")
+
+# --- 5. FALLBACK CONTENT (If all 5 failed) ---
+if not ai_success:
+    print("❌ All AI models failed. Using generic fallback.")
     article_body = f"**{channel_name}** has released a new video! Check out the details below:\n\n"
     if video_description:
         article_body += "> " + video_description.replace("\n", "\n> ")
     else:
         article_body += "Watch the video below to learn more."
-    
-    source_type = "Generic Text (AI Failed)"
+    source_type = "Generic Text (All Models Failed)"
 
 # --- 6. DOWNLOAD THUMBNAIL ---
 image_filename = f"{video_id}.jpg"

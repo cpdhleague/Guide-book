@@ -5,8 +5,7 @@ permalink: /meta/
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  caption: "Data powered by **cPDH League**"
-excerpt: "Comprehensive data analysis of the current Competitive Pauper Commander metagame."
+excerpt: "ELO leaderboards of CPDH meta."
 ---
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
@@ -28,8 +27,8 @@ excerpt: "Comprehensive data analysis of the current Competitive Pauper Commande
   <p style="margin-bottom: 20px;">Check out specific breakdowns and historical records.</p>
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="#" class="btn btn--primary btn--large">📊 Deck Database</a>
-    <a href="#" class="btn btn--primary btn--large">🏆 Tournament Results</a>
+    <a href="#" class="btn btn--primary btn--large">🏆 Deck Database</a>
+    <a href="#" class="btn btn--primary btn--large">📈 Historical Top 10</a>
   </div>
 
 </div>
@@ -38,6 +37,6 @@ excerpt: "Comprehensive data analysis of the current Competitive Pauper Commande
   <p>
     Looking for older data? 
     <br>
-    <a href="https://INSERT-OLD-URL-HERE.com"><strong>Return to the Legacy cPDH Site &rarr;</strong></a>
+    <a href="https://cpdh.guide/statistics/commander-data/"><strong>Return to the Legacy cPDH Site &rarr;</strong></a>
   </p>
 </div>

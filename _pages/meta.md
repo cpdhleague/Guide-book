@@ -1,11 +1,10 @@
 ---
-title: "The cPDH Meta"
+title: "cPDH Meta"
 layout: splash
 permalink: /meta/
 header:
-  overlay_image: /assets/images/cpdh.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-excerpt: "cPDH Elo Leaderboards."
 ---
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
@@ -27,7 +26,7 @@ excerpt: "cPDH Elo Leaderboards."
   <p style="margin-bottom: 20px;">Check out specific breakdowns and historical records.</p>
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="{{ '/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
     <a href="#" class="btn btn--primary btn--large">📈 Historical Top 10</a>
   </div>

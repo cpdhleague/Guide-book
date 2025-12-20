@@ -13,7 +13,7 @@ header:
 ## Latest Articles
 
 <div class="feature__row--images">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:12 %}
     
     {% comment %} --- 1. Set Image (Use Teaser OR Fallback) --- {% endcomment %}
     {% if post.header.teaser %}

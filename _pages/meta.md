@@ -5,7 +5,7 @@ permalink: /meta/
 header:
   overlay_image: /assets/images/cpdh.png
   overlay_filter: 0.5
-excerpt: "CPDH ELO Leaderboards."
+excerpt: "cPDH Elo Leaderboards."
 ---
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">

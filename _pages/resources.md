@@ -17,4 +17,4 @@ Searching for your next commander? [**PDHREC**](https://www.pdhrec.com/) is an i
 
 Once you have a few games under your belt, check out our [**Meta**](/Guide-book/meta/) page to analyze the stats and placements of top competitors. We also maintain a [**Content Creator Directory**](/Guide-book/resources/content-creators/) so you can find gameplay videos, podcasts, and discussions to level up your game.
 
-Finally, when you're ready to sleeve up and compete, you can find a place to play over at [**Topdeck.gg**](https://topdeck.gg/magic-the-gathering) (just use the filter to see only *MTG: Pauper Commander* events). Good luck!
+Finally, when you're ready to sleeve up and compete, you can find a place to play over at [**Topdeck.gg**](https://topdeck.gg/magic-the-gathering) (use the filter to see only *MTG: Pauper Commander* events). Good luck!

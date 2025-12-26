@@ -1,7 +1,8 @@
 main:
   - title: "Meta"
-    url: /meta/
-  - title: "Resources"
-    url: /resources/
+    url: /meta/ 
   - title: "Articles"
     url: /articles/
+  - title: "Resources"
+    url: /resources/
+

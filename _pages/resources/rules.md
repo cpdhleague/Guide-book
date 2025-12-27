@@ -9,7 +9,7 @@ header:
 excerpt: "Official rules for Pauper Commander."
 ---
 
-<div style="width: 100%; height: 1200px; overflow: hidden; position: relative;">
+<div style="width: 100%; height: 4000px; overflow: hidden; position: relative;">
 
   <iframe 
     src="https://pdhhomebase.com/rules/" 
@@ -18,10 +18,10 @@ excerpt: "Official rules for Pauper Commander."
       top: -180px; 
       left: 0; 
       width: 100%; 
-      height: 1400px; 
+      height: 4200px; 
       border: none;"
     title="PDH Rules"
-    scrolling="yes"
+    scrolling="no"
   ></iframe>
 
 </div>

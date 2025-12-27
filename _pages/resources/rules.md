@@ -1,15 +1,14 @@
 ---
-title: "Format Rules"
+title: "Pauper Commander Rules"
 layout: splash
 permalink: /rules/
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_color: "#000"
   overlay_filter: "0.0"
-excerpt: "Official rules for Pauper Commander."
 ---
 
-<div style="width: 100%; height: 4000px; overflow: hidden; position: relative;">
+<div style="width: 100%; height: 1800px; overflow: hidden; position: relative;">
 
   <iframe 
     src="https://pdhhomebase.com/rules/" 

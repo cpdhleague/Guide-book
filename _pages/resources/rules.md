@@ -8,7 +8,7 @@ header:
   overlay_filter: "0.0"
 ---
 
-<div style="width: 100%; height: 1800px; overflow: hidden; position: relative;">
+<div style="width: 100%; height: 1600px; overflow: hidden; position: relative;">
 
   <iframe 
     src="https://pdhhomebase.com/rules/" 

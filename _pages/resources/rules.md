@@ -3,8 +3,9 @@ title: "Format Rules"
 layout: splash
 permalink: /rules/
 header:
+  overlay_image: /assets/images/header2025-1.png
   overlay_color: "#000"
-  overlay_filter: "0.5"
+  overlay_filter: "0.0"
 excerpt: "Official rules for Pauper Commander."
 ---
 

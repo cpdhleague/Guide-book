@@ -44,7 +44,7 @@ excerpt: "Visual history of the top performing commanders in cPDH."
     
     <a href="{{ '/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
-    <a href="#" class="btn btn--primary btn--large">🔎 See Your Stats</a>
+    <a href="{{ '/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
 
     <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
 

@@ -19,7 +19,7 @@ excerpt: "Visual history of the top performing commanders in cPDH."
 
 <div style="text-align: center; max-width: 800px; margin: 0 auto 2em auto; padding: 0 20px;">
   <p style="font-size: 1.1em; opacity: 0.9;">
-    <strong>Compare the Legends:</strong> Use the dropdown at the top of the chart above to filter for specific commanders. 
+    <strong>Compare the Legends:</strong> Use the dropdown at the top of the chart below to filter for specific commanders. 
     You can select up to 10 different decks to see how they measure up against each other over time. 
     <br><em>(Scroll or search by commander name to find your favorites!)</em>
   </p>

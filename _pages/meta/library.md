@@ -98,3 +98,19 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Wilson, Refined Grizzly + Far Traveler | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/tVgoCMX4C0yfHxDL7RpNAw) |
 | Young Pyromancer | Red | Aggro | [Decklist](https://www.moxfield.com/decks/mWP7zKIjXEOeylb-X-0jJg) |
 | Zada, Hedron Grinder | Red | Aggro | [Decklist](https://moxfield.com/decks/jWnufsB3SEuXFXfUjszZ3g) |
+
+<hr style="margin: 3em 0;">
+
+<div style="text-align: center; margin-bottom: 4em;">
+  <h3>Explore Deeper</h3>
+  
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+    
+    <a href="{{ '/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
+
+    <a href="{{ '/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
+
+    <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
+    
+  </div>
+</div>

@@ -11,7 +11,7 @@ permalink: /resources/
 
 Welcome to your cPDH toolkit! Whether you are a new recruit or a seasoned grinder, we’ve gathered the essential links to help you on your journey.
 
-If you're just starting out, the best place to begin is the [**Official PDH Rules**](/Guide-book/resources/rules/) page to get grounded in the format.
+If you're just starting out, the best place to begin is the [**Official PDH Rules**](/Guide-book/rules/) page to get grounded in the format.
 
 Searching for your next commander? [**PDHREC.com**](https://www.pdhrec.com/) is an incredible resource to explore what the community is brewing. You can also browse our growing [**Decklist Library**](/Guide-book/resources/library/) to see specific lists that have been battle-tested in tournaments.
 

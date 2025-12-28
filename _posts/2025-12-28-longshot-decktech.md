@@ -104,7 +104,7 @@ We run extremely few creatures because creatures don't trigger Longshot. The fiv
 **The MVP: "Delusionary" Goblin**
 This card (officially **_____ Goblin**) is a house. By choosing the **Delusionary** sticker, it can generate massive amounts of mana—potentially winning the game on Turn 3. It feeds **Infernal Plunge** and **Battle Hymn** perfectly.
 
-{% include card.html name="_____ Goblin" %}
+{% include card.html name="Namesticker Goblin" %}
 
 **The Backup Singers**
 **Kessig Flamebreather** and **Mysidian Elder** are the only other pingers we need. Why just these two? Because they have 3 toughness (good blockers) and trigger off noncreature spells.

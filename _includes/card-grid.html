@@ -1,0 +1,13 @@
+<div class="gallery gallery-center">
+  {% assign card_list = include.cards | split: ", " %}
+  {% for card in card_list %}
+    <figure class="gallery-item">
+      <img src="https://api.scryfall.com/cards/named?exact={{ card | url_encode }}&format=image" alt="{{ card }}">
+    </figure>
+  {% endfor %}
+</div>
+
+<style>
+.gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.gallery-item img { max-width: 200px; border-radius: 4.75% / 3.5%; }
+</style>

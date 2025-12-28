@@ -1,3 +1,18 @@
+---
+title: "Longshot, Rebel Bowman Competitive Deck Tech"
+date: 2025-12-28
+layout: splash
+classes: wide
+categories:
+  - cPDH Deck Techs
+tags:
+  - Community
+header:
+  overlay_image: /assets/images/longshot.jpg
+  overlay_filter: 0.5
+  teaser: /assets/images/longshot.jpg
+---
+
 ## High Stakes & Hot Hands: A Guide to Longshot, Rebel Bowman
 
 Welcome to the table. Take a seat. I hope you brought your wallet, because we’re playing a game of high stakes, high rewards, and explosive finishes.

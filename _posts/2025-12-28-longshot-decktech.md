@@ -18,7 +18,7 @@ I call this my "Degenerate Gambling" deck because playing it is a wager: can I e
 
 Here's how we win that gamble.
 
-{% include card-grid.html cards="Longshot, Rebel Bowman, " %}
+{% include card-grid.html cards="Longshot, Rebel Bowman" %}
 
 ### The Win Condition
 **The Goal:** We cast 15 spells with Longshot on the board to blast our opponents to death.
@@ -29,7 +29,7 @@ We start the game (turns 1-3) with patience. Do not cast Longshot too fast. Ther
 2.  **Mana Choke:** If we ramp into Longshot too early, we usually won't have enough mana remaining on that turn (or the following turns) to initiate a storm chain.
 3.  **Card Disadvantage:** Theoretically, the deck could spend 3-4 cards to play Longshot on Turn 1. However, this leaves us with only two mana and—crucially—down 3-4 cards in hand. We need a full grip to storm off.
 
-With this in mind, the only spells we want to cast on early turns are creatures, plotting **Highway Robbery**, or occasionally a 2-cost mana rock like **Mind Stone**. Generally, you shouldn’t keep opening hands with fewer than 3 lands. If you must keep a land-light hand, prioritize playing card draw early to find your land drops before committing Longshot to the board. If you get a land-heavy hand with 4-5 lands, it's often keepable. 
+With this in mind, the only spells we want to cast on early turns are creatures, plotting **Highway Robbery**, or occasionally a 2-cost mana rock like **Mind Stone**. Generally, you shouldn’t keep opening hands with fewer than 3 lands. If you must keep a land-light hand, prioritize playing card draw early to find your land drops before committing Longshot to the board. If you get a land-heavy hand with 4-5 lands, it's often keepable.
 
 {% include card-grid.html cards="Rite of Flame, Lotus Petal, Infernal Plunge, Highway Robbery, Mind Stone" %}
 
@@ -83,7 +83,7 @@ One of the strongest engines in this deck is Flashback. We run all the best Flas
 Many cards use "discard a card as an additional cost" text. We rely heavily on **Big Score**, **Unexpected Windfall**, **Thrill of Possibility**, and **Tormenting Voice**.
 *Tip:* Track which cards discard as a *cost* (like **Faithless Looting**) versus an *effect*. Save cards like **Romantic Rendezvous** or **Dangerous Wager** for the end of your storm chain so you can draw without having to discard a card you needed.
 
-{% include card-grid.html cards="Big Score, Thrill of Possibility,  Faithless Salvaging, Romantic Rendezvous, Dangerous Wager" %}
+{% include card-grid.html cards="Big Score, Thrill of Possibility, Faithless Salvaging, Romantic Rendezvous, Dangerous Wager" %}
 
 **Impulse Draw Timing:**
 * **Glimpse the Impossible** and **Experimental Synthesizer**: You must play these cards *this turn*.
@@ -96,7 +96,7 @@ Many cards use "discard a card as an additional cost" text. We rely heavily on *
 Because our primary win condition triggers off non-creature spells, we run very few creatures—only the essential five.
 
 **The Creatures**
-* **Goblin Chirurgeon** sacrifices itself or another goblin to regenerate the Commander. 
+* **Goblin Chirurgeon** sacrifices itself or another goblin to regenerate the Commander.
 * **Burning Prophet** allows us to manipulate the top of the library to find the gas we need during big storm turns.
 * **"Delusionary" Goblin (_____ Goblin)** As mentioned, this is one of our best mana sources and feeds into **Infernal Plunge** and **Battle Hymn**. Opening with this card can enable a Turn 3 win.
 * **Kessig Flamebreather & Mysidian Elder** These are the only two other pingers in the deck. They have 3 toughness (good blockers) and trigger off all non-creature spells. **Mysidian Elder** also creates two bodies for blocking.
@@ -138,14 +138,14 @@ Do not get fancy. Run Mountains. Reliable red mana is king. And we only have 27 
 
 ---
 
-### Alternative Packages 
+### Alternative Packages
 The following sections outline specific "Packages" or strategies you can build into the deck. While I do not run full versions of these packages in my current list, they are popular options that may appeal to your playstyle.
 
 **The Goblin Package**
 I run a light version of this to support **Battle Hymn** and providing blockers, but you can lean all the way in.
 * **Why play it?** You want more board presence and blockers.
 * **Key Inclusions:** **Brightstone Ritual** becomes a premier ritual here. **Skirk Prospector** turns extra goblins into more mana to help storm off. **Mogg War Marshal** makes 3 bodies for two mana. **Goblin Surprise** and **Seize Opportunity** buff your board to let any small tokens get in for increased damage. Casting Goblin Surprise the turn after you’ve played **Empty the Warrens** is usually game over.
-* I'll note that Skirk Prospector may be good enough to include in the main deck without a full Goblin Package. I'm currently testing him. 
+* I'll note that Skirk Prospector may be good enough to include in the main deck without a full Goblin Package. I'm currently testing him.
 
 {% include card-grid.html cards="Brightstone Ritual, Skirk Prospector, Mogg War Marshal, Goblin Surprise, Empty the Warrens" %}
 
@@ -158,7 +158,7 @@ I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s
 {% include card-grid.html cards="Dragon's Approach, Stormshriek Feral, Lightning Shrieker" %}
 
 **The Removal Package**
-One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but these three are your best options. 
+One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but these three are your best options.
 
 {% include card-grid.html cards="Scour from Existence, Zuko's Exile, Lunatic Pandora" %}
 
@@ -170,13 +170,13 @@ One of the best ways to handle Longshot is by neutralizing him without killing h
 * **The Brute:** Extra protection against death. Worth considering.
 * **Mycosynth Wellspring:** "Draws" lands to thin the deck without losing spell triggers.
 * **Improvised Club:** Sacrifice outlet for tapped Wizard's Rockets or Ichor Wellspring.
-* **Simian Spirit Guide:** I don't run this because I want as many Longshot triggers as possible, but it wouldn't be an incorrect inclusion. 
+* **Simian Spirit Guide:** I don't run this because I want as many Longshot triggers as possible, but it wouldn't be an incorrect inclusion.
 
-{% include card-grid.html cards="The Brute, Mycosynth Wellspring, Improvised Club" %}
+{% include card-grid.html cards="The Brute, Mycosynth Wellspring, Improvised Club, Simian Spirit Guide" %}
 
 **Cards to Avoid:**
-* **Free Spells:** **Downhill Charge** and **Thunderclap**. Free does not mean good. I've played with these cards and they often sit in my hand too long. I generally don't want to sac my mountains until I know I'm going to win and these end up clogging the hand. Play good cards, whether they are free or not. 
-* **Grapeshot:** This is a trap. You usually hit a storm count of 7-8 on your turns. If you hit a full 15 storm count, you have already won via Longshot triggers. If you only get 8 pings from Grapeshot, it's not enough of an impact to affect the game. We're an aggro deck, we don't need to remove creatures from the board. 
+* **Free Spells:** **Downhill Charge** and **Thunderclap**. Free does not mean good. I've played with these cards and they often sit in my hand too long. I generally don't want to sac my mountains until I know I'm going to win and these end up clogging the hand. Play good cards, whether they are free or not.
+* **Grapeshot:** This is a trap. You usually hit a storm count of 7-8 on your turns. If you hit a full 15 storm count, you have already won via Longshot triggers. If you only get 8 pings from Grapeshot, it's not enough of an impact to affect the game. We're an aggro deck, we don't need to remove creatures from the board.
 * **Burst Damage:** **Lightning Bolt**, **Fireblast**. We don't need help dealing damage; the Commander does that.
 * **Library of Leng:** Only works on discard *effects*, not discard *costs*. Most of the discarding we do in the deck is to pay additional costs. Too inconsistent.
 
@@ -197,4 +197,4 @@ This deck is a gambling deck, so it’s important to point out that Longshot nee
 
 ### Full Decklist
 
-[Longshot Competitive Decklist](https://moxfield.com/decks/felxydpKP0qpoou767dsJA)
+<a href="https://moxfield.com/decks/felxydpKP0qpoou767dsJA" class="btn btn--primary btn--large">View Full Decklist on Moxfield</a>

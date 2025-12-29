@@ -1,5 +1,5 @@
 ---
-title: "Longshot, Rebel Bowman Competitive Deck Tech"
+title: "Longshot, Rebel Bowman cPDH Deck Tech"
 date: 2025-12-28
 layout: splash
 classes: wide
@@ -8,173 +8,189 @@ categories:
 tags:
   - Community
 header:
-  overlay_image: /assets/images/longshot.jpg
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/longshot.jpg
+  teaser: /assets/images/longshottech.jpg
+excerpt: "Can I burn the table to the ground before they stop me? A guide to the degenerate gambling of Longshot."
 ---
 
-## High Stakes & Hot Hands: A Guide to Longshot, Rebel Bowman
+I call this my "Degenerate Gambling" deck because playing it is a wager: can I end the game before someone stops me? As Satwa has pointed out, this deck turns the whole table into gamblers. Every opponent must decide on their turn if they can afford to ignore **Longshot, Rebel Bowman**. Any player that spends resources setting you back is also setting themselves back, while those who ignore you risk sudden death.
 
-Welcome to the table. Take a seat. I hope you brought your wallet, because we’re playing a game of high stakes, high rewards, and explosive finishes.
+Here is how we win that gamble.
 
-This isn’t a control deck looking for answers. This isn’t a midrange deck looking for value. This is a **degenerate gambling deck**. We are here to ask one question: *Can I burn the table to the ground before they stop me?*
+{% include card-grid.html cards="Longshot, Rebel Bowman" %}
 
-### The Elevator Pitch
-**How do we win?**
-Simple. We cast **Longshot, Rebel Bowman**. Then, we cast 15 noncreature spells.
-{% include card.html name="Longshot, Rebel Bowman" %}
+### The Win Condition
+**The Goal:** We cast 15 spells with Longshot on the board to blast our opponents to death.
 
-With Longshot on the board, every noncreature spell deals 2 damage to each opponent. 15 spells equals 30 damage to each face. That’s the math. That’s the mission.
+**The Path to Victory:**
+We start the game with patience. Do not cast Longshot too fast. There are three critical reasons for this:
+1.  **Missed Triggers:** By casting too many ramp spells like **Rite of Flame** or **Lotus Petal** early, we lose out on the damage triggers those spells would generate if Longshot were already in play.
+2.  **Mana Choke:** If we ramp into Longshot too early, we usually won't have enough mana remaining on that turn (or the following turns) to initiate a storm chain.
+3.  **Card Disadvantage:** Theoretically, the deck could spend 3-4 cards (like **Infernal Plunge** and **Simian Spirit Guide**) to play Longshot on Turn 1. However, this leaves us with only two mana and—crucially—down 3-4 cards in hand. We need a full grip to storm off.
 
----
+With this in mind, the only spells we want to cast on early turns are creatures, plotting **Highway Robbery**, or occasionally a 2-cost mana rock like **Mind Stone**. Generally, you shouldn’t keep opening hands with fewer than 3 lands. If you must keep a land-light hand, prioritize playing card draw early to find your land drops before committing Longshot to the board. If you get a land-heavy hand with 4-5 lands, it's often keepable. 
 
-### The Game Plan: A Path to Victory
-
-To play this deck, you need to understand that paradoxically, the key to going fast is **patience**.
-
-**Phase 1: The Setup (Turns 1-3)**
-We do not cast Longshot as soon as we hit 4 mana. If you ramp into him too early without gas in the tank, you’ll be sitting there with an empty hand while your opponents remove him.
-* **The Goal:** Play lands, cast cheap mana rocks, or plot **Highway Robbery**.
-* **The Trap:** Do not waste your rituals yet. If you run out of gas on the highway, you don’t start throwing gasoline around in a panic. You wait until the engine is ready.
-
-**Phase 2: The Turn**
-Usually around Turn 3 or 4, we cast Longshot. Ideally, we want to do this while still having a little mana left over, or a free spell ready to go to get immediate value.
-
-**Phase 3: The Storm**
-The turn *after* Longshot comes down is the "All-In" moment. We dump our hand, chain draw spells into rituals, rituals into more draw spells, and burn the table out in a single, glorious flurry of triggers.
+{% include card-grid.html cards="Rite of Flame, Lotus Petal, Infernal Plunge, Simian Spirit Guide, Highway Robbery, Mind Stone" %}
 
 ---
 
-### Mulligan Guide: Knowing When to Fold
+### The Storm Turn
+In most games, you will cast Longshot on Turn 3 or 4. You will not usually storm off that turn. The following turn you'll have all your mana available to focus on the aim: casting 15 spells.
 
-Because we run a lean 27 lands (more on that later), your opening hand is the most critical decision you will make all game.
+**The Exception:** Playing the "Sticker Goblin" (**_____ Goblin**) with the "Delusionary" sticker is the biggest exception to the rule. This card can generate enough floating red mana to allow you to cast Longshot and start storming off immediately.
 
-* **The Golden Rule:** Do not keep hands with fewer than **3 lands** unless you have a guaranteed way to find more (like an early draw spell).
-* **The God Hand:** If you see **_____ Goblin** (specifically aiming for the "Delusionary" sticker), you keep that hand. It’s our best accelerant.
-* **The Trap:** A hand full of rituals but no card draw is a path to failure. You will cast Longshot, pass the turn, and do nothing.
+{% include card-grid.html cards="_____ Goblin" %}
 
-**Look for:** 3 Lands + 1 Draw Engine + 1 Ritual.
-
----
-
-### Fueling the Fire: Mana Acceleration
-
-We split our mana into two categories: **Neutral** and **Positive**. Since we are playing Red, our rituals act as our Dark Rituals.
-
-**The Mana Positive Package**
-These are the cards that net us mana. Note that **Springleaf Drum** essentially becomes a ritual here thanks to Longshot’s discount/interaction.
-
-{% include card-grid.html cards="Battle Hymn, Infernal Plunge, Pyretic Ritual, Seething Song, Springleaf Drum, Rite of Flame" %}
-
-**The Mana Neutral Package**
-These artifacts filter our mana or ramp us, but more importantly, they refund their own cost (or close to it) while triggering Longshot.
-
-{% include card-grid.html cards="Arcane Signet, Fellwar Stone, Mind Stone, Prized Statue" %}
+**Recovery:**
+If the plan goes awry, fear not. The deck runs tons of mana acceleration; you will almost certainly be able to cast Longshot again if he is removed. Paradoxically, the key to this super-fast burn deck is patience. Do not cast spells you don't need until Longshot is back on the battlefield.
 
 ---
 
-### Restocking the Hand: Card Draw
+### Card Selection
+To cast 15 spells successfully, you need two things: A) Spells to cast and B) Mana to cast them. Therefore, our 99 is divided into three primary categories:
+1.  Card Draw
+2.  Mana Acceleration
+3.  Support Cards
 
-We run every "egg" (cheap artifacts that draw a card) we can get our hands on. The goal is to cycle through the deck as fast as possible.
+**Crucial Note:** We do not have a category for damage spells. Our Commander is already dealing damage to our opponents.
+* **No Direct Damage:** We do not want cards like **Lightning Bolt** or **Lava Spike**.
+* **No Creature Removal:** We do not want cards that damage creatures.
 
-**Discard to Draw**
-Be careful with your sequencing here. Some cards discard as a *cost* (like **Tormenting Voice**), while others discard as an *effect*. Try to hold cards like **Faithless Salvaging** or **Romantic Rendezvous** until your hand is empty so you can get the draw without paying the discard tax.
+Our goal is to storm before opponents combo off, before their board states matter. We are an aggro deck and we stay focused on its our own game plan. If we wanted to control the board, we would be a control deck. Cards that don't draw or accelerate don't help us win; they may only delay how long until we lose. You have to be okay with losing sometimes—that is the key to the deck.
 
-{% include card-grid.html cards="Tormenting Voice, Faithless Salvaging, Romantic Rendezvous" %}
+#### 1. Mana Acceleration
+There are two sub-categories:
 
-**Impulse Draw**
-Read your cards carefully!
-* **Use it NOW:** Cards like **Glimpse the Impossible** and **Experimental Synthesizer** force you to play the cards *this turn*.
-* **Use it LATER:** **Wrenn's Resolve** and **Reckless Impulse** let you play them until the end of your *next* turn.
-* **The Weird One:** **Galvanic Relay** only lets you play the cards on your *next* turn. This is a setup card, not a storm-off card.
+**Mana Positive (Rituals):** Pay less, get more. In this deck, your red rituals become Dark Rituals. We run the full suite: **Rite of Flame**, **Desperate Ritual**, **Pyretic Ritual**, and **Seething Song**. We also run **Battle Hymn** (fueled by our goblin tokens) and **Mana Geyser** for late-game explosions.
 
-{% include card-grid.html cards="Glimpse the Impossible, Wrenn's Resolve, Galvanic Relay" %}
+{% include card-grid.html cards="Rite of Flame, Desperate Ritual, Pyretic Ritual, Seething Song, Battle Hymn, Mana Geyser" %}
+
+**Mana Neutral:** These keep the storm count going by refunding the mana you spent to cast them. This includes **Arcane Signet**, **Fellwar Stone**, **Mind Stone**, and **Prized Statue**.
+*Note:* **Springleaf Drum** effectively becomes a ritual here by virtue of the discount Longshot provides.
+
+{% include card-grid.html cards="Arcane Signet, Fellwar Stone, Mind Stone, Prized Statue, Springleaf Drum" %}
+
+#### 2. Card Draw
+We run loads of draw and "eggs" to cycle through the deck. There are important mechanical distinctions to master here:
+
+**The Power of Flashback:**
+One of the strongest engines in this deck is Flashback. We run all the best Flashback cards (like **Faithless Looting** and **Electric Revelation**) because they allow us to cast a spell twice. This is pure value: one card in hand becomes two triggers for Longshot. Many of these cards also draw us more cards, keeping the engine greased.
+
+{% include card-grid.html cards="Faithless Looting, Electric Revelation" %}
+
+**Discard Costs vs. Effects:**
+Many cards use "discard a card as an additional cost" text. We rely heavily on **Big Score**, **Unexpected Windfall**, **Thrill of Possibility**, and **Tormenting Voice**.
+*Tip:* Track which cards discard as a *cost* (like **Faithless Looting**) versus an *effect*. Save cards like **Romantic Rendezvous** or **Dangerous Wager** for the end of your storm chain so you can draw without having to discard a card you needed.
+
+{% include card-grid.html cards="Big Score, Thrill of Possibility,  Faithless Salvaging, Romantic Rendezvous, Dangerous Wager" %}
+
+**Impulse Draw Timing:**
+* **Glimpse the Impossible**, **Experimental Synthesizer**, and **You've Been Caught Stealing**: You must play these cards *this turn*.
+* **Reckless Impulse** and **Wrenn's Resolve**: You can play these until the end of your *next* turn.
+* **Galvanic Relay**: You can *only* play these on your *next* turn, not the current one.
+
+{% include card-grid.html cards="Glimpse the Impossible, Experimental Synthesizer, You've Been Caught Stealing, Reckless Impulse, Wrenn's Resolve, Galvanic Relay" %}
+
+#### 3. Support Cards & Creatures
+Because our primary win condition triggers off non-creature spells, we run very few creatures—only the essential five.
+
+**The Creatures**
+* **Goblin Chirurgeon** sacrifices itself or another goblin to regenerate the Commander. 
+* **Burning Prophet** allows us to manipulate the top of the library to find the gas we need during big storm turns.
+* **"Delusionary" Goblin (_____ Goblin)** As mentioned, this is one of our best mana sources and feeds into **Infernal Plunge** and **Battle Hymn**. Opening with this card can enable a Turn 3 win.
+* **Kessig Flamebreather & Mysidian Elder** These are the only two other pingers in the deck. They have 3 toughness (good blockers) and trigger off all non-creature spells. **Mysidian Elder** also creates two bodies for blocking.
+
+{% include card-grid.html cards="Goblin Chirurgeon, Burning Prophet, _____ Goblin, Kessig Flamebreather, Mysidian Elder" %}
+
+**The Math of Pingers:**
+We do not run a huge package of pingers because of diminishing returns.
+* **Longshot alone:** Deals 2 damage per spell. To deal 30 damage, you need 15 spells.
+* **Longshot + 1 Pinger:** Deals 3 damage per spell. To deal 30 damage, you need 10 spells. (A reduction of 5 spells).
+* **Longshot + 2 Pingers:** Deals 4 damage per spell. To deal 30 damage, you need 8 spells. (A reduction of only 2 spells).
+
+Seeing one pinger in your opening hand is a blessing because it drops your requirement from 15 to 10. However, adding a second one only reduces the requirement by 2 more spells. It simply doesn't make sense to run a large number of additional pinger effects for such a small marginal gain.
 
 ---
 
-### The 1%er: The Creature Package
+### Graveyard Cards
 
-We run extremely few creatures because creatures don't trigger Longshot. The five we *do* run are non-negotiable all-stars.
+**Satyr’s Cunning** is one of the best cards in the deck. With enough mana and a stocked graveyard, you can end the game by escaping and casting this repeatedly. Hide this card in your hand so you don't scare the table. **Lava Dart** and **Flame Jab** allow you to turn cards in your graveyard or excess lands in hand into extra cast triggers via Retrace/Flashback. **Flaring Pain** provides two triggers (Cast + Flashback) and bypasses damage prevention like Prismatic Strands.
 
-**The Bodyguards & Enablers**
-**Goblin Chirurgeon** is here to sacrifice himself (or a token) to keep Longshot alive. **Burning Prophet** provides the scrying we need to smooth out our storm turns.
+{% include card-grid.html cards="Satyr's Cunning, Lava Dart, Flame Jab, Flaring Pain" %}
 
-{% include card-grid.html cards="Goblin Chirurgeon, Burning Prophet" %}
+**Graveyard Hate:**
+I currently run **Tormod’s Crypt** and **Relic of Progenitus**, but I am strongly considering cutting them. Neither actively pushes our game plan forward. **Relic of Progenitus** is particularly problematic because it exiles our *own* graveyard, removing access to our Flashback, Escape, and Retrace spells that help us win. As soon as better options are printed, these will be thrown to the wayside.
 
-**The MVP: "Delusionary" Goblin**
-This card (officially **_____ Goblin**) is a house. By choosing the **Delusionary** sticker, it can generate massive amounts of mana—potentially winning the game on Turn 3. It feeds **Infernal Plunge** and **Battle Hymn** perfectly.
-
-{% include card.html name="Namesticker Goblin" %}
-
-**The Backup Singers**
-**Kessig Flamebreather** and **Mysidian Elder** are the only other pingers we need. Why just these two? Because they have 3 toughness (good blockers) and trigger off noncreature spells.
-* *Math Note:* Seeing one of these reduces our "Spells to Win" count from 15 down to 10. We don't need a critical mass of pingers; we just need the best ones.
-
-{% include card-grid.html cards="Kessig Flamebreather, Mysidian Elder" %}
+{% include card-grid.html cards="Tormod's Crypt, Relic of Progenitus" %}
 
 ---
 
-### Synergies & Secret Tech
-
-**The Goblin Package**
-We run cards like **Krenko's Command** and **Dragon Fodder** not to attack, but to create bodies for **Battle Hymn** or edict protection. **Goblin Surprise** is a secret win-con; casting it the turn after an **Empty the Warrens** is usually game over.
-
-{% include card-grid.html cards="Battle Hymn, Empty the Warrens, Goblin Surprise" %}
-
-**Graveyard Love**
-**Satyr's Cunning** is arguably one of the best cards in the deck. With enough mana and a stocked graveyard, you can cast this repeatedly via Escape to burn the table down. Hide this in your hand or graveyard—don’t scare the table until you’re ready to win. **Flame Jab** serves a similar role, turning excess lands into triggers.
-
-{% include card-grid.html cards="Satyr's Cunning, Flame Jab" %}
-
-**Protection & Buffs**
-**Whispersilk Cloak** keeps Longshot safe. **Red Mage's Rapier** triggers the commander and turns him into a Voltron threat if the burn plan stalls.
-
-{% include card.html name="Red Mage's Rapier" %}
-
----
-
-### The Mana Base: Why 27 Mountains?
-
-Do not get fancy.
-* No Cycling lands.
-* No tap lands.
-
-We need untapped Red mana immediately. Every Mountain acts as a "cycling land" anyway because of our high volume of discard-to-draw effects. I run **Great Furnace** (artifact synergy) and **Dwarven Mine** (free creature), but otherwise? **25 Mountains**.
-
-**27 Lands is the Magic Number.**
-It sounds low, but higher land counts create bottlenecks during the storm turn. You can see this math in action during my game with the *Jalapeño Paupers*.
-* *Pro Tip:* On your storm turn, hold your land drop as long as possible. You might need to discard it to a **Tormenting Voice**, and having that discard fodder is crucial.
+### The Mana Base
+Do not get fancy. Run Mountains. Reliable red mana is king. And we only have 27 lands, making your land count an important consideration of your mulligans. Trust me, running too many lands can lead to impossible bottlenecks during storm turns, which you can see in a recent gameplay video I did with the [Jalapeno Paupers](https://www.youtube.com/watch?v=Z4eQMGRYxC8).
+* **Cycling Lands:** Do not run them. Every Mountain is effectively a cycling land because of our high volume of "discard-to-draw" effects. Coming in untapped is the most powerful effect a land can have in this deck.
+**Exceptions:**
+* **Great Furnace:** Artifact fodder for **Kuldotha Rebirth** and **Demand Answers**.
+* **Dwarven Mine:** Free 1/1 creature for sacrifice rituals while usually entering untapped.
 
 {% include card-grid.html cards="Mountain, Great Furnace, Dwarven Mine" %}
 
 ---
 
-### What to Avoid (The Trap Cards)
+### Alternative Packages 
+The following sections outline specific "Packages" or strategies you can build into the deck. While I do not run full versions of these packages in my current list, they are popular options that may appeal to your playstyle.
 
-I’ve seen lists running these cards, and I’m here to tell you: **Don’t do it.**
+**The Goblin Package**
+I run a light version of this to support **Battle Hymn** and providing blockers, but you can lean all the way in.
+* **Why play it?** You want more board presence and blockers.
+* **Key Inclusions:** **Brightstone Ritual** becomes a premier ritual here. **Skirk Prospector** turns extra goblins into more mana to help storm off. **Mogg War Marshal** makes 3 bodies for two mana. **Goblin Surprise** and **Seize Opportunity** buff your board to let any small tokens get in for increased damage. Casting Goblin Surprise the turn after you’ve played **Empty the Warrens** is usually game over. I'll also note that I think Skirk Prospector may be good enough to include in the main deck without a full Goblin Package. I'm currently testing him out to see how he does. 
 
-**The "Free" Spells**
-Free doesn't mean good. **Everflowing Chalice**, **Thunderclap**, and **Downhill Charge** don't advance our board state or draw us cards.
+{% include card-grid.html cards="Brightstone Ritual, Skirk Prospector, Mogg War Marshal, Goblin Surprise, Seize Opportunity, Empty the Warrens" %}
 
-**The Dragon's Approach Trap**
-This is a popular build, but it dilutes the strategy. You rely on your spells doing 60% of the damage. If you go the Dragon route, you are softer to counterspells and slower to win.
-* *If you MUST play Dragons:* Commit to 40 copies and run **Lightning Shrieker** (haste/evasion) and **Stormshriek Feral**.
+**The Dragon Package (Dragon's Approach)**
+I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s not one that appeals to me because relying on spells for 60% of your damage makes you much weaker to counterspells. However, if this appeals to you, here is how to make it effective:
+* **Commit:** Go all in. Run at least 40 copies of Dragon's Approach.
+* **Ramp:** Run all the mana acceleration and "eggs" you can find.
+* **The Dragons:** I recommend only running two: **Stormshriek Feral** (ensures your deck is never empty of dragons) and **Lightning Shrieker** (best for hitting face with haste/evasion).
 
-**Grapeshot**
-This is a trap. You usually storm off for 7 or 8 spells. **Grapeshot** dealing 8 damage to one person doesn't win the game. Longshot dealing 16 damage to *everyone* does.
+{% include card-grid.html cards="Dragon's Approach, Stormshriek Feral, Lightning Shrieker" %}
 
-{% include card-grid.html cards="Grapeshot, Dragon's Approach, Thunderclap" %}
+**The Removal Package**
+One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but I feel these three are the best option. 
+
+{% include card-grid.html cards="Scour from Existence, Zuko's Exile, Lunatic Pandora" %}
+
+---
+
+### Additional Cards to Consider
+**Cards to Include:**
+* **The Brute:** Extra protection against death. Worth considering.
+* **Mycosynth Wellspring:** "Draws" lands to thin the deck without losing spell triggers.
+* **Improvised Club:** Sacrifice outlet for tapped Wizard's Rockets or Ichor Wellspring.
+
+{% include card-grid.html cards="The Brute, Mycosynth Wellspring, Improvised Club" %}
+
+**Cards to Avoid:**
+* **Free Spells:** **Downhill Charge** and **Thunderclap**. Free does not mean good. I've played with these cards and they often sit in my hand too long. I generally don't want to sac my mountains until I know I'm going to win and these end up clogging the hand. Play good cards, whether they are free or not. 
+* **Grapeshot:** This is a trap. You usually hit a storm count of 7-8 on your turns. If you hit a full 15 storm count, you have already won via Longshot triggers. If you only get 8 pings from Grapeshot, it's not enough of an impact to affect the game. We're an aggro deck, we don't need to remove creatures from the board. 
+* **Burst Damage:** **Lightning Bolt**, **Fireblast**. We don't need help dealing damage; the Commander does that.
+* **Library of Leng:** Only works on discard *effects*, not discard *costs*. Most of the discarding we do in the deck is to pay additional costs. Too inconsistent.
+
+{% include card-grid.html cards="Downhill Charge, Thunderclap, Grapeshot, Lightning Bolt, Fireblast, Library of Leng" %}
 
 ---
 
 ### How to Fight This Deck
+There is no one card in the 99 of this deck that is super good. There are two bottlenecks to target with this deck.
 
-If you are sitting across from Longshot, here is how you beat me.
+1.  **The Commander:** The Commander is how you win. Counter or kill him and the whole deck needs to reset, recast Longshot, and start again.
+2.  **The Rituals:** If you have counterspells, identify when this deck is about to run out of mana. When they use their last floating red mana to cast a **Pyretic Ritual**, that is the moment to strike. Countering that ritual ends their shenanigans for the turn.
 
-1.  **Kill the Commander:** It sounds obvious, but it’s true. If you remove or counter Longshot, the entire deck grinds to a halt. I have to find 6 mana to recast him, and that slows me down significantly.
-2.  **Counter the Rituals:** Watch my mana. If I’m floating 1 Red mana and cast a **Pyretic Ritual**, that is the bottleneck. Counter that ritual, and my turn ends.
-3.  **Witness Protection:** Auras that remove abilities (like **Kenku's Artifice** or **Oubliette**) are devastating. I currently don't run removal for these because I’m betting I can win before you find them.
+**A Note on Threat Assessment:**
+This deck is a gambling deck, so it’s important to point out that Longshot needs to get lucky. It is a non-deterministic combo deck. It’s not going to definitely win. If you’ve got a bonafide infinite combo deck at the table, they should usually take priority—they’ll win 100% for sure if their combo goes off, whereas Longshot might fizzle. However, at a midrange table, Longshot is your #1 concern and you should get him out of the game quick.
 
-This is a deck for the bold. It makes everyone at the table a degenerate gambler because every turn I take, you have to bet on whether I have it.
+---
 
-**House always wins? Not if I have anything to say about it.**
+### Full Decklist
+
+![Longshot Competitive Decklist](https://moxfield.com/decks/felxydpKP0qpoou767dsJA)

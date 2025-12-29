@@ -57,7 +57,7 @@ Once your deck tech article is complete, please submit the following via email t
 We will then work with you to fine-tune the language, embed card images, and prepare your deck tech for online publication.
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="mailto:cpdhleague@gmail.com?subject=Deck%20Tech%20Submission" class="btn btn--primary btn--large">Send Us Your Guide</a>
+  <a href="mailto:cpdhleague@gmail.com?subject=Deck%20Tech%20Submission" class="btn btn--primary btn--large">Send Us Your Deck Tech</a>
 </div>
 
 
@@ -89,7 +89,7 @@ Once your article is complete, please submit the following via email to **[cpdhl
 We will work with you to fine-tune the language, format the post, and prepare your work for online publication.
 
 <div style="text-align: center; margin-top: 40px;">
-  <a href="mailto:cpdhleague@gmail.com?subject=Guide/Opinion%20Submission" class="btn btn--primary btn--large">Send Us Your Draft</a>
+  <a href="mailto:cpdhleague@gmail.com?subject=Guide/Opinion%20Submission" class="btn btn--primary btn--large">Send Us Your Guide</a>
 </div>
 
 <h2 style="text-align: center; font-weight: bold; text-transform: uppercase; margin-top: 50px; margin-bottom: 20px;">

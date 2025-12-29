@@ -10,7 +10,7 @@ tags:
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/longshottech.jpg
+  teaser: /assets/images/longshottech.png
 excerpt: "Can I burn the table to the ground before they stop me? A guide to the degenerate gambling of Longshot."
 ---
 

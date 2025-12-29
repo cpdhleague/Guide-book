@@ -197,4 +197,4 @@ This deck is a gambling deck, so it’s important to point out that Longshot nee
 
 ### Full Decklist
 
-<a href="https://moxfield.com/decks/felxydpKP0qpoou767dsJA" class="btn btn--primary btn--large">View Full Decklist on Moxfield</a>
+<a href="https://moxfield.com/decks/felxydpKP0qpoou767dsJA" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">View Full Decklist on Moxfield</a>

@@ -14,17 +14,17 @@ header:
 excerpt: "Can I burn the table to the ground before they stop me? A guide to the degenerate gambling of Longshot."
 ---
 
-I call this my "Degenerate Gambling" deck because playing it is a wager: can I end the game before someone stops me? As Satwa has pointed out, this deck turns the whole table into gamblers. Every opponent must decide on their turn if they can afford to ignore **Longshot, Rebel Bowman**. Any player that spends resources setting you back is also setting themselves back, while those who ignore you risk sudden death.
+I call this my "Degenerate Gambling" deck because playing it is a wager: can I end the game before someone stops me? As a friend has pointed out, this deck turns the whole table into gamblers. Every opponent must decide on their turn if they can afford to ignore **Longshot, Rebel Bowman**. Any player that spends resources setting you back is also setting themselves back, while those who ignore you risk sudden death.
 
-Here is how we win that gamble.
+Here's how we win that gamble.
 
-{% include card-grid.html cards="Longshot, Rebel Bowman" %}
+{% include card-grid.html cards="Longshot, Rebel Bowman, " %}
 
 ### The Win Condition
 **The Goal:** We cast 15 spells with Longshot on the board to blast our opponents to death.
 
 **The Path to Victory:**
-We start the game with patience. Do not cast Longshot too fast. There are three critical reasons for this:
+We start the game (turns 1-3) with patience. Do not cast Longshot too fast. There are three critical reasons for this:
 1.  **Missed Triggers:** By casting too many ramp spells like **Rite of Flame** or **Lotus Petal** early, we lose out on the damage triggers those spells would generate if Longshot were already in play.
 2.  **Mana Choke:** If we ramp into Longshot too early, we usually won't have enough mana remaining on that turn (or the following turns) to initiate a storm chain.
 3.  **Card Disadvantage:** Theoretically, the deck could spend 3-4 cards to play Longshot on Turn 1. However, this leaves us with only two mana and—crucially—down 3-4 cards in hand. We need a full grip to storm off.
@@ -43,7 +43,7 @@ In most games, you will cast Longshot on Turn 3 or 4. You will not usually storm
 {% include card-grid.html cards="_____ Goblin" %}
 
 **Recovery:**
-If the plan goes awry, fear not. The deck runs tons of mana acceleration; you will almost certainly be able to cast Longshot again if he is removed. Paradoxically, the key to this super-fast burn deck is patience. Do not cast spells you don't need until Longshot is back on the battlefield.
+If the plan goes awry, fear not. The deck runs tons of mana acceleration; you will almost certainly be able to cast Longshot again if he is removed. Paradoxically, the key to this super-fast burn deck is patience. Do not cast spells you don't need to until Longshot is back on the battlefield.
 
 ---
 
@@ -57,7 +57,7 @@ To cast 15 spells successfully, you need two things: A) Spells to cast and B) Ma
 * **No Direct Damage:** We do not want cards like **Lightning Bolt** or **Lava Spike**.
 * **No Creature Removal:** We do not want cards that damage creatures.
 
-Our goal is to storm before opponents combo off, before their board states matter. We are an aggro deck and we stay focused on its our own game plan. If we wanted to control the board, we would be a control deck. Cards that don't draw or accelerate don't help us win; they may only delay how long until we lose. You have to be okay with losing sometimes—that is the key to the deck.
+Our goal is to storm before opponents combo off, before their board states matter. We are an aggro deck and we stay focused on our own game plan. If we wanted to control the board, we would be a control deck and choose a different commander. Cards that don't draw or accelerate don't help us win; they may only delay how long until we lose. You have to be okay with losing sometimes—that is the key to the deck.
 
 #### 1. Mana Acceleration
 There are two sub-categories:
@@ -197,4 +197,4 @@ This deck is a gambling deck, so it’s important to point out that Longshot nee
 
 ### Full Decklist
 
-![Longshot Competitive Decklist](https://moxfield.com/decks/felxydpKP0qpoou767dsJA)
+[Longshot Competitive Decklist](https://moxfield.com/decks/felxydpKP0qpoou767dsJA)

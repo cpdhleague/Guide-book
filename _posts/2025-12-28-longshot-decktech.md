@@ -27,11 +27,11 @@ Here is how we win that gamble.
 We start the game with patience. Do not cast Longshot too fast. There are three critical reasons for this:
 1.  **Missed Triggers:** By casting too many ramp spells like **Rite of Flame** or **Lotus Petal** early, we lose out on the damage triggers those spells would generate if Longshot were already in play.
 2.  **Mana Choke:** If we ramp into Longshot too early, we usually won't have enough mana remaining on that turn (or the following turns) to initiate a storm chain.
-3.  **Card Disadvantage:** Theoretically, the deck could spend 3-4 cards (like **Infernal Plunge** and **Simian Spirit Guide**) to play Longshot on Turn 1. However, this leaves us with only two mana and—crucially—down 3-4 cards in hand. We need a full grip to storm off.
+3.  **Card Disadvantage:** Theoretically, the deck could spend 3-4 cards to play Longshot on Turn 1. However, this leaves us with only two mana and—crucially—down 3-4 cards in hand. We need a full grip to storm off.
 
 With this in mind, the only spells we want to cast on early turns are creatures, plotting **Highway Robbery**, or occasionally a 2-cost mana rock like **Mind Stone**. Generally, you shouldn’t keep opening hands with fewer than 3 lands. If you must keep a land-light hand, prioritize playing card draw early to find your land drops before committing Longshot to the board. If you get a land-heavy hand with 4-5 lands, it's often keepable. 
 
-{% include card-grid.html cards="Rite of Flame, Lotus Petal, Infernal Plunge, Simian Spirit Guide, Highway Robbery, Mind Stone" %}
+{% include card-grid.html cards="Rite of Flame, Lotus Petal, Infernal Plunge, Highway Robbery, Mind Stone" %}
 
 ---
 
@@ -62,14 +62,14 @@ Our goal is to storm before opponents combo off, before their board states matte
 #### 1. Mana Acceleration
 There are two sub-categories:
 
-**Mana Positive (Rituals):** Pay less, get more. In this deck, your red rituals become Dark Rituals. We run the full suite: **Rite of Flame**, **Desperate Ritual**, **Pyretic Ritual**, and **Seething Song**. We also run **Battle Hymn** (fueled by our goblin tokens) and **Mana Geyser** for late-game explosions.
-
-{% include card-grid.html cards="Rite of Flame, Desperate Ritual, Pyretic Ritual, Seething Song, Battle Hymn, Mana Geyser" %}
-
-**Mana Neutral:** These keep the storm count going by refunding the mana you spent to cast them. This includes **Arcane Signet**, **Fellwar Stone**, **Mind Stone**, and **Prized Statue**.
+**Mana Positive (Rituals):** Pay less, get more. In this deck, your 2-mana red rituals become Dark Rituals. We run the full suite: **Rite of Flame**, **Desperate Ritual**, **Pyretic Ritual**, and **Seething Song**. We also run **Battle Hymn** (fueled by our goblin tokens) and **Mana Geyser** for late-game explosions.
 *Note:* **Springleaf Drum** effectively becomes a ritual here by virtue of the discount Longshot provides.
 
-{% include card-grid.html cards="Arcane Signet, Fellwar Stone, Mind Stone, Prized Statue, Springleaf Drum" %}
+{% include card-grid.html cards="Desperate Ritual, Pyretic Ritual, Seething Song, Battle Hymn, Springleaf Drum" %}
+
+**Mana Neutral:** These keep the storm count going by refunding the mana you spent to cast them. This includes **Arcane Signet**, **Fellwar Stone**, **Mind Stone**, and **Prized Statue**.
+
+{% include card-grid.html cards="Arcane Signet, Fellwar Stone, Mind Stone, Prized Statue" %}
 
 #### 2. Card Draw
 We run loads of draw and "eggs" to cycle through the deck. There are important mechanical distinctions to master here:
@@ -86,11 +86,11 @@ Many cards use "discard a card as an additional cost" text. We rely heavily on *
 {% include card-grid.html cards="Big Score, Thrill of Possibility,  Faithless Salvaging, Romantic Rendezvous, Dangerous Wager" %}
 
 **Impulse Draw Timing:**
-* **Glimpse the Impossible**, **Experimental Synthesizer**, and **You've Been Caught Stealing**: You must play these cards *this turn*.
+* **Glimpse the Impossible** and **Experimental Synthesizer**: You must play these cards *this turn*.
 * **Reckless Impulse** and **Wrenn's Resolve**: You can play these until the end of your *next* turn.
 * **Galvanic Relay**: You can *only* play these on your *next* turn, not the current one.
 
-{% include card-grid.html cards="Glimpse the Impossible, Experimental Synthesizer, You've Been Caught Stealing, Reckless Impulse, Wrenn's Resolve, Galvanic Relay" %}
+{% include card-grid.html cards="Glimpse the Impossible, Experimental Synthesizer, Reckless Impulse, Wrenn's Resolve, Galvanic Relay" %}
 
 #### 3. Support Cards & Creatures
 Because our primary win condition triggers off non-creature spells, we run very few creatures—only the essential five.
@@ -129,6 +129,7 @@ I currently run **Tormod’s Crypt** and **Relic of Progenitus**, but I am stron
 ### The Mana Base
 Do not get fancy. Run Mountains. Reliable red mana is king. And we only have 27 lands, making your land count an important consideration of your mulligans. Trust me, running too many lands can lead to impossible bottlenecks during storm turns, which you can see in a recent gameplay video I did with the [Jalapeno Paupers](https://www.youtube.com/watch?v=Z4eQMGRYxC8).
 * **Cycling Lands:** Do not run them. Every Mountain is effectively a cycling land because of our high volume of "discard-to-draw" effects. Coming in untapped is the most powerful effect a land can have in this deck.
+
 **Exceptions:**
 * **Great Furnace:** Artifact fodder for **Kuldotha Rebirth** and **Demand Answers**.
 * **Dwarven Mine:** Free 1/1 creature for sacrifice rituals while usually entering untapped.
@@ -143,9 +144,10 @@ The following sections outline specific "Packages" or strategies you can build i
 **The Goblin Package**
 I run a light version of this to support **Battle Hymn** and providing blockers, but you can lean all the way in.
 * **Why play it?** You want more board presence and blockers.
-* **Key Inclusions:** **Brightstone Ritual** becomes a premier ritual here. **Skirk Prospector** turns extra goblins into more mana to help storm off. **Mogg War Marshal** makes 3 bodies for two mana. **Goblin Surprise** and **Seize Opportunity** buff your board to let any small tokens get in for increased damage. Casting Goblin Surprise the turn after you’ve played **Empty the Warrens** is usually game over. I'll also note that I think Skirk Prospector may be good enough to include in the main deck without a full Goblin Package. I'm currently testing him out to see how he does. 
+* **Key Inclusions:** **Brightstone Ritual** becomes a premier ritual here. **Skirk Prospector** turns extra goblins into more mana to help storm off. **Mogg War Marshal** makes 3 bodies for two mana. **Goblin Surprise** and **Seize Opportunity** buff your board to let any small tokens get in for increased damage. Casting Goblin Surprise the turn after you’ve played **Empty the Warrens** is usually game over.
+* I'll note that Skirk Prospector may be good enough to include in the main deck without a full Goblin Package. I'm currently testing him. 
 
-{% include card-grid.html cards="Brightstone Ritual, Skirk Prospector, Mogg War Marshal, Goblin Surprise, Seize Opportunity, Empty the Warrens" %}
+{% include card-grid.html cards="Brightstone Ritual, Skirk Prospector, Mogg War Marshal, Goblin Surprise, Empty the Warrens" %}
 
 **The Dragon Package (Dragon's Approach)**
 I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s not one that appeals to me because relying on spells for 60% of your damage makes you much weaker to counterspells. However, if this appeals to you, here is how to make it effective:
@@ -156,17 +158,19 @@ I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s
 {% include card-grid.html cards="Dragon's Approach, Stormshriek Feral, Lightning Shrieker" %}
 
 **The Removal Package**
-One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but I feel these three are the best option. 
+One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but these three are your best options. 
 
 {% include card-grid.html cards="Scour from Existence, Zuko's Exile, Lunatic Pandora" %}
 
 ---
 
 ### Additional Cards to Consider
+
 **Cards to Include:**
 * **The Brute:** Extra protection against death. Worth considering.
 * **Mycosynth Wellspring:** "Draws" lands to thin the deck without losing spell triggers.
 * **Improvised Club:** Sacrifice outlet for tapped Wizard's Rockets or Ichor Wellspring.
+* **Simian Spirit Guide:** I don't run this because I want as many Longshot triggers as possible, but it wouldn't be an incorrect inclusion. 
 
 {% include card-grid.html cards="The Brute, Mycosynth Wellspring, Improvised Club" %}
 
@@ -176,18 +180,18 @@ One of the best ways to handle Longshot is by neutralizing him without killing h
 * **Burst Damage:** **Lightning Bolt**, **Fireblast**. We don't need help dealing damage; the Commander does that.
 * **Library of Leng:** Only works on discard *effects*, not discard *costs*. Most of the discarding we do in the deck is to pay additional costs. Too inconsistent.
 
-{% include card-grid.html cards="Downhill Charge, Thunderclap, Grapeshot, Lightning Bolt, Fireblast, Library of Leng" %}
+{% include card-grid.html cards="Thunderclap, Grapeshot, Lightning Bolt, Fireblast, Library of Leng" %}
 
 ---
 
-### How to Fight This Deck
+### How to Play Against this Deck
 There is no one card in the 99 of this deck that is super good. There are two bottlenecks to target with this deck.
 
 1.  **The Commander:** The Commander is how you win. Counter or kill him and the whole deck needs to reset, recast Longshot, and start again.
-2.  **The Rituals:** If you have counterspells, identify when this deck is about to run out of mana. When they use their last floating red mana to cast a **Pyretic Ritual**, that is the moment to strike. Countering that ritual ends their shenanigans for the turn.
+2.  **The Rituals:** If you have counterspells, identify when this deck is about to run out of mana. When they use their last floating red mana to cast a **Pyretic Ritual**, that is the moment to strike. Countering that burst of mana ends their shenanigans for the turn.
 
 **A Note on Threat Assessment:**
-This deck is a gambling deck, so it’s important to point out that Longshot needs to get lucky. It is a non-deterministic combo deck. It’s not going to definitely win. If you’ve got a bonafide infinite combo deck at the table, they should usually take priority—they’ll win 100% for sure if their combo goes off, whereas Longshot might fizzle. However, at a midrange table, Longshot is your #1 concern and you should get him out of the game quick.
+This deck is a gambling deck, so it’s important to point out that Longshot needs to get lucky. It is a non-deterministic storm deck. It’s not going to definitely win. If you’ve got a bonafide infinite combo deck at the table, they should usually take priority—they’ll win 100% of the time if their combo goes off, whereas Longshot might fizzle. However, at a midrange table, Longshot is your #1 concern and you should get him out of the game quick.
 
 ---
 

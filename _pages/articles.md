@@ -56,6 +56,11 @@ header:
 
 <div style="clear: both;"></div>
 
+<div style="text-align: center; margin: 40px 0;">
+  <h3>Want to publish your own guide?</h3>
+  <a href="/submit-guide" class="btn btn--success btn--large">Write articles for the best PDH community</a>
+</div>
+
 ## Topics
 
 <div class="archive-taxonomy-list">

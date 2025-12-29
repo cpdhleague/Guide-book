@@ -1,7 +1,7 @@
 ---
 title: "Submit Your cPDH Guide"
 permalink: /submit-guide/
-layout: single
+layout: splash
 classes: wide
 header:
   overlay_filter: 0.0

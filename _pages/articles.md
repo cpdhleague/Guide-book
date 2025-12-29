@@ -58,7 +58,7 @@ header:
 
 <div style="text-align: center; margin: 40px 0;">
   <h3>Want to publish your own guide?</h3>
-  <a href="/submit-guide" class="btn btn--success btn--large">Write articles for the best PDH community</a>
+  <a href="/Guide-book/submit-guide" class="btn btn--success btn--large">Share with the Community</a>
 </div>
 
 ## Topics

@@ -17,9 +17,7 @@ excerpt: "Can I burn the table to the ground before they stop me? A guide to the
 I call this my "Degenerate Gambling" deck because playing it is a wager: can I end the game before someone stops me? As a friend has pointed out, this deck turns the whole table into gamblers. Every opponent must decide on their turn if they can afford to ignore **Longshot, Rebel Bowman**. Any player that spends resources setting you back is also setting themselves back, while those who ignore you risk sudden death.
 
 Here's how we win that gamble.
-
 {% include card-grid.html cards="Longshot Rebel Bowman" %}
-
 ### The Win Condition
 **The Goal:** We cast 15 spells with Longshot on the board to blast our opponents to death.
 

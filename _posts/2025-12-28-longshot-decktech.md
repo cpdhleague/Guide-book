@@ -18,7 +18,7 @@ I call this my "Degenerate Gambling" deck because playing it is a wager: can I e
 
 Here's how we win that gamble.
 
-{% include card-grid.html cards="Longshot, Rebel Bowman" %}
+{% include card-grid.html cards="Longshot Rebel Bowman" %}
 
 ### The Win Condition
 **The Goal:** We cast 15 spells with Longshot on the board to blast our opponents to death.

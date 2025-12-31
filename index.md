@@ -65,9 +65,9 @@ Our primary mission is to provide the clear, actionable [**Metagame Data**](/met
 But data is only half the story. We're building a platform to celebrate the players and creators who make this format thrive. Check out our latest community-driven [**articles and PDH videos**](/articles/).
 
 In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead, including:
-* The official [PDH rules](/resources/rules)
+* The official [PDH rules](/resources/rules/)
 * Links to essential tools like PDHREC
 * A growing [Decklist Library](/meta/library)
-* A directory of [PDH content creators](/resources/content-creators)
+* A directory of [PDH content creators](/resources/content-creators/)
 
 Whether you're here to tune into our community or tune your latest deck, we're glad you're here. 

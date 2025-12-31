@@ -57,3 +57,39 @@
   width: 100%;
   height: 100%;
 }
+
+
+/* --- Responsive Rules Embed --- */
+.rules-embed-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  /* Mobile Default: HUGE height to fit wrapped text */
+  height: 5500px; 
+}
+
+.rules-embed-iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border: none;
+  
+  /* Mobile: Needs to be taller than the container */
+  height: 6000px;
+  
+  /* Mobile Crop: Keep the header cut, or adjust if mobile header differs */
+  top: -180px; 
+}
+
+/* Desktop Override (Screens wider than 1024px) */
+/* This restores the settings you liked on PC */
+@media (min-width: 1024px) {
+  .rules-embed-container {
+    height: 1600px; 
+  }
+  .rules-embed-iframe {
+    height: 4200px;
+    top: -180px;
+  }
+}

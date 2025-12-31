@@ -1,7 +1,7 @@
 ---
 title: "Decklist Library"
 layout: splash
-permalink: /resources/library/
+permalink: /meta/library/
 ---
 
 ## Welcome to the Decklist Library

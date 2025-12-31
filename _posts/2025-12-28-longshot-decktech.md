@@ -193,7 +193,7 @@ There is no one card in the 99 of this deck that is super good. There are two bo
 1.  **The Commander:** The Commander is how you win. Counter or kill him and the whole deck needs to reset, recast Longshot, and start again.
 2.  **The Rituals:** If you have counterspells, identify when this deck is about to run out of mana. When they use their last floating red mana to cast a **Pyretic Ritual**, that is the moment to strike. Countering that burst of mana ends their shenanigans for the turn.
 
-If you're in a pinger-heavy meta or have a way to tutor for specific auras, you should also consider **Spirit Link**, **Armadillo Cloak**, **Vampiric Link**, and **Soul Link** if you're in the right colors. If you attach one of these to Longshot, you gain life for all the damage he deals to the table. As such, for each trigger you'll gain 3 life (in a 4-player pod). Red doesn't have a ton of enchantment removal options, so this is often a game-winning play.
+If you're in a pinger-heavy meta or have a way to tutor for specific auras, you should also consider **Spirit Link**, **Armadillo Cloak**, **Vampiric Link**, and **Soul Link** if you're in the right colors. If you attach one of these to Longshot, you gain life for all the damage he deals to the table. As such, for each trigger you'll gain 4 life (in a 4-player pod). Monored doesn't have many enchantment removal options, so this is often a game-defining play.
 
 {% include card-grid.html cards="Spirit Link, Armadillo Cloak, Vampiric Link, Soul Link" %}
 

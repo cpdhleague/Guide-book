@@ -8,17 +8,11 @@ header:
   overlay_filter: "0.5"
 ---
 
-<div style="width: 100%; height: 1600px; overflow: hidden; position: relative;">
+<div class="rules-embed-container">
 
   <iframe 
     src="https://pdhhomebase.com/rules/" 
-    style="
-      position: absolute; 
-      top: -180px; 
-      left: 0; 
-      width: 100%; 
-      height: 4200px; 
-      border: none;"
+    class="rules-embed-iframe"
     title="PDH Rules"
     scrolling="no"
   ></iframe>

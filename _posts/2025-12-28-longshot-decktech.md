@@ -11,7 +11,7 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/longshottech.png
-excerpt: "Can I burn the table to the ground before they stop me? A guide to the degenerate gambling of Longshot."
+excerpt: "Can Longshot burn the table to the ground before they stop me? A guide to the degenerate gambling of Avatar's Rebel Archer."
 ---
 
 I call this my "Degenerate Gambling" deck because playing it is a wager: I am shoving all my chips into the middle on Turn 4, and daring the table to have the answer. As a friend has pointed out, this deck turns the whole table into gamblers. Every opponent must decide on their turn if they can afford to ignore **Longshot, Rebel Bowman**. Any player that spends resources setting you back is also setting themselves back, while those who ignore you risk sudden death.

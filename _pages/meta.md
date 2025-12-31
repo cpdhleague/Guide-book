@@ -27,11 +27,11 @@ header:
   <p style="margin-bottom: 20px;">Check out specific breakdowns and historical records.</p>
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="{{ '/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/meta/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
-    <a href="{{ '/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
+    <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
 
-    <a href="{{ '/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
+    <a href="{{ '/meta/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
   </div>
 
 </div>

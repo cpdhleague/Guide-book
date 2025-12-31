@@ -1,7 +1,7 @@
 ---
 title: "Historical Top 10 Timeline"
 layout: splash
-permalink: /top10timeline/
+permalink: /meta/top10timeline/
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

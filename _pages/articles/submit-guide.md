@@ -1,6 +1,6 @@
 ---
 title: "Submit Your cPDH Guide"
-permalink: /submit-guide/
+permalink: /articles/submit-guide/
 layout: splash
 classes: wide
 header:

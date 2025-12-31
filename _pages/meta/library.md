@@ -2,6 +2,10 @@
 title: "Decklist Library"
 layout: splash
 permalink: /meta/library/
+classes: short-header
+header:
+  overlay_image: /assets/images/header2025-1.png
+  overlay_filter: 0.5
 ---
 
 ## Welcome to the Decklist Library
@@ -106,9 +110,9 @@ This library features every commander to have placed in the Top 4 of a recorded 
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
     
-    <a href="{{ '/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
+    <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
 
-    <a href="{{ '/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
+    <a href="{{ '/meta/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
 
     <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
     

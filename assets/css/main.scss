@@ -76,10 +76,10 @@
   border: none;
   
   /* Mobile: Needs to be taller than the container */
-  height: 3000px;
+  height: 2000px;
   
   /* Mobile Crop: Keep the header cut, or adjust if mobile header differs */
-  top: -180px; 
+  top: -160px; 
 }
 
 /* Desktop Override (Screens wider than 1024px) */
@@ -90,6 +90,6 @@
   }
   .rules-embed-iframe {
     height: 4200px;
-    top: -250px;
+    top: -230px;
   }
 }

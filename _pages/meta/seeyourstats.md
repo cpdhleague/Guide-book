@@ -1,7 +1,7 @@
 ---
 title: "Player Statistics"
 layout: splash
-permalink: /seeyourstats/
+permalink: /meta/seeyourstats/
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

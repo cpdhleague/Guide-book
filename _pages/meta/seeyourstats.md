@@ -2,6 +2,7 @@
 title: "Player Statistics"
 layout: splash
 permalink: /meta/seeyourstats/
+classes: short-header
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
@@ -32,9 +33,9 @@ excerpt: "Search individual player performance across time."
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
     
-    <a href="{{ '/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/meta/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
-    <a href="{{ '/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
+    <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
 
     <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
 

@@ -1,7 +1,7 @@
 ---
 title: "Pauper Commander Rules"
 layout: splash
-permalink: /rules/
+permalink: /resources/rules/
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_color: "#000"

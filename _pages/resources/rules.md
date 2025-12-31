@@ -2,10 +2,10 @@
 title: "Pauper Commander Rules"
 layout: splash
 permalink: /resources/rules/
+classes: short-header
 header:
   overlay_image: /assets/images/header2025-1.png
-  overlay_color: "#000"
-  overlay_filter: "0.0"
+  overlay_filter: "0.5"
 ---
 
 <div style="width: 100%; height: 1600px; overflow: hidden; position: relative;">

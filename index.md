@@ -1,6 +1,5 @@
 ---
 title: " "
-baseurl: "/Guide-book"
 layout: splash
 permalink: /
 header:
@@ -61,14 +60,14 @@ header:
 
 ## Welcome to CPDH.guide
 
-Our primary mission is to provide the clear, actionable [**Metagame Data**](/Guide-book/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
+Our primary mission is to provide the clear, actionable [**Metagame Data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
 
-But data is only half the story. We're building a platform to celebrate the players and creators who make this format thrive. Check out our latest community-driven [**articles and PDH videos**](/Guide-book/articles/).
+But data is only half the story. We're building a platform to celebrate the players and creators who make this format thrive. Check out our latest community-driven [**articles and PDH videos**](/articles/).
 
-In our [**Resources**](/Guide-book/resources/) section, you'll find everything you need to get started or get ahead, including:
-* The official [PDH rules](/Guide-book/rules)
+In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead, including:
+* The official [PDH rules](/rules)
 * Links to essential tools like PDHREC
-* A growing [Decklist Library](/Guide-book/library)
-* A directory of [PDH content creators](/Guide-book/content-creators)
+* A growing [Decklist Library](/library)
+* A directory of [PDH content creators](/content-creators)
 
 Whether you're here to tune into our community or tune your latest deck, we're glad you're here. 

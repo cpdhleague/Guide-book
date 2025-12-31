@@ -76,7 +76,7 @@
   border: none;
   
   /* Mobile: Needs to be taller than the container */
-  height: 6000px;
+  height: 3000px;
   
   /* Mobile Crop: Keep the header cut, or adjust if mobile header differs */
   top: -180px; 
@@ -90,6 +90,6 @@
   }
   .rules-embed-iframe {
     height: 4200px;
-    top: -180px;
+    top: -250px;
   }
 }

@@ -6,7 +6,6 @@ classes: short-header
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-excerpt: "Visual history of the top performing commanders in cPDH."
 ---
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">

@@ -31,3 +31,29 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+
+/* --- Force 16:9 Aspect Ratio on Article Teasers --- */
+
+.archive__item-teaser {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover; 
+  object-position: center;
+  max-height: 200px; 
+}
+
+/* Fix for Video Embeds to stay 16:9 */
+.responsive-video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.responsive-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

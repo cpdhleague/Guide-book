@@ -142,6 +142,7 @@ Do not get fancy. Run Mountains. Reliable red mana is king. And we only have 27 
 The following sections outline specific "Packages" or strategies you can build into the deck. While I do not run full versions of these packages in my current list, they are popular options that may appeal to your playstyle.
 
 **The Goblin Package**
+
 I run a light version of this to support **Battle Hymn** and providing blockers, but you can lean all the way in.
 * **Why play it?** You want more board presence and blockers.
 * **Key Inclusions:** **Brightstone Ritual** becomes a premier ritual here. **Skirk Prospector** turns extra goblins into more mana to help storm off. **Mogg War Marshal** makes 3 bodies for two mana. **Goblin Surprise** and **Seize Opportunity** buff your board to let any small tokens get in for increased damage. Casting Goblin Surprise the turn after you’ve played **Empty the Warrens** is usually game over.
@@ -150,6 +151,7 @@ I run a light version of this to support **Battle Hymn** and providing blockers,
 {% include card-grid.html cards="Brightstone Ritual, Skirk Prospector, Mogg War Marshal, Goblin Surprise, Empty the Warrens" %}
 
 **The Dragon Package (Dragon's Approach)**
+
 I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s not one that appeals to me because relying on spells for 60% of your damage makes you much weaker to counterspells. However, if this appeals to you, here is how to make it effective:
 * **Commit:** Go all in. Run at least 40 copies of Dragon's Approach.
 * **Ramp:** Run all the mana acceleration and "eggs" you can find.
@@ -158,6 +160,7 @@ I’ve seen many pilots playing with the **Dragon’s Approach** package. It’s
 {% include card-grid.html cards="Dragon's Approach, Stormshriek Feral, Lightning Shrieker" %}
 
 **The Removal Package**
+
 One of the best ways to handle Longshot is by neutralizing him without killing him (e.g., **Witness Protection** or **Temporal Isolation**). The current list doesn't handle this well. If your meta is full of these effects, consider running **Scour from Existence**, **Zuko's Exile**, and **Lunatic Pandora**. These allow you to remove obstacles on an opponent's end step, leaving you with full mana on your turn. There are many other removal spells that can fill in these slots, but these three are your best options.
 
 {% include card-grid.html cards="Scour from Existence, Zuko's Exile, Lunatic Pandora" %}
@@ -167,16 +170,16 @@ One of the best ways to handle Longshot is by neutralizing him without killing h
 ### Additional Cards to Consider
 
 **Cards to Include:**
-* **The Brute:** Extra protection against death. Worth considering.
-* **Mycosynth Wellspring:** "Draws" lands to thin the deck without losing spell triggers.
-* **Improvised Club:** Sacrifice outlet for tapped Wizard's Rockets or Ichor Wellspring.
-* **Simian Spirit Guide:** I don't run this because I want as many Longshot triggers as possible, but it wouldn't be an incorrect inclusion.
+* **The Brute:** Extra protection.
+* **Mycosynth Wellspring:** Can be an extra "land slot" without losing the Longshot trigger.
+* **Improvised Club:** Sacrifice outlet for artifacts that have an effect when they hit the graveyard.
+* **Simian Spirit Guide:** I don't run this because I want as many Longshot triggers as possible, but it's another way to pump more mana into the deck.
 
 {% include card-grid.html cards="The Brute, Mycosynth Wellspring, Improvised Club, Simian Spirit Guide" %}
 
 **Cards to Avoid:**
 * **Free Spells:** **Downhill Charge** and **Thunderclap**. Free does not mean good. I've played with these cards and they often sit in my hand too long. I generally don't want to sac my mountains until I know I'm going to win and these end up clogging the hand. Play good cards, whether they are free or not.
-* **Grapeshot:** This is a trap. You usually hit a storm count of 7-8 on your turns. If you hit a full 15 storm count, you have already won via Longshot triggers. If you only get 8 pings from Grapeshot, it's not enough of an impact to affect the game. We're an aggro deck, we don't need to remove creatures from the board.
+* **Grapeshot:** This is a trap. You usually hit a storm count of 7-8 on your turns. If you hit a full 15 storm count, you have already won via Longshot triggers. If you only get 8 pings from Grapeshot, it's not enough of an impact to affect the game. We're an over-the-top-aggro deck, we don't need to remove creatures from the board.
 * **Burst Damage:** **Lightning Bolt**, **Fireblast**. We don't need help dealing damage; the Commander does that.
 * **Library of Leng:** Only works on discard *effects*, not discard *costs*. Most of the discarding we do in the deck is to pay additional costs. Too inconsistent.
 
@@ -190,8 +193,12 @@ There is no one card in the 99 of this deck that is super good. There are two bo
 1.  **The Commander:** The Commander is how you win. Counter or kill him and the whole deck needs to reset, recast Longshot, and start again.
 2.  **The Rituals:** If you have counterspells, identify when this deck is about to run out of mana. When they use their last floating red mana to cast a **Pyretic Ritual**, that is the moment to strike. Countering that burst of mana ends their shenanigans for the turn.
 
+If you're in a pinger-heavy meta or have a way to tutor for specific auras, you should also consider **Spirit Link**, **Armadillo Cloak**, **Vampiric Link**, and **Soul Link** if you're in the right colors. If you attach one of these to Longshot, you gain life for all the damage he deals to the table. As such, for each trigger you'll gain 3 life (in a 4-player pod). Red doesn't have a ton of enchantment removal options, so this is often a game-winning play.
+
+{% include card-grid.html cards="Spirit Link, Armadillo Cloak, Vampiric Link, Soul Link" %}
+
 **A Note on Threat Assessment:**
-This deck is a gambling deck, so it’s important to point out that Longshot needs to get lucky. It is a non-deterministic storm deck. It’s not going to definitely win. If you’ve got a bonafide infinite combo deck at the table, they should usually take priority—they’ll win 100% of the time if their combo goes off, whereas Longshot might fizzle. However, at a midrange table, Longshot is your #1 concern and you should get him out of the game quick.
+This deck is a gambling deck, so it’s important to point out that Longshot needs to get lucky. It is a non-deterministic storm deck. It’s not going to definitely win. If you’ve got a bonafide infinite combo deck at the table, they should usually take priority—they’ll win 100% of the time if their combo goes off, whereas Longshot might fizzle. However, at a midrange table, Longshot is your #1 concern and you should get him out of the game as quickly as you can manage.
 
 ---
 

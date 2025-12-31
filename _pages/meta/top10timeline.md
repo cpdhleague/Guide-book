@@ -2,6 +2,7 @@
 title: "Historical Top 10 Timeline"
 layout: splash
 permalink: /meta/top10timeline/
+classes: short-header
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
@@ -42,9 +43,9 @@ excerpt: "Visual history of the top performing commanders in cPDH."
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
     
-    <a href="{{ '/resources/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/meta/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
-    <a href="{{ '/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
+    <a href="{{ '/meta/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
 
     <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
 

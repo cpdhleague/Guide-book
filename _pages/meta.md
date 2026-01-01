@@ -36,10 +36,10 @@ header:
 
 </div>
 
-<div style="text-align: center; opacity: 0.8; font-size: 0.9em; margin-top: 4em;">
+<div style="text-align: center; opacity: 0.6; font-size: 0.9em; margin-top: 4em;">
   <p>
-    Looking for older data? 
+    Curious about how ratings are calculated or looking for older data?
     <br>
-    <a href="https://cpdh.guide/statistics/commander-data/"><strong>Return to the Legacy cPDH Site &rarr;</strong></a>
+    <a href="{{ '/meta/methodology/' | relative_url }}"><strong>View Methodology, Raw Data, & Historical Archives &rarr;</strong></a>
   </p>
 </div>

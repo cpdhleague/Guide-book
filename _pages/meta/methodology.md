@@ -61,15 +61,15 @@ We believe in transparency. You can view the raw data we use on our backend at t
 
 ### Commander Stats (Archive)
 <div style="width: 100%; overflow: auto; margin-bottom: 2em;">
-<iframe width="600" height="429" src="https://lookerstudio.google.com/embed/reporting/14d15235-575f-4dca-8751-b7797598765e/page/JaCSD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe width="1200" height="860" src="https://lookerstudio.google.com/embed/reporting/14d15235-575f-4dca-8751-b7797598765e/page/JaCSD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 </div>
 
 ### Player Stats (Archive)
 <div style="width: 100%; overflow: auto; margin-bottom: 2em;">
-<iframe width="600" height="429" src="https://lookerstudio.google.com/embed/reporting/c9c425f6-2c3d-4542-8b73-0adfac98fdc9/page/JaCSD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe width="1200" height="860" src="https://lookerstudio.google.com/embed/reporting/c9c425f6-2c3d-4542-8b73-0adfac98fdc9/page/JaCSD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 </div>
 
 ### Metagame Stats (Archive)
 <div style="width: 100%; overflow: auto; margin-bottom: 2em;">
-<iframe width="600" height="500" src="https://lookerstudio.google.com/embed/reporting/e6465966-c3f7-442c-9fb5-1a2f616882a0/page/p_de5p8rjwcd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe width="1200" height="1000" src="https://lookerstudio.google.com/embed/reporting/e6465966-c3f7-442c-9fb5-1a2f616882a0/page/p_de5p8rjwcd" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 </div>

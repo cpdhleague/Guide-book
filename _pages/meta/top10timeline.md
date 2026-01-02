@@ -42,7 +42,7 @@ header:
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
     
-    <a href="{{ '/meta/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
     <a href="{{ '/meta/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
 

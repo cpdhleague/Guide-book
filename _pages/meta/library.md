@@ -1,7 +1,7 @@
 ---
 title: "Decklist Library"
 layout: splash
-permalink: /meta/library/
+permalink: /library/
 classes: short-header
 header:
   overlay_image: /assets/images/header2025-1.png

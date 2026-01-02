@@ -67,7 +67,7 @@ But data is only half the story. We're building a platform to celebrate the play
 In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead, including:
 * The official [PDH rules](/resources/rules/)
 * Links to essential tools like PDHREC
-* A growing [Decklist Library](/meta/library)
+* A growing [Decklist Library](/library)
 * A directory of [PDH content creators](/resources/content-creators/)
 
 Whether you're here to tune into our community or tune your latest deck, we're glad you're here. 

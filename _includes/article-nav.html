@@ -1,0 +1,57 @@
+{% comment %}
+  Article Navigation: Shows Previous and Next post links.
+  Include this at the bottom of post content.
+{% endcomment %}
+
+{% assign sorted_posts = site.posts | sort: 'date' %}
+{% assign post_count = sorted_posts | size %}
+
+{% for p in sorted_posts %}
+  {% if p.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
+
+{% if current_index != nil %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign next_index = current_index | plus: 1 %}
+
+  {% if prev_index >= 0 %}
+    {% assign prev_post = sorted_posts[prev_index] %}
+  {% endif %}
+
+  {% if next_index < post_count %}
+    {% assign next_post = sorted_posts[next_index] %}
+  {% endif %}
+
+  {% if prev_post or next_post %}
+  <div class="article-nav">
+    <span class="article-nav-label">Continue Reading</span>
+    <div class="article-nav-grid">
+
+      {% if prev_post %}
+      <div class="article-nav-card">
+        <div class="nav-direction">← Previous</div>
+        <div class="nav-title">
+          <a href="{{ prev_post.url | relative_url }}">{{ prev_post.title }}</a>
+        </div>
+      </div>
+      {% else %}
+      <div></div>
+      {% endif %}
+
+      {% if next_post %}
+      <div class="article-nav-card">
+        <div class="nav-direction" style="text-align: right;">Next →</div>
+        <div class="nav-title" style="text-align: right;">
+          <a href="{{ next_post.url | relative_url }}">{{ next_post.title }}</a>
+        </div>
+      </div>
+      {% else %}
+      <div></div>
+      {% endif %}
+
+    </div>
+  </div>
+  {% endif %}
+{% endif %}

@@ -1,0 +1,9 @@
+main:
+  - title: "Meta"
+    url: /meta/
+  - title: "Articles"
+    url: /articles/
+  - title: "Resources"
+    url: /resources/
+  - title: "App"
+    url: https://app.cpdh.guide

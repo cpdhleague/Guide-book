@@ -1,0 +1,53 @@
+{% comment %}
+  MODIFIED: This version can accept an 'id' parameter.
+  Usage:
+  {% include feature_row id="my_data_block" %}
+  (It defaults to "feature_row" if no id is provided)
+{% endcomment %}
+
+{% comment %} --- 1. Get the data block --- {% endcomment %}
+{%- assign feature_row_id = include.id | default: "feature_row" -%}
+{%- assign feature_row_data = page[feature_row_id] -%}
+
+{% comment %} --- 2. Render the data block (this is your original code) --- {% endcomment %}
+{% if feature_row_data %}
+  {% if feature_row_data.first.image_path %}
+    <div class="feature__row--images">
+  {% else %}
+    <div class="feature__row--no-images">
+  {% endif %}
+  {% for item in feature_row_data %}
+    <div class="feature__item" {% if item.image_path %}style="flex-basis: 33.33333%"{% endif %}>
+      <div class="feature__item__content-wrapper">
+        
+        {% comment %} --- This part makes the image clickable --- {% endcomment %}
+        {% if item.image_path %}
+          <div class="feature__item-image">
+            <a href="{{ item.url | relative_url }}" class="feature__item-image-link">
+              <img
+                src="{{ item.image_path | relative_url }}"
+                alt="{{ item.alt | escape }}"
+                class="feature__item-image"
+              >
+            </a>
+          </div>
+        {% endif %}
+        
+        <div class="feature__item-content">
+
+          {% comment %} --- This part makes the title clickable --- {% endcomment %}
+          {% if item.title %}
+            <h3 class="feature__item-title">
+              <a href="{{ item.url | relative_url }}">{{ item.title | markdownify }}</a>
+            </h3>
+          {% endif %}
+
+          {% if item.excerpt %}
+            <p class="feature__item-excerpt">{{ item.excerpt | markdownify }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
+{% endif %}

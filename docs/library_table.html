@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Decklist Table</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css">
+
+    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+    
+    <script type="text/javascript" charset="utf8" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" defer></script>
+
+</head>
+<body>
+
+    <h2>My Magic: The Gathering Decks</h2>
+
+    <table id="decklist-table" class="table table-bordered table-hover table-condensed">
+        <thead>
+            <tr>
+                <th title="Field #1">COMMANDER</th>
+                <th title="Field #2">IDENTITY</th>
+                <th title="Field #3">STRATEGY</th>
+                <th title="Field #4">LINK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Atraxa, Praetors' Voice</td>
+                <td>4-Color (WUBG)</td>
+                <td>Proliferate / Superfriends</td>
+                <td>https://www.moxfield.com/decks/example-link-1</td>
+            </tr>
+            <tr>
+                <td>Yuriko, the Tiger's Shadow</td>
+                <td>Dimir (UB)</td>
+                <td>Ninja Tribal / Top-deck</td>
+                <td>https://www.moxfield.com/decks/example-link-2</td>
+            </tr>
+            <tr>
+                <td>Krenko, Mob Boss</td>
+                <td>Mono-Red</td>
+                <td>Goblin Tribal / Aggro</td>
+                <td>https://www.moxfield.com/decks/example-link-3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+    // Wait for the document to be fully loaded
+    $(document).ready( function () {
+        // Find the table with id="decklist-table" and apply DataTables
+        $('#decklist-table').DataTable({
+            "columnDefs": [
+                {
+                    // Target the 4th column (index 3)
+                    "targets": [ 3 ], 
+                    
+                    // Render its content as a link
+                    "render": function ( data, type, row ) {
+                        // 'data' is the raw URL text from the cell
+                        return '<a href="' + data + '" target="_blank">Decklist</a>';
+                    }
+                }
+            ]
+        });
+    } );
+    </script>
+
+</body>
+</html>

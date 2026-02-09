@@ -51,16 +51,11 @@ header:
 
 <h2>Welcome to CPDH.guide</h2>
 
-Our primary mission is to provide the clear, actionable [**Metagame Data**](/meta/) you need to build better decks and understand the format. Our dynamic data displays give you a flowable view of what's winning right now.
-
-But data is only half the story. We're building a platform to celebrate the players and creators who make this format thrive. Check out our latest community-driven [**articles and PDH videos**](/articles/).
-
-In our [**Resources**](/resources/) section, you'll find everything you need to get started or get ahead — the official [PDH rules](/resources/rules/), links to essential tools like PDHREC, a growing [Decklist Library](/library), and a directory of [PDH content creators](/resources/content-creators/).
-
-Whether you're here to tune into our community or tune your latest deck, we're glad you're here.
+Compete in the ultimate Pauper Commander experience. Our year-long, ELO-based league is designed for agility—dynamic ranking means new challengers can storm the leaderboard at any time. Leverage our live metagame data to master the format, refine your deck, and prove your skill.
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5em;">
-  <a href="/meta/" class="btn btn--primary">Explore the Meta</a>
+  <a href="https://app.cpdh.guide" class="btn btn--primary">Join the League</a>
+  <a href="/meta/" class="btn btn--inverse">Explore the Meta</a>
   <a href="/articles/" class="btn btn--inverse">Read Articles</a>
   <a href="/resources/" class="btn btn--inverse">Resources</a>
 </div>

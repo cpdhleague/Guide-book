@@ -1,15 +1,14 @@
 <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-otra.png' | relative_url }}">
 <link rel="shortcut icon" href="{{ '/assets/images/favicon-otra.png' | relative_url }}">
 
-<!-- Google Fonts: Display + Heading + Body -->
+<!-- Google Fonts: Matching app.cpdh.guide font stack -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Reading Progress Bar (appears on article/post pages) -->
+<!-- Reading Progress Bar (article pages) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Only add progress bar on article pages (posts)
   var article = document.querySelector('.page__content');
   if (!article) return;
 
@@ -24,8 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var articleHeight = article.offsetHeight;
     var windowHeight = window.innerHeight;
     var scrolled = window.scrollY - articleTop + windowHeight;
-    var total = articleHeight;
-    var pct = Math.min(Math.max((scrolled / total) * 100, 0), 100);
+    var pct = Math.min(Math.max((scrolled / articleHeight) * 100, 0), 100);
     bar.style.width = pct + '%';
   });
 });

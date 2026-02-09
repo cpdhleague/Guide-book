@@ -78,7 +78,7 @@ header:
 
   <div style="flex: 1; min-width: 250px; text-align: center;">
     <h3 class="archive__subtitle">Contribute</h3>
-    <p style="color: var(--text-secondary, #9a9caa);">Have a deck tech, guide, or opinion piece? We'd love to feature your work.</p>
+    <p style="color: #9ca3af;">Have a deck tech, guide, or opinion piece? We'd love to feature your work.</p>
     <a href="/articles/submit-guide/" class="btn btn--success btn--large">Submit Your Guide</a>
   </div>
 

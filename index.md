@@ -54,7 +54,7 @@ header:
 Compete in the ultimate Pauper Commander experience. Our year-long, ELO-based league is designed for agility — dynamic ranking means new challengers can storm the leaderboard at any time. Beyond the ladder, level up your game with our expert articles and live data, or connect with fellow brewers in our Discord. Whether you're here to study the meta or join the fray, the path to victory is open.
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5em;">
-  <a href="https://app.cpdh.guide" class="btn btn--primary">Join the League</a>
+  <a href="https://app.cpdh.guide" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Join the League</a>
   <a href="/meta/" class="btn btn--inverse">Explore the Meta</a>
   <a href="/articles/" class="btn btn--inverse">Read Articles</a>
   <a href="/resources/" class="btn btn--inverse">Resources</a>

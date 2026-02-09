@@ -22,7 +22,7 @@ Welcome to your cPDH toolkit! Whether you are a new recruit or a seasoned grinde
 
   <div style="background: rgba(26,26,36,0.50); border: 1px solid rgba(58,58,74,0.50); border-radius: 12px; padding: 1.5em; transition: border-color 0.3s ease;">
     <h3 style="margin-top: 0; font-size: 1.1em;">🔍 PDHREC</h3>
-    <p style="color: #9ca3af; font-size: 0.95em;">Explore what the community is brewing with powerful search tools.</p>
+    <p style="color: #9ca3af; font-size: 0.95em;">Explore what the community is brewing and format staples.</p>
     <a href="https://www.pdhrec.com/" class="btn btn--primary" style="font-size: 0.85em;" target="_blank">Visit PDHREC →</a>
   </div>
 

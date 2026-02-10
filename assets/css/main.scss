@@ -214,7 +214,7 @@ hr { border: none; border-top: 1px solid var(--border-subtle); margin: 2.5em 0; 
   /* Optional: Spacing between logo and text if needed */
   display: inline-flex;
   align-items: center;
-  gap: 10px; 
+  gap: 6px; 
 }
 
 .greedy-nav {
@@ -871,4 +871,10 @@ table.library-table thead th {
 table.library-table tbody td {
   padding: 14px 24px;
   white-space: nowrap;
+}
+
+/* Add rounded corners to the header logo (iPhone app style) */
+.site-logo {
+  border-radius: 22% !important; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Optional: adds a subtle depth */
 }

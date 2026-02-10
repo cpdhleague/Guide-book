@@ -41,7 +41,7 @@ header:
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
     
-    <a href="{{ '//library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
     <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
 

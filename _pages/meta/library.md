@@ -917,74 +917,28 @@ header:
 </tbody>
     </table>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
 <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
 <script>
-    $(document).ready(function() {
-        // Clone the header row to create the input row
-        $('#libraryTable thead tr')
-            .clone(true)
-            .addClass('filter-row')
-            .appendTo('#libraryTable thead');
+    // --- THE FIX ---
+    // 1. We name our version of jQuery '$j' so it doesn't fight the website.
+    // 2. We verify everything is loaded before running.
+    var $j = jQuery.noConflict(true); 
 
-        $('#libraryTable').DataTable({
+    $j(document).ready(function() {
+        $j('#libraryTable').DataTable({
             responsive: true,
             pageLength: 25,
-            order: [[ 6, "desc" ]], // Default Sort: Date
+            order: [[ 6, "desc" ]], // Sort by Date (Column 6) descending
             columnDefs: [
-                { type: 'date', targets: 6 },
-                { orderable: false, targets: 0 } // Disable sorting on the "Link" column
+                { type: 'date', targets: 6 }, 
+                { orderable: false, targets: 0 } // Don't sort by the "Link" button
             ],
             language: {
-                search: "_INPUT_",
-                searchPlaceholder: "Search all columns..."
-            },
-            
-            // Logic to create Dropdowns for specific columns
-            initComplete: function () {
-                var api = this.api();
-
-                // For each column in the second header row
-                api.columns().every(function (colIdx) {
-                    var column = this;
-                    var headerCell = $('.filter-row th').eq(column.index());
-                    var title = $(headerCell).text();
-
-                    // CLEAR existing text in the filter row
-                    headerCell.empty();
-
-                    // 1. If it's the Identity (4) or Strategy (5) column -> Create Dropdown
-                    if (colIdx === 4 || colIdx === 5) {
-                        var select = $('<select class="column-search-select"><option value="">All ' + title + '</option></select>')
-                            .appendTo(headerCell)
-                            .on('change', function () {
-                                var val = $.fn.dataTable.util.escapeRegex($(this).val());
-                                column.search(val ? '^' + val + '$' : '', true, false).draw();
-                            });
-
-                        // Populate the dropdown with unique values from the column data
-                        column.data().unique().sort().each(function (d, j) {
-                            // Strip HTML tags if necessary, though simpler is better
-                            var textContent = $('<div>').html(d).text(); 
-                            select.append('<option value="' + textContent + '">' + textContent + '</option>');
-                        });
-                    } 
-                    // 2. If it's Date, Link, or others -> Leave empty or add text input?
-                    // Let's leave Link (0) and Date (6) empty to keep it clean.
-                    // Let's add text search for Commander (1), Event (2), Player (3)
-                    else if (colIdx === 1 || colIdx === 2 || colIdx === 3) {
-                         var input = $('<input type="text" placeholder="Filter..." class="column-search-input" />')
-                            .appendTo(headerCell)
-                            .on('keyup change clear', function () {
-                                if (column.search() !== this.value) {
-                                    column.search(this.value).draw();
-                                }
-                            });
-                    }
-                });
+                search: "Filter Library:",
+                searchPlaceholder: "Search Commander, Color, Strategy..."
             }
         });
     });

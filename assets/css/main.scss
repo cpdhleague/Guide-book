@@ -815,3 +815,15 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
   }
   body { background: #fff !important; color: #000 !important; }
 }
+
+
+/* FIX: Force the navigation bar to stay on top of all other content */
+.masthead {
+  position: relative;
+  z-index: 1000 !important; /* This was previously 1, causing the menu to hide behind content */
+}
+
+/* Ensure the mobile dropdown specifically floats above everything */
+.greedy-nav .visible-links {
+  z-index: 1001 !important;
+}

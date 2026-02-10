@@ -26,7 +26,7 @@ header:
   <p style="margin-bottom: 20px;">Check out specific breakdowns and historical records.</p>
   
   <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-    <a href="{{ '/meta/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
+    <a href="{{ '/library/' | relative_url }}" class="btn btn--primary btn--large">🏆 Decklist Library</a>
     
     <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
 

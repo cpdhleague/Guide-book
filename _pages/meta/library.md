@@ -8,206 +8,1216 @@ header:
   overlay_filter: 0.5
 ---
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+
 <style>
-  /* Container to ensure full width usage, but centered if it hits max-width */
-  .library-container {
-    width: 100%;
-    max-width: 1400px; /* Cap the width so it doesn't get absurdly wide on 4k screens */
-    margin: 0 auto;    /* Centers the table if the screen is wider than max-width */
-  }
-
-  /* The Table Style */
-  .library-container table {
-    width: 100%;
-    border-collapse: collapse;
-    /* KEY CHANGE: Fixed layout respects our width percentages strictly */
-    table-layout: fixed; 
-  }
-
-  /* Header and Cell Styling */
-  .library-container th, 
-  .library-container td {
-    /* FLUID TYPOGRAPHY: 
-       adjusted to be slightly smaller and more manageable than the last version
-       Min: 14px, Ideal: 1.2vw, Max: 18px
-    */
-    font-size: clamp(0.9rem, 1.2vw, 1.15rem);
-    padding: 1em 0.8em; /* More vertical breathing room */
-    border-bottom: 1px solid #3a3a4a;
-    vertical-align: middle; /* Ensures text aligns nicely if one row is taller */
-    word-wrap: break-word; /* IMPORTANT: Lets long names wrap to next line instead of breaking layout */
-  }
-
-  /* Header specific styling */
-  .library-container th {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #e5e5e7; /* Pale */
-    background: #12121a; /* Abyss */
-    letter-spacing: 0.05em;
-    text-align: center; /* Default center for headers */
-  }
-
-  /* --- COLUMN WIDTHS (The 2:1:1:1 Ratio) --- */
-
-  /* Column 1: Commander (40% width - The "2 units") */
-  .library-container th:nth-child(1),
-  .library-container td:nth-child(1) {
-    width: 40%; 
-    text-align: left; /* Keep names left-aligned for readability */
-    font-weight: 600;
-    color: #a78bfa; /* Arcane Glow */
-  }
-
-  /* Column 2: Identity (20% width - "1 unit") */
-  .library-container th:nth-child(2),
-  .library-container td:nth-child(2) {
-    width: 20%;
-    text-align: center;
-  }
-
-  /* Column 3: Strategy (20% width - "1 unit") */
-  .library-container th:nth-child(3),
-  .library-container td:nth-child(3) {
-    width: 20%;
-    text-align: center;
-  }
-
-  /* Column 4: Link (20% width - "1 unit") */
-  .library-container th:last-child,
-  .library-container td:last-child {
-    width: 20%;
-    text-align: center;
-  }
-
-  /* Links in the table */
-  .library-container a {
-    color: #ff6b35; /* Ember */
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
-  }
-  .library-container a:hover {
-    text-decoration: underline;
-    color: #ff8c5a;
-  }
+    /* Custom styles for the library table */
+    .library-container {
+        padding: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    #libraryTable {
+        width: 100% !important;
+        font-size: 0.95em;
+        border-collapse: collapse;
+    }
+    #libraryTable thead th {
+        background-color: #2c3e50;
+        color: #fff;
+        text-align: left;
+        padding: 12px;
+    }
+    #libraryTable tbody td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+    #libraryTable tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    #libraryTable tbody tr:hover {
+        background-color: #e9ecef;
+    }
+    /* Button style for links */
+    .btn-decklist {
+        display: inline-block;
+        padding: 6px 12px;
+        background-color: #2980b9;
+        color: white !important;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 0.85em;
+        transition: background 0.3s;
+    }
+    .btn-decklist:hover {
+        background-color: #1abc9c;
+    }
+    /* Mobile adjustments */
+    @media screen and (max-width: 600px) {
+        .library-container {
+            padding: 10px 0;
+        }
+        div.dataTables_wrapper div.dataTables_filter input {
+            width: 150px; /* Prevent search bar from breaking layout */
+        }
+    }
 </style>
 
-## Welcome to the Decklist Library
+<div class="library-container">
+    <table id="libraryTable" class="display responsive nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th data-priority="1">Commander</th>
+                <th data-priority="4">Identity</th>
+                <th data-priority="5">Strategy</th>
+                <th data-priority="3">Player</th>
+                <th data-priority="6">Event</th>
+                <th data-priority="7">Date</th>
+                <th data-priority="2">Link</th>
+            </tr>
+        </thead>
+        <tbody>
+<tr>
+        <td>Arabella, Abandoned Doll</td>
+        <td>Boros</td>
+        <td>Aggro</td>
+        <td>Clay</td>
+        <td>Common Cause X</td>
+        <td data-sort="20260207">2026-02-07</td>
+        <td><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-decklist">View</a></td>
+    </tr>
 
-This library features every commander to have placed in the Top 4 of a recorded cPDH tournament. To give you the most accurate data, each entry links directly to the pilot's original decklist where possible, giving you a direct look at what's winning.
+    <tr>
+        <td>Loyal Apprentice</td>
+        <td>Izzet</td>
+        <td>Aggro</td>
+        <td>Clay</td>
+        <td>Common Cause X</td>
+        <td data-sort="20260207">2026-02-07</td>
+        <td><a href="https://moxfield.com/decks/fJYMP6v2TEG_d_36iCcLgQ" target="_blank" class="btn-decklist">View</a></td>
+    </tr>
 
-<div class="library-container" markdown="1">
+    <tr>
+        <td>Gretchen Titchwillow</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Scarecrow1779</td>
+        <td>Common Cause X</td>
+        <td data-sort="20260207">2026-02-07</td>
+        <td><a href="https://moxfield.com/decks/ja_xsny7vkqgrJ088-Utug" target="_blank" class="btn-decklist">View</a></td>
+    </tr>
 
-| COMMANDER | IDENTITY | STRATEGY | LINK |
-| :--- | :--- | :--- | :--- |
-| Abdel Adrian, Gorion's Ward + Agent of the Iron Throne | Orzhov | Combo | [Decklist](https://moxfield.com/decks/ZUMlxGM5EEWu4gFtX-TzGg) |
-| Abdel Adrian, Gorion's Ward + Agent of the Iron Throne | Orzhov | Combo | [Decklist](https://moxfield.com/decks/Yr_wtHangUq7Lmhlli4fMw) |
-| Abdel Adrian, Gorion's Ward + Sword Coast Sailor | Azorius | Combo | [Decklist](https://moxfield.com/decks/bl8xsbwTsU-J0s1UZULYiQ) |
-| Abdel Adrian, Gorion's Ward + Sword Coast Sailor | Azorius | Combo | [Decklist](https://moxfield.com/decks/gobW0aiqQUGidavyGyw7_Q) |
-| Akiri, Fearless Voyager | Boros | Combo | [Decklist](https://topdeck.gg/deck/common-cause-10/nLq85ixdYgYv4eG9WxElvyu9Tg13) |
-| Arabella, Abandoned Doll | Boros | Aggro | [Decklist](https://www.moxfield.com/decks/PZI5L9zmCEuOBznPDzrqJQ) |
-| Arabella, Abandoned Doll ft. Hare Apparent | Boros | Aggro | [Decklist](https://topdeck.gg/deck/common-cause-10/gIWLOeFlI7ToRSCdb01OO3PQFRH2) |
-| Ardenn, Intrepid Archaeologist + Malcolm, Keen-Eyed Navigator | Azorius | Combo | [Decklist](https://moxfield.com/decks/OxGAVHRC8EmTbe4EBFL4Ig) |
-| Bilbo, Retired Burglar | Izzet | Midrange | [Decklist](https://moxfield.com/decks/hSNg0sbuS0mlxLfeE8bUlA) |
-| Bone-Cairn Butcher | Mardu | Aggro | [Decklist](https://topdeck.gg/deck/common-cause-10/FP8puQ4pEfYOXE6MzpxWkd0fT4t2) |
-| Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/Pu_fVLvYLUOxUfM6srUkow) |
-| Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator | Izzet | Midrange | [Decklist](https://moxfield.com/decks/ROR3Ll-bVU6L06KlOwZc2g) |
-| Cadira, Caller of the Small | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/an986JYA4ESWsy5iCtty1Q) |
-| Cyberman Patrol | Colorless | Midrange | [Decklist](https://www.moxfield.com/decks/f2Pyemv2zk-uGi5atTXG4w) |
-| Dargo, the Shipwrecker + Kediss, Emberclaw Familiar | Red | Aggro | [Decklist](https://moxfield.com/decks/Sv5hMA-I806ArpyKom7AAg) |
-| Dargo, the Shipwrecker + Keskit, the Flesh Sculptor | Rakdos | Combo | [Decklist](https://moxfield.com/decks/ldWBKTilHEStYfnztmdI_Q) |
-| Dargo, the Shipwrecker + Keskit, the Flesh Sculptor | Rakdos | Combo | [Decklist](https://moxfield.com/decks/CR0NHcwhUESrTax5qO2sJA) |
-| Dargo, the Shipwrecker + Malcolm, Keen-Eyed Navigator | Izzet | Combo | [Decklist](https://www.moxfield.com/decks/VXn-nHJHCki5mCQHIX32Xg) |
-| Disciple of Deceit | Dimir | Combo | [Decklist](https://moxfield.com/decks/hAo1bvF2LUaGP1j0hyHzHg) |
-| Disciple of Deceit | Dimir | Combo | [Decklist](https://moxfield.com/decks/NnC5pANZI0SnuysrAvyOuw) |
-| Diviner Spirit | Blue | Voltron | [Decklist](https://www.moxfield.com/decks/NtDtHwhfF0WqVqEuaZ7EfA) |
-| Erinis, Gloom Stalker + Street Urchin | Gruul | Control | [Decklist](https://www.moxfield.com/decks/ONYzU8zGnE-vGql05-3KqQ) |
-| Fynn, the Fangbearer | Green | Aggro | [Decklist](https://moxfield.com/decks/HMve6vBIIk-QyT7_D_vxbA) |
-| Ganax, Astral Hunter + Feywild Visitor | Izzet | Midrange | [Decklist](https://topdeck.gg/deck/common-cause-10/vscTibDw7BfFtSJFRbBlFkaJmtk1) |
-| Ghost of Ramirez DePietro + Tormod, the Desecrator | Dimir | Control | [Decklist](https://moxfield.com/decks/kPEgKbFNe0yZPXp5D0sB_A) |
-| Gilanra, Caller of Wirewood + Numa, Joraga Chieftain | Green | Midrange | [Decklist](https://moxfield.com/decks/IaiX4ShuMUydmcxniMzCUg) |
-| Glaring Fleshraker | Colorless | Combo | [Decklist](https://www.moxfield.com/decks/UAIeiIOWok--5rpoi7kCrA) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/qp8i-fp01EOlRfSc4qXH0Q) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/9NynA609AkWFdJim94kKNg) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/BB45YbVrg06lj3Fc9C4C-w) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/S134dNSTy0SiFND5610K2Q) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/C2SPUw5rCEGYqyJnQ6nnqw?ut) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/LC5EhCv4W0-l34IyF8oxzg) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/sxzp3LVZT0mKm_WLaykXuQ) |
-| Gretchen Titchwillow | Simic | Combo | [Decklist](https://moxfield.com/decks/C2SPUw5rCEGYqyJnQ6nnqw) |
-| Gut, True Soul Zealot + Inspiring Leader | Boros | Aggro | [Decklist](https://moxfield.com/decks/EBN9baXZ1E64jJWf05OvQw) |
-| Halana, Kessig Ranger + Toggo, Goblin Weaponsmith | Gruul | Control | [Decklist](https://moxfield.com/decks/PiP1I_YilEGElbJDaV-S3w) |
-| Heartfire Hero | Red | Aggro | [Decklist](https://moxfield.com/decks/1LCewKgqSEyu1INcOGAA0A) |
-| Hollow Marauder | Black | Control | [Decklist](https://www.moxfield.com/decks/eYZSyMKhK0u5XlNsbnanug) |
-| Honest Rutstein | Golgari | Midrange | [Decklist](https://topdeck.gg/deck/free-pauper-commander-tournament/UY3rayeh6UhzYDlIPUr0F1FVwyc2) |
-| Horrid Shadowspinner | Dimir | Combo | [Decklist](https://moxfield.com/decks/1CGT-HOhdEymjFyFGAcOeg) |
-| Imoen, Mystic Trickster + Criminal Past | Dimir | Midrange | [Decklist](https://moxfield.com/decks/2--Ih4wTPkKJ8nxPnNSEnQ) |
-| Juri, Master of the Revue | Rakdos | Midrange | [Decklist](https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw) |
-| Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator | Izzet | Combo | [Decklist](https://www.moxfield.com/decks/3FpPdVfP0U-Evf9m6QPXGA) |
-| Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator | Izzet | Combo | [Decklist](https://moxfield.com/decks/oXbkSrbw1kKMnHJDnhNF3g) |
-| Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator | Izzet | Combo | [Decklist](https://moxfield.com/decks/j1S3GhgWPkixFyvOXYYBVA) |
-| Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator | Izzet | Combo | [Decklist](https://moxfield.com/decks/a6QRhLaha0-ZipO9E-ZBEQ) |
-| Knotvine Mystic | Naya | Midrange | [Decklist](https://moxfield.com/decks/wpRRrpJJdEWczwF6S_PlUA) |
-| Kutzil, Malamet Exemplar | Selesnya | Midrange | [Decklist](https://moxfield.com/decks/9tGroGXxD0Gy0WDQ6mTLxA) |
-| Lagrella, the Magpie | Bant | Combo | [Decklist](https://topdeck.gg/deck/free-pauper-commander-tournament/kB0YyPVCo8XWy4sVeZ3m3Wje98k1) |
-| Lazav, Familiar Stranger | Dimir | Voltron | [Decklist](https://moxfield.com/decks/xvyNpNC6A0aPNqMRGTLK9w) |
-| Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/aUJ-X8ltOkmbEdZSmKQ3zQ) |
-| Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/8JCLvQyWSEmV6wtnaA4qrQ) |
-| Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ) |
-| Ley Weaver + Lore Weaver | Simic | Combo | [Decklist](httpsMoxfield/decks/3eI3t4xksUixg-fwPnVncA) |
-| Long Feng, Grand Secretariat | Golgari | Combo | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/atJqz3FPb5R4oK7Vnfu67weNTb93) |
-| Lorehold Apprentice | Boros | Midrange | [Decklist](https://www.moxfield.com/decks/MY6Wv-mWnUmFwDSoAiv13Q) |
-| Loyal Apprentice | Red | Aggro | [Decklist](https://www.moxfield.com/decks/ufYjl-QfH0uvY-EugYNhAg) |
-| Lumberknot | Green | Midrange | [Decklist](https://www.moxfield.com/decks/hyOgwcLUbE6OX8VRYkhttg) |
-| Malcolm, Keen-Eyed Navigator + Rograkh, Son of Rohgahh | Izzet | Combo | [Decklist](https://www.moxfield.com/decks/lEZAnF9uik6IdMeqY-JxoQ) |
-| Mystic Enforcer | Selesnya | Voltron | [Decklist](https://www.moxfield.com/decks/rXJ5AkJA8EeDC6MLE6vwiw) |
-| Oji, the Exquisite Blade | Azorius | Midrange | [Decklist](https://moxfield.com/decks/XF_kbWFhXEC_u6i5p8spWA) |
-| Patchwork Automaton | Colorless | Voltron | [Decklist](https://www.moxfield.com/decks/8XK59D5RmUKlgrK_H4EkcA) |
-| Raff, Weatherlight Stawart | Azorius | Control | [Decklist](https://www.moxfield.com/decks/LSNefRJe20Ckf34lPfJPUw) |
-| Rilsa Rael, Kingpin | Dimir | Midrange | [Decklist](https://www.moxfield.com/decks/ptDs_HP6mEyOJENDj2mE_A) |
-| Risen Reef | Simic | Midrange | [Decklist](https://www.moxfield.com/decks/1sDi-9JZoEq9A7HFL4XegA) |
-| Rocketeer Boostbuggy | Gruul | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/q9Ki57T7fEdJaMPol5rr0e2Znar2) |
-| Satyr Enchanter | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/SaKWDQYvmE6iEsHJ_WJzpg) |
-| Scholar of the Ages | Blue | Combo | [Decklist](https://moxfield.com/decks/tmMplRiiQU6p6DzssHzy2g) |
-| Shao Jun | Izzet | Midrange | [Decklist](https://moxfield.com/decks/YPbNuTKcLU24gZ7Z-uhzvA) |
-| Shao Jun | Izzet | Midrange | [Decklist](https://moxfield.com/decks/abaRtSFfKEyuX5POke7MRA) |
-| Sivriss, Nightmare Speaker + Cloakwood Hermit | Golgari | Midrange | [Decklist](https://www.moxfield.com/decks/AIn0u7bqc06raB-75tkLCg) |
-| Skirmish Rhino | Abzan | Combo | [Decklist](https://moxfield.com/decks/BW8_OJXw70KLvJstGhfTDQ) |
-| Sphinx Summoner | Dimir | Combo | [Decklist](https://www.moxfield.com/decks/fYZKUOMj_EqeNMCvH5leww) |
-| Sprite Dragon | Izzet | Voltron | [Decklist](https://www.moxfield.com/decks/mkvjgoEQwEanpo6EdAwuqQ) |
-| Syr Konrad, the Grim | Black | Control | [Decklist](https://moxfield.com/decks/wIJvB0XAfUeRsyK_DRVqoA) |
-| Tatyova, Benthic Druid | Simic | Combo | [Decklist](https://www.moxfield.com/decks/7Jzp4PEWdU6iYRpDi9_GDQ) |
-| Tatyova, Benthic Druid | Simic | Combo | [Decklist](https://www.moxfield.com/decks/7Jzp4PEWdU6iYRpDi9_GDQ) |
-| Tatyova, Benthic Druid | Simic | Combo | [Decklist](https://moxfield.com/decks/M3p9X9kVNUy7ZGhfQmeyQg) |
-| Terravore | Green | Midrange | [Decklist](https://moxfield.com/decks/ypO7zk3rckmOdaMUppAN-A) |
-| Teshar, Ancestor's Apostle | White | Combo | [Decklist](https://www.moxfield.com/decks/ADy_WV-dlE2BVObDpDZBOQ) |
-| The Emperor of Palamecia // The Lord Master of Hell | Izzet | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/xA5c35JHdoefe1dH5RRJMPIerCG2) |
-| Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/EQeyjAlsNESZzB6rboqgDg) |
-| Third Path Iconoclast | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/H5YMtjnOPEGW6AcxlO_TIQ) |
-| Trygon Prime | Simic | Midrange | [Decklist](https://moxfield.com/decks/-67pN4-VfUyLlyVEAF8Hag) |
-| Veteran Beastrider | Selesnya | Midrange | [Decklist](https://topdeck.gg/deck/cpdh-commander-clash-2025/RF01KBbpm5h2JMkwqdzbDuLWKo12) |
-| Vhal, Candlekeep Researcher + Agent of the Shadow Thieves | Dimir | Combo | [Decklist](https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A) |
-| Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://www.moxfield.com/decks/d3s7EXKyeEmy1A2livtmHQ) |
-| Vizkopa Guildmage | Orzhov | Combo | [Decklist](https://moxfield.com/decks/GMJDy-NfwUOyVfXqLCxtnw) |
-| Wilson, Refined Grizzly + Far Traveler | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/tVgoCMX4C0yfHxDL7RpNAw) |
-| Young Pyromancer | Red | Aggro | [Decklist](https://www.moxfield.com/decks/mWP7zKIjXEOeylb-X-0jJg) |
-| Zada, Hedron Grinder | Red | Aggro | [Decklist](https://moxfield.com/decks/jWnufsB3SEuXFXfUjszZ3g) |
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Riches to Rags V</td>
+        <td data-sort="20250316">2025-03-16</td>
+        <td>Decklist</td>
+    </tr>
 
+    <tr>
+        <td>Veteran Beastrider</td>
+        <td>Selesnya</td>
+        <td>Midrange</td>
+        <td>Scarecrow1779</td>
+        <td>CPDH Commander Clash I</td>
+        <td data-sort="20251213">2025-12-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Rocketeer Boostbuggy</td>
+        <td>Gruul</td>
+        <td>Midrange</td>
+        <td>Alkadron</td>
+        <td>CPDH Commander Clash I</td>
+        <td data-sort="20251213">2025-12-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>The Emperor of Palamecia // The Lord Master of Hell</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Russell  Harder</td>
+        <td>CPDH Commander Clash I</td>
+        <td data-sort="20251213">2025-12-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Long Feng, Grand Secretariat</td>
+        <td>Golgari</td>
+        <td>Combo</td>
+        <td>myra</td>
+        <td>CPDH Commander Clash I</td>
+        <td data-sort="20251213">2025-12-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Honest Rutstein</td>
+        <td>Golgari</td>
+        <td>Midrange</td>
+        <td>Brandon White</td>
+        <td>AllThatGames I</td>
+        <td data-sort="20251019">2025-10-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Narfi, Betrayer King</td>
+        <td>Dimir</td>
+        <td>Control</td>
+        <td>Scarecrow1779</td>
+        <td>AllThatGames I</td>
+        <td data-sort="20251019">2025-10-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Paul</td>
+        <td>AllThatGames I</td>
+        <td data-sort="20251019">2025-10-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>AllThatGames I</td>
+        <td data-sort="20251019">2025-10-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Liam</td>
+        <td>Common Cause IX</td>
+        <td data-sort="20250816">2025-08-16</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause IX</td>
+        <td data-sort="20250816">2025-08-16</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Common Cause IX</td>
+        <td data-sort="20250816">2025-08-16</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Zada, Hedron Grinder</td>
+        <td>Red</td>
+        <td>Combo</td>
+        <td>Liam</td>
+        <td>Riches to Rags IV</td>
+        <td data-sort="20250810">2025-08-10</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Etali, Primal Storm</td>
+        <td>Red</td>
+        <td>Midrange</td>
+        <td>Scarecrow1779</td>
+        <td>Riches to Rags IV</td>
+        <td data-sort="20250810">2025-08-10</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Wilson, Refined Grizzly + Cultist of the Absolute</td>
+        <td>Golgari</td>
+        <td>Midrange</td>
+        <td>Flicker729</td>
+        <td>Riches to Rags IV</td>
+        <td data-sort="20250810">2025-08-10</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
+        <td>Orzhov</td>
+        <td>Combo</td>
+        <td>Heartless</td>
+        <td>The Pauper Pit I</td>
+        <td data-sort="20240928">2024-09-28</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Arabella, Abandoned Doll</td>
+        <td>Boros</td>
+        <td>Aggro</td>
+        <td>Shakur W</td>
+        <td>The Pauper Pit I</td>
+        <td data-sort="20240928">2024-09-28</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Kutzil, Malamet Exemplar</td>
+        <td>Selesnya</td>
+        <td>Aggro</td>
+        <td>Lobbert</td>
+        <td>The Pauper Pit I</td>
+        <td data-sort="20240928">2024-09-28</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Flicker729</td>
+        <td>The Pauper Pit I</td>
+        <td data-sort="20240928">2024-09-28</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause VIII</td>
+        <td data-sort="20240615">2024-06-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Common Cause VIII</td>
+        <td data-sort="20240615">2024-06-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Sivriss, Nightmare Speaker + Cloakwood Hermit</td>
+        <td>Golgari</td>
+        <td>Midrange</td>
+        <td>Dino</td>
+        <td>Common Cause VIII</td>
+        <td data-sort="20240615">2024-06-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Common Cause VIII</td>
+        <td data-sort="20240615">2024-06-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Sivriss, Nightmare Speaker + Cloakwood Hermit</td>
+        <td>Golgari</td>
+        <td>Midrange</td>
+        <td>Liam</td>
+        <td>Common Cause VIII</td>
+        <td data-sort="20240615">2024-06-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gretchen Titchwillow</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Bobby</td>
+        <td>RIW II</td>
+        <td data-sort="20240727">2024-07-27</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Vhal, Candlekeep Researcher + Agent of the Shadow Thieves</td>
+        <td>Dimir</td>
+        <td>Combo</td>
+        <td>TonisBolognis</td>
+        <td>RIW II</td>
+        <td data-sort="20240727">2024-07-27</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Wilson, Refined Grizzly + Far Traveler</td>
+        <td>Selesnya</td>
+        <td>Midrange</td>
+        <td>HiveCryptid</td>
+        <td>RIW II</td>
+        <td data-sort="20240727">2024-07-27</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gretchen Titchwillow</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Scarecrow1779</td>
+        <td>RIW II</td>
+        <td data-sort="20240727">2024-07-27</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Young Pyromancer</td>
+        <td>Red</td>
+        <td>Aggro</td>
+        <td>Peter Young</td>
+        <td>Cloudy Commons I</td>
+        <td data-sort="20250517">2025-05-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylon A</td>
+        <td>Cloudy Commons I</td>
+        <td data-sort="20250517">2025-05-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Cloudy Commons I</td>
+        <td data-sort="20250517">2025-05-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Tyler J</td>
+        <td>Cloudy Commons I</td>
+        <td data-sort="20250517">2025-05-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Riches to Rags III</td>
+        <td data-sort="20240414">2024-04-14</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Inspiring Leader</td>
+        <td>Boros</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Riches to Rags III</td>
+        <td data-sort="20240414">2024-04-14</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Riches to Rags III</td>
+        <td data-sort="20240414">2024-04-14</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Soul of Migration</td>
+        <td>Azorius</td>
+        <td>Midrange</td>
+        <td>Scarecrow1779</td>
+        <td>Riches to Rags III</td>
+        <td data-sort="20240414">2024-04-14</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH VIII</td>
+        <td data-sort="20250215">2025-02-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Mayhem Devil</td>
+        <td>Rakdos</td>
+        <td>Midrange</td>
+        <td>Julian</td>
+        <td>Sanctuary PDH VIII</td>
+        <td data-sort="20250215">2025-02-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Bilbo, Retired Burglar</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ginger Persolus</td>
+        <td>Sanctuary PDH VIII</td>
+        <td data-sort="20250215">2025-02-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Sanctuary PDH VIII</td>
+        <td data-sort="20250215">2025-02-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH VII</td>
+        <td data-sort="20240824">2024-08-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Scarecrow1779</td>
+        <td>Sanctuary PDH VII</td>
+        <td data-sort="20240824">2024-08-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Mayhem Devil</td>
+        <td>Rakdos</td>
+        <td>Midrange</td>
+        <td>Julian</td>
+        <td>Sanctuary PDH VII</td>
+        <td data-sort="20240824">2024-08-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Sanctuary PDH VII</td>
+        <td data-sort="20240824">2024-08-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Nolan S</td>
+        <td>Sanctuary PDH VI</td>
+        <td data-sort="20240406">2024-04-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Sanctuary PDH VI</td>
+        <td data-sort="20240406">2024-04-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Crackling Drake</td>
+        <td>Izzet</td>
+        <td>Combo</td>
+        <td>Julian</td>
+        <td>Sanctuary PDH VI</td>
+        <td data-sort="20240406">2024-04-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH VI</td>
+        <td data-sort="20240406">2024-04-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Sanctuary PDH V</td>
+        <td data-sort="20240113">2024-01-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH V</td>
+        <td data-sort="20240113">2024-01-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Scarecrow1779</td>
+        <td>Sanctuary PDH V</td>
+        <td data-sort="20240113">2024-01-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Murmuring Mystic</td>
+        <td>Mono U</td>
+        <td>Control</td>
+        <td>Lobbert</td>
+        <td>Sanctuary PDH V</td>
+        <td data-sort="20240113">2024-01-13</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Sanctuary PDH IV</td>
+        <td data-sort="20231125">2023-11-25</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Kutzil, Malamet Exemplar</td>
+        <td>Selesnya</td>
+        <td>Midrange</td>
+        <td>Lobbert</td>
+        <td>Sanctuary PDH IV</td>
+        <td data-sort="20231125">2023-11-25</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH IV</td>
+        <td data-sort="20231125">2023-11-25</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Scarecrow1779</td>
+        <td>Sanctuary PDH IV</td>
+        <td data-sort="20231125">2023-11-25</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
+        <td>Orzhov</td>
+        <td>Combo</td>
+        <td>uyokonoyami</td>
+        <td>Common Cause VI</td>
+        <td data-sort="20241109">2024-11-09</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Abdel Adrian, Gorion’s Ward + Sword Coast Sailor</td>
+        <td>Azorius</td>
+        <td>Combo</td>
+        <td>PurplePenguinJo</td>
+        <td>Common Cause VI</td>
+        <td data-sort="20241109">2024-11-09</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause VI</td>
+        <td data-sort="20241109">2024-11-09</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Scarecrow1779</td>
+        <td>Common Cause VI</td>
+        <td data-sort="20241109">2024-11-09</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Abdel Adrian, Gorion’s Ward + Sword Coast Sailor</td>
+        <td>Azorius</td>
+        <td>Combo</td>
+        <td>Kunx</td>
+        <td>Sanctuary PDH III</td>
+        <td data-sort="20231104">2023-11-04</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Ardenn, Intrepid Archaeologist + Malcolm, Keen-Eyed Navigator</td>
+        <td>Azorius</td>
+        <td>Combo</td>
+        <td>Chinaman</td>
+        <td>Sanctuary PDH III</td>
+        <td data-sort="20231104">2023-11-04</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH III</td>
+        <td data-sort="20231104">2023-11-04</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Sanctuary PDH III</td>
+        <td data-sort="20231104">2023-11-04</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Scarecrow1779</td>
+        <td>Common Cause V</td>
+        <td data-sort="20240217">2024-02-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause V</td>
+        <td data-sort="20240217">2024-02-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Common Cause V</td>
+        <td data-sort="20240217">2024-02-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Murmuring Mystic</td>
+        <td>Mono U</td>
+        <td>Control</td>
+        <td>Lobbert</td>
+        <td>Common Cause V</td>
+        <td data-sort="20240217">2024-02-17</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Common Cause IV</td>
+        <td data-sort="20231021">2023-10-21</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Flicker729</td>
+        <td>Common Cause IV</td>
+        <td data-sort="20231021">2023-10-21</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Warden of the Eye</td>
+        <td>Jeskai</td>
+        <td>Combo</td>
+        <td>Bosh</td>
+        <td>Common Cause IV</td>
+        <td data-sort="20231021">2023-10-21</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Common Cause IV</td>
+        <td data-sort="20231021">2023-10-21</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Vizkopa Guildmage</td>
+        <td>Orzhov</td>
+        <td>Combo</td>
+        <td>Dylan A</td>
+        <td>Riches to Rags II</td>
+        <td data-sort="20230312">2023-03-12</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Riches to Rags II</td>
+        <td data-sort="20230312">2023-03-12</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Riches to Rags II</td>
+        <td data-sort="20230312">2023-03-12</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Riches to Rags II</td>
+        <td data-sort="20230312">2023-03-12</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Vizkopa Guildmage</td>
+        <td>Orzhov</td>
+        <td>Combo</td>
+        <td>Scarecrow1779</td>
+        <td>RIW I</td>
+        <td data-sort="20230624">2023-06-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>RIW I</td>
+        <td data-sort="20230624">2023-06-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>RIW I</td>
+        <td data-sort="20230624">2023-06-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Murmuring Mystic</td>
+        <td>Mono U</td>
+        <td>Control</td>
+        <td>Lobbert</td>
+        <td>RIW I</td>
+        <td data-sort="20230624">2023-06-24</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Mayhem Devil</td>
+        <td>Rakdos</td>
+        <td>Midrange</td>
+        <td>Julian</td>
+        <td>Sanctuary PDH II</td>
+        <td data-sort="20230722">2023-07-22</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Sanctuary PDH II</td>
+        <td data-sort="20230722">2023-07-22</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH II</td>
+        <td data-sort="20230722">2023-07-22</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Sanctuary PDH II</td>
+        <td data-sort="20230722">2023-07-22</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause III</td>
+        <td data-sort="20230819">2023-08-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Common Cause III</td>
+        <td data-sort="20230819">2023-08-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Loyal Apprentice</td>
+        <td>Izzet</td>
+        <td>Aggro</td>
+        <td>Clay</td>
+        <td>Common Cause III</td>
+        <td data-sort="20230819">2023-08-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Common Cause III</td>
+        <td data-sort="20230819">2023-08-19</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Common Cause II</td>
+        <td data-sort="20230520">2023-05-20</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Flicker729</td>
+        <td>Common Cause II</td>
+        <td data-sort="20230520">2023-05-20</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Murmuring Mystic</td>
+        <td>Mono U</td>
+        <td>Control</td>
+        <td>Lobbert</td>
+        <td>Common Cause II</td>
+        <td data-sort="20230520">2023-05-20</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Common Cause II</td>
+        <td data-sort="20230520">2023-05-20</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Ghost of Ramirez DePietro + Armix, Filigree Thrasher</td>
+        <td>Dimir</td>
+        <td>Midrange</td>
+        <td>Julian</td>
+        <td>Sanctuary PDH I</td>
+        <td data-sort="20230506">2023-05-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Sanctuary PDH I</td>
+        <td data-sort="20230506">2023-05-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Sanctuary PDH I</td>
+        <td data-sort="20230506">2023-05-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Zack</td>
+        <td>Sanctuary PDH I</td>
+        <td data-sort="20230506">2023-05-06</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Cloudy Commons II</td>
+        <td data-sort="20230415">2023-04-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Cloudy Commons II</td>
+        <td data-sort="20230415">2023-04-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Cloudy Commons II</td>
+        <td data-sort="20230415">2023-04-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Tatyova, Benthic Druid</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td>Crash</td>
+        <td>Cloudy Commons II</td>
+        <td data-sort="20230415">2023-04-15</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Third Path Iconoclast</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td>Ross Berkowitz</td>
+        <td>Riches to Rags I</td>
+        <td data-sort="20230101">2023-01-01</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Mayhem Devil</td>
+        <td>Rakdos</td>
+        <td>Midrange</td>
+        <td>Julian</td>
+        <td>Riches to Rags I</td>
+        <td data-sort="20230101">2023-01-01</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Riches to Rags I</td>
+        <td data-sort="20230101">2023-01-01</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Riches to Rags I</td>
+        <td data-sort="20230101">2023-01-01</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Soul of Migration</td>
+        <td>Azorius</td>
+        <td>Midrange</td>
+        <td>Scarecrow1779</td>
+        <td>Common Cause I</td>
+        <td data-sort="20230218">2023-02-18</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Flicker729</td>
+        <td>Common Cause I</td>
+        <td data-sort="20230218">2023-02-18</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Gut, True Soul Zealot + Agent of the Iron Throne</td>
+        <td>Rakdos</td>
+        <td>Aggro</td>
+        <td>Dylan A</td>
+        <td>Common Cause I</td>
+        <td data-sort="20230218">2023-02-18</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Rakdos</td>
+        <td>Combo</td>
+        <td>Zack</td>
+        <td>Common Cause I</td>
+        <td data-sort="20230218">2023-02-18</td>
+        <td>Decklist</td>
+    </tr>
+
+    <tr>
+        <td>Izzet Guildmage</td>
+        <td>Izzet</td>
+        <td>Combo</td>
+        <td>Trafton</td>
+        <td>PDH Tourney - Mainberg I</td>
+        <td data-sort="20230826">2023-08-26</td>
+        <td><a href="https://moxfield.com/decks/aZ-sF7xauUKBogcA3wQCdg" target="_blank" class="btn-decklist">View</a></td>
+    </tr>
+
+        </tbody>
+    </table>
 </div>
 
-<hr style="margin: 3em 0;">
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
 
-<div style="text-align: center; margin-bottom: 4em;">
-  <h3>Explore Deeper</h3>
-  
-  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-    
-    <a href="{{ '/meta/top10timeline/' | relative_url }}" class="btn btn--primary btn--large">📈 Historical Top 10</a>
-
-    <a href="{{ '/meta/seeyourstats/' | relative_url }}" class="btn btn--primary btn--large">🔎 See Your Stats</a>
-
-    <a href="{{ '/meta/' | relative_url }}" class="btn btn--inverse btn--large">↩ Back to Meta</a>
-    
-  </div>
-</div>
+<script>
+    $(document).ready(function() {
+        $('#libraryTable').DataTable({
+            responsive: true,
+            pageLength: 25,
+            order: [[ 5, "desc" ]], // Sort by Date (index 5) descending by default
+            columnDefs: [
+                { type: 'date', targets: 5 } // Ensure Date column is treated as date
+            ],
+            language: {
+                search: "Filter records:"
+            }
+        });
+    });
+</script>

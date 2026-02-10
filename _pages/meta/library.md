@@ -8,120 +8,133 @@ header:
 ---
 
 <style>
-    /* --- 1. The Container "Breakout" --- */
-    /* This wrapper ensures the table can scroll on mobile */
-    .table-wrapper {
-        width: 100%;
-        overflow-x: auto; /* Adds scrollbar ONLY if needed (mobile) */
-        margin-bottom: 2em;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    /* --- 1. THE BREAKOUT CONTAINER --- */
+    /* This forces the container to ignore the max-width of the page 
+       and stretch to the absolute edges of the browser window (100vw). */
+    .decklist-breakout {
+        width: 100vw; 
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: #1a1a1a; /* Dark background behind table */
+        padding: 0;
+        overflow: hidden; /* No scrollbars allowed */
     }
 
-    /* --- 2. The Table Styling --- */
-    .simple-deck-table {
-        width: 100%;          /* Force full width */
-        min-width: 600px;     /* Minimum width to prevent crushing content */
-        border-collapse: collapse; /* Removes gaps between cells */
-        background-color: #2d2d2d;
+    /* --- 2. THE FLUID TABLE (Behaves like an Image) --- */
+    .fluid-deck-table {
+        width: 100%;           
+        table-layout: fixed;   /* CRITICAL: Forces columns to split space evenly/fluidly */
+        border-collapse: collapse;
         color: #e0e0e0;
-        font-size: 0.95em;
-        border-radius: 8px;   /* Rounded corners if the container allows */
-        overflow: hidden;
+        
+        /* THE MAGIC: Font size scales with screen width.
+           Min: 10px (so it's readable on phone)
+           Ideal: 1.1% of screen width
+           Max: 16px (so it's not huge on TV screens) */
+        font-size: clamp(10px, 1.1vw, 16px); 
     }
 
     /* Header Styling */
-    .simple-deck-table thead th {
-        background-color: #1a1a1a;
+    .fluid-deck-table thead th {
+        background-color: #121212;
         color: #ffffff;
         text-align: left;
-        padding: 14px 12px;
+        padding: 1em 0.5em; /* Padding scales relative to font size */
         border-bottom: 2px solid #555;
-        white-space: nowrap; /* Keeps headers on one line */
+        white-space: nowrap; /* Prevent headers from wrapping awkwardly */
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     /* Row Styling */
-    .simple-deck-table tbody td {
-        padding: 12px;
+    .fluid-deck-table tbody td {
+        padding: 0.8em 0.5em;
         border-bottom: 1px solid #444;
         vertical-align: middle;
+        white-space: nowrap; /* Keep data on one line to act like an image */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Add "..." if screen is WAY too small */
     }
 
-    /* Alternating Row Colors (Optional, good for readability) */
-    .simple-deck-table tbody tr:nth-of-type(even) {
+    /* Alternating Colors */
+    .fluid-deck-table tbody tr:nth-of-type(even) {
+        background-color: #252525;
+    }
+    .fluid-deck-table tbody tr:hover {
         background-color: #333;
     }
 
-    /* Hover Effect */
-    .simple-deck-table tbody tr:hover {
-        background-color: #444;
-    }
+    /* --- 3. COLUMN WIDTH CONTROL --- */
+    /* We manually set widths so important columns (Commander) get more space 
+       and small columns (Date/Link) get less. Total must = 100% */
+    
+    .col-link     { width: 8%;  text-align: center; }
+    .col-cmdr     { width: 25%; }
+    .col-event    { width: 20%; }
+    .col-player   { width: 12%; }
+    .col-identity { width: 12%; }
+    .col-strategy { width: 12%; }
+    .col-date     { width: 11%; }
 
-    /* --- 3. The Button --- */
+    /* Button Styling */
     .btn-view {
         display: inline-block;
-        padding: 6px 14px;
+        padding: 0.3em 0.8em;
         background-color: #555;
         color: #fff !important;
         text-decoration: none;
         border-radius: 4px;
-        font-size: 0.85em;
         transition: background 0.2s;
     }
     .btn-view:hover {
         background-color: #777;
     }
-    
-    /* --- 4. THE "GAP" FIXER --- */
-    /* If your theme adds padding, use negative margins to pull the table to the edge */
-    @media (min-width: 800px) {
-        .full-width-breakout {
-            margin-left: -20px;  /* Adjust these numbers if there is still a gap */
-            margin-right: -20px;
-            width: calc(100% + 40px);
-        }
-    }
+
 </style>
 
-<div class="table-wrapper full-width-breakout">
-    <table class="simple-deck-table">
+<div class="decklist-breakout">
+    <table class="fluid-deck-table">
         <thead>
             <tr>
-                <th>Link</th>
-                <th>Commander</th>
-                <th>Event</th>
-                <th>Player</th>
-                <th>Identity</th>
-                <th>Strategy</th>
-                <th>Date</th>
+                <th class="col-link">Link</th>
+                <th class="col-cmdr">Commander</th>
+                <th class="col-event">Event</th>
+                <th class="col-player">Player</th>
+                <th class="col-identity">Identity</th>
+                <th class="col-strategy">Strategy</th>
+                <th class="col-date">Date</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-view">View</a></td>
-                <td>Arabella, Abandoned Doll</td>
-                <td>Common Cause X</td>
-                <td>Clay</td>
-                <td>Boros</td>
-                <td>Aggro</td>
-                <td>2026-02-07</td>
+                <td class="col-link"><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-view">View</a></td>
+                <td class="col-cmdr">Arabella, Abandoned Doll</td>
+                <td class="col-event">Common Cause X</td>
+                <td class="col-player">Clay</td>
+                <td class="col-identity">Boros</td>
+                <td class="col-strategy">Aggro</td>
+                <td class="col-date">2026-02-07</td>
             </tr>
             <tr>
-                <td><a href="https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw" target="_blank" class="btn-view">View</a></td>
-                <td>Juri, Master of the Revue</td>
-                <td>Riches to Rags I</td>
-                <td>Jacob Paris</td>
-                <td>Rakdos</td>
-                <td>Midrange</td>
-                <td>2022-10-31</td>
+                <td class="col-link"><a href="https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw" target="_blank" class="btn-view">View</a></td>
+                <td class="col-cmdr">Juri, Master of the Revue</td>
+                <td class="col-event">Riches to Rags I</td>
+                <td class="col-player">Jacob Paris</td>
+                <td class="col-identity">Rakdos</td>
+                <td class="col-strategy">Midrange</td>
+                <td class="col-date">2022-10-31</td>
             </tr>
-             <tr>
-                <td><a href="#" class="btn-view">View</a></td>
-                <td>Tivit, Seller of Secrets</td>
-                <td>The 3rd Event</td>
-                <td>Michael</td>
-                <td>Esper</td>
-                <td>Control</td>
-                <td>2025-01-15</td>
+            <tr>
+                <td class="col-link"><a href="#" class="btn-view">View</a></td>
+                <td class="col-cmdr">Tivit, Seller of Secrets</td>
+                <td class="col-event">The 3rd Event</td>
+                <td class="col-player">Michael</td>
+                <td class="col-identity">Esper</td>
+                <td class="col-strategy">Control</td>
+                <td class="col-date">2025-01-15</td>
             </tr>
         </tbody>
     </table>

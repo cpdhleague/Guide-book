@@ -9,30 +9,33 @@ header:
 ---
 
 <style>
-  /* Container to ensure full width usage */
+  /* Container to ensure full width usage, but centered if it hits max-width */
   .library-container {
     width: 100%;
-    max-width: 100%; /* Overrides some default theme constraints */
+    max-width: 1400px; /* Cap the width so it doesn't get absurdly wide on 4k screens */
+    margin: 0 auto;    /* Centers the table if the screen is wider than max-width */
   }
 
   /* The Table Style */
   .library-container table {
     width: 100%;
     border-collapse: collapse;
-    table-layout: auto; /* Allows columns to adjust based on content */
+    /* KEY CHANGE: Fixed layout respects our width percentages strictly */
+    table-layout: fixed; 
   }
 
   /* Header and Cell Styling */
   .library-container th, 
   .library-container td {
     /* FLUID TYPOGRAPHY: 
-       Min: 1rem (16px)
-       Ideal: 1.5vw (1.5% of screen width)
-       Max: 1.3rem (approx 21px) 
+       adjusted to be slightly smaller and more manageable than the last version
+       Min: 14px, Ideal: 1.2vw, Max: 18px
     */
-    font-size: clamp(1rem, 1.5vw, 1.3rem);
-    padding: 0.8em;
+    font-size: clamp(0.9rem, 1.2vw, 1.15rem);
+    padding: 1em 0.8em; /* More vertical breathing room */
     border-bottom: 1px solid #3a3a4a;
+    vertical-align: middle; /* Ensures text aligns nicely if one row is taller */
+    word-wrap: break-word; /* IMPORTANT: Lets long names wrap to next line instead of breaking layout */
   }
 
   /* Header specific styling */
@@ -42,31 +45,39 @@ header:
     color: #e5e5e7; /* Pale */
     background: #12121a; /* Abyss */
     letter-spacing: 0.05em;
+    text-align: center; /* Default center for headers */
   }
 
-  /* Column Specific Tweaks */
-  /* Give the Commander name (1st column) the most space */
+  /* --- COLUMN WIDTHS (The 2:1:1:1 Ratio) --- */
+
+  /* Column 1: Commander (40% width - The "2 units") */
   .library-container th:nth-child(1),
   .library-container td:nth-child(1) {
-    width: 45%;
+    width: 40%; 
+    text-align: left; /* Keep names left-aligned for readability */
     font-weight: 600;
-    color: #a78bfa; /* Arcane Glow for names */
+    color: #a78bfa; /* Arcane Glow */
   }
 
-  /* Center the middle columns for neatness */
+  /* Column 2: Identity (20% width - "1 unit") */
   .library-container th:nth-child(2),
-  .library-container td:nth-child(2),
+  .library-container td:nth-child(2) {
+    width: 20%;
+    text-align: center;
+  }
+
+  /* Column 3: Strategy (20% width - "1 unit") */
   .library-container th:nth-child(3),
   .library-container td:nth-child(3) {
-    text-align: center;
     width: 20%;
+    text-align: center;
   }
 
-  /* Link column alignment */
+  /* Column 4: Link (20% width - "1 unit") */
   .library-container th:last-child,
   .library-container td:last-child {
+    width: 20%;
     text-align: center;
-    width: 15%;
   }
 
   /* Links in the table */
@@ -74,6 +85,7 @@ header:
     color: #ff6b35; /* Ember */
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.2s;
   }
   .library-container a:hover {
     text-decoration: underline;

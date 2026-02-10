@@ -8,81 +8,92 @@ header:
 ---
 
 <style>
-    /* --- 1. CENTERED LAYOUT --- */
-    .library-centered-wrapper {
+    /* --- 1. THE LAYOUT FIX --- */
+    /* This wrapper grabs the table and forces it to the center */
+    .decklist-center-driver {
+        display: flex;
+        justify-content: center; /* Perfect centering */
         width: 100%;
-        max-width: 1200px; /* Stops it from getting too wide on huge monitors */
-        margin: 0 auto;    /* This centers the wrapper */
-        padding: 0 10px;   /* Small safety padding for mobile edges */
+        margin: 2em 0;
     }
 
-    /* --- 2. CLEAN TABLE STYLING (No Outer Box) --- */
-    .centered-deck-table {
-        width: 100%;
-        border-collapse: collapse; 
-        color: #e0e0e0;
-        font-size: 0.95em;
-        /* No background color on the table itself to blend in */
+    /* This wrapper handles the scrolling and width */
+    .decklist-scroll-frame {
+        /* "fit-content" is the magic. It tells the box:
+           "Don't stretch to the edge. Just wrap around the text." */
+        width: fit-content; 
+        max-width: 100%; /* Prevent it from breaking mobile screens */
+        overflow-x: auto; 
+        border-radius: 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Deep shadow for depth */
+        background: #252532; /* 'Stone' color from your theme */
     }
 
-    /* Header: Clean line at the bottom */
-    .centered-deck-table thead th {
-        text-align: left;
-        padding: 12px 15px;
-        border-bottom: 2px solid #7c3aed; /* Using your 'primary' purple for flair */
-        color: #fff;
-        font-weight: 600;
-        letter-spacing: 0.05em;
+    /* --- 2. TABLE STYLING --- */
+    .decklist-table {
+        /* We force 'max-content' so columns never squish. 
+           The scrollbar will appear if this gets too wide. */
+        width: max-content !important; 
+        border-collapse: collapse;
+        font-family: 'Outfit', sans-serif; /* Your theme font */
+        color: #e5e5e7; /* Your 'pale' color */
+    }
+
+    /* Header */
+    .decklist-table thead th {
+        background-color: #1a1a24; /* 'Slate' */
+        color: #a78bfa; /* 'Primary Glow' (Purple) */
         text-transform: uppercase;
-        font-size: 0.85em;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+        padding: 16px 24px; /* Generous padding for a premium look */
+        border-bottom: 2px solid rgba(124, 58, 237, 0.3);
+        white-space: nowrap;
+        text-align: left;
     }
 
-    /* Rows: Minimalist */
-    .centered-deck-table tbody tr {
-        border-bottom: 1px solid #333; /* Subtle divider */
+    /* Rows */
+    .decklist-table tbody tr {
+        border-bottom: 1px solid rgba(58, 58, 74, 0.5);
         transition: background 0.2s;
     }
-
-    /* Hover: Highlight the row slightly */
-    .centered-deck-table tbody tr:hover {
-        background-color: rgba(255, 255, 255, 0.05); 
+    .decklist-table tbody tr:last-child {
+        border-bottom: none;
     }
-
-    .centered-deck-table tbody td {
-        padding: 12px 15px;
+    .decklist-table tbody tr:hover {
+        background-color: #3a3a4a; /* 'Mist' - Highlight on hover */
+    }
+    .decklist-table tbody td {
+        padding: 14px 24px;
         vertical-align: middle;
+        white-space: nowrap; /* Keeps rows clean and straight */
     }
 
-    /* --- 3. MOBILE SCROLLING --- */
-    /* If the screen is smaller than the table, allow scrolling */
-    .scroll-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
-
-    /* --- 4. BUTTON --- */
-    .btn-view {
+    /* --- 3. BUTTON STYLING --- */
+    .btn-deck-link {
         display: inline-block;
-        padding: 4px 12px;
-        background-color: transparent;
-        border: 1px solid #555;
-        color: #ddd !important;
+        padding: 6px 16px;
+        background-color: #7c3aed; /* Your 'Primary' Purple */
+        color: #fff !important;
         text-decoration: none;
         border-radius: 4px;
-        font-size: 0.8em;
-        transition: all 0.2s;
+        font-size: 0.85em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        transition: transform 0.2s, background 0.2s;
+        box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
     }
-    .btn-view:hover {
-        border-color: #7c3aed; /* Purple hover */
-        color: #fff !important;
-        background-color: rgba(124, 58, 237, 0.1);
+    .btn-deck-link:hover {
+        background-color: #a78bfa; /* Glow on hover */
+        transform: translateY(-2px);
+        text-decoration: none;
     }
 </style>
 
-<div class="library-centered-wrapper">
-    
-    <div class="scroll-container">
-        <table class="centered-deck-table">
+<div class="decklist-center-driver">
+    <div class="decklist-scroll-frame">
+        <table class="decklist-table">
             <thead>
                 <tr>
                     <th>Link</th>
@@ -96,7 +107,7 @@ header:
             </thead>
             <tbody>
                 <tr>
-                    <td><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-view">VIEW</a></td>
+                    <td><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-deck-link">View</a></td>
                     <td>Arabella, Abandoned Doll</td>
                     <td>Common Cause X</td>
                     <td>Clay</td>
@@ -105,7 +116,7 @@ header:
                     <td>2026-02-07</td>
                 </tr>
                 <tr>
-                    <td><a href="https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw" target="_blank" class="btn-view">VIEW</a></td>
+                    <td><a href="https://www.moxfield.com/decks/8Y8epCv_fk2Xd4ddYIdANw" target="_blank" class="btn-deck-link">View</a></td>
                     <td>Juri, Master of the Revue</td>
                     <td>Riches to Rags I</td>
                     <td>Jacob Paris</td>
@@ -114,7 +125,7 @@ header:
                     <td>2022-10-31</td>
                 </tr>
                 <tr>
-                    <td><a href="#" class="btn-view">VIEW</a></td>
+                    <td><a href="#" class="btn-deck-link">View</a></td>
                     <td>Tivit, Seller of Secrets</td>
                     <td>The 3rd Event</td>
                     <td>Michael</td>

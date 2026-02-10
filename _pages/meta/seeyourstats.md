@@ -24,6 +24,15 @@ header:
   </div>
 </div>
 
+<div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
+  <div class="flourish-embed flourish-chart" data-src="visualisation/26897507">
+    <script src="https://public.flourish.studio/resources/embed.js"></script>
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/26897507/thumbnail" width="100%" alt="chart visualization" />
+      </noscript>
+  </div>
+</div>
+
 <hr style="margin: 3em 0;">
 
 <div style="text-align: center; margin-bottom: 4em;">

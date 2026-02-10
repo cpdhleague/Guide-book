@@ -15,7 +15,7 @@ header:
 <h3 class="archive__subtitle" style="margin-top: 0;">All Articles</h3>
 
 <div class="feature__row--images">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:15 %}
     
     {% if post.header.teaser %}
       {% assign post_image = post.header.teaser %}

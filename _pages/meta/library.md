@@ -8,9 +8,84 @@ header:
   overlay_filter: 0.5
 ---
 
+<style>
+  /* Container to ensure full width usage */
+  .library-container {
+    width: 100%;
+    max-width: 100%; /* Overrides some default theme constraints */
+  }
+
+  /* The Table Style */
+  .library-container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Allows columns to adjust based on content */
+  }
+
+  /* Header and Cell Styling */
+  .library-container th, 
+  .library-container td {
+    /* FLUID TYPOGRAPHY: 
+       Min: 1rem (16px)
+       Ideal: 1.5vw (1.5% of screen width)
+       Max: 1.3rem (approx 21px) 
+    */
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+    padding: 0.8em;
+    border-bottom: 1px solid #3a3a4a;
+  }
+
+  /* Header specific styling */
+  .library-container th {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e5e5e7; /* Pale */
+    background: #12121a; /* Abyss */
+    letter-spacing: 0.05em;
+  }
+
+  /* Column Specific Tweaks */
+  /* Give the Commander name (1st column) the most space */
+  .library-container th:nth-child(1),
+  .library-container td:nth-child(1) {
+    width: 45%;
+    font-weight: 600;
+    color: #a78bfa; /* Arcane Glow for names */
+  }
+
+  /* Center the middle columns for neatness */
+  .library-container th:nth-child(2),
+  .library-container td:nth-child(2),
+  .library-container th:nth-child(3),
+  .library-container td:nth-child(3) {
+    text-align: center;
+    width: 20%;
+  }
+
+  /* Link column alignment */
+  .library-container th:last-child,
+  .library-container td:last-child {
+    text-align: center;
+    width: 15%;
+  }
+
+  /* Links in the table */
+  .library-container a {
+    color: #ff6b35; /* Ember */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .library-container a:hover {
+    text-decoration: underline;
+    color: #ff8c5a;
+  }
+</style>
+
 ## Welcome to the Decklist Library
 
 This library features every commander to have placed in the Top 4 of a recorded cPDH tournament. To give you the most accurate data, each entry links directly to the pilot's original decklist where possible, giving you a direct look at what's winning.
+
+<div class="library-container" markdown="1">
 
 | COMMANDER | IDENTITY | STRATEGY | LINK |
 | :--- | :--- | :--- | :--- |
@@ -18,9 +93,12 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Abdel Adrian, Gorion's Ward + Agent of the Iron Throne | Orzhov | Combo | [Decklist](https://moxfield.com/decks/Yr_wtHangUq7Lmhlli4fMw) |
 | Abdel Adrian, Gorion's Ward + Sword Coast Sailor | Azorius | Combo | [Decklist](https://moxfield.com/decks/bl8xsbwTsU-J0s1UZULYiQ) |
 | Abdel Adrian, Gorion's Ward + Sword Coast Sailor | Azorius | Combo | [Decklist](https://moxfield.com/decks/gobW0aiqQUGidavyGyw7_Q) |
+| Akiri, Fearless Voyager | Boros | Combo | [Decklist](https://topdeck.gg/deck/common-cause-10/nLq85ixdYgYv4eG9WxElvyu9Tg13) |
 | Arabella, Abandoned Doll | Boros | Aggro | [Decklist](https://www.moxfield.com/decks/PZI5L9zmCEuOBznPDzrqJQ) |
+| Arabella, Abandoned Doll ft. Hare Apparent | Boros | Aggro | [Decklist](https://topdeck.gg/deck/common-cause-10/gIWLOeFlI7ToRSCdb01OO3PQFRH2) |
 | Ardenn, Intrepid Archaeologist + Malcolm, Keen-Eyed Navigator | Azorius | Combo | [Decklist](https://moxfield.com/decks/OxGAVHRC8EmTbe4EBFL4Ig) |
 | Bilbo, Retired Burglar | Izzet | Midrange | [Decklist](https://moxfield.com/decks/hSNg0sbuS0mlxLfeE8bUlA) |
+| Bone-Cairn Butcher | Mardu | Aggro | [Decklist](https://topdeck.gg/deck/common-cause-10/FP8puQ4pEfYOXE6MzpxWkd0fT4t2) |
 | Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator | Izzet | Midrange | [Decklist](https://www.moxfield.com/decks/Pu_fVLvYLUOxUfM6srUkow) |
 | Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator | Izzet | Midrange | [Decklist](https://moxfield.com/decks/ROR3Ll-bVU6L06KlOwZc2g) |
 | Cadira, Caller of the Small | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/an986JYA4ESWsy5iCtty1Q) |
@@ -34,6 +112,7 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Diviner Spirit | Blue | Voltron | [Decklist](https://www.moxfield.com/decks/NtDtHwhfF0WqVqEuaZ7EfA) |
 | Erinis, Gloom Stalker + Street Urchin | Gruul | Control | [Decklist](https://www.moxfield.com/decks/ONYzU8zGnE-vGql05-3KqQ) |
 | Fynn, the Fangbearer | Green | Aggro | [Decklist](https://moxfield.com/decks/HMve6vBIIk-QyT7_D_vxbA) |
+| Ganax, Astral Hunter + Feywild Visitor | Izzet | Midrange | [Decklist](https://topdeck.gg/deck/common-cause-10/vscTibDw7BfFtSJFRbBlFkaJmtk1) |
 | Ghost of Ramirez DePietro + Tormod, the Desecrator | Dimir | Control | [Decklist](https://moxfield.com/decks/kPEgKbFNe0yZPXp5D0sB_A) |
 | Gilanra, Caller of Wirewood + Numa, Joraga Chieftain | Green | Midrange | [Decklist](https://moxfield.com/decks/IaiX4ShuMUydmcxniMzCUg) |
 | Glaring Fleshraker | Colorless | Combo | [Decklist](https://www.moxfield.com/decks/UAIeiIOWok--5rpoi7kCrA) |
@@ -102,6 +181,8 @@ This library features every commander to have placed in the Top 4 of a recorded 
 | Wilson, Refined Grizzly + Far Traveler | Selesnya | Midrange | [Decklist](https://www.moxfield.com/decks/tVgoCMX4C0yfHxDL7RpNAw) |
 | Young Pyromancer | Red | Aggro | [Decklist](https://www.moxfield.com/decks/mWP7zKIjXEOeylb-X-0jJg) |
 | Zada, Hedron Grinder | Red | Aggro | [Decklist](https://moxfield.com/decks/jWnufsB3SEuXFXfUjszZ3g) |
+
+</div>
 
 <hr style="margin: 3em 0;">
 

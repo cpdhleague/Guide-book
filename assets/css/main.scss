@@ -205,11 +205,16 @@ hr { border: none; border-top: 1px solid var(--border-subtle); margin: 2.5em 0; 
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  /* text-gradient: arcane → ember (per Arcane Edition rule) */
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  
+  /* UPDATED: Removed gradient text-fill, added Cream color */
+  color: #FFFDD0 !important; 
+  background: none; 
+  -webkit-text-fill-color: initial; 
+  
+  /* Optional: Spacing between logo and text if needed */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; 
 }
 
 .greedy-nav {

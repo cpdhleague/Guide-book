@@ -10,13 +10,12 @@ header:
 
 <div style="width: 100%; max-width: 1200px; margin: 0 auto; padding: 20px 0;">
   
-  <div class="flourish-embed" data-src="visualisation/3516023">
+  <div class="flourish-embed flourish-chart" data-src="visualisation/26812044">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
-    <noscript>
-      <img src="https://public.flourish.studio/visualisation/26812044/thumbnail" width="100%" alt="visualization" />
-    </noscript>
-  </div>
-
+      <noscript>
+        <img src="https://public.flourish.studio/visualisation/26812044/thumbnail" width="100%" alt="chart visualization" />
+      </noscript>
+    </div>
 </div>
 
 <hr style="margin: 2em 0;">

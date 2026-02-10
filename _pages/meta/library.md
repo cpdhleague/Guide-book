@@ -12,6 +12,13 @@ header:
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
 
 <style>
+
+  /* In your <style> block */
+.page__content, .wrapper {
+    max-width: 100% !important;
+    padding-right: 2em; /* Add breathing room */
+    padding-left: 2em;
+}
     /* --- 1. LAYOUT & WIDTH FIXES --- */
     
     /* Force the main content area to be full width if the theme restricts it */

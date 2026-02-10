@@ -13,7 +13,7 @@ header:
   <div class="flourish-embed" data-src="visualisation/3516023">
     <script src="https://public.flourish.studio/resources/embed.js"></script>
     <noscript>
-      <img src="https://public.flourish.studio/story/26812044/thumbnail" width="100%" alt="visualization" />
+      <img src="https://public.flourish.studio/visualisation/26812044/thumbnail" width="100%" alt="visualization" />
     </noscript>
   </div>
 

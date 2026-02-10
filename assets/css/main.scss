@@ -827,3 +827,43 @@ a:focus-visible, button:focus-visible, .btn:focus-visible {
 .greedy-nav .visible-links {
   z-index: 1001 !important;
 }
+
+/* ===================================================================
+   DECKLIST LIBRARY OVERRIDES
+   =================================================================== */
+.library-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the table on screen */
+  width: 100%;
+  margin: 2em 0;
+}
+
+.library-scroll {
+  width: fit-content;       /* Shrinks box to fit content */
+  max-width: 100%;          /* Prevents overflow on mobile */
+  overflow-x: auto;         /* Allows scroll on mobile */
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  background: var(--stone);
+}
+
+/* Force the table to shrink, overriding the global 100% */
+table.library-table {
+  width: auto !important;   
+  margin: 0 !important;
+  border: none;
+}
+
+/* Custom Header Styling */
+table.library-table thead th {
+  background-color: var(--slate);
+  color: var(--primary-glow) !important;
+  padding: 16px 24px;
+  white-space: nowrap;
+  border-bottom: 2px solid var(--primary);
+}
+
+table.library-table tbody td {
+  padding: 14px 24px;
+  white-space: nowrap;
+}

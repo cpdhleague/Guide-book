@@ -200,19 +200,20 @@ hr { border: none; border-top: 1px solid var(--border-subtle); margin: 2.5em 0; 
 }
 
 .site-title {
-  font-family: var(--font-display) !important;
-  font-size: 1.35em !important;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #FFFDD0 !important; 
-  background: none; 
-  -webkit-text-fill-color: initial; 
+  /* 1. Turn on Flexbox. This INSTANTLY kills the "Ghost Space" text node. */
+  display: inline-flex !important;
   
-  /* Layout Settings */
-  display: inline-flex !important; /* Ensures flexbox behavior */
-  align-items: center;             /* Vertically centers text with logo */
-  gap: 0 !important;               /* Start with 0 gap */
+  /* 2. Vertically align the text and logo perfectly center */
+  align-items: center !important;
+  
+  /* 3. This is now your ONLY control for spacing. 
+     Change this number to whatever you want (e.g., 5px, 10px). */
+  gap: 6px !important;
+  
+  /* Keep your styling */
+  color: #FFFDD0 !important;
+  background: none;
+  -webkit-text-fill-color: initial;
 }
 
 .greedy-nav {
@@ -871,9 +872,13 @@ table.library-table tbody td {
   white-space: nowrap;
 }
 
-/* Add rounded corners to the header logo (iPhone app style) */
+.site-title img, 
 .site-logo {
-  border-radius: 22% !important; 
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Optional: adds a subtle depth */
-  margin-right: -5 !important;
+  /* 4. Kill the theme's default spacing so it doesn't fight with our 'gap' */
+  margin: 0 !important;
+  padding: 0 !important;
+  
+  /* Keep your styling */
+  border-radius: 22% !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }

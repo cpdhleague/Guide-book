@@ -875,6 +875,7 @@ table.library-table tbody td {
 
 /* Add rounded corners to the header logo (iPhone app style) */
 .site-logo {
-  border-radius: 22% !important; 
+  border-radius: 12% !important; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Optional: adds a subtle depth */
+  margin-right: 0 !important;
 }

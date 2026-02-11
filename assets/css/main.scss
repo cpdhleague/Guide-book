@@ -201,20 +201,18 @@ hr { border: none; border-top: 1px solid var(--border-subtle); margin: 2.5em 0; 
 
 .site-title {
   font-family: var(--font-display) !important;
-  font-size: 2.35em !important;
+  font-size: 1.35em !important;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  
-  /* UPDATED: Removed gradient text-fill, added Cream color */
   color: #FFFDD0 !important; 
   background: none; 
   -webkit-text-fill-color: initial; 
   
-  /* Optional: Spacing between logo and text if needed */
-  display: inline-flex;
-  align-items: center;
-  gap: 3px; 
+  /* Layout Settings */
+  display: inline-flex !important; /* Ensures flexbox behavior */
+  align-items: center;             /* Vertically centers text with logo */
+  gap: 0 !important;               /* Start with 0 gap */
 }
 
 .greedy-nav {
@@ -875,7 +873,7 @@ table.library-table tbody td {
 
 /* Add rounded corners to the header logo (iPhone app style) */
 .site-logo {
-  border-radius: 12% !important; 
+  border-radius: 22% !important; 
   box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Optional: adds a subtle depth */
-  margin-right: 0 !important;
+  margin-right: -5 !important;
 }

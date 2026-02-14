@@ -12,7 +12,7 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/south_article_thumbnail.jpg
-excerpt: "It’s not every day you see Akiri, Fearless Voyager winning at the PDH table. We sat down with SouthLakes to discuss his Common Cause X victory."
+excerpt: "It’s not every day you see Akiri, Fearless Voyager winning at the PDH table. I sat down with SouthLakes to discuss his Common Cause X victory."
 ---
 
 It’s not every day you see **Akiri, Fearless Voyager** at the PDH table, let alone winning at a major tournament. It’s even rarer that the pilot is someone as thoughtful—and frankly, hilarious—as **SouthLakes**.
@@ -67,8 +67,6 @@ If you want to see how he did it, or try your hand at the next one, check out th
 ### Links
 
 <a href="https://topdeck.gg/bracket/common-cause-10" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">Common Cause X Event Page & Bracket</a>
-
-<br>
 
 <a href="https://topdeck.gg/deck/common-cause-10/nLq85ixdYgYv4eG9WxElvyu9Tg13" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">SouthLakes' Winning Akiri Decklist</a>
 

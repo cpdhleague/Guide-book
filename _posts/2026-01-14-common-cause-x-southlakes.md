@@ -9,26 +9,28 @@ tags:
   - Community
   - Interview
 header:
-  overlay_image: /assets/images/header-common-cause.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/south_article_final.jpg
+  teaser: /assets/images/south_article_thumbnail.jpg
 excerpt: "It’s not every day you see Akiri, Fearless Voyager winning at the PDH table. We sat down with SouthLakes to discuss his Common Cause X victory."
 ---
 
-It’s not every day you see **Akiri, Fearless Voyager** winning at the PDH table, let alone at a major tournament. It’s even rarer that the pilot is someone as thoughtful—and frankly, hilarious—as **SouthLakes**.
+It’s not every day you see **Akiri, Fearless Voyager** at the PDH table, let alone winning at a major tournament. It’s even rarer that the pilot is someone as thoughtful—and frankly, hilarious—as **SouthLakes**.
 
 Last Saturday, the Common Cause X tournament wrapped up with a bit of a surprise ending. South (as we’ll call him) managed to squeak into the Top 4 with a 1-1-1 record. He didn't dominate the Swiss rounds, but once he hit the elimination bracket, he took the winning position in the finals.
 
 I caught up with him afterward to talk about the win, his unique Akiri list, and, inevitably, a bunch of other stuff we didn't plan on discussing.
 
-![SouthLakes](/assets/images/south_article_final.jpg)
-
-{% include card-grid.html cards="Akiri Fearless Voyager" %}
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/assets/images/south_article_final.jpg" alt="SouthLakes" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
 
 ### The Deck: "A Sandbox in Boros"
 I had to ask him: Why Akiri? And specifically, is this a new brew?
 
 South explained that he’s been tinkering with this list since the summer of 2025. He sees Akiri as a deceptively powerful engine that people are sleeping on.
+
+{% include card-grid.html cards="Akiri Fearless Voyager" %}
 
 "It's a deck that does a lot of things," he told me. He compared it to **Raff, Weatherlight Stalwart**—another commander that demands you meet a specific condition (in Raff’s case, casting spells; in Akiri’s, attacking with equipped creatures) to unlock a massive advantage. "Once you fulfill the kind of central condition in both decks, you have a huge amount of flexibility... It's kind of just a sandbox. You can plug and play as you see fit."
 

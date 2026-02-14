@@ -22,7 +22,7 @@ Last Saturday, the Common Cause X tournament wrapped up with a bit of a surprise
 I caught up with him afterward to talk about the win, his unique Akiri list, and, inevitably, a bunch of other stuff we didn't plan on discussing.
 
 <div style="text-align: center; margin: 20px 0;">
-    <img src="/assets/images/south_article_final.jpg" alt="SouthLakes" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="/assets/images/south_article_final.jpg" alt="SouthLakes" style="max-width: 30%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 ### The Deck: "A Sandbox in Boros"

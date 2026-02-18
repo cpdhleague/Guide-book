@@ -1,5 +1,5 @@
 ---
-title: "Hudson Valley 1k: Princex of Pauper"
+title: "Hudson Valley 1k: Princex of Pauper is a Disciple of Deceit"
 date: 2026-02-18
 layout: splash
 classes: wide

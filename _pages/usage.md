@@ -83,7 +83,7 @@ header:
   background: #fff;
 ">
   <iframe 
-    src="https://cpdh.guide.goatcounter.com"
+    src="https://cpdh-guide.goatcounter.com"
     style="width: 100%; height: 85vh; border: none;"
     title="CPDH.guide Analytics Dashboard"
     loading="lazy"

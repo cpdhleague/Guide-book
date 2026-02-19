@@ -101,7 +101,7 @@ It usually involves **Mirran Spy** or **Battered Golem**. You combine this with 
 To keep transmuting, you need to untap Disciple.
 "You actually never want to use **Freed from the Real** on Disciple," Dallas warned me. "That's arguably one of the most important cards in the deck [for the mana combo]."
 
-Instead, he uses cards like **Moonsnare Prototype** and **Springleaf Drum**. But the MVP?
+Instead, he uses cards like **Moonsnare Prototype** and **Springleaf Drum**.
 "**Mothdust Changeling**," Dallas laughed. "It's a one mana drop... Tap an untapped creature you control to give it flying. It's just a tap outlet."
 
 {% include card-grid.html cards="Freed from the Real, Moonsnare Prototype, Springleaf Drum, Mothdust Changeling" %}

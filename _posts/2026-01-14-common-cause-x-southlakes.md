@@ -8,6 +8,7 @@ categories:
 tags:
   - Community
   - Interview
+image: /assets/images/south_article_thumbnail.jpg
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

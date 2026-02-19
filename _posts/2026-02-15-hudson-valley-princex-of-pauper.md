@@ -8,6 +8,7 @@ categories:
 tags:
   - Community
   - Interview
+image: /assets/images/dallas_hudson_valley.jpg
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

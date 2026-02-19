@@ -7,6 +7,7 @@ categories:
   - cPDH Deck Techs
 tags:
   - Community
+image: /assets/images/longshottech.png
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

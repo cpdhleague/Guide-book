@@ -7,6 +7,7 @@ categories:
   - Videos
 tags:
   - Community
+image: /assets/images/UH4xty3w6EQ.jpg
 header:
   overlay_image: /assets/images/UH4xty3w6EQ.jpg
   overlay_filter: 0.5

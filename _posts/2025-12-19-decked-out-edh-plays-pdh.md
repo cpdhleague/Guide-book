@@ -7,6 +7,7 @@ categories:
   - Videos
 tags:
   - Community
+image: /assets/images/nGpK-GfwWRI.jpg
 header:
   overlay_image: /assets/images/nGpK-GfwWRI.jpg
   overlay_filter: 0.5

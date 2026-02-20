@@ -1,4 +1,4 @@
-name: Convert Video Issue to Post
+name: Convert Content Issue to Post
 
 on:
   issues:
@@ -6,11 +6,13 @@ on:
 
 jobs:
   build:
-    if: contains(github.event.issue.title, 'Video:')
+    # Trigger if title starts with our chosen categories
+    if: startsWith(github.event.issue.title, 'YouTube:') || startsWith(github.event.issue.title, 'Spotify:') || startsWith(github.event.issue.title, 'Article:')
     runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
+      pull-requests: write # Needed to create the PR
 
     steps:
       - name: Checkout code
@@ -29,20 +31,21 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          # Extract URL from issue body and Title from issue title
           VIDEO_URL="${{ github.event.issue.body }}"
           ISSUE_TITLE="${{ github.event.issue.title }}"
+          # We'll rename the script logically, but keeping your current filename for ease
           python _scripts/youtube_to_post.py "$VIDEO_URL" "$ISSUE_TITLE"
 
-      - name: Commit and Push
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add _posts/ assets/images/
-          git commit -m "Auto-generated post from video issue"
-          git push
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "Auto-generated post from issue: ${{ github.event.issue.title }}"
+          title: "Review Required: ${{ github.event.issue.title }}"
+          body: "A new content submission has been processed. Please review the attached markdown file for spelling, grammar, and formatting before merging."
+          branch: "content-submission-${{ github.event.issue.number }}"
+          base: main
 
       - name: Close Issue
         uses: peter-evans/close-issue@v3
         with:
-          comment: "✅ Article generated successfully! Check the main page."
+          comment: "✅ Content processed! A Pull Request has been generated for admin review."

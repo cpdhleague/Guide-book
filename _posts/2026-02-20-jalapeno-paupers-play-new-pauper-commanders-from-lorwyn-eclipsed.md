@@ -10,7 +10,6 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/J9qwDDOfPdk.jpg
-excerpt: "This spicy Orzhov brew turns your graveyard into a nightmare engine."
 ---
 
 Lorwyn is here and the Jalapenos were quick to highlight some of the most interesting pauper commanders from the set in their latest video. 

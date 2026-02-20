@@ -1,3 +1,28 @@
+# =============================================================
+# video-to-post.yml - Convert GitHub Issues into Jekyll blog posts
+# =============================================================
+# HOW IT WORKS:
+# 1. A user opens a GitHub Issue with a title like "YouTube: Cool PDH Video"
+# 2. The issue body contains a link (line 1) and optional notes
+# 3. This workflow runs a Python script that:
+#    - Extracts the video/podcast link
+#    - Optionally runs AI to expand short notes into a full article
+#    - Downloads thumbnails (YouTube)
+#    - Generates a Jekyll markdown post
+# 4. A Pull Request is created for admin review before publishing
+#
+# SUPPORTED TITLE PREFIXES:
+#   YouTube:  → Embeds a YouTube video, downloads thumbnail
+#   Spotify:  → Embeds a Spotify player (episode or show)
+#   Article:  → Plain text article with optional link buttons
+#
+# LEARNING NOTE ON GITHUB ACTIONS:
+# A "workflow" is an automated process that runs when something
+# happens in your repo (like opening an issue). Each workflow has
+# "jobs" made of "steps." Steps run sequentially — if one fails,
+# the rest are skipped (unless you use `if: failure()`).
+# =============================================================
+
 name: Convert Content Issue to Post
 
 on:
@@ -6,53 +31,92 @@ on:
 
 jobs:
   build:
-    # Trigger if title starts with our chosen categories
-    if: startsWith(github.event.issue.title, 'YouTube:') || startsWith(github.event.issue.title, 'Spotify:') || startsWith(github.event.issue.title, 'Article:')
+    # Only trigger if the issue title starts with one of our keywords.
+    # LEARNING NOTE: GitHub Actions expressions use a special syntax.
+    # startsWith() is a built-in function for string comparison.
+    if: >-
+      startsWith(github.event.issue.title, 'YouTube:') ||
+      startsWith(github.event.issue.title, 'Spotify:') ||
+      startsWith(github.event.issue.title, 'Article:')
     runs-on: ubuntu-latest
     permissions:
       contents: write
       issues: write
-      pull-requests: write # Needed to create the PR
+      pull-requests: write
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
         run: |
-          pip install -r _scripts/requirements.txt
+          pip install google-generativeai requests
+
+      # ⚠️ CRITICAL SECURITY NOTE:
+      # We pass issue data as ENVIRONMENT VARIABLES, not shell arguments.
+      #
+      # THE OLD (BROKEN) WAY:
+      #   run: python script.py "${{ github.event.issue.body }}"
+      #
+      # This is called "shell injection" — the issue body gets pasted
+      # directly into a shell command. If someone submits a URL like:
+      #   https://youtube.com/watch?v=abc&feature=shared
+      # The shell sees the & as "run next command in background."
+      # Worse, a malicious user could submit:
+      #   "; rm -rf / #
+      # ...and run arbitrary commands on your server.
+      #
+      # THE SAFE WAY (what we do now):
+      # Pass data through `env:` — GitHub Actions sets these as proper
+      # environment variables, which Python reads with os.environ.get().
+      # No shell parsing, no injection, no breakage from special chars.
 
       - name: Run generation script
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
-          VIDEO_URL="${{ github.event.issue.body }}"
-          ISSUE_TITLE="${{ github.event.issue.title }}"
-          # We'll rename the script logically, but keeping your current filename for ease
-          python _scripts/youtube_to_post.py "$VIDEO_URL" "$ISSUE_TITLE"
+          python _scripts/youtube_to_post.py
 
-      - name: Report Invalid Link Failure
-        if: failure() # This ONLY runs if the Python script crashes or exits with an error
-        uses: peter-evans/create-or-update-comment@v3
+      - name: Report failure to issue
+        if: failure()
+        uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.issue.number }}
-          body: "❌ **Automated processing failed.** It looks like the first line of your issue does not contain a valid YouTube or Spotify link. Please edit your issue to ensure the link is on the very first line, or check the Actions tab for more details."    
+          body: |
+            ❌ **Automated processing failed.**
+
+            This can happen if:
+            - The first line of your issue doesn't contain a valid YouTube or Spotify link
+            - The link format isn't recognized
+            - There was a temporary API issue
+
+            Please double-check your issue body, or check the [Actions tab](/${{ github.repository }}/actions) for details.
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "Auto-generated post from issue: ${{ github.event.issue.title }}"
           title: "Review Required: ${{ github.event.issue.title }}"
-          body: "A new content submission has been processed. Please review the attached markdown file for spelling, grammar, and formatting before merging."
+          body: |
+            📝 A new content submission has been processed from issue #${{ github.event.issue.number }}.
+
+            **Please review before merging:**
+            - [ ] Spelling and grammar look good
+            - [ ] No policy violations
+            - [ ] Embedded media loads correctly
+            - [ ] Thumbnail image is appropriate
           branch: "content-submission-${{ github.event.issue.number }}"
           base: main
 
       - name: Close Issue
+        if: success()
         uses: peter-evans/close-issue@v3
         with:
-          comment: "✅ Content processed! A Pull Request has been generated for admin review."
+          comment: "✅ Content processed! A Pull Request has been created for admin review."

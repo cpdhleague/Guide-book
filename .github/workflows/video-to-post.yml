@@ -36,6 +36,13 @@ jobs:
           # We'll rename the script logically, but keeping your current filename for ease
           python _scripts/youtube_to_post.py "$VIDEO_URL" "$ISSUE_TITLE"
 
+      - name: Report Invalid Link Failure
+        if: failure() # This ONLY runs if the Python script crashes or exits with an error
+        uses: peter-evans/create-or-update-comment@v3
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: "❌ **Automated processing failed.** It looks like the first line of your issue does not contain a valid YouTube or Spotify link. Please edit your issue to ensure the link is on the very first line, or check the Actions tab for more details."    
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:

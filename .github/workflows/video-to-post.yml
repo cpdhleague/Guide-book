@@ -113,7 +113,7 @@ jobs:
             - [ ] Embedded media loads correctly
             - [ ] Thumbnail image is appropriate
           branch: "content-submission-${{ github.event.issue.number }}"
-          base: main
+          base: master
 
       - name: Close Issue
         if: success()

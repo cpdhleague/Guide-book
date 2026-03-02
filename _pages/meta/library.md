@@ -70,7 +70,115 @@ header:
         </tr>
       </thead>
       <tbody>
-            <tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/6a464UvGIUC7lKU1X59Z8Q" target="_blank" class="btn-decklist">View</a></td>
+        <td>Ley Weaver // Lore Weaver</td>
+        <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>
+        <td>_clay_</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260228">2026-02-28</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/FORZyrI_wUKPHK8vxSlh-w" target="_blank" class="btn-decklist">View</a></td>
+        <td>Voracious Tome-Skimmer</td>
+        <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>
+        <td>Andrew Kobus</td>
+        <td>Dimir</td>
+        <td>Control</td>
+        <td data-sort="20260228">2026-02-28</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/nrn6QabEdUeL8VwMbY0dNw" target="_blank" class="btn-decklist">View</a></td>
+        <td>Gretchen Titchwillow</td>
+        <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>
+        <td>Josh Mattson</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260228">2026-02-28</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/82niZs42i0q67bsxFyQwkQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Alexios, Deimos of Kosmos</td>
+        <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>
+        <td>Derek Neumann</td>
+        <td>Red</td>
+        <td>Voltron</td>
+        <td data-sort="20260228">2026-02-28</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/EUe6usl3U0q8biyCzqCn2Q" target="_blank" class="btn-decklist">View</a></td>
+        <td>Scholar of the Ages</td>
+        <td>PAUPEROCALYPSE 1K I</td>
+        <td>Tyler Wood</td>
+        <td>Blue</td>
+        <td>Combo</td>
+        <td data-sort="20260222">2026-02-22</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/-vtaH7Vlp0iJjutEQyYsFA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Ley Weaver // Lore Weaver</td>
+        <td>PAUPEROCALYPSE 1K I</td>
+        <td>Robert Fine</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260222">2026-02-22</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/d5pStVUPa0ep7qssKbT-vw" target="_blank" class="btn-decklist">View</a></td>
+        <td>Abdel Adrian, Gorion's Ward // Street Urchin</td>
+        <td>PAUPEROCALYPSE 1K I</td>
+        <td>Shakur Williams</td>
+        <td>Boros</td>
+        <td>Combo</td>
+        <td data-sort="20260222">2026-02-22</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/Kh0bF_5SLUmsD7APM0-YDg" target="_blank" class="btn-decklist">View</a></td>
+        <td>Glaring Fleshraker</td>
+        <td>PAUPEROCALYPSE 1K I</td>
+        <td>Kelsie Ricard</td>
+        <td>Colorless</td>
+        <td>Aggro</td>
+        <td data-sort="20260222">2026-02-22</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/c6l5Oa79ekifraoWU4vlPQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Disciple of Deceit</td>
+        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Dallas Walker</td>
+        <td>Dimir</td>
+        <td>Combo</td>
+        <td data-sort="20260215">2026-02-15</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/hQi10-t7tUWi8NyjA6Sjig" target="_blank" class="btn-decklist">View</a></td>
+        <td>Syr Konrad, the Grim</td>
+        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Russell Harder</td>
+        <td>Black</td>
+        <td>Control</td>
+        <td data-sort="20260215">2026-02-15</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/ndg2H-PUNEqV4PaeX6IjoA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Gretchen Titchwillow</td>
+        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Jon</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260215">2026-02-15</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/xMFH4ExelUm-WCNSOEmJwA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Melek, Izzet Paragon</td>
+        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Bizmuth Reda</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td data-sort="20260215">2026-02-15</td>
+    </tr>
+    <tr>
         <td><a href="https://moxfield.com/decks/WFOkQ_uhmkOsNCKO4mUDTw" target="_blank" class="btn-decklist">View</a></td>
         <td>Arabella, Abandoned Doll</td>
         <td>Common Cause X</td>
@@ -105,6 +213,42 @@ header:
         <td>Izzet</td>
         <td>Midrange</td>
         <td data-sort="20260207">2026-02-07</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/Jx4Ih2NFb06eE4W2R54xiQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Gretchen Titchwillow</td>
+        <td>Wanderer's League 2025: Invitational</td>
+        <td>Dallas Carlson</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260117">2026-01-17</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/sn-Cx4UNU0a6R1Ep8ZsIGg" target="_blank" class="btn-decklist">View</a></td>
+        <td>Wilson, Refined Grizzly // Far Traveler</td>
+        <td>Wanderer's League 2025: Invitational</td>
+        <td>Kevin Levi</td>
+        <td>Selesnya</td>
+        <td>Midrange</td>
+        <td data-sort="20260117">2026-01-17</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/qGe_D1DECkyYQhybVLwXww" target="_blank" class="btn-decklist">View</a></td>
+        <td>Marauding Mako</td>
+        <td>Wanderer's League 2025: Invitational</td>
+        <td>Makaia Busscher</td>
+        <td>Red</td>
+        <td>Aggro</td>
+        <td data-sort="20260117">2026-01-17</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/y2XTN83WdEmswOkxMFp89g" target="_blank" class="btn-decklist">View</a></td>
+        <td>Ethersworn Sphinx</td>
+        <td>Wanderer's League 2025: Invitational</td>
+        <td>Thomas Bryan</td>
+        <td>Azorius</td>
+        <td>Midrange</td>
+        <td data-sort="20260117">2026-01-17</td>
     </tr>
     <tr>
         <td><a href="https://topdeck.gg/deck/cpdh-commander-clash-2025/atJqz3FPb5R4oK7Vnfu67weNTb93" target="_blank" class="btn-decklist">View</a></td>
@@ -835,7 +979,7 @@ header:
         <td>Midrange</td>
         <td data-sort="20221031">2022-10-31</td>
     </tr>
-      </tbody>
+</tbody>
     </table>
   </div>
 </div>

@@ -109,7 +109,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/EUe6usl3U0q8biyCzqCn2Q" target="_blank" class="btn-decklist">View</a></td>
         <td>Scholar of the Ages</td>
-        <td>PAUPEROCALYPSE 1K I</td>
+        <td>PAUPEROCALYPSE 1K</td>
         <td>Tyler Wood</td>
         <td>Blue</td>
         <td>Combo</td>
@@ -118,7 +118,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/-vtaH7Vlp0iJjutEQyYsFA" target="_blank" class="btn-decklist">View</a></td>
         <td>Ley Weaver // Lore Weaver</td>
-        <td>PAUPEROCALYPSE 1K I</td>
+        <td>PAUPEROCALYPSE 1K</td>
         <td>Robert Fine</td>
         <td>Simic</td>
         <td>Combo</td>
@@ -127,7 +127,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/d5pStVUPa0ep7qssKbT-vw" target="_blank" class="btn-decklist">View</a></td>
         <td>Abdel Adrian, Gorion's Ward // Street Urchin</td>
-        <td>PAUPEROCALYPSE 1K I</td>
+        <td>PAUPEROCALYPSE 1K</td>
         <td>Shakur Williams</td>
         <td>Boros</td>
         <td>Combo</td>
@@ -136,7 +136,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/Kh0bF_5SLUmsD7APM0-YDg" target="_blank" class="btn-decklist">View</a></td>
         <td>Glaring Fleshraker</td>
-        <td>PAUPEROCALYPSE 1K I</td>
+        <td>PAUPEROCALYPSE 1K</td>
         <td>Kelsie Ricard</td>
         <td>Colorless</td>
         <td>Aggro</td>
@@ -145,7 +145,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/c6l5Oa79ekifraoWU4vlPQ" target="_blank" class="btn-decklist">View</a></td>
         <td>Disciple of Deceit</td>
-        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Hudson Valley PauperEDH 1K</td>
         <td>Dallas Walker</td>
         <td>Dimir</td>
         <td>Combo</td>
@@ -154,7 +154,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/hQi10-t7tUWi8NyjA6Sjig" target="_blank" class="btn-decklist">View</a></td>
         <td>Syr Konrad, the Grim</td>
-        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Hudson Valley PauperEDH 1K</td>
         <td>Russell Harder</td>
         <td>Black</td>
         <td>Control</td>
@@ -163,7 +163,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/ndg2H-PUNEqV4PaeX6IjoA" target="_blank" class="btn-decklist">View</a></td>
         <td>Gretchen Titchwillow</td>
-        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Hudson Valley PauperEDH 1K</td>
         <td>Jon</td>
         <td>Simic</td>
         <td>Combo</td>
@@ -172,7 +172,7 @@ header:
     <tr>
         <td><a href="https://moxfield.com/decks/xMFH4ExelUm-WCNSOEmJwA" target="_blank" class="btn-decklist">View</a></td>
         <td>Melek, Izzet Paragon</td>
-        <td>Hudson Valley PauperEDH 1K I</td>
+        <td>Hudson Valley PauperEDH 1K</td>
         <td>Bizmuth Reda</td>
         <td>Izzet</td>
         <td>Midrange</td>

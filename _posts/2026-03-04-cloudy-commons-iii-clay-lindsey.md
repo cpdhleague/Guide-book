@@ -20,8 +20,10 @@ Before highlighting our latest tournament winner, I want to take a moment to app
 
 On Saturday, February 28th, I had the pleasure of sitting in the Wyldwolf cafe, drinking one of their dragon-themed beverages while playing an incredibly fun series of games with lovely community members. Clay Lindsey of the PDH RC secured a first-place finish in the event, going completely undefeated with a 4-0-0 record for the day to take home a Beta Edition Lightning Bolt. 
 
-![Beta Edition Lightning Bolt Prize](/assets/images/beta_lightning_bolt_prize.jpg)
 
+<div style="text-align: center; margin: 20px 0;">
+    <img src="/assets/images/beta_lightning_bolt_prize.jpg" alt="BetaBolt" style="max-width: 30%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+</div>
 Piloting the Simic partner pairing of Ley Weaver and Lore Weaver, Clay’s victories pushed the deck past the 1700 ELO mark, cementing its status at the top of the format.
 
 {% include card-grid.html cards="Ley Weaver, Lore Weaver" %}

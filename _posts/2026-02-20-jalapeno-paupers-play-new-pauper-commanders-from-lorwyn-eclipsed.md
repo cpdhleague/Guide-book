@@ -4,7 +4,7 @@ date: 2026-02-20
 layout: splash
 classes: wide
 categories:
-  - Youtube
+  - Video
 image: /assets/images/J9qwDDOfPdk.jpg
 header:
   overlay_image: /assets/images/header2025-1.png

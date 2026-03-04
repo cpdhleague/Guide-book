@@ -16,6 +16,8 @@ header:
   excerpt: "You know him, you love him, it's Clay from the RC."
 ---
 
+---
+
 Before highlighting our latest tournament winner, I want to take a moment to appreciate Ethan Krebs for his work and organization in setting up the Cloudy Commons Cup III: Blitzkrieg for a Bolt and its preceding events. While every event has a hard-working organizer at its core, I had the pleasure of attending this tournament, chatting with Ethan over a pre-tournament 1v1 game using draft chaff, and seeing all of his work firsthand. Thank you Ethan for all your support and Justin McNamara for continued prizing support. 
 
 On Saturday, February 28th, I had the pleasure of sitting in the Wyldwolf cafe, drinking one of their dragon-themed beverages while playing an incredibly fun series of games with lovely community members. Clay Lindsey of the PDH RC secured a first-place finish in the event, going completely undefeated with a 4-0-0 record for the day to take home a Beta Edition Lightning Bolt. 

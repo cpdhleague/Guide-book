@@ -10,9 +10,10 @@ tags:
   - Interview
 image: /assets/images/cciii_clay_weavers.jpg
 header:
-  overlay_image: /assets/images/header2026-cloudy.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/cciii_clay_weavers.jpg
+  excerpt: ""
 ---
 
 Before highlighting our latest tournament winner, I want to take a moment to appreciate Ethan Krebs for his work and organization in setting up the Cloudy Commons Cup III: Blitzkrieg for a Bolt and its preceding events. While every event has a hard-working organizer at its core, I had the pleasure of attending this tournament, chatting with Ethan over a pre-tournament 1v1 game using draft chaff, and seeing all of his work firsthand. Thank you Ethan for all your support and Justin McNamara for continued prizing support. 

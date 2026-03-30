@@ -71,6 +71,42 @@ header:
       </thead>
       <tbody>
     <tr>
+        <td><a href="https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Guidelight Pathmaker</td>
+        <td>Wanderer's Type Hype 2026</td>
+        <td>Ginger Persolus</td>
+        <td>Azorius</td>
+        <td>Combo</td>
+        <td data-sort="20260228">2026-03-28</td>
+    </tr>
+        <tr>
+        <td><a href="https://archidekt.com/decks/20914201/sphinx" target="_blank" class="btn-decklist">View</a></td>
+        <td>Sphinx of the Guildpact</td>
+        <td>Wanderer's Type Hype 2026</td>
+        <td>Kevin Levi</td>
+        <td>5 Color</td>
+        <td>Voltron</td>
+        <td data-sort="20260228">2026-03-28</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/PNPHCzwif0muBVtGAEcO9Q" target="_blank" class="btn-decklist">View</a></td>
+        <td>Arabella, Abandoned Doll</td>
+        <td>Wanderer's Type Hype 2026</td>
+        <td>Combraman</td>
+        <td>Boros</td>
+        <td>Aggro</td>
+        <td data-sort="20260228">2026-03-28</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/_S7QWLyR8Ue0WUy5jzodgA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Enthusiastic Mechanaut</td>
+        <td>Wanderer's Type Hype 2026</td>
+        <td>Bernie</td>
+        <td>Izzet</td>
+        <td>Combo</td>
+        <td data-sort="20260228">2026-03-28</td>
+    </tr>
+    <tr>
         <td><a href="https://moxfield.com/decks/6a464UvGIUC7lKU1X59Z8Q" target="_blank" class="btn-decklist">View</a></td>
         <td>Ley Weaver // Lore Weaver</td>
         <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>

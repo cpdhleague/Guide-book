@@ -14,5 +14,5 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem "jekyll-algolia"
+  # jekyll-algolia removed — not on GitHub Pages whitelist and search: false anyway
 end

@@ -19,7 +19,8 @@ header:
 {% assign past_events   = "" | split: "" %}
 
 {% for event in all_events %}
-  {% if event.date >= today %}
+  {% assign event_date_str = event.date | date: "%Y-%m-%d" %}
+  {% if event_date_str >= today %}
     {% assign future_events = future_events | push: event %}
   {% else %}
     {% assign past_events = past_events | push: event %}

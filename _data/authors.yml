@@ -1,0 +1,31 @@
+# Author profiles for CPDH.guide
+# Keys must exactly match the "author:" field in post front matter.
+# Use all-lowercase, no spaces (e.g. gingerpersolus, beachbodgod69)
+# To add a photo: drop image in assets/images/authors/ and reference it here.
+
+gingerpersolus:
+  name: "Ginger Persolus"
+  photo: "/assets/images/bio-photo.jpg"
+  bio: "Your bio goes here. Keep it to 1–2 sentences."
+  links:
+    - label: "Discord"
+      url: "https://discord.com/invite/UtgN272kpq"
+    - label: "YouTube"
+      url: "https://www.youtube.com/@cPDH"
+
+beachbodgod69:
+  name: "BeachBodGod69"
+  photo: "/assets/images/authors/beachbodgod69.jpg"
+  bio: "An avid cPDH meta enjoyer and true believer in the power of Mystic Enforcer."
+  links:
+    - label: "Discord"
+      url: "https://discord.com/invite/UtgN272kpq"
+
+# --- HOW TO ADD A NEW AUTHOR ---
+# yourkey:
+#   name: "Display Name"
+#   photo: "/assets/images/authors/yourphoto.jpg"
+#   bio: "Short 1–2 sentence bio."
+#   links:
+#     - label: "Discord"
+#       url: "https://discord.com/invite/UtgN272kpq"

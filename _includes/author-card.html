@@ -1,0 +1,63 @@
+{% comment %}
+  Author Card — renders at the bottom of any post.
+
+  USAGE: Add to the bottom of any post file:
+    {% include author-card.html %}
+
+  In the post's front matter, set one of:
+    author: gingerpersolus       → full card (photo + bio) from _data/authors.yml
+    author: "Sam Reich"          → name-only card (person not in data file)
+
+  Leave "author:" out entirely to show no card at all.
+{% endcomment %}
+
+{% if page.author %}
+  {% assign author_data = site.data.authors[page.author] %}
+
+  <div class="author-card-wrap">
+    <div class="author-card">
+
+      {% if author_data %}
+
+        {% if author_data.photo %}
+        <div class="author-card__photo-wrap">
+          <img
+            src="{{ author_data.photo | relative_url }}"
+            alt="{{ author_data.name }}"
+            class="author-card__photo"
+          >
+        </div>
+        {% endif %}
+
+        <div class="author-card__info">
+          <p class="author-card__label">Written by</p>
+          <h4 class="author-card__name">{{ author_data.name }}</h4>
+          {% if author_data.bio %}
+            <p class="author-card__bio">{{ author_data.bio }}</p>
+          {% endif %}
+          {% if author_data.links %}
+          <div class="author-card__links">
+            {% for link in author_data.links %}
+              <a href="{{ link.url }}" target="_blank" rel="noopener" class="author-card__link">
+                {{ link.label }}
+              </a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+
+      {% else %}
+
+        <div class="author-card__info">
+          <p class="author-card__label">Written by</p>
+          <h4 class="author-card__name">{{ page.author }}</h4>
+          <p class="author-card__bio author-card__bio--guest">
+            Guest contributor to CPDH.guide.
+          </p>
+        </div>
+
+      {% endif %}
+
+    </div>
+  </div>
+{% endif %}

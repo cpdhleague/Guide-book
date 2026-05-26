@@ -1,17 +1,32 @@
 ---
-title: "REPLACE THIS WITH YOUR CLICKABLE TITLE"
-date: 2025-12-01
+title: "YOUR CLICKABLE TITLE HERE"
+date: 2026-05-26
 layout: splash
 classes: wide
+
+# --- WHO & WHAT ---
+creator: guide          # guide | pdhpod | jalapenos
+author: gingerpersolus  # Key from _data/authors.yml, or "First Last" for guests
 categories:
-  - Deck Tech
+  - Game Guides         # ONE of: Game Guides | Deck Tech | Videos | Community | Tournament Reports | Events
+
+# --- DISPLAY CONTROLS ---
+front_page: true        # Show on homepage? true or false
+hidden: false           # Hide from ALL listings? true or false (use for drafts)
+archive_only: false     # Only in category archive, not /articles/? true or false
+gnews: false            # Send to Google News / Reddit / Discord RSS? true or false
+
+# --- IMAGES ---
 header:
-  overlay_image: /assets/images/YOUR-IMAGE.jpg
+  overlay_image: /assets/images/YOUR-HEADER-IMAGE.jpg
   overlay_filter: 0.5
-  teaser: /assets/images/YOUR-THUMBNAIL.jpg
-excerpt: "Write 1-2 sentences here that summarize the article. This will appear on the main page and in your newsletter."
+  teaser: /assets/images/YOUR-THUMBNAIL.jpg   # 16:9 ratio recommended
+
+# --- EXCERPT ---
+excerpt: "1–2 sentences summarizing the article. No markdown, no quotes. Shows on homepage and in feeds."
 ---
 
-## Introduction
+Write your article content here. Use ## for section headings.
 
-Write your content here...
+{% include author-card.html %}
+{% include article-nav.html %}

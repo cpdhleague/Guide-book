@@ -3,6 +3,11 @@ title: "Jalapenos Play Chaotic Homebrews"
 date: 2025-12-20
 layout: splash
 classes: wide
+front_page: true
+creator: jalapenos
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

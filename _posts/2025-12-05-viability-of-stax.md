@@ -3,6 +3,11 @@ title: "The Viability of Stax in Competitive Pauper Commander"
 date: 2025-12-05
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Opinion
 excerpt: "The Stax archetype IS NOT named for Smokestack. Let’s explore the history of the archetype and what it actually looks like in cPDH."

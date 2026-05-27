@@ -3,6 +3,11 @@ title: "Decked Out EDH plays PDH!"
 date: 2025-12-19
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

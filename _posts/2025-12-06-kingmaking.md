@@ -3,6 +3,11 @@ title: "Kingmaking in cPDH"
 date: 2025-12-06
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Opinion
 excerpt: "Playing a competitive variant of a casual, multiplayer game doesn’t fully eliminate the common social pitfalls. Let's discuss Kingmaking and Spite Plays."

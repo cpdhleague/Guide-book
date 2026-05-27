@@ -21,11 +21,21 @@ beachbodgod69:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"
 
+pdhpod:
+  name: "The PDH Pod"
+  photo: "/assets/images/authors/pdhpod.jpg"
+  bio: "The PDH Pod is hosted by three lifelong Magic players dedicated to competitive Pauper Commander. Tune in for weekly strategy, meta breakdowns, and deep dives into the cPDH format."
+  links:
+    - label: "Spotify"
+      url: "https://open.spotify.com/show/YOUR_SHOW_ID_HERE"
+    - label: "Discord"
+      url: "https://discord.com/invite/UtgN272kpq"
+
 # --- HOW TO ADD A NEW AUTHOR ---
 # yourkey:
 #   name: "Display Name"
 #   photo: "/assets/images/authors/yourphoto.jpg"
 #   bio: "Short 1–2 sentence bio."
 #   links:
-#     - label: "Discord"
-#       url: "https://discord.com/invite/UtgN272kpq"
+#     - label: "Spotify"
+#       url: "https://open.spotify.com/show/YOUR_ID"

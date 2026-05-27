@@ -7,6 +7,14 @@ permalink: /early_game/
 header:
   teaser: /assets/images/cpdh.phg
 excerpt: "Adam breaks down how to navigate and think about the Early Game."
+front_page: true
+creator: guide
+author: beachbodgod69
+hidden: false
+archive_only: false
+gnews: false
+categories:
+  - Game Guides
 ---
 
 Feel free to read about The Early Game in the following partitions, should you choose to do so:

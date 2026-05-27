@@ -3,6 +3,11 @@ title: "Longshot, Rebel Bowman cPDH Deck Tech"
 date: 2025-12-28
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - cPDH Deck Techs
 tags:

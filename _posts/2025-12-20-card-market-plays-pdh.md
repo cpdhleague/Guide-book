@@ -3,6 +3,11 @@ title: "Card Market plays PDH!"
 date: 2025-12-20
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

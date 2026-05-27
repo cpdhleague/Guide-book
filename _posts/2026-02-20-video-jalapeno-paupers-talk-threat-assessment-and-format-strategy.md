@@ -3,6 +3,11 @@ title: "Jalapeno Paupers talk Threat Assessment and Format Strategy"
 date: 2026-02-20
 layout: splash
 classes: wide
+front_page: true
+creator: jalapenos
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

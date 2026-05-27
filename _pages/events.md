@@ -85,7 +85,7 @@ header:
         {% endif %}
       </div>
       {% if event.link %}
-        <a href="{{ event.link }}" class="btn btn--inverse" target="_blank" rel="noopener">View Recap</a>
+        <a href="{{ event.link }}" class="btn btn--inverse" target="_blank" rel="noopener">View Details</a>
       {% endif %}
     </div>
   </div>

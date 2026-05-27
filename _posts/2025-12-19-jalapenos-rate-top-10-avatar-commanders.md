@@ -3,6 +3,11 @@ title: "Jalapenos Rate Top 10 Avatar Commanders"
 date: 2025-12-19
 layout: splash
 classes: wide
+front_page: true
+creator: jalapenos
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

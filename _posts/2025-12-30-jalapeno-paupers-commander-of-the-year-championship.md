@@ -3,6 +3,11 @@ title: "Jalapeno Paupers Commander of the Year Championship"
 date: 2025-12-30
 layout: splash
 classes: wide
+front_page: true
+creator: jalapenos
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

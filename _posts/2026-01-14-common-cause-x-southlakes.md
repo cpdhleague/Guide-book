@@ -3,6 +3,11 @@ title: "Common Cause X Champion: SouthLakes Slings to Top Spot with Akiri"
 date: 2026-02-14
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Tournament Reports
 tags:

@@ -3,6 +3,11 @@ title: "Hudson Valley 1k: Princex of Pauper is a Disciple of this Deceitfully St
 date: 2026-02-18
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Tournament Reports
 tags:

@@ -3,6 +3,12 @@ title: "STAGES OF THE GAME"
 date: 2025-12-04
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+author: beachbodgod69
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Game Guides
 excerpt: "Turn 0 is a very unique and important space in the game... it is the only space where the 90-minute time limit isn’t applied to your actions."

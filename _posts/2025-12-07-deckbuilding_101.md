@@ -3,6 +3,12 @@ title: "Deckbuilding 101: Focusing on Process over Outcome"
 date: 2025-12-07
 layout: splash
 classes: wide
+front_page: true
+creator: guide
+author: beachbodgod69
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Game Guides
 excerpt: "Is focusing on the win condition the best way to build a competitive deck? Let's take a deeper dive into the minds of our Champions to find out."

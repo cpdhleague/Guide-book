@@ -1,48 +1,10 @@
-<link rel="icon" type="image/png" href="{{ '/assets/images/logo-final.png' | relative_url }}">
-<link rel="shortcut icon" href="{{ '/assets/images/logo-final.png' | relative_url }}">
-<link rel="apple-touch-icon" href="{{ '/assets/images/logo-final.png' | relative_url }}">
-
-<!-- Google Fonts: Matching app.cpdh.guide font stack -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<!-- ============================================================
-     ANALYTICS: GoatCounter (free, privacy-friendly, no cookies)
-     
-     HOW TO SET UP:
-     1. Go to https://www.goatcounter.com and click "Sign up"
-     2. Pick a code (e.g., "cpdh-guide") — this becomes your subdomain
-     3. Replace YOUR-CODE below with whatever you chose
-     4. That's it. GoatCounter will start counting page views immediately.
-     
-     Your dashboard will be at: https://YOUR-CODE.goatcounter.com
-     ============================================================ -->
-<script data-goatcounter="https://cpdh-guide.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
-<!-- Custom analytics: link clicks + time-on-page tracking -->
-<script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>
-
-<!-- Reading Progress Bar (article pages) -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var article = document.querySelector('.page__content');
-  if (!article) return;
-
-  var bar = document.createElement('div');
-  bar.className = 'reading-progress';
-  bar.style.width = '0%';
-  document.body.appendChild(bar);
-
-  window.addEventListener('scroll', function() {
-    var rect = article.getBoundingClientRect();
-    var articleTop = rect.top + window.scrollY;
-    var articleHeight = article.offsetHeight;
-    var windowHeight = window.innerHeight;
-    var scrolled = window.scrollY - articleTop + windowHeight;
-    var pct = Math.min(Math.max((scrolled / articleHeight) * 100, 0), 100);
-    bar.style.width = pct + '%';
-  });
-});
-</script>
+<style>
+/* CPDH.GUIDE site title — bigger & bolder */
+.site-title {
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  color: #FFFDD0 !important;
+  -webkit-text-fill-color: #FFFDD0 !important;
+}
+</style>

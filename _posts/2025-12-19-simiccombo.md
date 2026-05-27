@@ -5,6 +5,11 @@ layout: single
 classes: 
   - wide
   - short-header
+front_page: true
+creator: guide
+hidden: false
+archive_only: false
+gnews: false
 categories:
   - Videos
 tags:

@@ -75,7 +75,7 @@ hidden: true
 </div>
 
 <script>
-  var SUBMIT_PASSWORD = "pdhpod2026";
+  var SUBMIT_PASSWORD = "NosleevesBestsleeves";
 
   function handleSubmit() {
     var pw = document.getElementById('sub-password').value;

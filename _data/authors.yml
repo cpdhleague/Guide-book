@@ -6,7 +6,8 @@
 ginger:
   name: "Ginger Persolus"
   photo: "/assets/images/ginger-bio.jpg"
-  bio: "Your bio goes here. Keep it to 1–2 sentences."
+  bio: "Currently living the life a of digital nomad, Ginger is co-owner of CPDH.guide and an incredible enthusiast of the format. He is proud of the fact that he has the most PDH matches on record. 
+    watch his play videos online or ask him questions on the CPDH.guide Discord."
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"

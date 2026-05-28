@@ -16,7 +16,7 @@ hidden: true
   </p>
 </div>
 
-<form id="submission-form" action="YOUR_FORMSPREE_ENDPOINT_HERE" method="POST" style="margin-top: 2em;">
+<form id="submission-form" action="https://formspree.io/f/mzdwogyv" method="POST" style="margin-top: 2em;">
 
   <input type="text" name="_gotcha" style="display:none">
   <input type="hidden" name="creator" value="pdhpod">

@@ -11,7 +11,7 @@ front_page: true
 creator: guide
 author: beachbodgod69
 hidden: false
-archive_only: false
+archive_only: true
 gnews: false
 categories:
   - Game Guides

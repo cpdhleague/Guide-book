@@ -88,7 +88,7 @@ One of the strongest engines in this deck is Flashback. We run all the best Flas
 
 **Discard Costs vs. Effects:**
 Many cards use "discard a card as an additional cost" text. We rely heavily on **Big Score**, **Unexpected Windfall**, **Thrill of Possibility**, and **Tormenting Voice**.
-*Tip:* Track which cards discard as a *cost* (like **Faithless Looting**) versus an *effect*. Save cards like **Romantic Rendezvous** or **Dangerous Wager** for the end of your storm chain so you can draw without having to discard a card you needed.
+*Tip:* Track which cards discard as a *cost*  versus an *effect*. Save cards like **Romantic Rendezvous** or **Dangerous Wager** for the end of your storm chain so you can draw without having to discard a card you needed.
 
 {% include card-grid.html cards="Big Score, Thrill of Possibility, Faithless Salvaging, Romantic Rendezvous, Dangerous Wager" %}
 
@@ -213,4 +213,5 @@ This deck is a gambling deck, so it’s important to point out that Longshot nee
 
 <a href="https://moxfield.com/decks/felxydpKP0qpoou767dsJA" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">View Full Decklist on Moxfield</a>
 
+{% include author-card.html %}
 {% include article-nav.html %}

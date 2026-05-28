@@ -5,6 +5,7 @@ layout: splash
 classes: wide
 front_page: true
 creator: guide
+author: ginger 
 hidden: false
 archive_only: false
 gnews: false

@@ -6,7 +6,7 @@ classes: wide
 front_page: true
 creator: guide
 hidden: false
-archive_only: false
+archive_only: true
 gnews: false
 categories:
   - Opinion

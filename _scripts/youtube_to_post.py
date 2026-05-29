@@ -1,73 +1,72 @@
 """
 youtube_to_post.py - Convert content submissions into Jekyll blog posts
 =======================================================================
-This script is called by a GitHub Actions workflow when someone opens
-an issue with a title like "YouTube: Cool Video About PDH".
+Called by the GitHub Actions workflow when someone opens an issue with
+a title like "PDHpod: Ep 222 - Simic Combo Deep Dive".
 
-It reads the issue body and title from ENVIRONMENT VARIABLES (not
-command line arguments — see the workflow file for why this matters).
+AI processing is intentionally disabled. Text is published as-written.
+See youtube_to_post_WITH_AI.py if you ever want to restore AI support.
 
-WHAT IT DOES:
-  1. Determines content type from the issue title prefix
-  2. Extracts media links (YouTube/Spotify) from line 1 of the body
-  3. Optionally runs Gemini AI to expand short notes into a full article
-  4. Downloads thumbnails (YouTube only)
-  5. Generates a Jekyll-compatible markdown post file
+SUPPORTED TITLE PREFIXES:
+  YouTube:   → Embeds a YouTube video, downloads thumbnail (creator: guide)
+  Spotify:   → Embeds a Spotify player (creator: guide)
+  Article:   → Plain text article with optional link buttons (creator: guide)
+  PDHpod:    → Spotify embed with PDHpod author card (creator: pdhpod)
+  Jalapenos: → YouTube embed + thumbnail, Jalapenos card (creator: jalapenos)
 
-SKIP-AI MODE:
-  If the user wraps their entire text in quotes ("like this"), the AI
-  step is skipped and their text is used verbatim. This is useful for
-  pre-written articles that just need to be formatted as a post.
+ISSUE BODY FORMAT (for YouTube/Spotify/PDHpod/Jalapenos):
+  Line 1:  The media link (YouTube or Spotify URL)
+  Line 2+: Article body / show notes — published exactly as written
 
 LEARNING NOTE ON ENVIRONMENT VARIABLES:
-  The old version used sys.argv (command line arguments) which required
-  the workflow to paste the issue body into a shell command — breaking
-  on any URL with & or ? characters. Environment variables avoid this
-  entirely because they're set by the OS, not parsed by the shell.
+  We read ISSUE_BODY and ISSUE_TITLE from env vars, not command-line
+  args, to avoid shell injection bugs with special characters in URLs.
 """
 
 import os
 import sys
-import requests
 import re
+import requests
 from datetime import datetime
 
 # =============================================================
-# CONFIGURATION
+# INPUTS
 # =============================================================
 
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-
-# Read inputs from environment variables (set by GitHub Actions)
-# Falls back to sys.argv for local testing
-issue_body = os.environ.get("ISSUE_BODY", "")
+issue_body      = os.environ.get("ISSUE_BODY", "")
 raw_issue_title = os.environ.get("ISSUE_TITLE", "")
 
-# Allow local testing via command line args
+# Allow local testing via command line
 if not issue_body and len(sys.argv) > 1:
     issue_body = sys.argv[1]
 if not raw_issue_title and len(sys.argv) > 2:
     raw_issue_title = sys.argv[2]
 
 if not issue_body:
-    print("❌ Error: No issue body provided (check ISSUE_BODY env var or pass as argument).")
+    print("Error: No issue body provided (check ISSUE_BODY env var).")
     sys.exit(1)
-
 if not raw_issue_title:
-    print("❌ Error: No issue title provided (check ISSUE_TITLE env var or pass as argument).")
+    print("Error: No issue title provided (check ISSUE_TITLE env var).")
     sys.exit(1)
 
 
 # =============================================================
-# HELPER: FIND YOUTUBE URL
+# CREATOR / CATEGORY MAPPINGS
 # =============================================================
-# Extracts both the full URL and the video ID from a YouTube link.
-#
-# LEARNING NOTE ON REGEX:
-# This pattern handles two YouTube URL formats:
-#   - youtube.com/watch?v=VIDEO_ID (standard)
-#   - youtu.be/VIDEO_ID (short link)
-# The [\w-]+ captures alphanumeric chars and hyphens (video IDs).
+# Add new creator types here. Each prefix produces different
+# front matter tags on the generated post.
+
+PREFIX_MAP = {
+    "youtube:":   {"media": "youtube",  "creator": "guide",     "author": None,        "category": "Videos"},
+    "spotify:":   {"media": "spotify",  "creator": "guide",     "author": None,        "category": "Videos"},
+    "article:":   {"media": "article",  "creator": "guide",     "author": None,        "category": "Game Guides"},
+    "pdhpod:":    {"media": "spotify",  "creator": "pdhpod",    "author": "pdhpod",    "category": "Podcast"},
+    "jalapenos:": {"media": "youtube",  "creator": "jalapenos", "author": "jalapenos", "category": "Videos"},
+}
+
+
+# =============================================================
+# HELPERS
 # =============================================================
 
 def find_youtube_url(text):
@@ -77,345 +76,191 @@ def find_youtube_url(text):
     return None, None
 
 
-# =============================================================
-# HELPER: SCRAPE VIDEO METADATA
-# =============================================================
-# Gets the channel name and video description without needing
-# a YouTube Data API key. Uses two approaches:
-#   1. oEmbed API (official, gives channel name)
-#   2. HTML scraping (unofficial, gets description)
-#
-# LEARNING NOTE: oEmbed is a standard that many sites support.
-# You give it a URL, it gives you metadata (title, author, etc.)
-# It's lightweight and doesn't require API keys.
-# =============================================================
-
-def scrape_video_data(url):
-    author = "The Creator"
-    description = ""
-
-    # 1. oEmbed for the channel name (official YouTube endpoint)
-    try:
-        oembed_url = f"https://www.youtube.com/oembed?url={url}&format=json"
-        data = requests.get(oembed_url, timeout=10).json()
-        author = data.get("author_name", author)
-    except Exception:
-        pass
-
-    # 2. HTML scraping for the video description
-    try:
-        headers = {'User-Agent': 'Mozilla/5.0'}
-        response = requests.get(url, headers=headers, timeout=10)
-        html = response.text
-
-        # YouTube embeds the description in a JSON blob in the page
-        desc_match = re.search(r'"shortDescription":"(.*?)"', html)
-        if desc_match:
-            description = desc_match.group(1).replace('\\n', '\n')
-        else:
-            # Fallback: meta description tag
-            meta_desc = re.search(r'<meta name="description" content="(.*?)">', html)
-            if meta_desc:
-                description = meta_desc.group(1)
-
-        # YouTube's default description is useless — discard it
-        if "Enjoy the videos and music" in description:
-            description = ""
-    except Exception:
-        pass
-
-    return author, description
+def make_excerpt(text):
+    """Pull the first sentence or ~12 words as an excerpt."""
+    clean = re.sub(r'^#+\s*', '', text, flags=re.MULTILINE).strip()
+    sentence = re.split(r'[.!?]', clean)[0].strip()
+    if len(sentence) > 15:
+        return sentence.replace('"', "'")
+    words = clean.split()
+    if len(words) > 12:
+        return " ".join(words[:12]).replace('"', "'") + "..."
+    return clean.replace('"', "'") or "New content from the cPDH community."
 
 
 # =============================================================
-# ROUTING: DETERMINE CONTENT TYPE
+# ROUTING
 # =============================================================
 
-content_type = "article"  # Default fallback
-final_title = raw_issue_title
+matched_config = None
+final_title    = raw_issue_title
 
-if raw_issue_title.lower().startswith("youtube:"):
-    content_type = "youtube"
-    final_title = raw_issue_title[8:].strip()
-elif raw_issue_title.lower().startswith("spotify:"):
-    content_type = "spotify"
-    final_title = raw_issue_title[8:].strip()
-elif raw_issue_title.lower().startswith("article:"):
-    content_type = "article"
-    final_title = raw_issue_title[8:].strip()
+for prefix, config in PREFIX_MAP.items():
+    if raw_issue_title.lower().startswith(prefix):
+        matched_config = config
+        final_title = raw_issue_title[len(prefix):].strip()
+        break
 
-print(f"📋 Content type: {content_type}")
-print(f"📋 Title: {final_title}")
+if not matched_config:
+    print(f"Error: Unrecognised prefix in: {raw_issue_title}")
+    print(f"Supported prefixes: {', '.join(PREFIX_MAP.keys())}")
+    sys.exit(1)
+
+media_type    = matched_config["media"]
+post_creator  = matched_config["creator"]
+post_author   = matched_config["author"]
+post_category = matched_config["category"]
+
+print(f"Media type : {media_type}")
+print(f"Creator    : {post_creator}")
+print(f"Title      : {final_title}")
 
 
 # =============================================================
 # PARSE ISSUE BODY
 # =============================================================
-# For YouTube/Spotify: line 1 = media link, rest = article text
-# For Articles: entire body = article text (no link required)
-#
-# SKIP-AI MODE: If the text body is wrapped in quotes, the user
-# wants their exact text used — no AI rewriting.
-# =============================================================
 
-if content_type in ["youtube", "spotify"]:
-    body_lines = issue_body.strip().split('\n')
-    first_line = body_lines[0].strip()
-    text_to_process = '\n'.join(body_lines[1:]).strip()
+if media_type in ["youtube", "spotify"]:
+    body_lines     = issue_body.strip().split('\n')
+    first_line     = body_lines[0].strip()
+    article_body   = '\n'.join(body_lines[1:]).strip()
 else:
-    first_line = ""
-    text_to_process = issue_body.strip()
+    first_line     = ""
+    article_body   = issue_body.strip()
 
-# Check for quote-wrapped text (skip AI mode)
-skip_ai = False
-if len(text_to_process) >= 2 and (
-    (text_to_process.startswith('"') and text_to_process.endswith('"')) or
-    (text_to_process.startswith("'") and text_to_process.endswith("'"))
-):
-    skip_ai = True
-    text_to_process = text_to_process[1:-1].strip()
-    print("✅ User requested text remain untouched (found quotes).")
-else:
-    print("🤖 User provided unquoted text. AI will expand/spellcheck.")
+# Check for an optional EXCERPT: line in the body
+# (the submission form can inject one)
+custom_excerpt = None
+excerpt_match = re.search(r'^EXCERPT:\s*(.+)$', article_body, re.MULTILINE | re.IGNORECASE)
+if excerpt_match:
+    custom_excerpt = excerpt_match.group(1).strip()
+    article_body = re.sub(r'^EXCERPT:.*\n?', '', article_body, flags=re.MULTILINE | re.IGNORECASE).strip()
 
+excerpt_text = custom_excerpt if custom_excerpt else make_excerpt(article_body)
 
-# =============================================================
-# AI GENERATION (GEMINI)
-# =============================================================
-# Only import and configure Gemini if we actually need it.
-#
-# LEARNING NOTE: "Lazy imports" — we only load the AI library
-# when we know we'll use it. This means submissions using the
-# quote-to-skip-AI feature work even if GEMINI_API_KEY isn't set.
-# =============================================================
-
-def process_content_with_ai(user_text, content_category):
-    """Send text to Gemini for expansion into a ~500 word article."""
-    if not GEMINI_API_KEY:
-        print("⚠️ GEMINI_API_KEY not set — using raw text as fallback.")
-        return get_fallback_excerpt(user_text), user_text
-
-    if not user_text.strip():
-        return "Check out this new release!", ""
-
-    try:
-        import google.generativeai as genai
-        genai.configure(api_key=GEMINI_API_KEY)
-        model = genai.GenerativeModel('gemini-2.5-pro')
-
-        prompt = f"""
-You are an expert writer and editor for a Pauper Commander (PDH) community website.
-A creator submitted notes/text for a new post.
-
-YOUR TASK:
-1. First, write a VERY SHORT "teaser" (Max 12 words) on its own line starting with "EXCERPT:".
-2. Then, write a full, engaging article of approximately 500 words based on their submission.
-   Correct any bad spelling or grammar natively.
-   Keep the tone excited, community-focused, and encouraging. Focus on the joy of the format.
-   Do not use an H1 header (# Title) at the start.
-   Do not include the EXCERPT line in the article body.
-
-CREATOR'S SUBMISSION:
-{user_text}
-"""
-        response = model.generate_content(prompt)
-        resp_text = response.text
-
-        # Parse the EXCERPT line from the rest of the body
-        if "EXCERPT:" in resp_text:
-            parts = resp_text.split("EXCERPT:", 1)[1].split("\n", 1)
-            out_excerpt = parts[0].strip().replace('"', '')
-            out_body = parts[1].strip() if len(parts) > 1 else ""
-            return out_excerpt, out_body
-
-        return "Check out our latest content!", resp_text.replace('"', '')
-
-    except Exception as e:
-        print(f"❌ AI generation failed: {e}")
-        return "Check out our latest content!", user_text
-
-
-def get_fallback_excerpt(text):
-    """Create a simple excerpt from the first ~12 words of the text."""
-    words = text.split()
-    if len(words) > 12:
-        return " ".join(words[:12]).replace('"', '') + "..."
-    return text.replace('"', '')
+print(f"Excerpt    : {excerpt_text}")
 
 
 # =============================================================
-# CONTENT ASSEMBLY (per type)
+# BUILD EMBED CODE
 # =============================================================
 
-article_body = ""
-excerpt_text = "Check out our latest content!"
-image_filename = "cpdh.png"  # Default image for Spotify/Articles
-embed_code = ""
-video_id = None
+image_filename = "cpdh.png"
+embed_code     = ""
+video_id       = None
 
-# --- YOUTUBE ---
-if content_type == "youtube":
+if media_type == "youtube":
     video_url, video_id = find_youtube_url(first_line)
     if not video_id:
-        print(f"❌ Error: Could not find a YouTube URL in: {first_line}")
+        print(f"Error: No YouTube URL found in: {first_line}")
         sys.exit(1)
+    print(f"YouTube ID : {video_id}")
+    embed_code = (
+        '\n<div style="text-align:center;margin:40px 0;">\n'
+        '  <h3>Watch the Video</h3>\n'
+        f'  <iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" '
+        'frameborder="0" allowfullscreen></iframe>\n'
+        '</div>\n'
+    )
 
-    print(f"🎬 Found YouTube video ID: {video_id}")
-    channel_name, video_description = scrape_video_data(video_url)
-    print(f"🎬 Channel: {channel_name}")
-
-    if skip_ai:
-        article_body = text_to_process
-        excerpt_text = get_fallback_excerpt(text_to_process)
-    else:
-        source_text = text_to_process if text_to_process.strip() else \
-            f"Video by {channel_name}. YouTube Description: {video_description}"
-        excerpt_text, article_body = process_content_with_ai(source_text, content_type)
-
-    embed_code = f"""
-<div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
-  <h3>Watch the Video</h3>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allowfullscreen></iframe>
-</div>
-"""
-
-# --- SPOTIFY ---
-elif content_type == "spotify":
-    spotify_match = re.search(r'spotify\.com/(episode|show)/([a-zA-Z0-9]+)', first_line)
-    if not spotify_match:
-        print(f"❌ Error: Could not find a Spotify URL in: {first_line}")
+elif media_type == "spotify":
+    m = re.search(r'spotify\.com/(episode|show)/([a-zA-Z0-9]+)', first_line)
+    if not m:
+        print(f"Error: No Spotify URL found in: {first_line}")
         sys.exit(1)
+    spot_type, spot_id = m.group(1), m.group(2)
+    print(f"Spotify    : {spot_type}/{spot_id}")
+    embed_code = (
+        '\n<div style="margin:40px 0;">\n'
+        f'  <iframe style="border-radius:12px" '
+        f'src="https://open.spotify.com/embed/{spot_type}/{spot_id}?utm_source=generator" '
+        'width="100%" height="352" frameBorder="0" allowfullscreen="" '
+        'allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture" '
+        'loading="lazy"></iframe>\n'
+        '</div>\n'
+    )
 
-    spot_type = spotify_match.group(1)
-    spot_id = spotify_match.group(2)
-    print(f"🎧 Found Spotify {spot_type}: {spot_id}")
-
-    if skip_ai:
-        article_body = text_to_process
-        excerpt_text = get_fallback_excerpt(text_to_process)
-    else:
-        excerpt_text, article_body = process_content_with_ai(text_to_process, content_type)
-
-    embed_code = f"""
-<div style="margin-top: 40px; margin-bottom: 40px;">
-  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/{spot_type}/{spot_id}?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-</div>
-"""
-
-# --- ARTICLE ---
-elif content_type == "article":
-    if skip_ai:
-        article_body = text_to_process
-        excerpt_text = get_fallback_excerpt(text_to_process)
-    else:
-        excerpt_text, article_body = process_content_with_ai(text_to_process, content_type)
-
-    # Extract any URLs from the body to create link buttons
-    links = re.findall(r'(https?://[^\s\)]+)', issue_body)
-    # Deduplicate and clean trailing punctuation
-    links = list(set([re.sub(r'[.,;!?]$', '', l) for l in links]))
-
+elif media_type == "article":
+    links = list(set([
+        re.sub(r'[.,;!?]$', '', l)
+        for l in re.findall(r'(https?://[^\s\)]+)', issue_body)
+    ]))
     if links:
-        button_html = '\n\n<div style="margin-top: 40px; text-align: center;">\n  <hr>\n  <h3>Helpful Links</h3>\n'
+        embed_code = '\n\n<div style="margin-top:40px;text-align:center;">\n  <hr>\n  <h3>Helpful Links</h3>\n'
         for i, link in enumerate(links):
-            button_html += f'  <a href="{link}" class="btn btn--primary" target="_blank" style="margin: 5px;">Reference Link {i+1}</a>\n'
-        button_html += '</div>\n'
-        embed_code = button_html
+            embed_code += f'  <a href="{link}" class="btn btn--primary" target="_blank" style="margin:5px;">Reference Link {i+1}</a>\n'
+        embed_code += '</div>\n'
 
 
 # =============================================================
 # DOWNLOAD THUMBNAIL (YouTube only)
 # =============================================================
-# YouTube provides thumbnails at predictable URLs based on video ID.
-# We try maxresdefault first (1280x720), then hqdefault (480x360).
-#
-# LEARNING NOTE: YouTube returns HTTP 200 even for placeholder/
-# missing thumbnails, but those are tiny files. We check that the
-# downloaded file is at least 10KB to filter out gray placeholders.
-# =============================================================
 
-if content_type == "youtube" and video_id:
+if media_type == "youtube" and video_id:
     image_filename = f"{video_id}.jpg"
-    image_dir = "assets/images"
-    image_path = f"{image_dir}/{image_filename}"
-
-    # Ensure the directory exists (it should in your repo, but just in case)
-    os.makedirs(image_dir, exist_ok=True)
-
-    thumb_urls = [
+    os.makedirs("assets/images", exist_ok=True)
+    downloaded = False
+    for url in [
         f"https://img.youtube.com/vi/{video_id}/maxresdefault.jpg",
         f"https://img.youtube.com/vi/{video_id}/hqdefault.jpg",
-    ]
-
-    downloaded = False
-    for url in thumb_urls:
+    ]:
         try:
             resp = requests.get(url, timeout=10)
-            # Check status AND file size (YouTube returns 200 for gray placeholders)
             if resp.status_code == 200 and len(resp.content) > 10_000:
-                with open(image_path, 'wb') as f:
+                with open(f"assets/images/{image_filename}", 'wb') as f:
                     f.write(resp.content)
                 downloaded = True
-                print(f"✅ Downloaded thumbnail: {image_path} ({len(resp.content)} bytes)")
+                print(f"Thumbnail  : assets/images/{image_filename} ({len(resp.content)} bytes)")
                 break
         except Exception as e:
-            print(f"⚠️ Thumbnail download failed for {url}: {e}")
-            continue
-
+            print(f"Thumbnail failed for {url}: {e}")
     if not downloaded:
-        print("⚠️ Could not download YouTube thumbnail — using default image.")
-        image_filename = "cpdh.png"  # Fall back to default
+        print("Thumbnail download failed — using default image.")
+        image_filename = "cpdh.png"
 
 
 # =============================================================
-# GENERATE THE JEKYLL POST FILE
-# =============================================================
-# Jekyll post filenames follow a strict format: YYYY-MM-DD-title.md
-# The front matter (between --- markers) configures how the page
-# looks. We include the `image:` field so the RSS feed (and your
-# Discord news bot!) can find the teaser image.
+# GENERATE JEKYLL POST FILE
 # =============================================================
 
-date_str = datetime.now().strftime("%Y-%m-%d")
+date_str   = datetime.now().strftime("%Y-%m-%d")
+safe_title = re.sub(r'\s+', '-', re.sub(r'[^a-zA-Z0-9\s_-]', '', final_title).strip()).lower()
+safe_title = safe_title or "untitled-post"
+filename   = f"_posts/{date_str}-{safe_title}.md"
 
-# Create a URL-safe filename from the title
-safe_title = re.sub(r'[^a-zA-Z0-9\s_-]', '', final_title).strip()
-safe_title = re.sub(r'\s+', '-', safe_title).lower()
-
-# Guard against empty title producing a bad filename
-if not safe_title:
-    safe_title = "untitled-post"
-
-filename = f"_posts/{date_str}-{safe_title}.md"
-
-# Ensure _posts directory exists
 os.makedirs("_posts", exist_ok=True)
 
-# Escape quotes in YAML strings to prevent broken front matter
-yaml_title = final_title.replace('"', '\\"')
-yaml_excerpt = excerpt_text.replace('"', '\\"')
+author_line  = f"author: {post_author}\n" if post_author else ""
+include_card = "{% include author-card.html %}\n" if post_author else ""
 
-file_content = f"""---
-title: "{yaml_title}"
+post_content = f"""---
+title: "{final_title.replace('"', '\\"')}"
 date: {date_str}
 layout: splash
 classes: wide
+creator: {post_creator}
+{author_line}front_page: true
+hidden: false
+archive_only: false
+gnews: false
 categories:
-  - {content_type.capitalize()}
+  - {post_category}
 image: /assets/images/{image_filename}
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/{image_filename}
-excerpt: "{yaml_excerpt}"
+excerpt: "{excerpt_text.replace('"', "'")}"
 ---
 
 {article_body}
 
 {embed_code}
+{include_card}
+{{% include article-nav.html %}}
 """
 
 with open(filename, 'w', encoding='utf-8') as f:
-    f.write(file_content)
+    f.write(post_content)
 
-print(f"✅ Successfully created post: {filename}")
+print(f"Created    : {filename}")

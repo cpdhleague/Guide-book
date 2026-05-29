@@ -51,7 +51,7 @@ jobs:
     # Change back to 'false' to restore the PR review workflow.
     # ==========================================================
     env:
-      AUTO_PUBLISH: 'false'
+      AUTO_PUBLISH: 'true'
 
     steps:
       - name: Checkout code

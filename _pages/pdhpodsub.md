@@ -34,7 +34,7 @@ hidden: true
   <div class="submit-field">
     <label class="submit-label">
       Short Excerpt
-      <span style="color:var(--dim);font-weight:400;text-transform:none;font-size:0.9em;">(optional — leave blank to auto-generate)</span>
+      <span style="color:var(--dim);font-weight:400;text-transform:none;font-size:0.9em;">(optional)</span>
     </label>
     <textarea id="field-excerpt" class="submit-input submit-textarea" rows="2"
       placeholder="1-2 sentence summary for the homepage and listings."></textarea>
@@ -43,8 +43,7 @@ hidden: true
   <div class="submit-field">
     <label class="submit-label">Show Notes / Episode Description *</label>
     <textarea id="field-body" class="submit-input submit-textarea" rows="10" required
-      placeholder="Paste your show notes here. Wrap in &quot;quotes&quot; to publish exactly as written. Otherwise our AI will expand and polish them."></textarea>
-    <p class="submit-hint">Tip: wrap your text in "quotes" to skip AI editing and publish your exact words.</p>
+      placeholder="Paste your show notes here."></textarea>
   </div>
 
   <hr style="margin: 2em 0; border-color: var(--border-subtle);">
@@ -81,10 +80,9 @@ hidden: true
 <script>
   var SUBMIT_PASSWORD = "pdhpod2026";
 
-  // Fine-grained PAT — issues: write only on this repo
-  // Replace this with your actual token from GitHub Settings
-  var GITHUB_TOKEN = "YOUR_GITHUB_TOKEN_HERE";
-  var GITHUB_REPO  = "cpdhleague/Guide-book";
+  // Cloudflare Worker URL — the Worker holds the GitHub token securely server-side.
+  // Replace this with your Worker URL once it is set up.
+  var WORKER_URL = "https://pdhpodsub.gingerpersolus.workers.dev/";
 
   function handleSubmit() {
     var title   = document.getElementById('field-title').value.trim();
@@ -106,10 +104,10 @@ hidden: true
       return;
     }
 
-    // Build the issue body:
-    // Line 1 = Spotify link (the script expects this)
-    // Line 2 = Excerpt (optional, prefixed so the script can parse it)
-    // Rest   = Show notes
+    // Build the GitHub issue body.
+    // Line 1 = Spotify link (the Python script expects this on line 1).
+    // Optional EXCERPT line the script will parse out and use as the post excerpt.
+    // Everything else becomes the article body, published exactly as written.
     var issueBody = spotify + '\n\n';
     if (excerpt) {
       issueBody += 'EXCERPT: ' + excerpt + '\n\n';
@@ -118,19 +116,15 @@ hidden: true
 
     var issueTitle = 'PDHpod: ' + title;
 
-    // Disable button and show loading state
     var btn = document.getElementById('submit-btn');
     btn.textContent = 'Submitting...';
     btn.disabled = true;
 
-    // Submit to GitHub Issues API
-    fetch('https://api.github.com/repos/' + GITHUB_REPO + '/issues', {
+    // Post to the Cloudflare Worker, which adds the GitHub token and
+    // forwards the request to the GitHub Issues API.
+    fetch(WORKER_URL, {
       method: 'POST',
-      headers: {
-        'Authorization': 'Bearer ' + GITHUB_TOKEN,
-        'Content-Type': 'application/json',
-        'Accept': 'application/vnd.github+json'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         title: issueTitle,
         body: issueBody,
@@ -143,7 +137,7 @@ hidden: true
         document.getElementById('success-message').style.display = 'block';
       } else {
         return response.json().then(function(data) {
-          throw new Error(data.message || 'GitHub API error ' + response.status);
+          throw new Error(data.message || 'Error ' + response.status);
         });
       }
     })

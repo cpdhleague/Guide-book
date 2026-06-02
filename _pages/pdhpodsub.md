@@ -98,7 +98,7 @@ hidden: true
 
 <script>
   var SUBMIT_PASSWORD = "pdhpod2026";
-  var WORKER_URL = "YOUR_CLOUDFLARE_WORKER_URL_HERE";
+  var WORKER_URL = "https://pdhpodsub.gingerpersolus.workers.dev/";
 
   function handleSubmit() {
     var title   = document.getElementById('field-title').value.trim();

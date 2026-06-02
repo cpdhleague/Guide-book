@@ -284,11 +284,13 @@ excerpt_text = custom_excerpt if custom_excerpt else make_excerpt(article_body)
 author_line  = f"author: {post_author}\n" if post_author else ""
 include_card = "{% include author-card.html %}\n" if post_author else ""
 
-# Strip leading slash for the image path if it's a local path
-image_path = image_filename if image_filename.startswith('http') else f"/assets/images/{image_filename.lstrip('/')}"
+# Pre-compute substitutions — backslashes not allowed inside f-string expressions in Python < 3.12
+yaml_title   = final_title.replace('"', '\\"')
+yaml_excerpt = excerpt_text.replace('"', "'")
+image_path   = image_filename if image_filename.startswith('http') else "/assets/images/" + image_filename.lstrip('/')
 
 post_content = f"""---
-title: "{final_title.replace('"', '\\"')}"
+title: "{yaml_title}"
 date: {date_str}
 layout: splash
 classes: wide
@@ -303,7 +305,7 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: {image_path}
-excerpt: "{excerpt_text.replace('"', "'")}"
+excerpt: "{yaml_excerpt}"
 ---
 
 {article_body}

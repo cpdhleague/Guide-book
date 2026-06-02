@@ -1,30 +1,3 @@
-# =============================================================
-# video-to-post.yml - Convert GitHub Issues into Jekyll blog posts
-# =============================================================
-# HOW IT WORKS:
-# 1. A user opens a GitHub Issue with a title like "PDHpod: Ep 42 - Deep Dive"
-# 2. The issue body contains a media link (line 1) and notes/body text
-# 3. This workflow runs a Python script that:
-#    - Detects content type from the title prefix
-#    - Extracts the YouTube/Spotify link and builds an embed
-#    - Downloads thumbnails (YouTube only)
-#    - Generates a complete Jekyll markdown post
-# 4. Either a Pull Request is created for review, OR the post is
-#    committed directly to master — controlled by AUTO_PUBLISH below.
-#
-# SUPPORTED TITLE PREFIXES:
-#   YouTube:   → YouTube embed + thumbnail download (creator: guide)
-#   Spotify:   → Spotify embed (creator: guide)
-#   Article:   → Plain article with link buttons (creator: guide)
-#   PDHpod:    → Spotify embed + PDHpod author card (creator: pdhpod)
-#   Jalapenos: → YouTube embed + thumbnail + Jalapenos card (creator: jalapenos)
-#
-# AUTO-PUBLISH TOGGLE:
-#   Set AUTO_PUBLISH to 'true' to commit directly to master (no review).
-#   Set AUTO_PUBLISH to 'false' (default) to create a Pull Request
-#   that Patrik must approve before the article goes live.
-# =============================================================
-
 name: Convert Content Issue to Post
 
 on:
@@ -45,14 +18,6 @@ jobs:
       issues: write
       pull-requests: write
 
-    # ==========================================================
-    # AUTO-PUBLISH TOGGLE
-    # Change 'false' to 'true' to skip review and go live immediately.
-    # Change back to 'false' to restore the PR review workflow.
-    # ==========================================================
-    env:
-      AUTO_PUBLISH: 'true'
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -66,6 +31,7 @@ jobs:
         run: pip install requests
 
       - name: Run generation script
+        id: generate
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
@@ -80,53 +46,55 @@ jobs:
             ❌ **Automated processing failed.**
 
             This can happen if:
-            - The first line of your issue doesn't contain a valid YouTube or Spotify link
-            - The link format isn't recognised
+            - No valid YouTube or Spotify URL was found in the issue body
+            - The link format was not recognised
             - There was a temporary network issue
 
-            Please double-check your issue body, or check the [Actions tab](/${{ github.repository }}/actions) for details.
+            Please check the [Actions tab](/${{ github.repository }}/actions) for the full error log.
 
       # ----------------------------------------------------------
-      # REVIEW MODE (AUTO_PUBLISH = false)
-      # Creates a Pull Request for Patrik to approve before publishing.
-      # ----------------------------------------------------------
-      - name: Create Pull Request for review
-        if: env.AUTO_PUBLISH != 'true'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "Submission: ${{ github.event.issue.title }}"
-          title: "Review Required: ${{ github.event.issue.title }}"
-          body: |
-            📝 New content submission from issue #${{ github.event.issue.number }}.
-
-            **Review checklist before merging:**
-            - [ ] Title and excerpt look good
-            - [ ] No spelling or formatting issues
-            - [ ] Embedded media loads correctly
-            - [ ] Thumbnail image is appropriate (YouTube posts)
-
-            Merge this PR to publish the article.
-          branch: "submission-${{ github.event.issue.number }}"
-          base: master
-          labels: submission, needs-review
-
-      # ----------------------------------------------------------
-      # AUTO-PUBLISH MODE (AUTO_PUBLISH = true)
-      # Commits directly to master — article goes live immediately.
+      # AUTO-PUBLISH: gnews is false → commit directly to master
+      # Article goes live immediately, no review needed.
       # ----------------------------------------------------------
       - name: Publish directly to master
-        if: env.AUTO_PUBLISH == 'true'
+        if: steps.generate.outputs.gnews != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _posts/ assets/images/
-          git diff --staged --quiet || git commit -m "Auto-publish: ${{ github.event.issue.title }}"
+          git diff --staged --quiet || git commit -m "Publish: ${{ github.event.issue.title }}"
           git push origin master
+
+      # ----------------------------------------------------------
+      # GNEWS REVIEW: gnews is true → create PR for Patrik to approve
+      # Article only goes live once Patrik merges the PR.
+      # ----------------------------------------------------------
+      - name: Create PR for GNews review
+        if: steps.generate.outputs.gnews == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Submission (GNews review): ${{ github.event.issue.title }}"
+          title: "GNews Review Required: ${{ github.event.issue.title }}"
+          body: |
+            📰 This submission has been flagged for **Google News**.
+
+            Before merging, please check:
+            - [ ] The article body is substantial enough for Google News (not just short show notes)
+            - [ ] Title and excerpt are clear and informative
+            - [ ] No formatting issues
+            - [ ] `gnews: true` is set correctly in the front matter
+
+            Merge to publish and include in the Google News RSS feed.
+
+            _From issue #${{ github.event.issue.number }}_
+          branch: "gnews-review-${{ github.event.issue.number }}"
+          base: master
+          labels: gnews, needs-review
 
       - name: Close Issue
         if: success()
         uses: peter-evans/close-issue@v3
         with:
           comment: |
-            ✅ Content processed successfully!
-            ${{ env.AUTO_PUBLISH == 'true' && 'Article published directly to the site.' || 'A Pull Request has been created for admin review — merge it to publish.' }}
+            ✅ Processed successfully!
+            ${{ steps.generate.outputs.gnews == 'true' && 'A Pull Request has been created for GNews review — Patrik will merge it once approved.' || 'Article published directly to the site.' }}

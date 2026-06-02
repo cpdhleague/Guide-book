@@ -11,8 +11,8 @@ hidden: true
 <div class="home-welcome" style="margin-top: 0;">
   <h2>PDHpod Submission Form</h2>
   <p style="color: var(--dim);">
-    Submit a new episode. Patrik will receive a pull request to review —
-    once he approves it, the article goes live automatically.
+    Submit a new episode. Once submitted it goes live on the site automatically.
+    If you request Google News distribution, Patrik will review it first.
   </p>
 </div>
 
@@ -29,6 +29,7 @@ hidden: true
     <label class="submit-label">Spotify Episode Link *</label>
     <input type="url" id="field-spotify" class="submit-input" required
       placeholder="https://open.spotify.com/episode/...">
+    <p class="submit-hint">The episode will be embedded directly on the page so visitors can listen without leaving the site.</p>
   </div>
 
   <div class="submit-field">
@@ -46,6 +47,24 @@ hidden: true
       placeholder="Paste your show notes here."></textarea>
   </div>
 
+  <div class="submit-field">
+    <div style="background:rgba(26,26,36,0.5);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:1.2em 1.5em;">
+      <label style="display:flex;align-items:flex-start;gap:12px;cursor:pointer;">
+        <input type="checkbox" id="field-gnews" style="margin-top:3px;flex-shrink:0;width:18px;height:18px;cursor:pointer;">
+        <div>
+          <span style="font-family:var(--font-display);font-size:0.95em;font-weight:600;color:var(--pale);text-transform:uppercase;letter-spacing:0.05em;">
+            Request Google News Distribution
+          </span>
+          <p style="font-size:0.85em;color:var(--dim);margin:6px 0 0;line-height:1.5;">
+            To qualify for Google News, an episode needs a full written article attached — not just show notes.
+            If you check this box, Patrik will review and expand the article before it goes out.
+            We cannot guarantee all GNews requests will be approved. Contact Patrik directly with any questions.
+          </p>
+        </div>
+      </label>
+    </div>
+  </div>
+
   <hr style="margin: 2em 0; border-color: var(--border-subtle);">
 
   <div class="submit-field">
@@ -59,15 +78,15 @@ hidden: true
 
   <div style="margin-top:1.5em;">
     <button type="button" onclick="handleSubmit()" id="submit-btn" class="btn btn--primary btn--large">
-      Submit for Review
+      Submit Episode
     </button>
   </div>
 
 </div>
 
 <div id="success-message" style="display:none;margin-top:2em;" class="notice--success notice">
-  <strong>Submitted!</strong> Patrik has been notified via GitHub and will review shortly.
-  Once he approves, the article goes live automatically.
+  <strong>Submitted!</strong> Your episode will be live on the site shortly.
+  <span id="gnews-note"></span>
 </div>
 
 <div id="error-message" style="display:none;margin-top:2em;" class="notice--danger notice">
@@ -79,40 +98,34 @@ hidden: true
 
 <script>
   var SUBMIT_PASSWORD = "pdhpod2026";
-
-  // Cloudflare Worker URL — the Worker holds the GitHub token securely server-side.
-  // Replace this with your Worker URL once it is set up.
-  var WORKER_URL = "https://pdhpodsub.gingerpersolus.workers.dev/";
+  var WORKER_URL = "YOUR_CLOUDFLARE_WORKER_URL_HERE";
 
   function handleSubmit() {
     var title   = document.getElementById('field-title').value.trim();
     var spotify = document.getElementById('field-spotify').value.trim();
     var excerpt = document.getElementById('field-excerpt').value.trim();
     var body    = document.getElementById('field-body').value.trim();
+    var gnews   = document.getElementById('field-gnews').checked;
     var pw      = document.getElementById('sub-password').value;
 
-    // Password check
     if (pw !== SUBMIT_PASSWORD) {
       document.getElementById('password-error').style.display = 'block';
       return;
     }
     document.getElementById('password-error').style.display = 'none';
 
-    // Required field check
     if (!title || !spotify || !body) {
-      alert('Please fill in all required fields (Title, Spotify Link, Show Notes).');
+      alert('Please fill in all required fields: Title, Spotify Link, and Show Notes.');
       return;
     }
 
-    // Build the GitHub issue body.
-    // Line 1 = Spotify link (the Python script expects this on line 1).
-    // Optional EXCERPT line the script will parse out and use as the post excerpt.
-    // Everything else becomes the article body, published exactly as written.
-    var issueBody = spotify + '\n\n';
-    if (excerpt) {
-      issueBody += 'EXCERPT: ' + excerpt + '\n\n';
-    }
-    issueBody += body;
+    // Build the issue body.
+    // The Python script searches all lines for the Spotify URL,
+    // and parses KEY: value metadata lines from anywhere in the body.
+    var issueBody = spotify + '\n';
+    if (gnews)   issueBody += 'GNEWS: true\n';
+    if (excerpt) issueBody += 'EXCERPT: ' + excerpt + '\n';
+    issueBody += '\n' + body;
 
     var issueTitle = 'PDHpod: ' + title;
 
@@ -120,20 +133,22 @@ hidden: true
     btn.textContent = 'Submitting...';
     btn.disabled = true;
 
-    // Post to the Cloudflare Worker, which adds the GitHub token and
-    // forwards the request to the GitHub Issues API.
     fetch(WORKER_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         title: issueTitle,
         body: issueBody,
-        labels: ['submission', 'pdhpod']
+        labels: gnews ? ['submission', 'pdhpod', 'gnews'] : ['submission', 'pdhpod']
       })
     })
     .then(function(response) {
       if (response.ok) {
         document.getElementById('form-wrap').style.display = 'none';
+        var note = gnews
+          ? ' Patrik will review it for Google News distribution before it goes live.'
+          : '';
+        document.getElementById('gnews-note').textContent = note;
         document.getElementById('success-message').style.display = 'block';
       } else {
         return response.json().then(function(data) {
@@ -142,7 +157,7 @@ hidden: true
       }
     })
     .catch(function(err) {
-      btn.textContent = 'Submit for Review';
+      btn.textContent = 'Submit Episode';
       btn.disabled = false;
       document.getElementById('error-detail').textContent = err.message;
       document.getElementById('error-message').style.display = 'block';

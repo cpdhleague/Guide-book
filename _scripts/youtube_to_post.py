@@ -8,19 +8,26 @@ AI processing is intentionally disabled. Text is published as-written.
 See youtube_to_post_WITH_AI.py if you ever want to restore AI support.
 
 SUPPORTED TITLE PREFIXES:
-  YouTube:   → Embeds a YouTube video, downloads thumbnail (creator: guide)
-  Spotify:   → Embeds a Spotify player (creator: guide)
-  Article:   → Plain text article with optional link buttons (creator: guide)
-  PDHpod:    → Spotify embed with PDHpod author card (creator: pdhpod)
-  Jalapenos: → YouTube embed + thumbnail, Jalapenos card (creator: jalapenos)
+  YouTube:   -> Embeds a YouTube video, downloads thumbnail (creator: guide)
+  Spotify:   -> Embeds a Spotify player (creator: guide)
+  Article:   -> Plain text article with optional link buttons (creator: guide)
+  PDHpod:    -> Spotify embed with PDHpod author card (creator: pdhpod)
+  Jalapenos: -> YouTube embed + thumbnail, Jalapenos card (creator: jalapenos)
 
-ISSUE BODY FORMAT (for YouTube/Spotify/PDHpod/Jalapenos):
-  Line 1:  The media link (YouTube or Spotify URL)
-  Line 2+: Article body / show notes — published exactly as written
+ISSUE BODY FORMAT:
+  The media URL can appear anywhere in the first 10 lines -- the script
+  searches for it rather than requiring it to be exactly on line 1.
 
-LEARNING NOTE ON ENVIRONMENT VARIABLES:
-  We read ISSUE_BODY and ISSUE_TITLE from env vars, not command-line
-  args, to avoid shell injection bugs with special characters in URLs.
+  Special metadata lines (KEY: value) are parsed from anywhere in the body:
+    EXCERPT: Custom excerpt text
+    IMAGE:   /assets/images/custom-image.jpg  (or full URL)
+    GNEWS:   true   (if present, article requires Patrik review before going live)
+
+  Everything else (non-URL, non-metadata lines) becomes the article body.
+
+OUTPUTS (written to $GITHUB_OUTPUT for the workflow to read):
+  gnews=true|false   -- whether GNews review was requested
+  filename=...       -- the generated post filename
 """
 
 import os
@@ -36,7 +43,6 @@ from datetime import datetime
 issue_body      = os.environ.get("ISSUE_BODY", "")
 raw_issue_title = os.environ.get("ISSUE_TITLE", "")
 
-# Allow local testing via command line
 if not issue_body and len(sys.argv) > 1:
     issue_body = sys.argv[1]
 if not raw_issue_title and len(sys.argv) > 2:
@@ -53,8 +59,6 @@ if not raw_issue_title:
 # =============================================================
 # CREATOR / CATEGORY MAPPINGS
 # =============================================================
-# Add new creator types here. Each prefix produces different
-# front matter tags on the generated post.
 
 PREFIX_MAP = {
     "youtube:":   {"media": "youtube",  "creator": "guide",     "author": None,        "category": "Videos"},
@@ -64,13 +68,29 @@ PREFIX_MAP = {
     "jalapenos:": {"media": "youtube",  "creator": "jalapenos", "author": "jalapenos", "category": "Videos"},
 }
 
+# Default images per creator (used when no IMAGE: metadata is provided)
+DEFAULT_IMAGES = {
+    "pdhpod":    "pdhpod.png",
+    "jalapenos": "cpdh.png",
+    "guide":     "cpdh.png",
+}
+
 
 # =============================================================
 # HELPERS
 # =============================================================
 
 def find_youtube_url(text):
-    match = re.search(r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([\w-]+))', text)
+    match = re.search(
+        r'(https?://(?:www\.)?(?:youtube\.com/watch\?v=|youtu\.be/)([\w-]+))', text
+    )
+    if match:
+        return match.group(1), match.group(2)
+    return None, None
+
+
+def find_spotify_url(text):
+    match = re.search(r'https?://[^\s]*spotify\.com/(episode|show)/([a-zA-Z0-9]+)', text)
     if match:
         return match.group(1), match.group(2)
     return None, None
@@ -117,78 +137,108 @@ print(f"Title      : {final_title}")
 
 
 # =============================================================
-# PARSE ISSUE BODY
+# ROBUST BODY PARSING
 # =============================================================
+# We search ALL lines for the media URL and KEY: value metadata,
+# rather than assuming a fixed line ordering. This makes the script
+# resilient to blank leading lines, CRLF endings, and other
+# formatting quirks from GitHub or the submission form.
 
-if media_type in ["youtube", "spotify"]:
-    body_lines     = issue_body.strip().split('\n')
-    first_line     = body_lines[0].strip()
-    article_body   = '\n'.join(body_lines[1:]).strip()
-else:
-    first_line     = ""
-    article_body   = issue_body.strip()
+lines = issue_body.strip().splitlines()
 
-# Check for an optional EXCERPT: line in the body
-# (the submission form can inject one)
-custom_excerpt = None
-excerpt_match = re.search(r'^EXCERPT:\s*(.+)$', article_body, re.MULTILINE | re.IGNORECASE)
-if excerpt_match:
-    custom_excerpt = excerpt_match.group(1).strip()
-    article_body = re.sub(r'^EXCERPT:.*\n?', '', article_body, flags=re.MULTILINE | re.IGNORECASE).strip()
+media_url_line = None   # the raw line containing the media URL
+metadata       = {}     # KEY -> value for any KEY: value lines
+body_lines     = []     # everything else becomes the article body
 
-excerpt_text = custom_excerpt if custom_excerpt else make_excerpt(article_body)
+METADATA_KEYS = {'EXCERPT', 'IMAGE', 'GNEWS'}
+MEDIA_PATTERNS = ['spotify.com', 'youtube.com', 'youtu.be']
 
-print(f"Excerpt    : {excerpt_text}")
+for line in lines:
+    stripped = line.strip()
+    if not stripped:
+        body_lines.append(line)
+        continue
+
+    # Check for media URL (only capture the first one found)
+    if media_url_line is None and any(p in stripped for p in MEDIA_PATTERNS):
+        media_url_line = stripped
+        continue
+
+    # Check for KEY: value metadata lines
+    meta_match = re.match(r'^([A-Z_]+):\s*(.+)$', stripped)
+    if meta_match and meta_match.group(1) in METADATA_KEYS:
+        metadata[meta_match.group(1)] = meta_match.group(2).strip()
+        continue
+
+    body_lines.append(line)
+
+article_body   = '\n'.join(body_lines).strip()
+custom_excerpt = metadata.get('EXCERPT', '')
+custom_image   = metadata.get('IMAGE', '')
+gnews_flag     = metadata.get('GNEWS', 'false').lower() == 'true'
+
+print(f"Media URL  : {media_url_line}")
+print(f"GNews      : {gnews_flag}")
+print(f"Custom img : {custom_image or '(using default)'}")
 
 
 # =============================================================
 # BUILD EMBED CODE
 # =============================================================
 
-image_filename = "cpdh.png"
+image_filename = custom_image if custom_image else DEFAULT_IMAGES.get(post_creator, "cpdh.png")
 embed_code     = ""
 video_id       = None
 
 if media_type == "youtube":
-    video_url, video_id = find_youtube_url(first_line)
+    if not media_url_line:
+        print("Error: No YouTube URL found in issue body.")
+        sys.exit(1)
+    video_url, video_id = find_youtube_url(media_url_line)
     if not video_id:
-        print(f"Error: No YouTube URL found in: {first_line}")
+        print(f"Error: Could not parse YouTube video ID from: {media_url_line}")
         sys.exit(1)
     print(f"YouTube ID : {video_id}")
     embed_code = (
         '\n<div style="text-align:center;margin:40px 0;">\n'
         '  <h3>Watch the Video</h3>\n'
-        f'  <iframe width="560" height="315" src="https://www.youtube.com/embed/{video_id}" '
-        'frameborder="0" allowfullscreen></iframe>\n'
+        f'  <iframe width="560" height="315"'
+        f' src="https://www.youtube.com/embed/{video_id}"'
+        ' frameborder="0" allowfullscreen></iframe>\n'
         '</div>\n'
     )
 
 elif media_type == "spotify":
-    m = re.search(r'spotify\.com/(episode|show)/([a-zA-Z0-9]+)', first_line)
-    if not m:
-        print(f"Error: No Spotify URL found in: {first_line}")
+    if not media_url_line:
+        print("Error: No Spotify URL found in issue body.")
         sys.exit(1)
-    spot_type, spot_id = m.group(1), m.group(2)
+    spot_type, spot_id = find_spotify_url(media_url_line)
+    if not spot_id:
+        print(f"Error: Could not parse Spotify ID from: {media_url_line}")
+        sys.exit(1)
     print(f"Spotify    : {spot_type}/{spot_id}")
     embed_code = (
         '\n<div style="margin:40px 0;">\n'
-        f'  <iframe style="border-radius:12px" '
-        f'src="https://open.spotify.com/embed/{spot_type}/{spot_id}?utm_source=generator" '
-        'width="100%" height="352" frameBorder="0" allowfullscreen="" '
-        'allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture" '
-        'loading="lazy"></iframe>\n'
+        f'  <iframe style="border-radius:12px"'
+        f' src="https://open.spotify.com/embed/{spot_type}/{spot_id}?utm_source=generator"'
+        ' width="100%" height="352" frameBorder="0" allowfullscreen=""'
+        ' allow="autoplay;clipboard-write;encrypted-media;fullscreen;picture-in-picture"'
+        ' loading="lazy"></iframe>\n'
         '</div>\n'
     )
 
 elif media_type == "article":
     links = list(set([
-        re.sub(r'[.,;!?]$', '', l)
-        for l in re.findall(r'(https?://[^\s\)]+)', issue_body)
+        re.sub(r'[.,;!?]$', '', lnk)
+        for lnk in re.findall(r'(https?://[^\s\)]+)', issue_body)
     ]))
     if links:
-        embed_code = '\n\n<div style="margin-top:40px;text-align:center;">\n  <hr>\n  <h3>Helpful Links</h3>\n'
-        for i, link in enumerate(links):
-            embed_code += f'  <a href="{link}" class="btn btn--primary" target="_blank" style="margin:5px;">Reference Link {i+1}</a>\n'
+        embed_code = (
+            '\n\n<div style="margin-top:40px;text-align:center;">\n'
+            '  <hr>\n  <h3>Helpful Links</h3>\n'
+        )
+        for i, lnk in enumerate(links):
+            embed_code += f'  <a href="{lnk}" class="btn btn--primary" target="_blank" style="margin:5px;">Reference Link {i+1}</a>\n'
         embed_code += '</div>\n'
 
 
@@ -196,7 +246,7 @@ elif media_type == "article":
 # DOWNLOAD THUMBNAIL (YouTube only)
 # =============================================================
 
-if media_type == "youtube" and video_id:
+if media_type == "youtube" and video_id and not custom_image:
     image_filename = f"{video_id}.jpg"
     os.makedirs("assets/images", exist_ok=True)
     downloaded = False
@@ -210,13 +260,13 @@ if media_type == "youtube" and video_id:
                 with open(f"assets/images/{image_filename}", 'wb') as f:
                     f.write(resp.content)
                 downloaded = True
-                print(f"Thumbnail  : assets/images/{image_filename} ({len(resp.content)} bytes)")
+                print(f"Thumbnail  : assets/images/{image_filename}")
                 break
         except Exception as e:
             print(f"Thumbnail failed for {url}: {e}")
     if not downloaded:
         print("Thumbnail download failed — using default image.")
-        image_filename = "cpdh.png"
+        image_filename = DEFAULT_IMAGES.get(post_creator, "cpdh.png")
 
 
 # =============================================================
@@ -230,8 +280,12 @@ filename   = f"_posts/{date_str}-{safe_title}.md"
 
 os.makedirs("_posts", exist_ok=True)
 
+excerpt_text = custom_excerpt if custom_excerpt else make_excerpt(article_body)
 author_line  = f"author: {post_author}\n" if post_author else ""
 include_card = "{% include author-card.html %}\n" if post_author else ""
+
+# Strip leading slash for the image path if it's a local path
+image_path = image_filename if image_filename.startswith('http') else f"/assets/images/{image_filename.lstrip('/')}"
 
 post_content = f"""---
 title: "{final_title.replace('"', '\\"')}"
@@ -242,14 +296,13 @@ creator: {post_creator}
 {author_line}front_page: true
 hidden: false
 archive_only: false
-gnews: false
+gnews: {str(gnews_flag).lower()}
 categories:
   - {post_category}
-image: /assets/images/{image_filename}
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/{image_filename}
+  teaser: {image_path}
 excerpt: "{excerpt_text.replace('"', "'")}"
 ---
 
@@ -264,3 +317,10 @@ with open(filename, 'w', encoding='utf-8') as f:
     f.write(post_content)
 
 print(f"Created    : {filename}")
+
+# Write outputs for the workflow to read
+github_output = os.environ.get('GITHUB_OUTPUT', '')
+if github_output:
+    with open(github_output, 'a') as f:
+        f.write(f"gnews={str(gnews_flag).lower()}\n")
+        f.write(f"filename={filename}\n")

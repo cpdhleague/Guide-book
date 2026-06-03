@@ -16,44 +16,31 @@ header:
 {% comment %}
   Homepage sorting logic:
   - Only articles with front_page: true are eligible
-  - Pick the most recent from each creator: pdhpod, jalapenos, guide
-  - Fill remaining slots (up to 6 total) with next most-recent front_page articles
-  - Final list sorted by date, newest first
+  - Walk posts newest-first; take up to 6
+  - PDHpod and Jalapenos are each capped at 1 (most recent)
+  - Guide/other articles fill remaining slots freely
 {% endcomment %}
 
 {% assign front_posts = site.posts | where: "front_page", true %}
-
-{% assign pdhpod_post    = nil %}
-{% assign jalapenos_post = nil %}
-{% assign guide_post     = nil %}
-
-{% for post in front_posts %}
-  {% if pdhpod_post    == nil and post.creator == "pdhpod"    %}{% assign pdhpod_post    = post %}{% endif %}
-  {% if jalapenos_post == nil and post.creator == "jalapenos" %}{% assign jalapenos_post = post %}{% endif %}
-  {% if guide_post     == nil and post.creator == "guide"     %}{% assign guide_post     = post %}{% endif %}
-{% endfor %}
-
-{% assign used_urls = "" | split: "" %}
-{% if pdhpod_post    %}{% assign used_urls = used_urls | push: pdhpod_post.url    %}{% endif %}
-{% if jalapenos_post %}{% assign used_urls = used_urls | push: jalapenos_post.url %}{% endif %}
-{% if guide_post     %}{% assign used_urls = used_urls | push: guide_post.url     %}{% endif %}
-
-{% assign others = "" | split: "" %}
-{% for post in front_posts %}
-  {% unless used_urls contains post.url %}
-    {% if others.size < 3 %}
-      {% assign others = others | push: post %}
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-
 {% assign featured = "" | split: "" %}
-{% if pdhpod_post    %}{% assign featured = featured | push: pdhpod_post    %}{% endif %}
-{% if jalapenos_post %}{% assign featured = featured | push: jalapenos_post %}{% endif %}
-{% if guide_post     %}{% assign featured = featured | push: guide_post     %}{% endif %}
-{% for post in others %}{% assign featured = featured | push: post %}{% endfor %}
+{% assign seen_pdhpod    = false %}
+{% assign seen_jalapenos = false %}
 
-{% assign featured = featured | sort: "date" | reverse %}
+{% for post in front_posts %}
+  {% if featured.size >= 6 %}{% continue %}{% endif %}
+
+  {% if post.creator == "pdhpod" %}
+    {% if seen_pdhpod %}{% continue %}{% endif %}
+    {% assign seen_pdhpod = true %}
+  {% endif %}
+
+  {% if post.creator == "jalapenos" %}
+    {% if seen_jalapenos %}{% continue %}{% endif %}
+    {% assign seen_jalapenos = true %}
+  {% endif %}
+
+  {% assign featured = featured | push: post %}
+{% endfor %}
 
 <div class="feature__row--images">
   {% for post in featured %}

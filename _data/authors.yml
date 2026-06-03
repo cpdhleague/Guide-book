@@ -36,13 +36,15 @@ pdhpod:
 jalapenos:
   name: "The Jalapeno Paupers"
   photo: "/assets/images/jala-sq.jpg"
-  bio: "The PDH Pod is the total Pauper Commander Exploration podcast. Go brew a deck, play some PDH, and check in next week for our latest episode! ;)"
+  bio: "The Jalapeno Paupers are passionate about MTG, especially PDH. Follow them for exciting gameplay, strategy discussions, and everything you need to dive deeper into PDH."
   page: "/articles/?author=jalapenos"
   links:
     - label: "Youtube"
       url: "https://www.youtube.com/@JalapenoPaupersMTG"
     - label: "Discord"
-      url: "https://discord.gg/CrexD6xE6A"
+      url: "https://discord.gg/TertcWjHdv"
+    - label: "Patreon"
+      url: "https://www.patreon.com/cw/JalapenoPaupers/home"
 
 # --- HOW TO ADD A NEW AUTHOR ---
 # yourkey:

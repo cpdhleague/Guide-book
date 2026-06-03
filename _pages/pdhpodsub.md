@@ -97,7 +97,7 @@ hidden: true
 </div>
 
 <script>
-  var SUBMIT_PASSWORD = "pdhpod2026";
+  var SUBMIT_PASSWORD = "NosleevesBestsleeves";
   var WORKER_URL = "https://pdhpodsub.gingerpersolus.workers.dev/";
 
   function handleSubmit() {

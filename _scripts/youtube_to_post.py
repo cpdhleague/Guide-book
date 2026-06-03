@@ -301,6 +301,7 @@ archive_only: false
 gnews: {str(gnews_flag).lower()}
 categories:
   - {post_category}
+image: {image_path}
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5

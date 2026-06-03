@@ -7,7 +7,7 @@ ginger:
   name: "Ginger Persolus"
   photo: "/assets/images/ginger-bio.jpg"
   bio: "Currently living the life a of digital nomad, Ginger is co-owner of CPDH.guide and an incredible enthusiast of the format. He is proud of the fact that he has the most PDH matches on record. 
-    watch his play videos online or ask him questions on the CPDH.guide Discord."
+    Watch his play videos online or ask him questions on the CPDH.guide Discord!"
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"
@@ -24,13 +24,13 @@ beachbodgod69:
 
 pdhpod:
   name: "The PDH Pod"
-  photo: "/assets/images/authors/pdhpod.jpg"
-  bio: "The PDH Pod is hosted by three lifelong Magic players dedicated to competitive Pauper Commander. Tune in for weekly strategy, meta breakdowns, and deep dives into the cPDH format."
+  photo: "/assets/images/pdhpod.png"
+  bio: "The PDH Pod is the total Pauper Commander exploration podcast. Go brew a deck, play some PDH, and we'll see you in about a week for our next episode! ;)"
   links:
     - label: "Spotify"
-      url: "https://open.spotify.com/show/YOUR_SHOW_ID_HERE"
+      url: "https://open.spotify.com/show/55DyhZMhnn7z4SivHPiFVC"
     - label: "Discord"
-      url: "https://discord.com/invite/UtgN272kpq"
+      url: "https://discord.gg/CrexD6xE6A"
 
 # --- HOW TO ADD A NEW AUTHOR ---
 # yourkey:

@@ -5,6 +5,7 @@ layout: splash
 classes: wide
 creator: pdhpod
 author: pdhpod
+image: /assets/images/pdhpod.png
 front_page: true
 hidden: false
 archive_only: false

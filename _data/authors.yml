@@ -1,13 +1,12 @@
 # Author profiles for CPDH.guide
 # Keys must exactly match the "author:" field in post front matter.
-# Use all-lowercase, no spaces (e.g. gingerpersolus, beachbodgod69)
-# To add a photo: drop image in assets/images/authors/ and reference it here.
+# page: is the URL of that creator's archive page (used for the "More from" button)
 
 ginger:
   name: "Ginger Persolus"
   photo: "/assets/images/ginger-bio.jpg"
-  bio: "Currently living the life a of digital nomad, Ginger is co-owner of CPDH.guide and an incredible enthusiast of the format. He is proud of the fact that he has the most PDH matches on record. 
-    Watch his play videos online or ask him questions on the CPDH.guide Discord!"
+  bio: "Currently living the life of a digital nomad, Ginger is co-owner of CPDH.guide and an incredible enthusiast of the format. He is proud of the fact that he has the most PDH matches on record. Watch his play videos online or ask him questions on the CPDH.guide Discord!"
+  page: "/articles/?author=ginger"
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"
@@ -18,6 +17,7 @@ beachbodgod69:
   name: "BeachBodGod69"
   photo: "/assets/images/authors/beachbodgod69.jpg"
   bio: "An avid cPDH meta enjoyer and true believer in the power of Mystic Enforcer."
+  page: "/articles/?author=beachbodgod69"
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"
@@ -25,18 +25,31 @@ beachbodgod69:
 pdhpod:
   name: "The PDH Pod"
   photo: "/assets/images/pdhpod.png"
-  bio: "The PDH Pod is the total Pauper Commander exploration podcast. Go brew a deck, play some PDH, and we'll see you in about a week for our next episode! ;)"
+  bio: "The PDH Pod is the total Pauper Commander Exploration podcast. Go brew a deck, play some PDH, and check in next week for our latest episode! ;)"
+  page: "/articles/?author=pdhpod"
   links:
     - label: "Spotify"
       url: "https://open.spotify.com/show/55DyhZMhnn7z4SivHPiFVC"
     - label: "Discord"
       url: "https://discord.gg/CrexD6xE6A"
 
+jalapenos:
+  name: "The Jalapeno Paupers"
+  photo: "/assets/images/jala-sq.jpg"
+  bio: "The PDH Pod is the total Pauper Commander Exploration podcast. Go brew a deck, play some PDH, and check in next week for our latest episode! ;)"
+  page: "/articles/?author=jalapenos"
+  links:
+    - label: "Youtube"
+      url: "https://www.youtube.com/@JalapenoPaupersMTG"
+    - label: "Discord"
+      url: "https://discord.gg/CrexD6xE6A"
+
 # --- HOW TO ADD A NEW AUTHOR ---
 # yourkey:
 #   name: "Display Name"
-#   photo: "/assets/images/authors/yourphoto.jpg"
-#   bio: "Short 1–2 sentence bio."
+#   photo: "/assets/images/yourphoto.jpg"
+#   bio: "Short 1-2 sentence bio."
+#   page: "/creator/yourkey/"
 #   links:
-#     - label: "Spotify"
-#       url: "https://open.spotify.com/show/YOUR_ID"
+#     - label: "Link Label"
+#       url: "https://..."

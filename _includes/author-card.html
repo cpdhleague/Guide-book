@@ -5,7 +5,7 @@
     {% include author-card.html %}
 
   In the post's front matter, set one of:
-    author: gingerpersolus       → full card (photo + bio) from _data/authors.yml
+    author: pdhpod               → full card (photo + bio) from _data/authors.yml
     author: "Sam Reich"          → name-only card (person not in data file)
 
   Leave "author:" out entirely to show no card at all.
@@ -30,26 +30,31 @@
         {% endif %}
 
         <div class="author-card__info">
-          <p class="author-card__label">Written by</p>
+          <p class="author-card__label">Content by</p>
           <h4 class="author-card__name">{{ author_data.name }}</h4>
           {% if author_data.bio %}
             <p class="author-card__bio">{{ author_data.bio }}</p>
           {% endif %}
-          {% if author_data.links %}
-          <div class="author-card__links">
-            {% for link in author_data.links %}
-              <a href="{{ link.url }}" target="_blank" rel="noopener" class="author-card__link">
-                {{ link.label }}
+          <div class="author-card__actions">
+            {% if author_data.links %}
+              {% for link in author_data.links %}
+                <a href="{{ link.url }}" target="_blank" rel="noopener" class="author-card__link">
+                  {{ link.label }}
+                </a>
+              {% endfor %}
+            {% endif %}
+            {% if author_data.page %}
+              <a href="{{ author_data.page | relative_url }}" class="author-card__link author-card__link--more">
+                More from {{ author_data.name }} →
               </a>
-            {% endfor %}
+            {% endif %}
           </div>
-          {% endif %}
         </div>
 
       {% else %}
 
         <div class="author-card__info">
-          <p class="author-card__label">Written by</p>
+          <p class="author-card__label">Content by</p>
           <h4 class="author-card__name">{{ page.author }}</h4>
           <p class="author-card__bio author-card__bio--guest">
             Guest contributor to CPDH.guide.

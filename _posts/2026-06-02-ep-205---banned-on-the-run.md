@@ -16,7 +16,7 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/pdhpod.png
-excerpt: "Recently, a patron asked Alkadron the question 'What's up with Rhystic and Mystic being banned in Pauper Commander'"
+excerpt: "" 
 ---
 
 Recently, a patron asked Alkadron the question "What's up with Rhystic and Mystic being banned in Pauper Commander". To answer that question, Alk replied, "Well, why don't you come on the show and we'll talk about it!"

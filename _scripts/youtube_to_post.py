@@ -280,7 +280,7 @@ filename   = f"_posts/{date_str}-{safe_title}.md"
 
 os.makedirs("_posts", exist_ok=True)
 
-excerpt_text = custom_excerpt if custom_excerpt else make_excerpt(article_body)
+excerpt_text = custom_excerpt  # Left blank if not provided — Patrik fills in for GNews
 author_line  = f"author: {post_author}\n" if post_author else ""
 include_card = "{% include author-card.html %}\n" if post_author else ""
 
@@ -306,7 +306,7 @@ header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: {image_path}
-excerpt: "{yaml_excerpt}"
+excerpt: "{yaml_excerpt}"  # Required for GNews — fill this in before publishing to Google News
 ---
 
 {article_body}

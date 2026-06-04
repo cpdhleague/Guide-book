@@ -36,9 +36,19 @@ title: "YOUR CLICKABLE TITLE HERE"
 # ---------------------------------------------------------------------------
 # DATE
 # ---------------------------------------------------------------------------
-# Publication date in YYYY-MM-DD format. Must be today or in the past
-# (Jekyll will not publish future-dated posts on GitHub Pages).
-# This date appears on the article and controls sort order everywhere.
+# Publication date in YYYY-MM-DD format.
+#
+# PAST OR TODAY: Article publishes on next push to GitHub.
+#
+# FUTURE DATE — SCHEDULED PUBLISHING:
+#   Set a future date to hold the article until that date.
+#   A scheduled GitHub Action rebuilds the site daily at 6 AM UTC.
+#   The article will appear automatically on (or just after) that date
+#   without any further action from you.
+#   Example: set date: 2026-07-04 today, push it, and it goes live
+#   on the morning of July 4th with no further action needed.
+#   Note: the article file must be in _posts/ and pushed to GitHub
+#   before the target date — it won't publish from your local machine.
 # ---------------------------------------------------------------------------
 date: 2026-06-03
 
@@ -240,11 +250,11 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 # TEMPLATES by creator (copy and customise):
 #
 #   PDHpod episodes:
-#     "\U0001F3A7 New episode of the PDH Pod is live! Drop your thoughts
+#     "🎧 New episode of the PDH Pod is live! Drop your thoughts
 #      below — questions for the hosts? Tag u/alkadron!"
 #
 #   Jalapenos videos:
-#     "\U0001F336\uFE0F The Jalapenos dropped a new video! What do you think?
+#     "🌶️ The Jalapenos dropped a new video! What do you think?
 #      Any questions for the crew? Tag u/JalapenoPaupersMTG!"
 #
 #   Guide articles — write something specific to THIS article:

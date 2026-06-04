@@ -1,0 +1,37 @@
+# =============================================================
+# scheduled-rebuild.yml
+# =============================================================
+# Rebuilds the site automatically every day at 6 AM UTC.
+# This enables scheduled/future-dated publishing:
+#   - Write an article, set a future date, push to GitHub
+#   - On the morning of that date this action triggers a rebuild
+#   - Jekyll sees the date has arrived and includes the article
+#   - Article goes live without any manual action
+#
+# You can also trigger this manually from the Actions tab on GitHub
+# (useful if you want to force a rebuild without making a content change).
+# =============================================================
+
+name: Scheduled Daily Rebuild
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # Every day at 6:00 AM UTC
+  workflow_dispatch:        # Also allows manual trigger from GitHub Actions tab
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Trigger rebuild with empty commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "Scheduled rebuild: $(date -u +%Y-%m-%d)"
+          git push origin master

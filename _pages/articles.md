@@ -76,7 +76,7 @@ header:
 </div>
 
 <script>
-  var BATCH = 9;
+  var BATCH = 30;
   var shown = 0;
 
   function initPage() {
@@ -142,6 +142,15 @@ header:
         </li>
       {% endfor %}
     </ul>
+  </div>
+
+  <div style="flex: 1; min-width: 250px;">
+    <h3 class="archive__subtitle">Submit Your Deck Tech</h3>
+    <p style="color: var(--dim); font-size: 0.95em; margin-bottom: 1em;">
+      Have a commander you want to break down? We welcome deck techs, guides,
+      and opinion pieces from the community.
+    </p>
+    <a href="/articles/submit-guide/" class="btn btn--primary">See Submission Guidelines →</a>
   </div>
 </div>
 

@@ -1,0 +1,24 @@
+{% comment %}
+  Deck Tech Call-to-Action
+  Automatically shows a submission prompt at the bottom of any article
+  whose category is "Deck Tech", "cPDH Deck Techs", or "PDH Deck Techs".
+  Include this in every post with:
+    {% include deck-tech-cta.html %}
+  It silently shows nothing if the article isn't a deck tech.
+{% endcomment %}
+
+{% assign is_deck_tech = false %}
+{% for cat in page.categories %}
+  {% if cat == "Deck Tech" or cat == "cPDH Deck Techs" or cat == "PDH Deck Techs" %}
+    {% assign is_deck_tech = true %}
+  {% endif %}
+{% endfor %}
+
+{% if is_deck_tech %}
+<div class="deck-tech-cta">
+  <p class="deck-tech-cta__text">
+    Have your own deck tech? We'd love to feature it on CPDH.guide!
+  </p>
+  <a href="/articles/submit-guide/" class="btn btn--primary">Submit Your Deck Tech →</a>
+</div>
+{% endif %}

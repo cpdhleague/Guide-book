@@ -14,21 +14,28 @@
   date: 2026-06-20
   location: "CPDH.guide Discord Server"
   online: true
-  link: "https://discord.com/invite/UtgN272kpq"
+  link: "https://topdeck.gg/event/pdh-rainbow-rumble"
   description: "A meta mixup event: all commanders must have 3 or more colors in their identities."
 
 - title: "Wanderer's Triple Threat"
   date: 2026-09-19
   location: "CPDH.guide Discord Server"
   online: true
-  link: "https://discord.com/invite/UtgN272kpq"
+  link: "https://topdeck.gg/event/pdh-triple-threat"
   description: "A meta mixup event: each player brings three decks and gets to ban one of their opponent's decks before the match begins."
 
 - title: "Wanderer's Commander Clash 2026"
   date: 2026-12-12
   location: "CPDH.guide Discord Server"
   online: true
-  link: "https://discord.com/invite/UtgN272kpq"
-  description: "A meta mixup event: each commander must have seen its first printing in 2026. "
+  link: "https://topdeck.gg/event/pdh-commander-clash-2026"
+  description: "A meta mixup event: each commander must have seen its first printing in 2026."
+
+- title: "Wanderer's PDH League Finals - Year 2"
+  date: 2027-01-16
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: "https://topdeck.gg/event/wanderers-pdh-league-finals-year-2"
+  description: "By invitation only. The top 16 performers from Wanderer's PDH League Year 2 (2026) will be invited to compete for cash prizes, trophies, and glory."
 
 # Add your next event below this line:

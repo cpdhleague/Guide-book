@@ -271,6 +271,43 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 
 Write your article content here. Use ## for section headings and ### for sub-sections.
 
+
+# ===========================================================================
+# MANA SYMBOLS
+# ===========================================================================
+# Write mana costs using standard Magic bracket notation anywhere in your
+# article text. They are automatically converted to real mana icons on the
+# page. No HTML needed — just type the symbol in curly braces.
+#
+# BASIC MANA:
+#   {W} = White      {U} = Blue       {B} = Black
+#   {R} = Red        {G} = Green      {C} = Colourless
+#
+# GENERIC / NUMBERS:
+#   {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} ... {20}
+#   {X} = X cost
+#
+# SPECIAL:
+#   {T} = Tap symbol    {Q} = Untap    {S} = Snow
+#
+# HYBRID MANA:
+#   {W/U} {U/B} {B/R} {R/G} {G/W}    (allied pairs)
+#   {W/B} {U/R} {B/G} {R/W} {G/U}    (enemy pairs)
+#
+# 2-HYBRID:
+#   {2/W} {2/U} {2/B} {2/R} {2/G}
+#
+# PHYREXIAN:
+#   {W/P} {U/P} {B/P} {R/P} {G/P}
+#
+# EXAMPLES:
+#   Ayli, Eternal Pilgrim costs {W}{B}
+#   A 4-mana white blue commander costs {4}{W}{U}
+#   Force of Will costs {3}{U}{U}
+#   Note: {B} in normal prose may be misread — write "black mana ({B})" for clarity
+# ===========================================================================
+
+
 Add images inline with:
 <img src="/assets/images/your-image.jpg" alt="Description" style="width:100%; display:block; margin:0 auto;">
 
@@ -281,5 +318,6 @@ Embed YouTube videos with:
 
 Delete these example lines before publishing.
 
+{% include deck-tech-cta.html %}
 {% include author-card.html %}
 {% include article-nav.html %}

@@ -48,11 +48,16 @@ Delete sections that don't apply (e.g. skip the GNews section if gnews: false).
 - [ ] Set to exactly ONE of:
   - `Game Guides` — strategy, mechanics, format education
   - `Deck Tech` — commander spotlight, decklist deep dives
+  - `cPDH Deck Techs` — legacy value, treated the same as Deck Tech
+  - `PDH Deck Techs` — legacy value, treated the same as Deck Tech
   - `Videos` — YouTube embeds, video content
   - `Podcast` — PDHpod episodes (set automatically by submission form)
   - `Community` — interviews, player spotlights, community highlights
   - `Tournament Reports` — event recaps, standings, winner interviews
   - `Events` — upcoming events, announcements
+- [ ] Note: articles categorised as `Deck Tech`, `cPDH Deck Techs`, or `PDH Deck Techs`
+      automatically show a "Submit Your Deck Tech" call-to-action banner at the
+      bottom of the article. No extra steps needed — it's driven by the category.
 
 ### image (top-level)
 - [ ] Full path to the article's main image: `/assets/images/your-image.jpg`
@@ -136,14 +141,54 @@ Delete sections that don't apply (e.g. skip the GNews section if gnews: false).
 
 ---
 
+## MANA SYMBOLS
+
+Mana costs and symbols are automatic — just write them in standard Magic bracket
+notation anywhere in your article body. The page converts them to real icons.
+
+| Type | Notation | Notes |
+|------|----------|-------|
+| Basic mana | `{W}` `{U}` `{B}` `{R}` `{G}` | White Blue Black Red Green |
+| Colourless | `{C}` | |
+| Generic | `{0}` `{1}` `{2}` ... `{10}` ... `{20}` | |
+| Variable | `{X}` | |
+| Tap / Untap | `{T}` `{Q}` | |
+| Snow | `{S}` | |
+| Hybrid | `{W/U}` `{U/B}` `{B/R}` `{R/G}` `{G/W}` | Allied pairs |
+| Hybrid | `{W/B}` `{U/R}` `{B/G}` `{R/W}` `{G/U}` | Enemy pairs |
+| 2-hybrid | `{2/W}` `{2/U}` `{2/B}` `{2/R}` `{2/G}` | |
+| Phyrexian | `{W/P}` `{U/P}` `{B/P}` `{R/P}` `{G/P}` | |
+
+**Examples in prose:**
+- `Ayli, Eternal Pilgrim costs {W}{B}` → renders with real white and black mana symbols
+- `This commander costs {4}{W}{U}` → renders with a 4 and white/blue symbols
+- `{T}: Add {G}` → renders tap symbol and green mana
+
+**Note:** `{B}` in plain prose can look like a variable name out of context.
+Where clarity matters, write it as `black mana ({B})` so readers understand before the symbol renders.
+
+**Inside code blocks** (`\`like this\``), symbols are intentionally left as raw text
+and not converted — safe to use for code examples in technical articles.
+
+---
+
 ## ARTICLE BODY
 
 - [ ] Opening paragraph hooks the reader — no "In this article we will..."
 - [ ] Section headings use `##` (H2), sub-sections use `###` (H3)
 - [ ] YouTube embeds use the iframe from YouTube's Share → Embed button
 - [ ] Blockquotes use `>` for pull quotes
-- [ ] `{% include author-card.html %}` is at the bottom of the content
+- [ ] `{% include deck-tech-cta.html %}` is present before the author card
+      (outputs nothing on non-deck-tech articles — safe to include on every article)
+- [ ] `{% include author-card.html %}` is after the deck-tech-cta
 - [ ] `{% include article-nav.html %}` is the very last line
+
+Correct order for the bottom of every article:
+```
+{% include deck-tech-cta.html %}
+{% include author-card.html %}
+{% include article-nav.html %}
+```
 
 ---
 

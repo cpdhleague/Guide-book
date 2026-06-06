@@ -3,6 +3,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- Mana Font — MTG mana symbols for inline use in articles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mana-font@latest/css/mana.min.css">
+
 <!-- Favicon -->
 <link rel="shortcut icon" type="image/png" href="/assets/images/logo-final.png">
 
@@ -39,4 +42,122 @@
   border-color: var(--border-accent) !important;
   color: var(--primary-glow) !important;
 }
+
+/* Deck Tech submission CTA */
+.deck-tech-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2.5em 0;
+  padding: 1.25em 1.75em;
+  background: var(--primary-dim);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
+}
+.deck-tech-cta__text {
+  font-family: var(--font-display) !important;
+  font-size: 1.05em;
+  color: var(--pale);
+  margin: 0;
+}
+
+/* Mana symbols — inline sizing and alignment */
+.ms {
+  font-size: 1.15em;
+  vertical-align: middle;
+  line-height: 1;
+}
 </style>
+
+<!-- Mana symbol auto-conversion — turns {W}{U}{4} notation into real icons -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Maps {SYMBOL} notation to mana-font CSS classes
+  var manaMap = {
+    // Colours
+    'W':'w', 'U':'u', 'B':'b', 'R':'r', 'G':'g',
+    // Colourless / generic
+    'C':'c', 'X':'x', 'Y':'y', 'Z':'z',
+    // Numbers 0–20
+    '0':'0','1':'1','2':'2','3':'3','4':'4','5':'5',
+    '6':'6','7':'7','8':'8','9':'9','10':'10',
+    '11':'11','12':'12','13':'13','14':'14','15':'15',
+    '16':'16','17':'17','18':'18','19':'19','20':'20',
+    // Special
+    'T':'tap', 'Q':'untap', 'S':'s', 'E':'e', 'P':'p',
+    // Hybrid
+    'W/U':'wu','U/B':'ub','B/R':'br','R/G':'rg','G/W':'gw',
+    'W/B':'wb','U/R':'ur','B/G':'bg','R/W':'rw','G/U':'gu',
+    // Phyrexian
+    'W/P':'wp','U/P':'up','B/P':'bp','R/P':'rp','G/P':'gp',
+    // 2-hybrid
+    '2/W':'2w','2/U':'2u','2/B':'2b','2/R':'2r','2/G':'2g'
+  };
+
+  function symbolToHtml(symbol) {
+    var key = symbol.toUpperCase();
+    var cls = manaMap[key];
+    if (cls !== undefined) {
+      return '<i class="ms ms-' + cls + ' ms-cost ms-shadow" aria-label="{' + symbol + '}"></i>';
+    }
+    return '{' + symbol + '}'; // leave unrecognised symbols as plain text
+  }
+
+  function convertTextNode(node) {
+    var text = node.textContent;
+    if (!text.includes('{')) return;
+
+    var parts = text.split(/(\{[^}]+\})/g);
+    if (parts.length <= 1) return;
+
+    var span = document.createElement('span');
+    parts.forEach(function(part) {
+      var match = part.match(/^\{([^}]+)\}$/);
+      if (match) {
+        span.insertAdjacentHTML('beforeend', symbolToHtml(match[1]));
+      } else if (part) {
+        span.appendChild(document.createTextNode(part));
+      }
+    });
+
+    node.parentNode.replaceChild(span, node);
+  }
+
+  function walkAndConvert(root) {
+    var walker = document.createTreeWalker(
+      root,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function(node) {
+          // Skip code and pre blocks — leave {symbols} as raw text there
+          var el = node.parentElement;
+          while (el) {
+            var tag = el.tagName;
+            if (tag === 'CODE' || tag === 'PRE' || tag === 'SCRIPT' || tag === 'STYLE') {
+              return NodeFilter.FILTER_REJECT;
+            }
+            el = el.parentElement;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    var nodes = [];
+    var node;
+    while ((node = walker.nextNode())) {
+      if (node.textContent.includes('{')) nodes.push(node);
+    }
+    // Convert after collecting (modifying DOM during walk breaks the walker)
+    nodes.forEach(convertTextNode);
+  }
+
+  // Run on the main article content area
+  var content = document.querySelector('.page__content');
+  if (content) walkAndConvert(content);
+
+});
+</script>

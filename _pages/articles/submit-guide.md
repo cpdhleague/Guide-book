@@ -19,7 +19,7 @@ We welcome submissions for deck tech articles to be featured on **CPDH.guide**. 
 To be published, your article must comprehensively address the following components in a clear and organized manner:
 
 * **Gameplan Summary:** Provide a concise overview of the deck's primary win condition.
-* **Gameplan Execution (Early, Mid, Late Game):** Detail the deck's operational path, describing how the core strategy unfolds across the early, middle, and late stages of a game.
+* **Gameplan Execution:** Detail the deck's operational path, describing how the core strategy unfolds across the stages of a game.
 * **Card Selection:**
     * Begin by outlining the broad categories of cards that support the main gameplan.
     * Follow with an in-depth analysis of each category. Explain their importance, provide relevant card examples, and elaborate on any complex or potentially unclear mechanics.
@@ -38,7 +38,7 @@ To be published, your article must comprehensively address the following compone
 You must explicitly state in your email whether the submission is intended as a **PDH Guide** or a **cPDH Guide**.
 
 > **cPDH Guides**
-> These will undergo a higher level of content scrutiny. They must rigorously adhere to the structure above and focus on competitive viability.
+> These will undergo a higher level of content scrutiny. They must adhere to the structure above and focus on competitive viability.
 
 > **PDH Guides**
 > These allow for a more casual and fun tone. They do not require that all points above are strictly covered, provided they still offer a comprehensive view of the deck.

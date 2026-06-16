@@ -381,9 +381,9 @@ These are the commanders that didn’t make our top 10, but earned our attention
 **Floor:** Whiplash’s equipment are going to be more mana-intensive than Arabella’s small creatures, and the best black equipment doesn’t quite match the best Boros creatures for raw impact. He also enters tapped — likely to stop the obvious haste-equipment shenanigans — and if he dies, you’ll need to pay to re-attach all his gear.
 
 
-{% include card-grid.html cards="Titania Proud Pummeler" %}
+{% include card-grid.html cards="Titania Rugged Rumbler" %}
 
-**#14 — Titania, Proud Pummeler**
+**#14 — Titania, Rugged Rumbler**
 
 **Ceiling:** Titania reminds me of Daemogoth Woe-Eater — a card I always felt had potential. She’s a 5/5 for three mana with built-in protection and, crucially, none of the mandatory upkeep cost that held the Daemogoth back. Green brings trample, black turns her additional discard cost into an advantage, and she can come down on turn one off a Dark Ritual.  
 **Floor:** Honestly? The floor is pretty high. She’s cheap, she’s strong, she can’t do you wrong. Without a value-generating or game-winning ability, the only real question is whether a vanilla-ish 5/5 body hits hard enough in a competitive field.
@@ -435,9 +435,9 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 **Floor:** At five mana he’s a touch costly, and white’s effects may not scale into top-4 territory. There’s also a timing wrinkle: sitting right after a land-pass player like Gretchen Titchwillow can throw off your windows. Handing opponents the choice of whether your cards have flash isn’t ideal — it’s often not a real choice, your opponents do need to play cards, but it’s a concession all the same. 
 
 
-{% include card-grid.html cards="Thor Asgard’s Avenger" %}
+{% include card-grid.html cards="Thor Odinson" %}
 
-**#8 — Thor, Asgard’s Avenger**
+**#8 — Thor, Odinson**
 
 **Ceiling:** Built-in evasion, built-in buff, and vigilance so he can hold down defense too. Double prowess lets Thor grow fast — so fast that playing dedicated buff spells is probably incorrect in his builds. Since he’s already getting bigger on his own, spending those slots on control and support gives you a more consistent, well-rounded deck rather than a glass-cannon that dumps everything into a single attack. Boros offers excellent spells and protection, which makes Thor unblockable, and haste to start swinging quickly.  
 {% include card-grid.html cards="Jeskai Brushmaster" %}

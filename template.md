@@ -308,6 +308,31 @@ Write your article content here. Use ## for section headings and ### for sub-sec
 # ===========================================================================
 
 
+# ===========================================================================
+# CARD HOVER TOOLTIPS
+# ===========================================================================
+# Wrap any Magic card name in double square brackets to make it a hoverable
+# link. On desktop, hovering shows the card image. On mobile, tapping toggles
+# the image. Tapping anywhere else closes it.
+# The card image is fetched live from Scryfall — no setup needed.
+#
+# SYNTAX:
+#   [[Card Name]]
+#
+# EXAMPLES:
+#   ...the power of [[Ayli, Eternal Pilgrim]] in this shell...
+#   ...pairing [[Mystic Remora]] with [[Rhystic Study]] is redundant...
+#   ...[[Jeska's Will]] generates absurd value here...
+#
+# NOTES:
+#   - Spelling must be close enough for Scryfall's fuzzy search to find it
+#     ([[ayli pilgrim]] will find Ayli, Eternal Pilgrim)
+#   - Double-faced cards show the front face
+#   - If a card isn't found, the name displays as plain styled text
+#   - Inside code blocks ([[like this]]) it renders as raw text, not a link
+# ===========================================================================
+
+
 Add images inline with:
 <img src="/assets/images/your-image.jpg" alt="Description" style="width:100%; display:block; margin:0 auto;">
 
@@ -315,6 +340,9 @@ Embed YouTube videos with:
 <div style="text-align:center; margin:2em 0;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
 </div>
+
+Add a section divider (short purple accent line) with:
+{% include divider.html %}
 
 Delete these example lines before publishing.
 

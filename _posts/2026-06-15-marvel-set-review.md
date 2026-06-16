@@ -464,15 +464,13 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 **Ceiling:** Artifacts and affinity strategies are already incredibly strong in Pauper, and Iron Man has everything you want in a Voltron commander: evasion, vigilance to keep a blocker back, card draw, access to blue, and a self-buff mechanic that frees you from running buff spells entirely. Fill the deck with high-impact artifacts to keep him threatening while you stack up effects across your board. Very strong.  
 **Floor:** With one extra card per turn, you may run out of artifacts to play before attacking if you rely only on Iron Man for card draw.
 
-<div style="width:60px; height:2px; background:var(--primary); margin:2em auto;"></div>
+{% include divider.html %}
 
 {% include card-grid.html cards="Wiccan Rising Magician" %}  
 **#1 — Wiccan, Rising Magician**  
-**Ceiling:** You’re effectively stapling a Teferi’s Time Twist (without the +1/+1 counter) onto every noncreature spell in your deck. The value ceiling is enormous. Every commander on this list still has to prove itself against the real world — but I love the potential in this mono-blue Wiccan. Mono-blue can lack the survivability to grind out varied matchups, yet the ability to flicker any non-land permanent — yours or an opponent’s, including attackers and combo pieces — many times at instant speed is exceptional.  
+**Ceiling:** You’re effectively stapling a [[Teferi’s Time Twist]] (without the +1/+1 counter) onto every noncreature spell in your deck. The value ceiling is enormous. Every commander on this list still has to prove itself against the real world, but I love the potential in this mono-blue Wiccan. Mono-blue can lack the survivability to grind out varied matchups, yet the ability to flicker any non-land permanent — yours or an opponent’s, including attackers and combo pieces — with any instant in your deck is exceptional.  
 **Floor:** Five mana is a touch more than I’d like, but your mana rocks can trigger Wiccan to flicker your draw and recursion pieces in the late game, giving every card a way to stay relevant at any stage.  
-**Comparison:** Wiccan reminds me of Lagrella, the Magpie, who sees competitive play with above-average (if not staggering) results. Where Lagrella can struggle with mana fixing and balancing card types, Wiccan is mono-blue and can be an outstanding flicker deck while running zero flicker spells in the 99. What Wiccan lacks is Lagrella’s reach — it can’t select as many targets as broadly — but the potential is real, and I would not be surprised to see this commander turn up in tournaments. 
-
-{% include card-grid.html cards="Lagrella the Magpie, Teferi’s Time Twist" %}
+**Comparison:** Wiccan reminds me of [[Lagrella, the Magpie]], who sees competitive play with above-average (if not staggering) results. Where Lagrella can struggle with mana fixing and balancing card types, Wiccan is mono-blue and can be an outstanding flicker deck while running zero flicker spells in the 99. What Wiccan lacks is Lagrella’s reach — it can’t select as many targets as broadly — but the potential is real, and I would not be surprised to see this commander turn up in tournaments. 
 
 ---
 

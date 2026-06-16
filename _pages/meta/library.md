@@ -1020,3 +1020,99 @@ header:
   </div>
 </div>
 
+<script>
+// Card hover tooltips for the Decklist Library Commander column.
+// Reuses the tooltip element and Scryfall fetch already set up by custom.html.
+// Splits partner pairs and DFCs into individual hoverable card names:
+//   "Ley Weaver // Lore Weaver"  →  [[Ley Weaver]] // [[Lore Weaver]]
+//   "Dargo + Keskit"             →  [[Dargo]] + [[Keskit]]
+document.addEventListener('DOMContentLoaded', function() {
+
+  var table = document.querySelector('.library-table');
+  if (!table) return;
+
+  // Wait one tick to ensure custom.html's DOMContentLoaded has run first
+  setTimeout(function() {
+    var hover = window.mtgCard;
+    if (!hover) return;
+
+    var tooltip = document.getElementById('card-tooltip');
+    var mobileActiveCard = null;
+
+    // Commander column is index 1 (0 = Link, 1 = Commander)
+    var rows = table.querySelectorAll('tbody tr');
+
+    rows.forEach(function(row) {
+      var cells = row.querySelectorAll('td');
+      if (cells.length < 2) return;
+
+      var cell = cells[1];
+      var originalText = cell.textContent.trim();
+
+      // Split on " // " or " + ", keeping the separator
+      // Captures: ["Card A", " // ", "Card B"] or ["Card A", " + ", "Card B"]
+      var parts = originalText.split(/( // | \+ )/);
+
+      // Rebuild the cell with hoverable spans
+      cell.textContent = '';
+
+      parts.forEach(function(part) {
+        // Separator — render as plain text
+        if (part === ' // ' || part === ' + ') {
+          cell.appendChild(document.createTextNode(part));
+          return;
+        }
+
+        var name = part.trim();
+        if (!name) return;
+
+        // Pre-fetch so first hover is instant
+        hover.fetch(name, function() {});
+
+        var span = document.createElement('span');
+        span.className = 'card-link';
+        span.dataset.card = name;
+        span.textContent = name;
+
+        // Desktop: hover
+        span.addEventListener('mouseenter', function(e) {
+          hover.show(name, e.clientX, e.clientY);
+        });
+        span.addEventListener('mousemove', function(e) {
+          hover.position(e.clientX, e.clientY);
+        });
+        span.addEventListener('mouseleave', function() {
+          hover.hide();
+          mobileActiveCard = null;
+        });
+
+        // Mobile: tap to toggle
+        span.addEventListener('click', function(e) {
+          e.stopPropagation();
+          if (mobileActiveCard === name && tooltip.style.display === 'block') {
+            hover.hide();
+            mobileActiveCard = null;
+          } else {
+            mobileActiveCard = name;
+            var rect = span.getBoundingClientRect();
+            hover.show(name, rect.left + rect.width / 2, rect.top);
+          }
+        });
+
+        cell.appendChild(span);
+      });
+    });
+
+    // Tap anywhere else closes the tooltip
+    document.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('card-link')) {
+        hover.hide();
+        mobileActiveCard = null;
+      }
+    });
+
+  }, 0);
+
+});
+</script>
+

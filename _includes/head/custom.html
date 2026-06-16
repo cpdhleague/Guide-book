@@ -69,6 +69,31 @@
   vertical-align: middle;
   line-height: 1;
 }
+
+/* MTG card hover/tap tooltip */
+.card-link {
+  color: var(--primary-glow);
+  border-bottom: 1px dotted var(--primary-glow);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.card-link:hover {
+  color: var(--pale);
+  border-bottom-color: var(--pale);
+}
+#card-tooltip {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.85));
+  transition: opacity 0.15s ease;
+}
+#card-tooltip img {
+  width: 223px;
+  border-radius: 4.75% / 3.5%;
+  display: block;
+}
 </style>
 
 <!-- Mana symbol auto-conversion — turns {W}{U}{4} notation into real icons -->
@@ -158,6 +183,207 @@ document.addEventListener('DOMContentLoaded', function() {
   // Run on the main article content area
   var content = document.querySelector('.page__content');
   if (content) walkAndConvert(content);
+
+});
+</script>
+
+<!-- MTG card hover/tap — converts [[Card Name]] to image tooltips via Scryfall -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  // ----------------------------------------------------------------
+  // 1. Create the tooltip element (one shared instance for the page)
+  // ----------------------------------------------------------------
+  var tooltip = document.createElement('div');
+  tooltip.id = 'card-tooltip';
+  var tooltipImg = document.createElement('img');
+  tooltipImg.alt = 'Card preview';
+  tooltip.appendChild(tooltipImg);
+  document.body.appendChild(tooltip);
+
+  // ----------------------------------------------------------------
+  // 2. Scryfall fetch with cache
+  //    Handles both normal cards and double-faced cards (DFCs)
+  // ----------------------------------------------------------------
+  var cardCache = {};
+
+  function fetchCardImage(name, callback) {
+    var key = name.toLowerCase();
+    if (cardCache[key] !== undefined) {
+      callback(cardCache[key]);
+      return;
+    }
+    fetch('https://api.scryfall.com/cards/named?fuzzy=' + encodeURIComponent(name))
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var url = null;
+        if (data.image_uris) {
+          url = data.image_uris.normal;
+        } else if (data.card_faces && data.card_faces[0].image_uris) {
+          // Double-faced card — show front face
+          url = data.card_faces[0].image_uris.normal;
+        }
+        cardCache[key] = url;
+        callback(url);
+      })
+      .catch(function() {
+        cardCache[key] = null; // cache the miss so we don't retry
+        callback(null);
+      });
+  }
+
+  // ----------------------------------------------------------------
+  // 3. Tooltip positioning — stays on screen, follows cursor
+  // ----------------------------------------------------------------
+  var CARD_W = 223;
+  var CARD_H = 311;
+  var PAD    = 16;
+
+  function positionTooltip(x, y) {
+    var left = x + PAD;
+    var top  = y - Math.round(CARD_H / 2);
+
+    // Flip left if too close to right edge
+    if (left + CARD_W > window.innerWidth - PAD) {
+      left = x - CARD_W - PAD;
+    }
+    // Clamp vertically
+    if (top < PAD) top = PAD;
+    if (top + CARD_H > window.innerHeight - PAD) {
+      top = window.innerHeight - CARD_H - PAD;
+    }
+
+    tooltip.style.left = left + 'px';
+    tooltip.style.top  = top  + 'px';
+  }
+
+  // ----------------------------------------------------------------
+  // 4. Show / hide helpers
+  // ----------------------------------------------------------------
+  var activeMobileCard = null;
+
+  function showTooltip(name, x, y) {
+    fetchCardImage(name, function(url) {
+      if (!url) return;
+      tooltipImg.src = url;
+      tooltip.style.display = 'block';
+      positionTooltip(x, y);
+    });
+  }
+
+  function hideTooltip() {
+    tooltip.style.display = 'none';
+    activeMobileCard = null;
+  }
+
+  // ----------------------------------------------------------------
+  // 5. Walk text nodes and convert [[Card Name]] to .card-link spans
+  //    Uses the same safe approach as the mana symbol converter —
+  //    skips <code> and <pre> blocks, collects then converts.
+  // ----------------------------------------------------------------
+  function convertCardLinks(root) {
+    var walker = document.createTreeWalker(
+      root,
+      NodeFilter.SHOW_TEXT,
+      {
+        acceptNode: function(node) {
+          var el = node.parentElement;
+          while (el) {
+            var tag = el.tagName;
+            if (tag === 'CODE' || tag === 'PRE' || tag === 'SCRIPT' || tag === 'STYLE') {
+              return NodeFilter.FILTER_REJECT;
+            }
+            el = el.parentElement;
+          }
+          return NodeFilter.FILTER_ACCEPT;
+        }
+      }
+    );
+
+    var nodes = [];
+    var node;
+    while ((node = walker.nextNode())) {
+      if (node.textContent.includes('[[')) nodes.push(node);
+    }
+
+    nodes.forEach(function(textNode) {
+      var text = textNode.textContent;
+      if (!text.includes('[[')) return;
+
+      var parts = text.split(/(\[\[[^\]]+\]\])/g);
+      if (parts.length <= 1) return;
+
+      var wrapper = document.createElement('span');
+      parts.forEach(function(part) {
+        var match = part.match(/^\[\[([^\]]+)\]\]$/);
+        if (match) {
+          var cardName = match[1];
+          var span = document.createElement('span');
+          span.className = 'card-link';
+          span.dataset.card = cardName;
+          span.textContent = cardName;
+
+          // Pre-fetch on page load so first hover is instant
+          fetchCardImage(cardName, function() {});
+
+          // Desktop: hover
+          span.addEventListener('mouseenter', function(e) {
+            showTooltip(cardName, e.clientX, e.clientY);
+          });
+          span.addEventListener('mousemove', function(e) {
+            positionTooltip(e.clientX, e.clientY);
+          });
+          span.addEventListener('mouseleave', function() {
+            hideTooltip();
+          });
+
+          // Mobile: tap to toggle
+          span.addEventListener('click', function(e) {
+            if (activeMobileCard === cardName) {
+              hideTooltip();
+            } else {
+              activeMobileCard = cardName;
+              var rect = span.getBoundingClientRect();
+              var cx = rect.left + rect.width / 2;
+              var cy = rect.top;
+              showTooltip(cardName, cx, cy);
+            }
+          });
+
+          wrapper.appendChild(span);
+        } else if (part) {
+          wrapper.appendChild(document.createTextNode(part));
+        }
+      });
+
+      textNode.parentNode.replaceChild(wrapper, textNode);
+    });
+  }
+
+  // ----------------------------------------------------------------
+  // 6. Tap elsewhere on mobile closes the tooltip
+  // ----------------------------------------------------------------
+  document.addEventListener('click', function(e) {
+    if (!e.target.classList.contains('card-link')) {
+      hideTooltip();
+    }
+  });
+
+  // ----------------------------------------------------------------
+  // 7. Run only on article content — not homepage or other pages
+  // ----------------------------------------------------------------
+  var articleContent = document.querySelector('.page__content');
+  if (articleContent) convertCardLinks(articleContent);
+
+  // ----------------------------------------------------------------
+  // 8. Expose core functions for reuse on other pages (e.g. library)
+  // ----------------------------------------------------------------
+  window.mtgCard = {
+    fetch:    fetchCardImage,
+    show:     showTooltip,
+    hide:     hideTooltip,
+    position: positionTooltip
+  };
 
 });
 </script>

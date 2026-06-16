@@ -172,12 +172,38 @@ and not converted — safe to use for code examples in technical articles.
 
 ---
 
+## CARD HOVER TOOLTIPS
+
+Wrap any Magic card name in `[[double brackets]]` to make it interactive.
+On desktop, hovering shows the card image floating near your cursor.
+On mobile, tapping toggles the image; tapping anywhere else closes it.
+
+**Syntax:** `[[Card Name]]`
+
+**Examples in prose:**
+```
+...the power of [[Ayli, Eternal Pilgrim]] in this shell...
+...pairing [[Mystic Remora]] with [[Rhystic Study]] is redundant...
+...[[Jeska's Will]] generates absurd value here...
+```
+
+**Notes:**
+- Spelling just needs to be close — Scryfall's fuzzy search finds the card
+  (`[[ayli pilgrim]]` finds Ayli, Eternal Pilgrim correctly)
+- Double-faced cards automatically show the front face
+- If a card name isn't found, it displays as plain highlighted text (no crash)
+- Inside \`code blocks\`, double brackets render as raw text — safe for technical writing
+- No setup needed — just write the syntax and it works
+
+---
+
 ## ARTICLE BODY
 
 - [ ] Opening paragraph hooks the reader — no "In this article we will..."
 - [ ] Section headings use `##` (H2), sub-sections use `###` (H3)
 - [ ] YouTube embeds use the iframe from YouTube's Share → Embed button
 - [ ] Blockquotes use `>` for pull quotes
+- [ ] Section dividers use `{% include divider.html %}` — renders a short purple accent line
 - [ ] `{% include deck-tech-cta.html %}` is present before the author card
       (outputs nothing on non-deck-tech articles — safe to include on every article)
 - [ ] `{% include author-card.html %}` is after the deck-tech-cta

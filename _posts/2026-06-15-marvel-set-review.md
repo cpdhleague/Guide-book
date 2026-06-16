@@ -456,13 +456,15 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 
 {% include card-grid.html cards="Hawkeye Young Avenger" %}  
 **#3 — Hawkeye, Young Avenger**  
-**Ceiling:** The ability here is tremendous. Pingers are among the strongest effects in the format — including the new common Hawkeye’s Bow — and Hawkeye buffs all of your non-combat damage: pingers, spells, abilities, the works. Board wipes just got a whole lot better in red. Better still, that damage buff scales with buffs to Hawkeye’s power. She has the potential to do real damage and bring home trophies.  
+**Ceiling:** The ability here is tremendous. Pingers are among the strongest effects in the format — including the new common, Hawkeye’s Bow — and Hawkeye buffs all of your non-combat damage: pingers, spells, abilities, the works. Board wipes just got a whole lot better in red. Better still, that damage buff scales with buffs to Hawkeye’s power. She has the potential to do real damage and bring home trophies.  
 **Floor:** The biggest obstacle is the lack of protection that continues to haunt mono-red lists. A deck like this needs both enablers and payoffs — here, the 99 and its damage sources are the enablers, with the commander supplying the payoff of added damage. It’ll be fascinating to see how the deck balances the two. It’s also worth mentioning that the damage replacement effects require Hawkeye to be in play at the time they resolve. Removing the commander can remove the damage - it’s a significant vulnerability. 
 
 {% include card-grid.html cards="Iron Man Master of Machines" %}  
 **#2 — Iron Man, Master of Machines**  
 **Ceiling:** Artifacts and affinity strategies are already incredibly strong in Pauper, and Iron Man has everything you want in a Voltron commander: evasion, vigilance to keep a blocker back, card draw, access to blue, and a self-buff mechanic that frees you from running buff spells entirely. Fill the deck with high-impact artifacts to keep him threatening while you stack up effects across your board. Very strong.  
 **Floor:** With one extra card per turn, you may run out of artifacts to play before attacking if you rely only on Iron Man for card draw.
+
+<div style="width:60px; height:2px; background:var(--primary); margin:2em auto;"></div>
 
 {% include card-grid.html cards="Wiccan Rising Magician" %}  
 **#1 — Wiccan, Rising Magician**  
@@ -482,7 +484,7 @@ Plenty of commons will make their mark in their own niches, but there is only on
 I’m also excited for the basic landcycling commons for PDH. They’re especially valuable in multicolor decks, letting you dig for whatever color you need from your deck. We’ve gotten ten of them this release cycle — five from MSH and five from MSC. They’re not all winners, but you’ll absolutely see them showing up in lists.
 
 {% include card-grid.html cards="Borough Backup, A.I.M. Scientists, Roxxon Brutes, Kree Sentinel, Savage Land Dinosaur" %}
-{% include card-grid.html cards="Fall to Earth, Dissmissive Denial, Infernal Rebirth, Marvelous Melee, Colossal Collision" %}
+{% include card-grid.html cards="Fall to Earth, Dismissive Denial, Infernal Rebirth, Marvelous Melee, Colossal Collision" %}
 
 ---
 

@@ -1,0 +1,10 @@
+Open command prompt
+
+cd documents
+cd guide
+
+git pull origin master
+
+git add .
+git commit -m "describe updates"
+git push origin master

@@ -72,7 +72,7 @@ header:
       <tbody>
     <tr>
         <td><a href="https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>[[Guidelight Pathmaker]]</td>
+        <td>Guidelight Pathmaker</td>
         <td>Wanderer's Type Hype 2026</td>
         <td>Ginger Persolus</td>
         <td>Azorius</td>
@@ -1047,11 +1047,12 @@ document.addEventListener('DOMContentLoaded', function() {
       if (cells.length < 2) return;
 
       var cell = cells[1];
-      var originalText = cell.textContent.trim();
+      var originalText = cell.textContent.trim()
+        .replace(/\[\[/g, '').replace(/\]\]/g, ''); // strip any accidental [[brackets]]
 
       // Split on " // " or " + ", keeping the separator
       // Captures: ["Card A", " // ", "Card B"] or ["Card A", " + ", "Card B"]
-      var parts = originalText.split(/( // | \+ )/);
+      var parts = originalText.split(/( \/\/ | \+ )/);
 
       // Rebuild the cell with hoverable spans
       cell.textContent = '';

@@ -300,7 +300,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 {% include card-grid.html cards="Echo Perceptive Prodigy" %}  
 **#24 — Echo, Perceptive Prodigy**  
 **Ceiling:** Copying an ability is a powerful ability being introduced to PDH, and Echo opens the door to enormous value. Four toughness is a welcome bonus for survivability.  
-**Floor:** There’s no clear path to victory here. The copy ability is limited to abilities you control from creature sources, and while there are absolutely lines that could close a game — hello [[Peregrin Drake]] — it’s hard to see them coming together consistently and the commander ability seems to function more as a source of protective redundancy once combos are enacted rather than contributing to development toward those win attempts.
+**Floor:** There’s no clear path to victory here. The copy ability is limited to abilities you control from creature sources, and while there are absolutely abilities that could close a game — hello [[Peregrin Drake]] — it’s hard to see them coming together consistently and the commander ability seems to function more as a source of protective redundancy once combos are enacted rather than contributing to development toward those win attempts.
 
 {% include divider.html %}
 
@@ -327,7 +327,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 
 {% include card-grid.html cards="Blue Marvel Adam Brashear" %}  
 **#20 — Blue Marvel, Adam Brashear**  
-**Ceiling:** Blue Marvel has the bones of a strong Voltron commander: ward {2} for protection, flying for evasion, and a self-buff that adds a +1/+1 counter each time you draw your second card in a turn. Blue Marvel has a lot of his own keywords, reducing the need for support cards and allowing you to play higher value selections in the 99. He could be a real threat. Mono-blue is also an excellent control color, giving you the time and space to see a Voltron plan through to the end. It looks a lot like a [[Sailor's Bane]] gameplan, which has been largely successful.   
+**Ceiling:** Blue Marvel has the bones of a strong Voltron commander: ward {2} for protection, flying for evasion, and a self-buff that adds a +1/+1 counter each time you draw your second card in a turn. Blue Marvel has a lot of his own keywords, reducing the need for support cards and allowing you to play higher value selections in the 99. He could be a real threat. Mono-blue is also an excellent control color, giving you the time and space to see a Voltron plan through to the end. It looks a lot like a [[Sailor's Bane]] gameplan, which has been largely successful in cPDH.   
 **Floor:** He may simply be too expensive. He comes down a touch late, which means opponents could already be executing their own plans before you land your first hit — and once a commander this costly is removed, getting him back into the game is an uphill battle.
 
 {% include divider.html %}
@@ -341,8 +341,8 @@ These are the commanders that didn’t make our top 10, but earned our attention
 
 {% include card-grid.html cards="Iceman and Firestar" %}  
 **#18 — Iceman and Firestar**  
-**Ceiling:** This commander gives you utility you can clip onto your other spells for free. It’s not blow-the-doors-off powerful, but the incremental value here could be enough to make it relevant over a lot game. In terms of assembling combo lines, being able to tap down attackers while also cycling for your pieces has viability.
-**Floor:** It’s not the most exciting commander on the page, and it may struggle to attract a dedicated pilot willing to push it to where it could be.
+**Ceiling:** This commander gives you utility you can clip onto your other spells for free. It’s not blow-the-doors-off powerful, but the incremental value here could be enough to make it relevant over a long game. Cycling to assemble combo lines while tapping down attackers has viability.
+**Floor:** It’s not the most exciting commander in this release, and it may struggle to attract a dedicated pilot willing to push it competitively.
 
 {% include divider.html %}
 
@@ -356,7 +356,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 {% include card-grid.html cards="Red Hulk" %}  
 **#16 — Red Hulk**  
 **Ceiling:** Red Hulk is awesome. He deals damage to any target whenever damage is dealt to him. Reach lets him sit back as an effective blocker while he pings opponents down and controls the board. And if you assemble a strong storm turn? Imagine sending 13 copies of [[Grapeshot]] at this guy. That’s game over.  
-**Floor:** Six mana is a heavy cost, and repeatable ping damage is hard to come by — most sources sacrifice themselves to deal it. The card design is extremely cool; whether it’s effective remains to be seen.
+**Floor:** Six mana is a heavy cost, and repeatable ping damage is hard to come by — most red sources sacrifice themselves to deal it. The card design is extremely cool; whether it’s effective remains to be seen.
 
 {% include divider.html %}
 
@@ -376,7 +376,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 
 {% include card-grid.html cards="Attuma Atlantean Warlord" %}  
 **#13 — Attuma, Atlantean Warlord**   
-**Ceiling:** With a draw ability reminiscent of Kutzil and SP//dr, Piloted by Peni, this is the most appealing tribal commander I’ve seen in a long time. Many Merfolk come with evasion built in, and Attuma draws based on whether you attack — Akiri-style — rather than on damage dealt. Drawing three cards a turn will be easy, and converting that card advantage into board control while you chip away sounds like a viable plan.  
+**Ceiling:** With a draw ability reminiscent of [[Kutzil, Malamet Exemplar]] and [[SP//dr, Piloted by Peni]], this is the most appealing tribal commander I’ve seen in a long time. Many Merfolk come with evasion built in, and Attuma draws based on whether you attack — [[Akiri, Fearless Voyager]] style — rather than on damage dealt. Drawing three cards a turn will be easy, and converting that card advantage into board control while you chip away sounds like a viable plan.  
 **Floor:** Go-wide strategies can struggle in PDH, so while the deck is viable, it remains to be seen whether it can get strong enough to place in tournaments.
 
 {% include divider.html %}
@@ -408,14 +408,14 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 
 {% include card-grid.html cards="Captain Mar-Vell Space-Born" %}  
 **#9 — Captain Mar-Vell, Space-Born**  
-**Ceiling:** White has a deep reservoir of powerful cards locked to sorcery speed — and this is the first time we’ve seen a commander hand white players the ability to cast all of their cards at instant speed. Because it’s a genuine first, it’s an open question whether the deck has enough raw power to go as hard as it needs to.  
-**Floor:** At five mana he’s a touch costly, and white’s effects may not scale into top-4 territory. There’s also a timing wrinkle: sitting right after a land-pass player like Gretchen Titchwillow can throw off your windows. Handing opponents the choice of whether your cards have flash isn’t ideal — it’s often not a real choice, your opponents do need to play cards, but it’s a concession all the same. 
+**Ceiling:** White has a deep reservoir of powerful cards locked to sorcery speed — and this is the first time we’ve seen a commander hand white players the ability to cast all of their cards at instant speed. Because it’s a genuine first, it’s an open question whether the deck has enough power to push itself up any leaderboards.  
+**Floor:** At five mana he’s a touch costly, and white’s effects may not scale into top-4 territory. There’s also a timing wrinkle: sitting right after a land-pass player like [[Gretchen Titchwillow]] can throw off your windows. Handing opponents the decision of whether your cards have flash or not isn’t ideal — it’s often not a real choice, your opponents do need to play cards, but it’s a concession all the same. 
 
 {% include divider.html %}
 
 {% include card-grid.html cards="Thor Odinson" %}  
 **#8 — Thor, Odinson**  
-**Ceiling:** Built-in evasion, built-in buff, and vigilance so he can hold down defense too. Double prowess lets Thor grow fast — so fast that playing dedicated buff spells is probably incorrect in his builds. Since he’s already getting bigger on his own, spending those slots on control and support gives you a more consistent, well-rounded deck rather than a glass-cannon that dumps everything into a single attack. Boros offers excellent spells and the protection mechanic, which can both protect Thor and make him unblockable, as well as haste to start swinging quickly. 
+**Ceiling:** Built-in evasion, built-in buff, and vigilance so he can hold down defense too. Double prowess lets Thor grow fast — so fast that playing dedicated buff spells is probably incorrect in his builds. Since he’s already getting bigger on his own, spending those slots on control and support gives you a more consistent, well-rounded deck rather than a glass-cannon that dumps everything into a single attack. Boros offers the protection mechanic, which can both protect Thor and make him unblockable, as well as haste enablers to get him swinging quickly.  
 **Floor:** He’s expensive. For what he brings, five mana may not be enough of a discount. He reminds me of [[Jeskai Brushmaster]] — a deck that has seen competitive play but with below-average results. For one more mana, Thor loses access to blue while gaining vigilance and flying. If Brushmaster couldn’t break through, I’d be surprised if Thor brings enough to the table. 
 
 {% include divider.html %}
@@ -423,34 +423,34 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 {% include card-grid.html cards="Speedball New Warrior" %}  
 **#7 — Speedball, New Warrior**  
 **Ceiling:** Speedball is a curious one. He has access to Izzet — a strong color pair — and an ability that buffs him quickly while offering its own protection, as his ability effectively gives him hexproof from spells.  
-**Floor:** I’m not sure he’ll have the consistency to reach competitive heights. Because the buffs are temporary, I question whether he has the resource pool to consistently close out games. But there’s real potential here, and I’m genuinely excited to find out the answer by playing with him across the table from me.
+**Floor:** I’m not sure he’ll have the consistency to reach competitive heights. Because the buffs are temporary, I question whether he has the resource pool to consistently close out games. But there’s real potential here, and I’m genuinely excited to discover the answer by playing with him across the table from me.
 
 {% include divider.html %}
 
 {% include card-grid.html cards="Black Widow Double Agent" %}  
 **#6 — Black Widow, Double Agent**  
-**Ceiling:** No other Pauper commander can offer deathtouch and first strike on its first attack — and every attack thereafter, for the rest of the game. Black Widow is going to either rack up commander damage fast or make every one of her attacks brutally expensive to block.  
-**Floor:** Orzhov isn’t home to the strongest buff cards, so growth will be slow — there are some +1/+1 counter tricks, but nothing explosive. Ceiling is that you’re in excellent control colors, so using Black Widow as a clock while your 99 controls the board is entirely viable. Lean on edicts and your opponents may not even have the two blockers they need to stop her.
+**Ceiling:** Having first strike, deathtouch, and menace all in one creature is such a strong combination. Black Widow is going to either rack up commander damage fast or make every one of her attacks brutally expensive to block. What she lacks in stats she more than packs in with her combination of keywords. Lean on edict effects and your opponents may not even have the two blockers they need to stop her.
+**Floor:** Orzhov isn’t home to the strongest buff cards, so growth will be slow — there are some +1/+1 counter tricks, but nothing explosive. You’re in excellent control colors, so using Black Widow as a clock while your 99 controls the board is entirely viable. The big question is whether she'll be fast enough to close out games effectively. 
 
 {% include divider.html %}
 
 {% include card-grid.html cards="Captain America Living Legend" %}  
 **#5 — Captain America, Living Legend**  
-**Ceiling:** Captain America compares neatly to [[Veteran Beastrider]], a commander that’s seen competitive success — except Cap adds blue. That’s significant for control and protection pieces, and it widens the range of tap effects you can double dip on using his ability. There are plenty of creatures that tap for mana, and others that tap for draw or cycling effects, giving the archetype an interesting second gear. I’ve also heard real enthusiasm for a Petitioners build. Whether you pick him for the meme or the power, Cap’s got punch.  
-**Floor:** While control and protection are plentiful, he does not himself support any combos and does not have access to great beaters. The issue, as with most control decks, will be to close out games.
+**Ceiling:** Captain America compares neatly to [[Veteran Beastrider]], a commander that’s seen competitive success — except Cap adds blue. That’s significant for control and protection pieces, and it widens the range of tap effects you can double dip on using his ability. There are plenty of creatures that tap for mana, and others that tap for draw or cycling effects, giving the archetype an interesting second gear. I’ve also heard real enthusiasm for a [[Persistent Petitioners]] build. Whether you pick him for the meme or the power, Cap’s got punch.  
+**Floor:** While control and protection are plentiful, he does not himself support any combos and does not have access to heavy beaters. The issue, as with most control decks, will be to close out games.
 
 {% include divider.html %}
 
 {% include card-grid.html cards="Mister Fantastic Reed Richards" %}  
 **#4 — Mister Fantastic, Reed Richards**  
 **Ceiling:** Mister Fantastic synergizes with token-making cards, and I think he has the makings of an excellent mono-blue combo shell — letting you run strong cards that incidentally make tokens and rewarding you for each one. Token creatures become blockers, and every one of them draws you a card.  
-**Floor:** At four mana he’ll be a little slow. While the value on offer is appealing, finding the right balance between commander synergies and a way to win will be challenging.
+**Floor:** While the value on offer is appealing, finding the right balance between commander synergies and a way to win will be challenging.
 
 {% include divider.html %}
 
 {% include card-grid.html cards="Hawkeye Young Avenger" %}  
 **#3 — Hawkeye, Young Avenger**  
-**Ceiling:** The ability here is tremendous. Pingers are among the strongest effects in the format — including the new common, Hawkeye’s Bow — and Hawkeye buffs all of your non-combat damage: pingers, spells, abilities, the works. Board wipes just got a whole lot better in red. Better still, that damage buff scales with buffs to Hawkeye’s power. She has the potential to do real damage and bring home trophies.  
+**Ceiling:** The ability here is tremendous. Pingers are among the strongest effects in the format — including the new common, [[Hawkeye’s Bow]] — and Hawkeye buffs all of your non-combat damage: pingers, spells, abilities, the works. Board wipes just got a whole lot better in red. Better still, that damage buff scales with buffs to Hawkeye’s power. She has the potential to do real damage and bring home trophies.  
 **Floor:** The biggest obstacle is the lack of protection that continues to haunt mono-red lists. A deck like this needs both enablers and payoffs — here, the 99 and its damage sources are the enablers, with the commander supplying the payoff of added damage. It’ll be fascinating to see how the deck balances the two. It’s also worth mentioning that the damage replacement effects require Hawkeye to be in play at the time they resolve. Removing the commander can remove the damage - it’s a significant vulnerability. 
 
 {% include divider.html %}
@@ -464,7 +464,7 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 
 {% include card-grid.html cards="Wiccan Rising Magician" %}  
 **#1 — Wiccan, Rising Magician**  
-**Ceiling:** You’re effectively stapling a [[Turn to Mist]] onto every noncreature spell in your deck, except it can target all nonland permanents. The value ceiling is enormous. Every commander on this list still has to prove itself against the real world, but I love the potential in this mono-blue Wiccan. Mono-blue can lack the survivability to grind out varied matchups, yet the ability to flicker any non-land permanent — yours or an opponent’s, including attackers and combo pieces — with any instant in your deck is exceptional.  
+**Ceiling:** You’re effectively stapling a [[Turn to Mist]] onto every noncreature spell in your deck, except it can target all nonland, nontoken permanents. The value ceiling is enormous. Every commander on this list still has to prove itself against the real world, but I love the potential in this mono-blue Wiccan. Mono-blue can lack the survivability to grind out varied matchups, yet the ability to flicker out your opponent’s attackers attackers and combo pieces with an [[Opt]] is exceptional.  
 **Floor:** Five mana is a touch more than I’d like, but your mana rocks can trigger Wiccan to flicker your draw and recursion pieces in the late game, giving every card a way to stay relevant at any stage.  
 **Comparison:** Wiccan reminds me of [[Lagrella, the Magpie]], who sees competitive play with above-average (if not staggering) results. Where Lagrella can struggle with mana fixing and balancing card types, Wiccan is mono-blue and can be an outstanding flicker deck while running zero flicker spells in the 99. What Wiccan lacks is Lagrella’s reach — it can’t select as many targets to broadly affect the board state — but the potential is real, and I would not be surprised to see this commander turn up in tournament top 4s. 
 

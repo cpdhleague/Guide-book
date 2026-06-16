@@ -384,7 +384,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 {% include card-grid.html cards="Ronin Shadow Stalker" %}  
 **#12 — Ronin, Shadow Stalker**  
 **Ceiling:** Our second mono-black equipment commander — an exciting turn for the color. Turning life into mana is exceptional (hello, [[Channel]]!), and while it’s once per turn, it isn’t restricted to your turn. Flash equipment let you invest life on your opponents’ turns too.  
-**Floor:** The question is whether this archetype and color can make good enough use of the life-for-mana trade to turn the corner into winning. With so many equipment now entering pre-attached tokens they’ve created, you also get a board state almost for free. I’m not sure Ronin deserves top 10, but it’s close for me.
+**Floor:** The question is whether this archetype and color can make good enough use of the life-for-mana trade to turn the corner into winning. With so many equipment now entering pre-attached tokens they’ve created, you also get a board state almost for free. The extra removal on Ronin is cute, but it's not super relevant at socery speed. I’m not sure Ronin deserves top 10, but it’s close for me.
 
 {% include divider.html %}
 

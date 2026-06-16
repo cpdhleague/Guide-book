@@ -341,7 +341,7 @@ These are the commanders that didn’t make our top 10, but earned our attention
 
 {% include card-grid.html cards="Iceman and Firestar" %}  
 **#18 — Iceman and Firestar**  
-**Ceiling:** This commander gives you utility you can clip onto your other spells for free. It’s not blow-the-doors-off powerful, but the incremental value here could be enough to make it relevant over a long game. Cycling to assemble combo lines while tapping down attackers has viability.
+**Ceiling:** This commander gives you utility you can clip onto your other spells for free. It’s not blow-the-doors-off powerful, but the incremental value here could be enough to make it relevant over a long game. Cycling to assemble combo lines while tapping down attackers has viability.  
 **Floor:** It’s not the most exciting commander in this release, and it may struggle to attract a dedicated pilot willing to push it competitively.
 
 {% include divider.html %}
@@ -429,7 +429,7 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 
 {% include card-grid.html cards="Black Widow Double Agent" %}  
 **#6 — Black Widow, Double Agent**  
-**Ceiling:** Having first strike, deathtouch, and menace all in one creature is such a strong combination. Black Widow is going to either rack up commander damage fast or make every one of her attacks brutally expensive to block. What she lacks in stats she more than packs in with her combination of keywords. Lean on edict effects and your opponents may not even have the two blockers they need to stop her.
+**Ceiling:** Having first strike, deathtouch, and menace all in one creature is such a strong combination. Black Widow is going to either rack up commander damage fast or make every one of her attacks brutally expensive to block. What she lacks in stats she more than packs in with her combination of keywords. Lean on edict effects and your opponents may not even have the two blockers they need to stop her.  
 **Floor:** Orzhov isn’t home to the strongest buff cards, so growth will be slow — there are some +1/+1 counter tricks, but nothing explosive. You’re in excellent control colors, so using Black Widow as a clock while your 99 controls the board is entirely viable. The big question is whether she'll be fast enough to close out games effectively. 
 
 {% include divider.html %}
@@ -458,7 +458,7 @@ These are our top picks for Marvel Super Heroes commanders we expect to actually
 {% include card-grid.html cards="Iron Man Master of Machines" %}  
 **#2 — Iron Man, Master of Machines**  
 **Ceiling:** Artifacts and affinity strategies are already incredibly strong in Pauper, and Iron Man has everything you want in a Voltron commander: evasion, vigilance to keep a blocker back, card draw, access to blue, and a self-buff mechanic that frees you from running buff spells entirely. Fill the deck with high-impact artifacts to keep him threatening while you stack up effects across your board. Very strong.  
-**Floor:** With one extra card per turn, you may run out of artifacts to play before attacking if you rely only on Iron Man for card draw.
+**Floor:** Iron Man has a high floor. At time of writing, it's hard to see what exactly might be difficult for him in the command zone outsid of the challenges that control/voltron style decks usually encounter — namely that a lot of control tools are 1-for-1, which is difficult to maintain with three other opponents. 
 
 {% include divider.html %}
 

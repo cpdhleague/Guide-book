@@ -17,6 +17,20 @@
   link: "https://topdeck.gg/event/pdh-rainbow-rumble"
   description: "A meta mixup event: all commanders must have 3 or more colors in their identities."
 
+- title: "Cloudy Commons Cup IV: Petal-Palooza"
+  date: 2026-07-19
+  location: "Minneapolis Convention Center, 1301 2nd Ave S, Minneapolis, MN 55404, USA"
+  online: false
+  link: "https://topdeck.gg/event/cloudy-commons-cup-iv"
+  description: "One of the best in-person PDH events in the country, only in Minneapolis. Win a Kaladesh Invention Lotus Petal!"
+
+- title: "Cloudy Commons Cup V: Signet Showdown"
+  date: 2026-08-16
+  location: "350 Harbor Drive, Duluth, Minnesota, United States"
+  online: false
+  link: "https://topdeck.gg/event/cpdh-signet-showdown"
+  description: "One of the best in-person PDH events in the country, only in Minneapolis. Win a Galaxy Foil Arcane Signet!"
+
 - title: "Wanderer's Triple Threat"
   date: 2026-09-19
   location: "CPDH.guide Discord Server"

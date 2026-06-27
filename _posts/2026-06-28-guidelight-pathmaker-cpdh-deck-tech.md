@@ -72,7 +72,7 @@ The second thing that gave me cartoon wowza eyes is the power of this commander'
 
 I worked vigilantly to find a way to crack this deck and make it cPDH viable. At first I fell into the same trap many other brewers fall into, trying to find combos that were partially artifacts and partially non-artifacts. I couldn't bring it together to make it cohesive — until I realized the final piece of the puzzle I'd been missing the entire time. The piece that allowed me to fully utilize the power of this commander's text box: if crewed, it becomes a *white creature.* Hello, [[Antler Skulkin]].
 
-{% include divider.html %}
+<img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## The Win Condition
 

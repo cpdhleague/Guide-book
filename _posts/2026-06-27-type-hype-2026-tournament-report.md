@@ -41,7 +41,7 @@ image: /assets/images/gin-typehype.jpg
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/header2025-1.png
+  teaser: /assets/images/gin-typehype.jpg
 
 # ===========================================================================
 # SECTION 4: EXCERPT

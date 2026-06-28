@@ -60,23 +60,23 @@ As soon as the announcement was made that vehicles and spacecraft could be comma
 
 {% include card-grid.html cards="Guidelight Pathmaker" %}
 
-[[Guidelight Pathmaker]] is from 2025's Aetherdrift set. It's a six-mana {4}{W}{U} Azorius vehicle that has vigilance and Crew 2, allowing it to become a 6/5. Most importantly, it reads:
+Guidelight Pathmaker is from 2025's Aetherdrift set. It's an Azorius vehicle for {4}{W}{U} that has vigilance and Crew 2, allowing it to become a 6/5. Most importantly, it reads:
 
 > "When this Vehicle enters, you may search your library for an artifact card and reveal it. Put it onto the battlefield if its mana value is 2 or less. Otherwise, put it into your hand. If you search your library this way, shuffle."
 
-At first glance, two things drew me to this commander. First, its colors. There are only 11 vehicles (no spacecraft) that offer access to multiple colors — almost all of them fresh cards from the Aetherdrift set, with one exception in [[Prodigy's Prototype]] from Kamigawa: Neon Dynasty. Having access to multiple colors is a big deal in PDH, as it allows you to reach a broader range of cards.
+At first glance, two traits drew me to this commander. First, its colors. There are only 11 vehicles (no spacecraft) that offer access to multiple colors — almost all of them fresh cards from the Aetherdrift set, with one exception in [[Prodigy's Prototype]] from Kamigawa: Neon Dynasty. Having access to multiple colors is a big deal in PDH, as it allows you to reach a broader range of cards.
 
-The second thing that gave me cartoon wowza eyes is the power of this commander's tutor ability. [[Summoner Sphinx]] already sees some success in the format, and that tutor ability is limited to artifact creatures only. Guidelight Pathmaker can find any artifact — and if it's 2 CMC or less, *it goes directly to the battlefield.*
+The second, far more important trait that gave me cartoon wowza eyes is the power of this commander's tutor ability. [[Sphinx Summoner]] already sees some success in the format, and that tutor ability is limited to artifact creatures only. Guidelight Pathmaker can find any artifact — and if it's 2 CMC or less, *it goes directly to the battlefield.* It's also an ETB effect, meaning we can abuse it by using flicker spells. [[Rocco, Cabaretti Caterer]] only wishes he could to the same. 
 
-{% include card-grid.html cards="Summoner Sphinx" %}
+{% include card-grid.html cards="Sphinx Summoner" %}
 
-I worked vigilantly to find a way to crack this deck and make it cPDH viable. At first I fell into the same trap many other brewers fall into, trying to find combos that were partially artifacts and partially non-artifacts. I couldn't bring it together to make it cohesive — until I realized the final piece of the puzzle I'd been missing the entire time. The piece that allowed me to fully utilize the power of this commander's text box: if crewed, it becomes a *white creature.* Hello, [[Antler Skulkin]].
+I worked vigilantly to find a way to crack this deck and make it cPDH viable. I created and recreated my decklist and ran it through five distinct, failed builds before arriving here at my current list. At first I fell into the same trap many other brewers fall into, trying to find combos that were partially artifacts and partially non-artifacts. I couldn't bring it together to make it cohesive — until I realized the final piece of the puzzle I'd been missing the entire time. The piece that allowed me to fully utilize the power of this commander's text box: if crewed, it becomes a *white creature.* Hello, [[Antler Skulkin]].
 
 <img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## The Win Condition
 
-Winning requires a lot of game actions, so let's start at the beginning — this way you know what you're working toward.
+Winning requires a lot of game actions, so let's start at our desired end game — this way you know what we're working toward.
 
 To win the game, you need your commander, [[Ashnod's Altar]], and an untapped [[Antler Skulkin]] on the battlefield, plus {5} available mana. Additional mana and a few counterspells wouldn't go amiss, but with just these three cards and 5 mana, you can win. Do you see it? Let's break it down step by step:
 
@@ -94,9 +94,11 @@ To win the game, you need your commander, [[Ashnod's Altar]], and an untapped [[
 
 With all five cards on the battlefield, you can now trigger your commander's artifact tutor ability an infinite number of times. Crew it with [[Battered Golem]] (which untaps each time another artifact you control enters); provide persist with [[Antler Skulkin]]; provide the sacrifice outlet and the mana to pay for Antler Skulkin's ability with [[Ashnod's Altar]]; and use [[Arcbound Prototype]] to continually remove the -1/-1 counters from [[Guidelight Pathmaker]] after its persist triggers.
 
-You can now pull every artifact in your deck straight onto the battlefield or into your hand. Along the way, you'll draw several cards and generate several mana sources.
+You can now pull every artifact in your deck straight onto the battlefield or into your hand. Along the way, you'll draw several cards and pull several mana sources to give you more mana to spend on protective interaction, if you need it.
 
 After pulling every artifact out of your deck, you'll have [[Myr Retriever]], [[Etherium Sculptor]], [[Energy Refractor]], [[Secret Door]], and [[Ashnod's Altar]] on the battlefield, with [[Workshop Assistant]] in hand. Use the last two mana from the persist loop to cast Workshop Assistant, sacrifice Myr Retriever to get two mana back, and begin looping these two graveyard fetchers to net one mana per loop.
+
+{% include card-grid.html cards="Myr Retriever, Workshop Assistant, Etherium Sculptor, Energy Refractor, Ashnod's Altar" %}
 
 Once you have infinite mana, filter it through Energy Refractor to generate as much blue mana as you need, then begin activating [[Secret Door]] until you ping your opponents out of the game. We're almost always using the Lost Mine of Phandelver — it pings each opponent as you venture through it. One important note: your number of pings is limited to how many cards remain in your deck, since the final room of the Mine requires you to draw a card. In the unlikely scenario your opponents are at high life and you're running low on cards, consider routing through the Tomb of Annihilation instead.
 

@@ -41,7 +41,7 @@ image: /assets/images/pathmaker-decktech.png
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/header2025-1.png
+  teaser: /assets/images/pathmaker-decktech.png
 
 # ===========================================================================
 # SECTION 4: EXCERPT

@@ -66,13 +66,13 @@ Guidelight Pathmaker is from 2025's Aetherdrift set. It's an Azorius vehicle for
 
 At first glance, two traits drew me to this commander. First, its colors. There are only 11 vehicles (no spacecraft) that offer access to multiple colors — almost all of them fresh cards from the Aetherdrift set, with one exception in [[Prodigy's Prototype]] from Kamigawa: Neon Dynasty. Having access to multiple colors is a big deal in PDH, as it allows you to reach a broader range of cards.
 
-The second, far more important trait that gave me cartoon wowza eyes is the power of this commander's tutor ability. [[Sphinx Summoner]] already sees some success in the format, and that tutor ability is limited to artifact creatures only. Guidelight Pathmaker can find any artifact — and if it's 2 CMC or less, *it goes directly to the battlefield.* It's also an ETB effect, meaning we can abuse it by using flicker spells. [[Rocco, Cabaretti Caterer]] only wishes he could to the same. 
+The second, far more important trait that gave me cartoon wowza eyes is the power of this commander's tutor ability. [[Sphinx Summoner]] already sees some success in the format, and that tutor ability is limited to artifact creatures only. Guidelight Pathmaker can find any artifact — and if it's 2 CMC or less, *it goes directly to the battlefield.* It's also an ETB effect, meaning we can abuse it by using flicker spells. [[Rocco, Cabaretti Caterer]] only wishes he could be flickered to the same effect. 
 
 {% include card-grid.html cards="Sphinx Summoner" %}
 
 I worked vigilantly to find a way to crack this deck and make it cPDH viable. I created and recreated my decklist and ran it through five distinct, failed builds before arriving here at my current list. At first I fell into the same trap many other brewers fall into, trying to find combos that were partially artifacts and partially non-artifacts. I couldn't bring it together to make it cohesive — until I realized the final piece of the puzzle I'd been missing the entire time. The piece that allowed me to fully utilize the power of this commander's text box: if crewed, it becomes a *white creature.* Hello, [[Antler Skulkin]].
 
-<img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
+{% include divider.html %}
 
 ## The Win Condition
 
@@ -118,15 +118,15 @@ These cards are here first and foremost to protect ourselves and our combo lines
 
 ## Flicker Spells
 
-Initially these spells were intended purely as instant-speed tutors — by flickering our commander, we trigger its search ability on demand. Instant-speed tutors in PDH — how strong! Five of these flickers were specifically selected for their ability to target our commander as an artifact, without requiring it to be crewed first.
-
-{% include card-grid.html cards="Scrollshift, Ghostly Flicker, Airbending Lesson, Teferi's Time Twist, Planar Incision" %}
+Initially these spells were intended purely as instant-speed tutors — by flickering our commander, we trigger its search ability on demand. Instant-speed tutors in PDH — how strong! 
 
 Through play, I've found these spells have incredible flexibility. They serve three distinct functions:
 
-**Tutors** — flickering our commander to find more of what we need, even at instant speed, is exceptionally strong. Five of our flicker spells can target the commander as an artifact without it needing to be crewed first.
+**Tutors** — flickering our commander to find combo pieces to win is exceptionally strong. Five of our flicker spells were selected because they can target the commander as an artifact without it needing to be crewed.
 
-**Protection** — when our permanents are targeted, we can get them out of harm's way. Spells with a delayed return can even protect our creatures through edicts.
+{% include card-grid.html cards="Scrollshift, Ghostly Flicker, Airbending Lesson, Teferi's Time Twist, Planar Incision" %}
+
+**Protection** — when our permanents are targeted, we can get them out of harm's way. Spells with a delayed "end of turn" flicker ability can even protect our creatures through edicts.
 
 **Removal** — five of these flicker spells don't specify that the target must be under our control. That means we can use them to disrupt opponents, particularly during their combo turns, to prevent them from going off.
 
@@ -148,13 +148,13 @@ How you play against this deck depends on whether you're ahead or behind.
 
 **If you're behind** and want to slow the deck without dismantling it entirely, the best tool is instant-speed graveyard hate. Importantly, this also allows the Guidelight player to still find interaction and work as an ally on the board by taking meaningful game actions rather than being relegated to the sidelines. Exiling one of the retriever creatures while it's in the graveyard prevents the combo from completing, leaving the Guidelight Pathmaker player with access to counterspells and interaction — but without their key pieces, forcing them into a long, arduous Voltron beatdown. It slows them significantly, but doesn't shut them out of the game entirely. 
 
-I've been asked what the correct way to apply pressure to this deck is. My answer: Sometimes the truck spins its wheels and doesn't have the means to follow through on its explosive potential. Keep up instant-speed interaction — counterspells, removal, and graveyard hate are all effective here — to disrupt the combo turns, but otherwise the Guidelight Pathmaker game plan tends to be rather passive until it isn't. Try to focus on winning the game before Guidelight can be a problem.
+I've been asked what the correct way to apply pressure to this deck is. My answer: Sometimes the truck spins its wheels and doesn't have the means to follow through on its explosive potential. Keep up instant-speed interaction — counterspells, removal, and graveyard hate are all effective here — to disrupt the combo turns, but otherwise the Guidelight Pathmaker game plan tends to be rather passive until it tries to win. Try to focus on winning the game before Guidelight can be a problem and keep up your interaciton if you think it will win before you can take take it out.
 
-{% include divider.html %}
+<img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## Conclusion
 
-I've had so much fun showing up to tables and proclaiming that I'm going to play the game with my truck! The deck was a joy to build — discovering the combo line that lets you empty your entire deck onto the battlefield felt genuinely satisfying. I'm proud of this truck. I've been working on it, getting under the bonnet and fixing up the engine so it can rev loud and run proud.
+I've had so much fun showing up to tables and proclaiming "I'm going to play the game with my truck!" The deck was a joy to build — discovering the combo line that lets you empty your entire deck onto the battlefield felt genuinely satisfying. I'm proud of this truck. I've been working on it, getting under the bonnet and fixing up the engine so it can rev loud and run proud.
 
 I hope you check it out, and if you feel inspired to take it for a spin, you can use the link below to purchase the deck straight from Manapool. Happy driving!
 

@@ -56,7 +56,7 @@ excerpt: "Ginger breaks down the full pilot's guide for Guidelight Pathmaker —
 
 ---
 
-As soon as the announcement was made that vehicles and spacecraft could be commanders, I immediately went on the hunt for the best one. I found a vehicle that stands tall above all the other non-creature artifacts that have been made available, and it's the vehicle I want to talk to you about today: [[Guidelight Pathmaker]].
+As soon as the announcement was made that vehicles and spacecraft could be commanders, I immediately went on the hunt for the best one. I found a vehicle that stands tall above all the other non-creature artifacts that have been made available, and it's the vehicle I want to talk to you about today:[[Guidelight Pathmaker](https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ).
 
 {% include card-grid.html cards="Guidelight Pathmaker" %}
 

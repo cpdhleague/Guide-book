@@ -80,29 +80,29 @@ Winning requires a lot of game actions, so let's start at our desired end game �
 
 To win the game, you need your commander, [[Ashnod's Altar]], and an untapped [[Antler Skulkin]] on the battlefield, plus {5} available mana. Additional mana and a few counterspells wouldn't go amiss, but with just these three cards and 5 mana, you can win. Do you see it? Let's break it down step by step:
 
-1. Tap [[Antler Skulkin]] to crew [[Guidelight Pathmaker]].
+1. Tap Antler Skulkin to crew Guidelight Pathmaker.
 2. Pay {2} to use Antler Skulkin's ability to give your commander persist.
-3. Sacrifice your commander to [[Ashnod's Altar]], getting the persist trigger and returning up to {5} mana to your mana pool.
-4. On re-entry, use the artifact tutor trigger to find [[Arcbound Prototype]] and bring it directly to the battlefield.
-5. Crew your commander with [[Arcbound Prototype]].
-6. Give [[Arcbound Prototype]] persist using [[Antler Skulkin]]'s ability.
-7. Sacrifice Arcbound Prototype, generating both a modular trigger and a persist trigger. The modular trigger puts its +1/+1 counters on [[Guidelight Pathmaker]], removing its -1/-1 counter as a consequence. Arcbound Prototype returns to the battlefield with a single +1/+1 counter.
-8. Give your commander persist, then sacrifice it to [[Ashnod's Altar]]. Use the tutor trigger to find [[Battered Golem]].
-9. Cast [[Battered Golem]].
+3. Sacrifice your commander to Ashnod's Altar, getting the persist trigger and returning up to {5} mana to your mana pool.
+4. On re-entry, use the artifact tutor trigger to find Arcbound Prototype and bring it directly to the battlefield.
+5. Crew your commander with Arcbound Prototype.
+6. Give Arcbound Prototype persist using Antler Skulkin's ability.
+7. Sacrifice Arcbound Prototype, generating both a modular trigger and a persist trigger. The modular trigger puts Arcound Prototype's +1/+1 counters on Guidelight Pathmaker, removing Pathmaker's -1/-1 counter as a consequence. Arcbound Prototype returns to the battlefield with a single +1/+1 counter.
+8. Give your commander persist, then sacrifice it to Ashnod's Altar. Use the tutor trigger to find Battered Golem.
+9. Cast Battered Golem.
 
 {% include card-grid.html cards="Ashnods Altar, Antler Skulkin, Arcbound Prototype, Battered Golem, Guidelight Pathmaker" %}
 
-With all five cards on the battlefield, you can now trigger your commander's artifact tutor ability an infinite number of times. Crew it with [[Battered Golem]] (which untaps each time another artifact you control enters); provide persist with [[Antler Skulkin]]; provide the sacrifice outlet and the mana to pay for Antler Skulkin's ability with [[Ashnod's Altar]]; and use [[Arcbound Prototype]] to continually remove the -1/-1 counters from [[Guidelight Pathmaker]] after its persist triggers.
+With all five cards on the battlefield, you can now trigger your commander's artifact tutor ability an infinite number of times in a mana neutral loop. Crew it with [[Battered Golem]] (which untaps each time another artifact you control enters); provide persist with [[Antler Skulkin]]; provide the sacrifice outlet and the mana to pay for Antler Skulkin's ability with [[Ashnod's Altar]]; and use [[Arcbound Prototype]] to continually remove the -1/-1 counters from [[Guidelight Pathmaker]] after its persist triggers.
 
 You can now pull every artifact in your deck straight onto the battlefield or into your hand. Along the way, you'll draw several cards and pull several mana sources to give you more mana to spend on protective interaction, if you need it.
 
-After pulling every artifact out of your deck, you'll have [[Myr Retriever]], [[Etherium Sculptor]], [[Energy Refractor]], [[Secret Door]], and [[Ashnod's Altar]] on the battlefield, with [[Workshop Assistant]] in hand. Use the last two mana from the persist loop to cast Workshop Assistant, sacrifice Myr Retriever to get two mana back, and begin looping these two graveyard fetchers to net one mana per loop.
+After pulling every artifact out of your deck, you'll have [[Myr Retriever]], [[Etherium Sculptor]], [[Energy Refractor]], [[Secret Door]], and [[Ashnod's Altar]] on the battlefield, with [[Workshop Assistant]] in hand. Use the last two mana from the persist loop to cast Workshop Assistant, then sacrifice Myr Retriever to get two mana back, and begin looping these two graveyard fetchers to net one mana per loop.
 
 {% include card-grid.html cards="Myr Retriever, Workshop Assistant, Etherium Sculptor, Energy Refractor, Ashnod's Altar" %}
 
-Once you have infinite mana, filter it through Energy Refractor to generate as much blue mana as you need, then begin activating [[Secret Door]] until you ping your opponents out of the game. We're almost always using the Lost Mine of Phandelver — it pings each opponent as you venture through it. One important note: your number of pings is limited to how many cards remain in your deck, since the final room of the Mine requires you to draw a card. In the unlikely scenario your opponents are at high life and you're running low on cards, consider routing through the Tomb of Annihilation instead.
+Once you have infinite mana, filter it through Energy Refractor to generate as much blue mana as you need, then begin activating [[Secret Door]] until you ping your opponents out of the game. We're almost always using the Lost Mine of Phandelver — it pings each opponent as you venture through it. One important note: your number of pings is limited to how many cards remain in your deck, since the final room of the Mine requires you to draw a card. In the unlikely scenario your opponents are at high life and you're running low on cards in your deck, consider routing through the Tomb of Annihilation instead.
 
-This is perhaps *the* most convoluted path to victory I've ever concocted — but it all starts from just three cards in play and 5 available mana.
+This is perhaps *the* most convoluted path to victory I've ever concocted — but it all starts from just three cards in play and {5} available mana.
 
 {% include divider.html %}
 

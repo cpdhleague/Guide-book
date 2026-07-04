@@ -56,7 +56,7 @@ excerpt: "Ginger breaks down the full pilot's guide for Guidelight Pathmaker —
 
 ---
 
-As soon as the announcement was made that vehicles and spacecraft could be commanders, I immediately went on the hunt for the best one. I found a vehicle that stands tall above all the other non-creature artifacts that have been made available, and it's the vehicle I want to talk to you about today:[[Guidelight Pathmaker](https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ).
+As soon as the announcement was made that vehicles and spacecraft could be commanders, I immediately went on the hunt for the best one. I found a vehicle that stands tall above all the other non-creature artifacts that have been made available, and it's the vehicle I want to talk to you about today:[Guidelight Pathmaker](https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ).
 
 {% include card-grid.html cards="Guidelight Pathmaker" %}
 
@@ -83,11 +83,11 @@ To win the game, you need your commander, [[Ashnod's Altar]], and an untapped [[
 1. Tap Antler Skulkin to crew Guidelight Pathmaker.
 2. Pay {2} to use Antler Skulkin's ability to give your commander persist.
 3. Sacrifice your commander to Ashnod's Altar, getting the persist trigger and returning up to {5} mana to your mana pool.
-4. On re-entry, use the artifact tutor trigger to find Arcbound Prototype and bring it directly to the battlefield.
+4. On re-entry, use the artifact tutor trigger to find [[Arcbound Prototype]] and bring it directly to the battlefield.
 5. Crew your commander with Arcbound Prototype.
 6. Give Arcbound Prototype persist using Antler Skulkin's ability.
 7. Sacrifice Arcbound Prototype, generating both a modular trigger and a persist trigger. The modular trigger puts Arcound Prototype's +1/+1 counters on Guidelight Pathmaker, removing Pathmaker's -1/-1 counter as a consequence. Arcbound Prototype returns to the battlefield with a single +1/+1 counter.
-8. Give your commander persist, then sacrifice it to Ashnod's Altar. Use the tutor trigger to find Battered Golem.
+8. Give your commander persist, then sacrifice it to Ashnod's Altar. Use the tutor trigger to find [[Battered Golem]].
 9. Cast Battered Golem.
 
 {% include card-grid.html cards="Ashnods Altar, Antler Skulkin, Arcbound Prototype, Battered Golem, Guidelight Pathmaker" %}

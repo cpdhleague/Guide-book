@@ -72,7 +72,6 @@ The second, far more important trait that gave me cartoon wowza eyes is the powe
 
 I worked vigilantly to find a way to crack this deck and make it cPDH viable. I created and recreated my decklist and ran it through five distinct, failed builds before arriving here at my current list. At first I fell into the same trap many other brewers fall into, trying to find combos that were partially artifacts and partially non-artifacts. I couldn't bring it together to make it cohesive — until I realized the final piece of the puzzle I'd been missing the entire time. The piece that allowed me to fully utilize the power of this commander's text box: if crewed, it becomes a *white creature.* Hello, [[Antler Skulkin]].
 
-<img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## The Win Condition
 
@@ -150,7 +149,8 @@ How you play against this deck depends on whether you're ahead or behind.
 
 I've been asked what the correct way to apply pressure to this deck is. My answer: Sometimes the truck spins its wheels and doesn't have the means to follow through on its explosive potential. Keep up instant-speed interaction — counterspells, removal, and graveyard hate are all effective here — to disrupt the combo turns, but otherwise the Guidelight Pathmaker game plan tends to be rather passive until it isn't. Try to focus on winning the game before Guidelight can be a problem.
 
-{% include divider.html %}
+
+<img src="/assets/images/cpdh-guidelight-list.png" alt="Guidelight full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## Conclusion
 

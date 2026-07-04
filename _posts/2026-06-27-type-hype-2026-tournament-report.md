@@ -3,7 +3,7 @@
 # CPDH.GUIDE — ARTICLE TEMPLATE
 # ===========================================================================
 
-title: "Type Hype 2026: Ginger Makes a Path to Victory"
+title: "Type Hype 2026: Ginger Persolus Makes a Path to Victory"
 
 # DATE: Update this to the actual event/publish date
 date: 2026-06-27

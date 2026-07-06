@@ -47,7 +47,7 @@ Welcome to your cPDH toolkit! Whether you are a new recruit or a seasoned grinde
   <div style="background: rgba(26,26,36,0.50); border: 1px solid rgba(58,58,74,0.50); border-radius: 12px; padding: 1.5em; transition: border-color 0.3s ease;">
     <h3 style="margin-top: 0; font-size: 1.1em;">⚔️ Find a Tournament</h3>
     <p style="color: #9ca3af; font-size: 0.95em;">Sleeve up and compete — filter for Pauper Commander events.</p>
-    <a href="https://topdeck.gg/magic-the-gathering" class="btn btn--primary" style="font-size: 0.85em;" target="_blank">Topdeck.gg →</a>
+    <a href="/events/" class="btn btn--primary" style="font-size: 0.85em;">Events</a>
   </div>
 
 </div>

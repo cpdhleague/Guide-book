@@ -10,19 +10,19 @@
 #   link:        URL for more info (optional — leave out if none)
 #   description: 1–3 sentence summary (optional)
 
-- title: "Wanderer's Rainbow Rumble"
-  date: 2026-06-20
-  location: "CPDH.guide Discord Server"
-  online: true
-  link: "https://topdeck.gg/event/pdh-rainbow-rumble"
-  description: "A meta mixup event: all commanders must have 3 or more colors in their identities."
-
 - title: "Cloudy Commons Cup IV: Petal-Palooza"
   date: 2026-07-19
   location: "Minneapolis Convention Center, 1301 2nd Ave S, Minneapolis, MN 55404, USA"
   online: false
   link: "https://topdeck.gg/event/cloudy-commons-cup-iv"
   description: "One of the best in-person PDH events in the country, only in Minneapolis. Win a Kaladesh Invention Lotus Petal!"
+
+- title: "Summer Jam"
+  date: 2026-07-25
+  location: "cPDH.guide Discord Server"
+  online: true
+  link: "https://discord.com/invite/UtgN272kpq"
+  description: "PDH tournament to wrap up the main summer months. Hang out, jam games, have a good time. Winner will get a playmat. Paper magic only, no digital simulators."
 
 - title: "Cloudy Commons Cup V: Signet Showdown"
   date: 2026-08-16
@@ -31,12 +31,26 @@
   link: "https://topdeck.gg/event/cpdh-signet-showdown"
   description: "One of the best in-person PDH events in the country, only in Minneapolis. Win a Galaxy Foil Arcane Signet!"
 
-- title: "Wanderer's Triple Threat"
+- title: "Burn Book Brawl"
+  date: 2026-08-22
+  location: "Burn Book Discord Server"
+  online: true
+  link: "https://topdeck.gg/event/burn-book-brawl"
+  description: "Fight for $1,000 in prizing as well as a token made and distributed in your honor!"
+
+- title: "Hudson Valley PDH 1k"
+  date: 2026-09-06
+  location: "88 Colden St, Newburgh, NY 12550, USA"
+  online: false
+  link: "https://topdeck.gg/event/hudson-valley-pauperedh-1k-copy"
+  description: "Sponsored by: Boardgame Bounty Hunters & Newburgh Brewing Co."
+
+- title: "Wanderer's TryHards Brawl"
   date: 2026-09-19
   location: "CPDH.guide Discord Server"
   online: true
-  link: "https://topdeck.gg/event/pdh-triple-threat"
-  description: "A meta mixup event: each player brings three decks and gets to ban one of their opponent's decks before the match begins."
+  link: "https://discord.com/invite/UtgN272kpq"
+  description: "A competitive event run as part of the year-long Wanderer's PDH League"
 
 - title: "Wanderer's Commander Clash 2026"
   date: 2026-12-12

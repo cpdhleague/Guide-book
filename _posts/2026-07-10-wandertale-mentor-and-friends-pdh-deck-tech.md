@@ -72,8 +72,6 @@ At the end of this article, I explore alternate commanders for this deck as well
 
 This is the PDH deck that brings me the most joy, and I'm delighted to share this joy with you. Go forth, build your own ramping, stomping, winning list, and I hope you enjoy it as much as I've enjoyed my own Trash Panda and his humongous friends!
 
-{% include divider.html %}
-
 ## Gameplan Summary
 
 Most of my deck techs open by naming a precise win condition — a specific combo, a storm line, something that closes the game with certainty. This deck doesn't work that way.
@@ -118,13 +116,19 @@ The nice thing about this deck is that you can fill it out with your favorite se
 
 Vigilance is probably the most important keyword in the deck, so I make it my top priority. Since the deck wants to swing out and beat faces in, it's easy to leave ourselves open and vulnerable to crack-back attacks. Vigilance allows us to push damage while also keeping up blockers to protect ourselves. You'll also notice that I've kept a [[Haunted Cloak]] in my list — being able to swing with the creature you just played and keep it up as a blocker, maximizing your damage each turn? It's just *chef's kiss.*
 
+{% include card-grid.html cards="Oakgnarl Warrior, Iron Giant, Beacon Behemoth, Elfhname Wurm, Skysnare Spider" %}
+
 ## *Trample*
 
 Trample isn't something you really need to try for. You're running Gruul cards, and the best ones you can find — you'll be tripping over all of your trample cards. This is our deck's version of "evasion" to keep pushing damage past blockers. The ones that say "creatures you control have trample" are the big hitters you can't miss! Unfortunately, there are only two that I think are super solid: [[Nylea's Forerunner]] and [[Spectral Hunt-Caller]]. There are a few that provide the same effect on ETB or when they attack, but the timing can be off, and I'd rather not risk it. I also ran [[Summon: Fat Chocobo]] for some time, but the fact that it sacrifices itself at the end of the Saga made it detrimental when I had to continue into the long game.
 
+{% include card-grid.html cards="Colossal Dreadmask, Molten Monstrosity, Wrecking Beast, Nylea's Forerunner, Havenwood Wurm" %}
+
 ## *Cascade*
 
 If you watched the Salubrious Snail video linked at the top of this article, you'll already know that a big motivator in his deck design was maximizing the impact of the free spells you find off cascade triggers. I've kept the same principle alive in my version of the deck, only allowing four cards into my build that are under four mana — they were too good to give up. You'll notice that I don't run [[Natural Reclamation]]. It hits ramp such a high percentage of the time that it's not actually helping the deck progress in the mid- to late-game. I also only run one card at a time in the deck with a mana value of two or lower, so I can turn [[Violent Outburst]] into an instant-speed tutor for that card. I'm currently running [[Flaring Pain]] as a way to get through my opponents' fog effects, but I've recently tried to find another card that's more impactful on average — I'm considering [[Moment's Peace]], as it also benefits from flashback, making it difficult to counter.
+
+{% include card-grid.html cards="Violent Outbust, Annoyed Altisaur, Maelstrom Colossus, Boarding Party" %}
 
 ## *Other Notable Cards*
 
@@ -148,19 +152,19 @@ If you're sitting across from Wandertale Mentor and want to slow it down, a core
 
 However, don't bolt the bard just because you can. If you have a Malcolm player and a Wandertale player at the table, the turbo combo deck should be your first priority. Use sound threat assessment before making decisions in all your games.
 
-<img src="/assets/images/wandertale-list.png" alt="Wandertale full decklist" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/wandertale-decklist.png" alt="Wandertale full decklist" style="width:100%; display:block; margin:2em auto;">
 
 ## Variations on a Theme
 
 There are several commanders that you can slot in place of Wandertale Mentor, all equally effective at providing mana in a timely manner but none of which match Wandertale's ability to scale in size over the course of the game. I myself keep [[Ruby, Daring Tracker]] in my deckbox to avoid needing to Rule Zero Wandertale into EDH games. If you choose to run more instants in your build, [[Radha, Heir to Keld]] will provide more value by giving you two extra mana a turn when she attacks.
 
-{% include card-grid.html cards="Ruby, Daring Tracker, Radha, Heir to Keld, Wildwood Scourge" %}
+{% include card-grid.html cards="Ruby Daring Tracker, Radha Heir to Keld, Kessig Naturalist" %}
 
 You can also find compatible commanders for the same style of play outside of Gruul. [[Skull Prophet]] gives you the ability to mill cards in Golgari when you're not using it for mana. [[Rootcoil Creeper]] is a Simic variant which provides more mana for spells cast from your graveyard, while also being able to retrieve flashback cards from exile. Think of the value! [[Hermetic Herbalist]] is another recent Simic inclusion to this list, providing extra mana for Lesson spells. If mono-colored decks are more your speed, [[Animal Attendant]] is also an excellent option, as it buffs almost all of the creatures you would want to be running with +1/+1 counters. It's like Wandertale, but the buffs spread across your board instead of staying on your commander.
 
 In the process of writing this article, I discovered what I thought did not exist: a Selesnya version of this type of commander! But it's here, it's real, it's [[Murasa Rootgrazer]]! She even offers BETTER ramp than Wandertale does! You're learning this with me, folks. Fresh off the press.
 
-{% include card-grid.html cards="Skull Prophet, Rootcoil Creeper, Hermetic Herbalist, Murasa Rootgrazer, Animal Attendant" %}
+{% include card-grid.html cards="Skull Prophet, Rootcoil Creeper, Hermitic Herbalist, Murasa Rootgrazer, Animal Attendant" %}
 
 Wandertale Mentor and Animal Attendant are probably the strongest of the options I've provided here, because of their abilities to provide lasting creature buffs into the late game. Perhaps someone will find a way to take the Rootcoil Creeper or Skull Prophet to new heights using their abilities, but until then I stake  my claim that these two are the best 2-cost mana dorks to have in your PDH command zone.
 
@@ -172,7 +176,6 @@ Elves of Deep Shadow shifts the strategy from 2-4-7 to 1-3-5, starting your acce
 
 I have not yet built or experimented with [[Elves of Deep Shadow]], so eager brewers — show us what you've got!
 
-{% include divider.html %}
 
 ## Conclusion
 

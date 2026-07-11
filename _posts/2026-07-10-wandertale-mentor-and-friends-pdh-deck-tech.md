@@ -116,7 +116,7 @@ The nice thing about this deck is that you can fill it out with your favorite se
 
 Vigilance is probably the most important keyword in the deck, so I make it my top priority. Since the deck wants to swing out and beat faces in, it's easy to leave ourselves open and vulnerable to crack-back attacks. Vigilance allows us to push damage while also keeping up blockers to protect ourselves. You'll also notice that I've kept a [[Haunted Cloak]] in my list — being able to swing with the creature you just played and keep it up as a blocker, maximizing your damage each turn? It's just *chef's kiss.*
 
-{% include card-grid.html cards="Oakgnarl Warrior, Iron Giant, Beacon Behemoth, Elfhname Wurm, Skysnare Spider" %}
+{% include card-grid.html cards="Oakgnarl Warrior, Iron Giant, Beacon Behemoth, Elfhame Wurm, Skysnare Spider" %}
 
 ## *Trample*
 

@@ -44,6 +44,7 @@ header:
 
     <div class="feature__item article-card"
       data-author="{{ post.author }}"
+      data-category="{{ post.categories | first | slugify }}"
       data-index="{{ visible_count }}">
       <div class="feature__item__content-wrapper">
         <div class="feature__item-image">
@@ -82,17 +83,28 @@ header:
   function initPage() {
     var params = new URLSearchParams(window.location.search);
     var author = params.get('author');
+    var category = params.get('category');
     var cards  = Array.from(document.querySelectorAll('.article-card'));
 
-    if (author) {
-      // Filter mode: show all matching, hide everything else, no load-more needed
+    if (author || category) {
+      // Filter mode: show matching, hide the rest, no load-more needed
+      var filterKey = author ? 'author' : 'category';
+      var filterVal = author || category;
+
       cards.forEach(function(card) {
-        card.style.display = card.dataset.author === author ? '' : 'none';
+        card.style.display = card.dataset[filterKey] === filterVal ? '' : 'none';
       });
       document.getElementById('load-more-wrap').style.display = 'none';
 
       var knownNames = { pdhpod: 'The PDH Pod', jalapenos: 'Jalapeno Paupers', ginger: 'Ginger Persolus', beachbodgod69: 'BeachBodGod69' };
-      document.getElementById('filter-label').textContent = knownNames[author] || author;
+      var label;
+      if (author) {
+        label = knownNames[author] || author;
+      } else {
+        // Turn a category slug like "cpdh-deck-techs" into "Cpdh Deck Techs"
+        label = category.replace(/-/g, ' ').replace(/\b\w/g, function(l){ return l.toUpperCase(); });
+      }
+      document.getElementById('filter-label').textContent = label;
       document.getElementById('active-filter').style.display = 'flex';
 
     } else {
@@ -135,7 +147,7 @@ header:
     <ul class="taxonomy__index">
       {% for category in site.categories %}
         <li>
-          <a href="{{ category[0] | slugify | prepend: '/categories/#' | relative_url }}">
+          <a href="/articles/?category={{ category[0] | slugify }}">
             <strong>{{ category[0] }}</strong>
             <span class="taxonomy__count">{{ category[1].size }}</span>
           </a>

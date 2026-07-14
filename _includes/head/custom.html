@@ -213,16 +213,11 @@ document.addEventListener('DOMContentLoaded', function() {
       callback(cardCache[key]);
       return;
     }
-    fetch('https://api.scryfall.com/cards/named?fuzzy=' + encodeURIComponent(name))
+    // Fetch via our Cloudflare Worker cache (90-day edge cache, one Scryfall hit per card ever)
+    fetch('https://pdhpodsub.gingerpersolus.workers.dev/card?name=' + encodeURIComponent(name))
       .then(function(r) { return r.json(); })
       .then(function(data) {
-        var url = null;
-        if (data.image_uris) {
-          url = data.image_uris.normal;
-        } else if (data.card_faces && data.card_faces[0].image_uris) {
-          // Double-faced card — show front face
-          url = data.card_faces[0].image_uris.normal;
-        }
+        var url = data.image || null;
         cardCache[key] = url;
         callback(url);
       })

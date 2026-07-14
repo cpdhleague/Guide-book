@@ -116,7 +116,7 @@ The nice thing about this deck is that you can fill it out with your favorite se
 
 Vigilance is probably the most important keyword in the deck, so I make it my top priority. Since the deck wants to swing out and beat faces in, it's easy to leave ourselves open and vulnerable to crack-back attacks. Vigilance allows us to push damage while also keeping up blockers to protect ourselves. You'll also notice that I've kept a [[Haunted Cloak]] in my list — being able to swing with the creature you just played and keep it up as a blocker, maximizing your damage each turn? It's just *chef's kiss.*
 
-{% include card-grid.html cards="Oakgnarl Warrior, Iron Giant, Beacon Behemoth, Elfhname Wurm, Skysnare Spider" %}
+{% include card-grid.html cards="Oakgnarl Warrior, Iron Giant, Beacon Behemoth, Elfhame Wurm, Skysnare Spider" %}
 
 ## *Trample*
 
@@ -128,7 +128,7 @@ Trample isn't something you really need to try for. You're running Gruul cards, 
 
 If you watched the Salubrious Snail video linked at the top of this article, you'll already know that a big motivator in his deck design was maximizing the impact of the free spells you find off cascade triggers. I've kept the same principle alive in my version of the deck, only allowing four cards into my build that are under four mana — they were too good to give up. You'll notice that I don't run [[Natural Reclamation]]. It hits ramp such a high percentage of the time that it's not actually helping the deck progress in the mid- to late-game. I also only run one card at a time in the deck with a mana value of two or lower, so I can turn [[Violent Outburst]] into an instant-speed tutor for that card. I'm currently running [[Flaring Pain]] as a way to get through my opponents' fog effects, but I've recently tried to find another card that's more impactful on average — I'm considering [[Moment's Peace]], as it also benefits from flashback, making it difficult to counter.
 
-{% include card-grid.html cards="Violent Outbust, Annoyed Altisaur, Maelstrom Colossus, Boarding Party" %}
+{% include card-grid.html cards="Violent Outburst, Annoyed Altisaur, Maelstrom Colossus, Boarding Party" %}
 
 ## *Other Notable Cards*
 

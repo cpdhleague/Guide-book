@@ -17,11 +17,11 @@
   link: "https://topdeck.gg/event/cloudy-commons-cup-iv"
   description: "One of the best in-person PDH events in the country, only in Minneapolis. Win a Kaladesh Invention Lotus Petal!"
 
-- title: "Summer Jam"
+- title: "Summer's End Jam"
   date: 2026-07-25
   location: "cPDH.guide Discord Server"
   online: true
-  link: "https://discord.com/invite/UtgN272kpq"
+  link: "https://topdeck.gg/event/pdh-summers-end-jam"
   description: "PDH tournament to wrap up the summer holidays. Hang out, jam games, have a good time. Winner will get a playmat. Paper magic only, no digital simulators."
 
 - title: "Cloudy Commons Cup V: Signet Showdown"
@@ -49,7 +49,7 @@
   date: 2026-09-19
   location: "CPDH.guide Discord Server"
   online: true
-  link: "https://discord.com/invite/UtgN272kpq"
+  link: "https://topdeck.gg/event/pdh-triple-threat"
   description: "A competitive event run as part of the year-long Wanderer's PDH League"
 
 - title: "Wanderer's Commander Clash 2026"

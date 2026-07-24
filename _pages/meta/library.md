@@ -70,6 +70,42 @@ header:
         </tr>
       </thead>
       <tbody>
+       <tr>
+        <td><a href="https://moxfield.com/decks/bJ-v3BCkV02JUDxgo8PunA" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Hawkeye, Young Avenger</td>
+        <td>Cloudy Commons Cup IV</td>
+        <td>Ken Cockriel</td>
+        <td>Red</td>
+        <td>Midrange</td>
+        <td data-sort="20260719">2026-07-19</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/UZafAY3pV3-3WXENmXxXhw" target="_blank" class="btn-decklist">View</a></td>
+        <td>Ley Weaver // Lore Weaver</td>
+        <td>Cloudy Commons Cup IV</td>
+        <td>Nicholas Reedy</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260719">2026-07-19</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/U5afARWzKnSsDf57aqXoag" target="_blank" class="btn-decklist">View</a></td>
+        <td>Sanar, Unfinished Genius</td>
+        <td>Cloudy Commons Cup IV</td>
+        <td>Justin M</td>
+        <td>Izzet</td>
+        <td>Combo</td>
+        <td data-sort="20260719">2026-07-19</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/VZafAV71Zn6yr2DtnHjuFw" target="_blank" class="btn-decklist">View</a></td>
+        <td>Third Path Iconoclast</td>
+        <td>Cloudy Commons Cup IV</td>
+        <td>John Lassak</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td data-sort="20260719">2026-07-19</td>
+    </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ" target="_blank" class="btn-decklist">View</a></td>
         <td>Guidelight Pathmaker</td>
@@ -77,7 +113,7 @@ header:
         <td>Ginger Persolus</td>
         <td>Azorius</td>
         <td>Combo</td>
-        <td data-sort="20260228">2026-03-28</td>
+        <td data-sort="20260328">2026-03-28</td>
     </tr>
         <tr>
         <td><a href="https://archidekt.com/decks/20914201/sphinx" target="_blank" class="btn-decklist">View</a></td>
@@ -86,7 +122,7 @@ header:
         <td>Kevin Levi</td>
         <td>5 Color</td>
         <td>Voltron</td>
-        <td data-sort="20260228">2026-03-28</td>
+        <td data-sort="20260328">2026-03-28</td>
     </tr>
         <tr>
         <td><a href="https://moxfield.com/decks/PNPHCzwif0muBVtGAEcO9Q" target="_blank" class="btn-decklist">View</a></td>
@@ -95,7 +131,7 @@ header:
         <td>Combraman</td>
         <td>Boros</td>
         <td>Aggro</td>
-        <td data-sort="20260228">2026-03-28</td>
+        <td data-sort="20260328">2026-03-28</td>
     </tr>
         <tr>
         <td><a href="https://moxfield.com/decks/_S7QWLyR8Ue0WUy5jzodgA" target="_blank" class="btn-decklist">View</a></td>
@@ -104,7 +140,7 @@ header:
         <td>Bernie</td>
         <td>Izzet</td>
         <td>Combo</td>
-        <td data-sort="20260228">2026-03-28</td>
+        <td data-sort="20260328">2026-03-28</td>
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/6a464UvGIUC7lKU1X59Z8Q" target="_blank" class="btn-decklist">View</a></td>

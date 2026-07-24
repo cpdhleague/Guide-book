@@ -108,7 +108,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/BH7BVBRPKk25Zn3B4xzJsQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Guidelight Pathmaker</td>
+        <td>👑 Guidelight Pathmaker</td>
         <td>Wanderer's Type Hype 2026</td>
         <td>Ginger Persolus</td>
         <td>Azorius</td>
@@ -144,7 +144,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/6a464UvGIUC7lKU1X59Z8Q" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ley Weaver // Lore Weaver</td>
+        <td>👑 Ley Weaver // Lore Weaver</td>
         <td>The Cloudy Commons Cup III: Blitzkrieg for a Bolt</td>
         <td>_clay_</td>
         <td>Simic</td>
@@ -216,7 +216,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/c6l5Oa79ekifraoWU4vlPQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Disciple of Deceit</td>
+        <td>👑 Disciple of Deceit</td>
         <td>Hudson Valley PauperEDH 1K</td>
         <td>Dallas Walker</td>
         <td>Dimir</td>
@@ -261,7 +261,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/fJYMP6v2TEG_d_36iCcLgQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Akiri, Fearless Voyager</td>
+        <td>👑 Akiri, Fearless Voyager</td>
         <td>Common Cause X</td>
         <td>southlakes</td>
         <td>Boros</td>
@@ -288,7 +288,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/Jx4Ih2NFb06eE4W2R54xiQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gretchen Titchwillow</td>
+        <td>👑 Gretchen Titchwillow</td>
         <td>Wanderer's League 2025: Invitational</td>
         <td>Dallas Carlson</td>
         <td>Simic</td>
@@ -351,7 +351,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://topdeck.gg/deck/cpdh-commander-clash-2025/RF01KBbpm5h2JMkwqdzbDuLWKo12" target="_blank" class="btn-decklist">View</a></td>
-        <td>Veteran Beastrider</td>
+        <td>👑 Veteran Beastrider</td>
         <td>Commander Clash 2025</td>
         <td>Scarecrow1779</td>
         <td>Selesnya</td>
@@ -387,7 +387,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/9NynA609AkWFdJim94kKNg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gretchen Titchwillow</td>
+        <td>👑 Gretchen Titchwillow</td>
         <td>Cloudy Commons II</td>
         <td>Josh Mattson</td>
         <td>Simic</td>
@@ -450,7 +450,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/EQeyjAlsNESZzB6rboqgDg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Third Path Iconoclast</td>
+        <td>👑 Third Path Iconoclast</td>
         <td>Common Cause IX</td>
         <td>PapaPauper</td>
         <td>Izzet</td>
@@ -513,7 +513,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/hAo1bvF2LUaGP1j0hyHzHg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Disciple of Deceit</td>
+        <td>👑 Disciple of Deceit</td>
         <td>Riches to Rags V</td>
         <td>Alex Tong</td>
         <td>Dimir</td>
@@ -594,7 +594,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/jWnufsB3SEuXFXfUjszZ3g" target="_blank" class="btn-decklist">View</a></td>
-        <td>Zada, Hedron Grinder</td>
+        <td>👑 Zada, Hedron Grinder</td>
         <td>Common Cause VII</td>
         <td>Stein</td>
         <td>Red</td>
@@ -639,7 +639,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/eYZSyMKhK0u5XlNsbnanug" target="_blank" class="btn-decklist">View</a></td>
-        <td>Hollow Marauder</td>
+        <td>👑 Hollow Marauder</td>
         <td>Common Cause VI</td>
         <td>PapaPauper</td>
         <td>Black</td>
@@ -648,7 +648,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/ZUMlxGM5EEWu4gFtX-TzGg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
+        <td>👑 Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
         <td>The Pauper Pit I</td>
         <td>Heartless</td>
         <td>Orzhov</td>
@@ -711,7 +711,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A" target="_blank" class="btn-decklist">View</a></td>
-        <td>Vhal, Candlekeep Researcher + Agent of the Shadow Thieves</td>
+        <td>👑 Vhal, Candlekeep Researcher + Agent of the Shadow Thieves</td>
         <td>RIW II</td>
         <td>TonisBolognis</td>
         <td>Dimir</td>
@@ -747,7 +747,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ley Weaver + Lore Weaver</td>
+        <td>👑 Ley Weaver + Lore Weaver</td>
         <td>Sanctuary PDH VI</td>
         <td>GatorbaitTV</td>
         <td>Simic</td>
@@ -783,7 +783,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/fYZKUOMj_EqeNMCvH5leww" target="_blank" class="btn-decklist">View</a></td>
-        <td>Sphinx Summoner</td>
+        <td>👑 Sphinx Summoner</td>
         <td>Common Cause IV</td>
         <td>Lobbert</td>
         <td>Dimir</td>
@@ -801,7 +801,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/sxzp3LVZT0mKm_WLaykXuQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gretchen Titchwillow</td>
+        <td>👑 Gretchen Titchwillow</td>
         <td>Sanctuary PDH V</td>
         <td>Xrlylyl</td>
         <td>Simic</td>
@@ -810,7 +810,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/MY6Wv-mWnUmFwDSoAiv13Q" target="_blank" class="btn-decklist">View</a></td>
-        <td>Lorehold Apprentice</td>
+        <td>👑 Lorehold Apprentice</td>
         <td>Common Cause III</td>
         <td>Ankylosaur</td>
         <td>Boros</td>
@@ -828,7 +828,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/8XK59D5RmUKlgrK_H4EkcA" target="_blank" class="btn-decklist">View</a></td>
-        <td>Patchwork Automaton</td>
+        <td>👑 Patchwork Automaton</td>
         <td>Riches to Rags IV</td>
         <td>Kevin R</td>
         <td>Colorless</td>
@@ -864,7 +864,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/j1S3GhgWPkixFyvOXYYBVA" target="_blank" class="btn-decklist">View</a></td>
-        <td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+        <td>👑 Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH IV</td>
         <td>Ankylosaur</td>
         <td>Izzet</td>
@@ -882,7 +882,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/tmMplRiiQU6p6DzssHzy2g" target="_blank" class="btn-decklist">View</a></td>
-        <td>Scholar of the Ages</td>
+        <td>👑 Scholar of the Ages</td>
         <td>Common Cause II</td>
         <td>MizuSun</td>
         <td>Blue</td>
@@ -927,7 +927,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/ufYjl-QfH0uvY-EugYNhAg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Loyal Apprentice</td>
+        <td>👑 Loyal Apprentice</td>
         <td>Common Cause I</td>
         <td>Obstinate</td>
         <td>Red</td>
@@ -963,7 +963,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/oXbkSrbw1kKMnHJDnhNF3g" target="_blank" class="btn-decklist">View</a></td>
-        <td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+        <td>👑 Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH III</td>
         <td>GatorbaitTV</td>
         <td>Izzet</td>
@@ -990,7 +990,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/mkvjgoEQwEanpo6EdAwuqQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Sprite Dragon</td>
+        <td>👑 Sprite Dragon</td>
         <td>RIW I</td>
         <td>Jackson S</td>
         <td>Izzet</td>
@@ -1026,7 +1026,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/qp8i-fp01EOlRfSc4qXH0Q" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gretchen Titchwillow</td>
+        <td>👑 Gretchen Titchwillow</td>
         <td>Riches to Rags II</td>
         <td>Bfine</td>
         <td>Simic</td>

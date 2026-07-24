@@ -2,7 +2,7 @@
   {% assign card_list = include.cards | split: ", " %}
   {% for card in card_list %}
     <figure class="gallery-item">
-      <img src="https://api.scryfall.com/cards/named?exact={{ card | url_encode }}&format=image" alt="{{ card }}">
+      <img src="https://cards.cpdh.guide/card-image?name={{ card | url_encode }}" alt="{{ card }}" loading="lazy">
     </figure>
   {% endfor %}
 </div>

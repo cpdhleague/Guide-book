@@ -70,7 +70,7 @@ header:
         </tr>
       </thead>
       <tbody>
-       <tr>
+     <tr>
         <td><a href="https://moxfield.com/decks/bJ-v3BCkV02JUDxgo8PunA" target="_blank" class="btn-decklist">View</a></td>
         <td>👑 Hawkeye, Young Avenger</td>
         <td>Cloudy Commons Cup IV</td>

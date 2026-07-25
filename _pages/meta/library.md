@@ -360,7 +360,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/CR0NHcwhUESrTax5qO2sJA" target="_blank" class="btn-decklist">View</a></td>
-        <td>Dargo, the Shipwrecker + Keskit, the Flesh Sculptor</td>
+        <td>Dargo, the Shipwrecker // Keskit, the Flesh Sculptor</td>
         <td>AllThatGames I</td>
         <td>Nathan Haiser</td>
         <td>Rakdos</td>
@@ -396,7 +396,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/a6QRhLaha0-ZipO9E-ZBEQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+        <td>Kediss, Emberclaw Familiar // Malcolm, Keen-Eyed Navigator</td>
         <td>Cloudy Commons II</td>
         <td>Justin McNamara</td>
         <td>Izzet</td>
@@ -432,7 +432,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/2--Ih4wTPkKJ8nxPnNSEnQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Imoen, Mystic Trickster + Criminal Past</td>
+        <td>Imoen, Mystic Trickster // Criminal Past</td>
         <td>Common Cause IX</td>
         <td>southlakesvibes</td>
         <td>Dimir</td>
@@ -477,7 +477,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/aUJ-X8ltOkmbEdZSmKQ3zQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ley Weaver + Lore Weaver</td>
+        <td>Ley Weaver // Lore Weaver</td>
         <td>Common Cause VIII</td>
         <td>Clay</td>
         <td>Simic</td>
@@ -486,7 +486,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/8JCLvQyWSEmV6wtnaA4qrQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ley Weaver + Lore Weaver</td>
+        <td>Ley Weaver // Lore Weaver</td>
         <td>Common Cause VIII</td>
         <td>Bfine</td>
         <td>Simic</td>
@@ -558,7 +558,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/ldWBKTilHEStYfnztmdI_Q" target="_blank" class="btn-decklist">View</a></td>
-        <td>Dargo, the Shipwrecker + Keskit, the Flesh Sculptor</td>
+        <td>Dargo, the Shipwrecker // Keskit, the Flesh Sculptor</td>
         <td>Sanctuary PDH VIII</td>
         <td>Xrlylyl</td>
         <td>Rakdos</td>
@@ -567,7 +567,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/EBN9baXZ1E64jJWf05OvQw" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gut, True Soul Zealot + Inspiring Leader</td>
+        <td>Gut, True Soul Zealot // Inspiring Leader</td>
         <td>Sanctuary PDH VIII</td>
         <td>Aaron</td>
         <td>Boros</td>
@@ -612,7 +612,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/Yr_wtHangUq7Lmhlli4fMw" target="_blank" class="btn-decklist">View</a></td>
-        <td>Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
+        <td>Abdel Adrian, Gorion’s Ward // Agent of the Iron Throne</td>
         <td>Common Cause VI</td>
         <td>uyokonoyami</td>
         <td>Orzhov</td>
@@ -621,7 +621,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/bl8xsbwTsU-J0s1UZULYiQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Abdel Adrian, Gorion’s Ward + Sword Coast Sailor</td>
+        <td>Abdel Adrian, Gorion’s Ward // Sword Coast Sailor</td>
         <td>Common Cause VI</td>
         <td>PurplePenguinJo</td>
         <td>Azorius</td>
@@ -648,7 +648,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/ZUMlxGM5EEWu4gFtX-TzGg" target="_blank" class="btn-decklist">View</a></td>
-        <td>👑 Abdel Adrian, Gorion’s Ward + Agent of the Iron Throne</td>
+        <td>👑 Abdel Adrian, Gorion’s Ward // Agent of the Iron Throne</td>
         <td>The Pauper Pit I</td>
         <td>Heartless</td>
         <td>Orzhov</td>
@@ -684,7 +684,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/ROR3Ll-bVU6L06KlOwZc2g" target="_blank" class="btn-decklist">View</a></td>
-        <td>Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator</td>
+        <td>Breeches, Brazen Plunderer // Malcolm, Keen-Eyed Navigator</td>
         <td>Common Cause V</td>
         <td>Kunx</td>
         <td>Izzet</td>
@@ -693,7 +693,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/Sv5hMA-I806ArpyKom7AAg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Dargo, the Shipwrecker + Kediss, Emberclaw Familiar</td>
+        <td>Dargo, the Shipwrecker // Kediss, Emberclaw Familiar</td>
         <td>Common Cause V</td>
         <td>Aaron</td>
         <td>Red</td>
@@ -711,7 +711,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/gt_j26k5Q0CDujwAIi92_A" target="_blank" class="btn-decklist">View</a></td>
-        <td>👑 Vhal, Candlekeep Researcher + Agent of the Shadow Thieves</td>
+        <td>👑 Vhal, Candlekeep Researcher // Agent of the Shadow Thieves</td>
         <td>RIW II</td>
         <td>TonisBolognis</td>
         <td>Dimir</td>
@@ -720,7 +720,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/tVgoCMX4C0yfHxDL7RpNAw" target="_blank" class="btn-decklist">View</a></td>
-        <td>Wilson, Refined Grizzly + Far Traveler</td>
+        <td>Wilson, Refined Grizzly // Far Traveler</td>
         <td>RIW II</td>
         <td>HiveCryptid</td>
         <td>Selesnya</td>
@@ -729,7 +729,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/Pu_fVLvYLUOxUfM6srUkow" target="_blank" class="btn-decklist">View</a></td>
-        <td>Breeches, Brazen Plunderer + Malcolm, Keen-Eyed Navigator</td>
+        <td>Breeches, Brazen Plunderer // Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH VI</td>
         <td>Nolan S</td>
         <td>Izzet</td>
@@ -747,7 +747,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/n04JVHmojkKKJTU85rjwwQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>👑 Ley Weaver + Lore Weaver</td>
+        <td>👑 Ley Weaver // Lore Weaver</td>
         <td>Sanctuary PDH VI</td>
         <td>GatorbaitTV</td>
         <td>Simic</td>
@@ -765,7 +765,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/IaiX4ShuMUydmcxniMzCUg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Gilanra, Caller of Wirewood + Numa, Joraga Chieftain</td>
+        <td>Gilanra, Caller of Wirewood // Numa, Joraga Chieftain</td>
         <td>Common Cause IV</td>
         <td>southlakesvibes</td>
         <td>Green</td>
@@ -846,7 +846,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/kPEgKbFNe0yZPXp5D0sB_A" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ghost of Ramirez DePietro + Tormod, the Desecrator</td>
+        <td>Ghost of Ramirez DePietro // Tormod, the Desecrator</td>
         <td>PDH Tourney - Mainberg I</td>
         <td>Chris S</td>
         <td>Dimir</td>
@@ -864,7 +864,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/j1S3GhgWPkixFyvOXYYBVA" target="_blank" class="btn-decklist">View</a></td>
-        <td>👑 Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+        <td>👑 Kediss, Emberclaw Familiar // Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH IV</td>
         <td>Ankylosaur</td>
         <td>Izzet</td>
@@ -891,7 +891,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/AIn0u7bqc06raB-75tkLCg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Sivriss, Nightmare Speaker + Cloakwood Hermit</td>
+        <td>Sivriss, Nightmare Speaker // Cloakwood Hermit</td>
         <td>Goblin's Heist I</td>
         <td>Slyns</td>
         <td>Golgari</td>
@@ -945,7 +945,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/gobW0aiqQUGidavyGyw7_Q" target="_blank" class="btn-decklist">View</a></td>
-        <td>Abdel Adrian, Gorion’s Ward + Sword Coast Sailor</td>
+        <td>Abdel Adrian, Gorion’s Ward // Sword Coast Sailor</td>
         <td>Sanctuary PDH III</td>
         <td>Kunx</td>
         <td>Azorius</td>
@@ -954,7 +954,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/OxGAVHRC8EmTbe4EBFL4Ig" target="_blank" class="btn-decklist">View</a></td>
-        <td>Ardenn, Intrepid Archaeologist + Malcolm, Keen-Eyed Navigator</td>
+        <td>Ardenn, Intrepid Archaeologist // Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH III</td>
         <td>Chinaman</td>
         <td>Azorius</td>
@@ -963,7 +963,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://moxfield.com/decks/oXbkSrbw1kKMnHJDnhNF3g" target="_blank" class="btn-decklist">View</a></td>
-        <td>👑 Kediss, Emberclaw Familiar + Malcolm, Keen-Eyed Navigator</td>
+        <td>👑 Kediss, Emberclaw Familiar // Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH III</td>
         <td>GatorbaitTV</td>
         <td>Izzet</td>
@@ -981,7 +981,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/ONYzU8zGnE-vGql05-3KqQ" target="_blank" class="btn-decklist">View</a></td>
-        <td>Erinis, Gloom Stalker + Street Urchin</td>
+        <td>Erinis, Gloom Stalker // Street Urchin</td>
         <td>RIW I</td>
         <td>Ankylosaur</td>
         <td>Gruul</td>
@@ -1008,7 +1008,7 @@ header:
     </tr>
     <tr>
         <td><a href="https://www.moxfield.com/decks/VXn-nHJHCki5mCQHIX32Xg" target="_blank" class="btn-decklist">View</a></td>
-        <td>Dargo, the Shipwrecker + Malcolm, Keen-Eyed Navigator</td>
+        <td>Dargo, the Shipwrecker // Malcolm, Keen-Eyed Navigator</td>
         <td>Sanctuary PDH I</td>
         <td>Clay</td>
         <td>Izzet</td>

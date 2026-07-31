@@ -338,79 +338,7 @@ But to close in the immortal stylings of Brad DracV:
 "Go brew a deck, and get JANKy with it!"
 ✌️
 
-# ===========================================================================
-# MANA SYMBOLS
-# ===========================================================================
-# Write mana costs using standard Magic bracket notation anywhere in your
-# article text. They are automatically converted to real mana icons on the
-# page. No HTML needed — just type the symbol in curly braces.
-#
-# BASIC MANA:
-#   {W} = White      {U} = Blue       {B} = Black
-#   {R} = Red        {G} = Green      {C} = Colourless
-#
-# GENERIC / NUMBERS:
-#   {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} ... {20}
-#   {X} = X cost
-#
-# SPECIAL:
-#   {T} = Tap symbol    {Q} = Untap    {S} = Snow
-#
-# HYBRID MANA:
-#   {W/U} {U/B} {B/R} {R/G} {G/W}    (allied pairs)
-#   {W/B} {U/R} {B/G} {R/W} {G/U}    (enemy pairs)
-#
-# 2-HYBRID:
-#   {2/W} {2/U} {2/B} {2/R} {2/G}
-#
-# PHYREXIAN:
-#   {W/P} {U/P} {B/P} {R/P} {G/P}
-#
-# EXAMPLES:
-#   Ayli, Eternal Pilgrim costs {W}{B}
-#   A 4-mana white blue commander costs {4}{W}{U}
-#   Force of Will costs {3}{U}{U}
-#   Note: {B} in normal prose may be misread — write "black mana ({B})" for clarity
-# ===========================================================================
 
-
-# ===========================================================================
-# CARD HOVER TOOLTIPS
-# ===========================================================================
-# Wrap any Magic card name in double square brackets to make it a hoverable
-# link. On desktop, hovering shows the card image. On mobile, tapping toggles
-# the image. Tapping anywhere else closes it.
-# The card image is fetched live from Scryfall — no setup needed.
-#
-# SYNTAX:
-#   [[Card Name]]
-#
-# EXAMPLES:
-#   ...the power of [[Ayli, Eternal Pilgrim]] in this shell...
-#   ...pairing [[Mystic Remora]] with [[Rhystic Study]] is redundant...
-#   ...[[Jeska's Will]] generates absurd value here...
-#
-# NOTES:
-#   - Spelling must be close enough for Scryfall's fuzzy search to find it
-#     ([[ayli pilgrim]] will find Ayli, Eternal Pilgrim)
-#   - Double-faced cards show the front face
-#   - If a card isn't found, the name displays as plain styled text
-#   - Inside code blocks ([[like this]]) it renders as raw text, not a link
-# ===========================================================================
-
-
-Add images inline with:
-<img src="/assets/images/your-image.jpg" alt="Description" style="width:100%; display:block; margin:0 auto;">
-
-Embed YouTube videos with:
-<div style="text-align:center; margin:2em 0;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-</div>
-
-Add a section divider (short purple accent line) with:
-{% include divider.html %}
-
-Delete these example lines before publishing.
 
 {% include deck-tech-cta.html %}
 {% include author-card.html %}

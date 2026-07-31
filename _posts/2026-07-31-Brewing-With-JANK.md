@@ -269,6 +269,7 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 
 ---
 ## Brewing With JANK
+
 <i>Hey, it's Ethan aka MagusoftheJank, Host of the Cloudy Commons Cup tournament series and prolific cPDH brewer. Today I'd like to talk to you a little bit about how I think about brewing a competitive deck, and introduce you to a method that you can hopefully also use to improve your own decks!</i>
 
 When you hear the word "Jank," it probably conjures images of fragile five card combos or unplayable bulk cards cobbled into an unsleeved pile that wins one in ten games. But what if "Jank" wasn't a descriptor for a bad deck? What if it was an acronym for an iterative deck engineering cycle designed to focus and optimize your list?
@@ -288,6 +289,7 @@ Let's dive in and talk about what each step of this cycle means, and how you can
 
 
 ### JUSTIFY
+
 <div class="wrapper">
   <article class="main">
     <p>Every single card swap should have a clear purpose. Justifying a change can take many forms: maybe you want to lower the curve of your ramp to cast your commander a turn earlier, or perhaps you need more answers for a specific threat that keeps losing you games. Whatever problem you are trying to solve, this step is where you define the parameters of your solution.</p>
@@ -303,6 +305,7 @@ Let's dive in and talk about what each step of this cycle means, and how you can
 
 
 ### ANALYZE
+
 So you have a reason you want to make a change to your deck, and the parameters of how to achieve that change in a way that best supports your deck's Core Thesis. Now what?
 
 You Analyze.
@@ -328,14 +331,18 @@ Once you have analyzed your options and found a few viable cards, plus that perf
 
 
 ### NEURALIZE
-Neuralizing is the act of implementing your changes with the least amount of disruption to the deck's core structure. This is the delicate stage where you make cuts, carefully weighing the impact those losses will have on your deck's "neural infrastructure".<br>
-This process is essentially the analysis step in reverse. You are weighing every logical cut you could make, and choosing the path of least resistance to maintain the deck's consistent performance.<br>
-I like to visualize a deck as a neural network. Every card connects back to the core pillars of the deck: things like the commander, the primary win conditions, and the overarching strategy (whether that's aggro, control, midrange, etc.). These connections form a complex lattice of cards branching out like neurons, all firing in patterns and sequences aimed at a single end state: winning the game.<br>
-Removing a card means removing a neuron. Any winning pathway that relied on that card being in the deck must now be reworked, or abandoned. To minimize friction, look to cut cards that sit on the outer fringes of this network, or the ones that are infrequently utilized or highly situational.<br>
-This might look like cutting narrow or inefficient interaction in favor of something more effective against the threats of your meta, or swapping out a high mana value beater for a more efficient, scaling threat. The goal is to eliminate the dead ends in your network, replacing them with cards that connect to as many pathways as possible. The tighter and more interconnected your network becomes, the faster and more consistently your deck will perform.<br>
-If you've made it this far, congratulations! You have successfully used JANK to optimize your deck. But the loop isn't finished yet. We must now move on to the last, and most important step.
 
-<img src="/assets/images/bwj-neural-network.jpg" alt="Neural Network" style="display:block; margin:2em auto;">
+<div class="wrapper">
+  <article class="main">
+    <p>Neuralizing is the act of implementing your changes with the least amount of disruption to the deck's core structure. This is the delicate stage where you make cuts, carefully weighing the impact those losses will have on your deck's "neural infrastructure".</p>
+    <p><img src="/assets/images/bwj-neural-network.jpg" alt="Neural Network" style="float:right; display:inline; max-height:350px; max-width:50%; height:auto; width:auto; object-fit:contain"></p>
+    <p>This process is essentially the analysis step in reverse. You are weighing every logical cut you could make, and choosing the path of least resistance to maintain the deck's consistent performance.</p>
+    <p>I like to visualize a deck as a neural network. Every card connects back to the core pillars of the deck: things like the commander, the primary win conditions, and the overarching strategy (whether that's aggro, control, midrange, etc.). These connections form a complex lattice of cards branching out like neurons, all firing in patterns and sequences aimed at a single end state: winning the game.</p>
+    <p>Removing a card means removing a neuron. Any winning pathway that relied on that card being in the deck must now be reworked, or abandoned. To minimize friction, look to cut cards that sit on the outer fringes of this network, or the ones that are infrequently utilized or highly situational.</p>
+    <p>This might look like cutting narrow or inefficient interaction in favor of something more effective against the threats of your meta, or swapping out a high mana value beater for a more efficient, scaling threat. The goal is to eliminate the dead ends in your network, replacing them with cards that connect to as many pathways as possible. The tighter and more interconnected your network becomes, the faster and more consistently your deck will perform.</p>
+    <p>If you've made it this far, congratulations! You have successfully used JANK to optimize your deck. But the loop isn't finished yet. We must now move on to the last, and most important step.</p>
+        </article>
+ </div>
 
 
 ### KAIZEN
@@ -350,6 +357,7 @@ If you've made it this far, congratulations! You have successfully used JANK to 
 
 
 ### CONCLUSION
+
 I hope this framework gives you a new lens for your next brewing session, and I highly encourage you to give the JANK method a try! If you want to dive deeper, share your builds, or just talk shop, you can always find me on the cpdh.guide Discord server.
 
 But to close in the immortal stylings of Brad DracV:

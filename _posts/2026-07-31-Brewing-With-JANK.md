@@ -329,7 +329,7 @@ If you've made it this far, congratulations! You have successfully used JANK to 
 
 <div class="wrapper">
   <article class="main">
-    <p><img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen" style="float:right; display:inline; max-height:350px; height:auto; width:auto; object-fit:contain"></p>
+    <p><img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen" style="float:right; display:inline; max-height:350px; max-width:50%; height:auto; width:auto; object-fit:contain"></p>
     <p>Kaizen is a Japanese philosophy and business methodology that translates to "change for the better" or "continuous improvement". It focuses on making small, incremental, and sustainable changes to processes to boost efficiency, eliminate waste, and improve overall quality.</p>
     <p>Adopting this mindset of Always Improving (shoutout to the Constructed Criticism podcast) fundamentally changes how you look at Magic, and life. There are tons of ways to implement Kaizen, like reading articles or books, listening to podcasts, playing games with the intent of learning or gathering data, or even just talking about ideas with your friends. All of that insight that you gain can be applied back into the JANK cycle, further improving the process each time.However you choose to practice Kaizen, it is a way of thinking that leaves you grounded in a core set of principles, that while always changing and improving, will constantly drive you down a path of improvement that is ultimately rewarding, whether that reward be winning more games, or just being a better person than you were the day before.</p>
     </article>

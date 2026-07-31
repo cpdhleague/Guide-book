@@ -192,7 +192,7 @@ gnews: false
 # Controls: Discord link previews, Reddit thumbnails, social sharing cards,
 #           and the <og:image> meta tag that all social platforms read.
 # This is the image people see when a link to this article is shared.
-image: /assets/images/bwj-thumbnail.jpg
+image: /assets/images/bwj-thumbnail.png
 
 header:
   # OVERLAY IMAGE
@@ -205,7 +205,7 @@ header:
   # TEASER
   # The thumbnail shown on the homepage cards and /articles/ listing grid.
   # Should be 16:9 ratio. Usually the same as the top-level image: above.
-  teaser: /assets/images/bwj-thumbnail.jpg
+  teaser: /assets/images/bwj-thumbnail.png
 
 # NOTE: For PDHpod articles, the image is always pdhpod.png (set automatically).
 # For Jalapenos articles, the YouTube thumbnail is downloaded automatically.

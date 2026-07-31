@@ -269,19 +269,14 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 
 ---
 ## Brewing With JANK
-Hey, it's Ethan aka MagusoftheJank, Host of the Cloudy Commons Cup tournament series and prolific cPDH brewer. Today I'd like to talk to you a little bit about how I think about brewing a competitive deck, and introduce you to a method that you can hopefully also use to improve your own decks!
-
-When you hear the word "Jank," it probably conjures images of fragile five card combos or unplayable bulk cards cobbled into an unsleeved pile that wins one in ten games. But what if "Jank" wasn't a descriptor for a bad deck? What if it was an acronym for an iterative deck engineering cycle designed to focus and optimize your list?
-
-The JANK brewing method is a four-stage, continuous cycle designed to iteratively tune your deck towards peak performance. It guides you through answering critical questions about your list, backed by a competitive philosophy that you constantly refine with real world data and deep reflection.
+Hey, it's Ethan aka MagusoftheJank, Host of the Cloudy Commons Cup tournament series and prolific cPDH brewer. Today I'd like to talk to you a little bit about how I think about brewing a competitive deck, and introduce you to a method that you can hopefully also use to improve your own decks!<br>
+When you hear the word "Jank," it probably conjures images of fragile five card combos or unplayable bulk cards cobbled into an unsleeved pile that wins one in ten games. But what if "Jank" wasn't a descriptor for a bad deck? What if it was an acronym for an iterative deck engineering cycle designed to focus and optimize your list?<br>
+The JANK brewing method is a four-stage, continuous cycle designed to iteratively tune your deck towards peak performance. It guides you through answering critical questions about your list, backed by a competitive philosophy that you constantly refine with real world data and deep reflection.<br>
 Like I said before, JANK is an acronym. It stands for:
 
-Justify 
-
-Analyze 
-
-Neuralize 
-
+Justify<br>
+Analyze <br>
+Neuralize <br>
 Kaizen
 
 Let's dive in and talk about what each step of this cycle means, and how you can apply them to your own deckbuilding!
@@ -290,58 +285,41 @@ Let's dive in and talk about what each step of this cycle means, and how you can
 
 
 ### JUSTIFY
-Every single card swap should have a clear purpose. Justifying a change can take many forms: maybe you want to lower the curve of your ramp to cast your commander a turn earlier, or perhaps you need more answers for a specific threat that keeps losing you games. Whatever problem you are trying to solve, this step is where you define the parameters of your solution.
-
-"Justifying" also means aligning something to a margin or standard. You can create a clear standard for your deck, and establish the margins it must operate within, by developing its Core Thesis. A deck's Core Thesis is a detailed set of guidelines and rules that contain the answers to questions like:
-
-"What is the deck's main win condition, and what turn can it consistently achieve that wincon?"
-
-And
-
-"What does this deck's ideal first few turns look like, and how consistently can the deck mulligan to those hands?"
-
-Notice that both of those examples mention consistency. In a competitive setting, consistency is the key to brewing a successful deck.
-
-Being able to really define what your deck wants to do in order to consistently achieve its goals will help you justify any change that you may want to make to the deck. It also ensures that it's a change that improves the deck's performance overall.
+Every single card swap should have a clear purpose. Justifying a change can take many forms: maybe you want to lower the curve of your ramp to cast your commander a turn earlier, or perhaps you need more answers for a specific threat that keeps losing you games. Whatever problem you are trying to solve, this step is where you define the parameters of your solution.<br>
+"Justifying" also means aligning something to a margin or standard. You can create a clear standard for your deck, and establish the margins it must operate within, by developing its Core Thesis. A deck's Core Thesis is a detailed set of guidelines and rules that contain the answers to questions like:<br>
+"What is the deck's main win condition, and what turn can it consistently achieve that wincon?"<br>
+And<br>
+"What does this deck's ideal first few turns look like, and how consistently can the deck mulligan to those hands?"<br>
+Notice that both of those examples mention consistency. In a competitive setting, consistency is the key to brewing a successful deck.<br>
+Being able to really define what your deck wants to do in order to consistently achieve its goals will help you justify any change that you may want to make to the deck. It also ensures that it's a change that improves the deck's performance overall.<br>
 
 <img src="/assets/images/bwj-actually.gif" alt="Actually" style="display:block; margin:2em auto;">
 
 
 ### ANALYZE
 So you have a reason you want to make a change to your deck, and the parameters of how to achieve that change in a way that best supports your deck's Core Thesis. Now what?<br>
-You Analyze.
-
-Analysis is the detailed examination of a complex system, breaking it down into smaller parts so you can understand its essential features and relationships. In deckbuilding, this means using the tools at your disposal to research the absolute best way to implement your justified change.
+You Analyze.<br>
+Analysis is the detailed examination of a complex system, breaking it down into smaller parts so you can understand its essential features and relationships. In deckbuilding, this means using the tools at your disposal to research the absolute best way to implement your justified change.<br>
 
 <picture>
 <img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" class="center" style="display:inline; max-width:300px; height:auto; width:auto; margin:2em auto;"> <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" class="center" style="display:inline; max-width:300px; height:auto; width:auto; margin:2em auto;">
 </picture>
 
 
-There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. [A guide to all that can be found here](https://scryfall.com/docs/syntax).
-
-The more you practice navigating Scryfall's syntax to narrow your search down to the perfect cards, the easier this becomes. It also helps you to pay closer attention to the specific, precise language that Magic uses to interact with the state of the game.
-
-This knowledge of game mechanics is invaluable to the analysis of a problem, and the more you engage in the JANK method of brewing, the more insight into the mechanics of Magic you will gain.
-
-You can also borrow methods of analysis from other subjects like Root Cause Analysis. The Five Whys and Fishbone Diagrams are great tools to visualize issues and work towards a solution to any problem. Adapting these concepts to card analysis with the parameters that you set in the justification phase can really help to get to cards that most affect the changes you want in the deck.
-
-Let’s explore adapting the Five Whys to analyzing your changes. The Five Whys is a process where you repeatedly ask "why" in response to each successive answer, much like a curious child seeking the root of all knowledge (parents, you know exactly what I'm talking about 🤣). By repeatedly drilling down on a subject, you gain a much better understanding of its root cause or potential effects. When evaluating a group of cards on Scryfall, we can systematically earmark or eliminate candidates by repeatedly checking them against our deck's Core Thesis and the margins set during the justification phase. It’s like playing a game of Guess Who!
-
+There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. [A guide to all that can be found here](https://scryfall.com/docs/syntax).<br>
+The more you practice navigating Scryfall's syntax to narrow your search down to the perfect cards, the easier this becomes. It also helps you to pay closer attention to the specific, precise language that Magic uses to interact with the state of the game.<br>
+This knowledge of game mechanics is invaluable to the analysis of a problem, and the more you engage in the JANK method of brewing, the more insight into the mechanics of Magic you will gain.<br>
+You can also borrow methods of analysis from other subjects like Root Cause Analysis. The Five Whys and Fishbone Diagrams are great tools to visualize issues and work towards a solution to any problem. Adapting these concepts to card analysis with the parameters that you set in the justification phase can really help to get to cards that most affect the changes you want in the deck.<br>
+Let’s explore adapting the Five Whys to analyzing your changes. The Five Whys is a process where you repeatedly ask "why" in response to each successive answer, much like a curious child seeking the root of all knowledge (parents, you know exactly what I'm talking about 🤣). By repeatedly drilling down on a subject, you gain a much better understanding of its root cause or potential effects. When evaluating a group of cards on Scryfall, we can systematically earmark or eliminate candidates by repeatedly checking them against our deck's Core Thesis and the margins set during the justification phase. It’s like playing a game of Guess Who!<br>
 Once you have analyzed your options and found a few viable cards, plus that perfect jank from Fallen Empires, you are ready for step three.
 
 
 ### NEURALIZE
-Neuralizing is the act of implementing your changes with the least amount of disruption to the deck's core structure. This is the delicate stage where you make cuts, carefully weighing the impact those losses will have on your deck's "neural infrastructure".
-
-This process is essentially the analysis step in reverse. You are weighing every logical cut you could make, and choosing the path of least resistance to maintain the deck's consistent performance.
-
-I like to visualize a deck as a neural network. Every card connects back to the core pillars of the deck: things like the commander, the primary win conditions, and the overarching strategy (whether that's aggro, control, midrange, etc.). These connections form a complex lattice of cards branching out like neurons, all firing in patterns and sequences aimed at a single end state: winning the game.
-
-Removing a card means removing a neuron. Any winning pathway that relied on that card being in the deck must now be reworked, or abandoned. To minimize friction, look to cut cards that sit on the outer fringes of this network, or the ones that are infrequently utilized or highly situational.
-
-This might look like cutting narrow or inefficient interaction in favor of something more effective against the threats of your meta, or swapping out a high mana value beater for a more efficient, scaling threat. The goal is to eliminate the dead ends in your network, replacing them with cards that connect to as many pathways as possible. The tighter and more interconnected your network becomes, the faster and more consistently your deck will perform.
-
+Neuralizing is the act of implementing your changes with the least amount of disruption to the deck's core structure. This is the delicate stage where you make cuts, carefully weighing the impact those losses will have on your deck's "neural infrastructure".<br>
+This process is essentially the analysis step in reverse. You are weighing every logical cut you could make, and choosing the path of least resistance to maintain the deck's consistent performance.<br>
+I like to visualize a deck as a neural network. Every card connects back to the core pillars of the deck: things like the commander, the primary win conditions, and the overarching strategy (whether that's aggro, control, midrange, etc.). These connections form a complex lattice of cards branching out like neurons, all firing in patterns and sequences aimed at a single end state: winning the game.<br>
+Removing a card means removing a neuron. Any winning pathway that relied on that card being in the deck must now be reworked, or abandoned. To minimize friction, look to cut cards that sit on the outer fringes of this network, or the ones that are infrequently utilized or highly situational.<br>
+This might look like cutting narrow or inefficient interaction in favor of something more effective against the threats of your meta, or swapping out a high mana value beater for a more efficient, scaling threat. The goal is to eliminate the dead ends in your network, replacing them with cards that connect to as many pathways as possible. The tighter and more interconnected your network becomes, the faster and more consistently your deck will perform.<br>
 If you've made it this far, congratulations! You have successfully used JANK to optimize your deck. But the loop isn't finished yet. We must now move on to the last, and most important step.
 
 <img src="/assets/images/bwj-neural-network.jpg" alt="Neural Network" style="display:block; margin:2em auto;">

@@ -348,7 +348,7 @@ If you've made it this far, congratulations! You have successfully used JANK to 
 
 ### KAIZEN
 <div class="image-right">
-<img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen">
   <div>
     <p>Kaizen is a Japanese philosophy and business methodology that translates to "change for the better" or "continuous improvement". It focuses on making small, incremental, and sustainable changes to processes to boost efficiency, eliminate waste, and improve overall quality.
 

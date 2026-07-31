@@ -302,7 +302,7 @@ You Analyze.<br>
 Analysis is the detailed examination of a complex system, breaking it down into smaller parts so you can understand its essential features and relationships. In deckbuilding, this means using the tools at your disposal to research the absolute best way to implement your justified change.<br>
 
 <picture>
-<img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" class="center" style="display:block; max-width:300px; height:auto; width:auto; margin:2em auto;"> <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" class="center" style="display:block; max-width:300px; height:auto; width:auto; margin:2em auto;">
+<img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" class="center" style="display:block; max-height:300px; height:auto; width:auto; margin:2em auto;"> <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" class="center" style="display:block; max-height:300px; height:auto; width:auto; margin:2em auto;">
 </picture>
 
 

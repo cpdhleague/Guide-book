@@ -317,7 +317,7 @@ Analysis is the detailed examination of a complex system, breaking it down into 
 <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" style="width:100%; display:block; margin:2em auto;">
 
 
-There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. A guide to all that can be found here: https://scryfall.com/docs/syntax
+There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. [A guide to all that can be found here](https://scryfall.com/docs/syntax).
 
 The more you practice navigating Scryfall's syntax to narrow your search down to the perfect cards, the easier this becomes. It also helps you to pay closer attention to the specific, precise language that Magic uses to interact with the state of the game.
 

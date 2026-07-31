@@ -286,7 +286,7 @@ Kaizen
 
 Let's dive in and talk about what each step of this cycle means, and how you can apply them to your own deckbuilding!
 
-<img src="/assets/images/bwj-jank-cycle.png" alt="The JANK cycle" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/bwj-jank-cycle.png" alt="The JANK cycle" style="display:block; margin:2em auto;">
 
 
 ### JUSTIFY
@@ -304,7 +304,7 @@ Notice that both of those examples mention consistency. In a competitive setting
 
 Being able to really define what your deck wants to do in order to consistently achieve its goals will help you justify any change that you may want to make to the deck. It also ensures that it's a change that improves the deck's performance overall.
 
-<img src="/assets/images/bwj-actually.gif" alt="Actually" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/bwj-actually.gif" alt="Actually" style="display:block; margin:2em auto;">
 
 
 ### ANALYZE
@@ -313,8 +313,7 @@ You Analyze.
 
 Analysis is the detailed examination of a complex system, breaking it down into smaller parts so you can understand its essential features and relationships. In deckbuilding, this means using the tools at your disposal to research the absolute best way to implement your justified change.
 
-<img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" style="width:100%; display:block; margin:2em auto;">
-<img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" style="display:block; margin:2em auto;"> <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" style="display:block; margin:2em auto;">
 
 
 There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. [A guide to all that can be found here](https://scryfall.com/docs/syntax).
@@ -343,7 +342,7 @@ This might look like cutting narrow or inefficient interaction in favor of somet
 
 If you've made it this far, congratulations! You have successfully used JANK to optimize your deck. But the loop isn't finished yet. We must now move on to the last, and most important step.
 
-<img src="/assets/images/bwj-neural-network.jpg" alt="Neural Network" style="width:100%; display:block; margin:2em auto;">
+<img src="/assets/images/bwj-neural-network.jpg" alt="Neural Network" style="display:block; margin:2em auto;">
 
 
 ### KAIZEN

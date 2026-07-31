@@ -313,7 +313,9 @@ You Analyze.
 
 Analysis is the detailed examination of a complex system, breaking it down into smaller parts so you can understand its essential features and relationships. In deckbuilding, this means using the tools at your disposal to research the absolute best way to implement your justified change.
 
+<picture>
 <img src="/assets/images/bwj-deep-analysis-1.jpg" alt="Deep Analysis" style="display:block; margin:2em auto;"> <img src="/assets/images/bwj-deep-analysis-2.jpg" alt="Deep Analysis" style="display:block; margin:2em auto;">
+</picture>
 
 
 There are countless ways to do this. Often, this step looks like doom-scrolling advanced Scryfall searches, hunting for specific Oracle text or mechanics that solve your exact problem. Another way to find groups of cards is to manually type out criteria using the Scryfall Syntax directly into the search bar, or by using otags. [A guide to all that can be found here](https://scryfall.com/docs/syntax).
@@ -350,7 +352,7 @@ If you've made it this far, congratulations! You have successfully used JANK to 
 <div class="wrapper">
   <article class="main">
     <p>Kaizen is a Japanese philosophy and business methodology that translates to "change for the better" or "continuous improvement". It focuses on making small, incremental, and sustainable changes to processes to boost efficiency, eliminate waste, and improve overall quality.</p>
-    <p>Adopting this mindset of Always Improving (shoutout to the Constructed Criticism podcast) fundamentally changes how you look at Magic, and life. There are tons of ways to implement Kaizen, like reading articles or books, listening to podcasts, playing games with the intent of learning or gathering data, or even just talking about ideas with your friends. All of that insight that you gain can be applied back into the JANK cycle, further improving the process each time.However you choose to practice Kaizen, it is a way of thinking that leaves you grounded in a core set of principles, that while always changing and improving, will constantly drive you down a path of improvement that is ultimately rewarding, whether that reward be winning more games, or just being a better person than you were the day before. <img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen" style="float:right"></p>
+    <p><img src="/assets/images/bwj-kaizen.jpg" alt="Kaizen" style="float:right"> Adopting this mindset of Always Improving (shoutout to the Constructed Criticism podcast) fundamentally changes how you look at Magic, and life. There are tons of ways to implement Kaizen, like reading articles or books, listening to podcasts, playing games with the intent of learning or gathering data, or even just talking about ideas with your friends. All of that insight that you gain can be applied back into the JANK cycle, further improving the process each time.However you choose to practice Kaizen, it is a way of thinking that leaves you grounded in a core set of principles, that while always changing and improving, will constantly drive you down a path of improvement that is ultimately rewarding, whether that reward be winning more games, or just being a better person than you were the day before.</p>
     </article>
  </div>
 

@@ -286,7 +286,7 @@ Kaizen
 
 Let's dive in and talk about what each step of this cycle means, and how you can apply them to your own deckbuilding!
 
-<img src="/assets/images/bwj-jank-cycle.png" alt="The JANK cycle" style="display:block; margin:2em auto;">
+<img src="/assets/images/bwj-jank-cycle.png" alt="The JANK cycle" class="center" style="display:inline; max-width:500px; height:auto; width:auto; margin:2em auto;">
 
 
 ### JUSTIFY

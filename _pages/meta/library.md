@@ -296,7 +296,7 @@ header:
         <td data-sort="20260117">2026-01-17</td>
     </tr>
     <tr>
-        <td><a href="https://moxfield.com/decks/sn-Cx4UNU0a6R1Ep8ZsIGg" target="_blank" class="btn-decklist">View</a></td>
+        <td><a href="https://moxfield.com/decks/b8mfAZIjV3Cy_xz2GkRzFg" target="_blank" class="btn-decklist">View</a></td>
         <td>Wilson, Refined Grizzly // Far Traveler</td>
         <td>Wanderer's League 2025: Invitational</td>
         <td>Kevin Levi</td>

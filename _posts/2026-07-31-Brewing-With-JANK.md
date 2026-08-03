@@ -118,7 +118,7 @@ author: magusofthejank
 #   - Events               (upcoming events, announcements)
 # ---------------------------------------------------------------------------
 categories:
-  - Opinion
+  - Game Guides
 
 
 

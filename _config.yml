@@ -114,6 +114,15 @@ defaults:
     values:
       layout: single
       author_profile: false
+  # _previews — unpublished drafts, viewable only at the secret URL
+  - scope:
+      path: ""
+      type: previews
+    values:
+      layout: splash
+      classes: wide
+      author_profile: false
+      sitemap: false
 
 category_archive:
   type: liquid
@@ -121,3 +130,15 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# ===========================================================================
+# PREVIEW COLLECTION
+# ===========================================================================
+# Files in _previews/ are built and viewable at a secret URL, but are NOT
+# part of site.posts — so they never appear on the homepage, /articles/,
+# gnews.xml, or feed.xml. Change the permalink slug below to rotate the
+# secret URL. Preview index lives at /preview-92fk3a/
+collections:
+  previews:
+    output: true
+    permalink: /preview-92fk3a/:path/

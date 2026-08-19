@@ -1,9 +1,32 @@
 <div class="gallery gallery-center">
-  {% assign card_list = include.cards | split: ", " %}
-  {% for card in card_list %}
+  {% comment %}
+    USAGE:
+      {% include card-grid.html cards="Sol Ring; Counterspell" %}
+
+    Separate cards with a SEMICOLON (;) so card names containing commas work.
+    A comma-separated list still works for names without commas.
+
+    Per-card options, appended with a pipe:
+      Delver of Secrets|back   -> back face of a double-faced card
+      Treasure|token           -> token image instead of a normal card
+  {% endcomment %}
+
+  {% if include.cards contains ";" %}
+    {% assign card_list = include.cards | split: ";" %}
+  {% else %}
+    {% assign card_list = include.cards | split: ", " %}
+  {% endif %}
+
+  {% for entry in card_list %}
+    {% assign parts = entry | split: "|" %}
+    {% assign card_name = parts[0] | strip %}
+    {% assign opt = "" %}
+    {% if parts.size > 1 %}{% assign opt = parts[1] | strip | downcase %}{% endif %}
+    {% if card_name != "" %}
     <figure class="gallery-item">
-      <img src="https://cards.cpdh.guide/card-image?name={{ card | url_encode }}" alt="{{ card }}" loading="lazy">
+      <img src="https://cards.cpdh.guide/card-image?name={{ card_name | url_encode }}{% if opt == 'back' %}&face=back{% elsif opt == 'token' %}&token=true{% endif %}" alt="{{ card_name }}" loading="lazy">
     </figure>
+    {% endif %}
   {% endfor %}
 </div>
 

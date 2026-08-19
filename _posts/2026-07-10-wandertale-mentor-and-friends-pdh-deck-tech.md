@@ -19,7 +19,7 @@ creator: guide
 author: ginger
 
 categories:
-  - PDH Deck Techs
+  - cPDH Deck Techs
 
 # ===========================================================================
 # SECTION 2: DISPLAY CONTROLS

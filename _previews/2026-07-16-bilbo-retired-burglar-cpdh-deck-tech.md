@@ -34,9 +34,9 @@ excerpt: ""  # Required for GNews
 
 With the Hobbit MTG set release upon us, I was disappointed to find no sparkly new Pauper Commanders that look ready to hit the competitive scene. There are some fun commanders, don't get me wrong, but nothing I think is ready to win a tournament.
 
-With that in mind, I decided to revisit one of my favorite characters from The Hobbit — one with some sentimental value for me in cPDH: [[Bilbo, Retired Burglar]].
+With that in mind, I decided to revisit one of my favorite characters from The Hobbit — one with some sentimental value for me in cPDH: [[Bilbo, Retired Burglar]]. This was my first deck I brought to a tournament and even made top 4 with it!
 
-{% include card-grid.html cards="Bilbo, Retired Burglar" %}
+{% include card-grid.html cards="Bilbo Retired Burglar" %}
 
 ## The Gameplan
 
@@ -66,7 +66,7 @@ These two packages are non-negotiable — every Bilbo build runs them.
 
 ### Flicker
 
-Bilbo gets our first temptation trigger on cast. Flicker gets us the next two. In addition, ninjutsu cards are pretty neat here, letting us return Bilbo to hand for additional triggers on return and on re-cast.
+Bilbo gets our first temptation trigger on cast. Flicker gets us the next two. In addition, ninjutsu cards are pretty neat here, letting us return Bilbo to hand for additional triggers on return and on re-cast. We can later use these cards to quickly switch our ring-bearers mid-combat to sneakily push damage later. 
 
 {% include card-grid.html cards="Ghostly Flicker, Essence Flux, Planar Incision, Ninja of the Deep Hours, Blur" %}
 
@@ -84,7 +84,7 @@ Here's the mix-and-match section. Take the packages that fit the version you wan
 
 ### Evasive Creatures
 
-With skulk available from our commander, you don't *need* small evasive creatures — but I still run about a dozen of my favorites so I don't have to rely on Bilbo entirely.
+With skulk available from our commander, you don't *need* small evasive creatures — but I still run about a dozen of my favorites so I don't have to rely on Bilbo entirely. Several of these creatures offer small buffs along the way, like scrying or peeking effects to inform our play. 
 
 {% include card-grid.html cards="Faerie Seer, Slither Blade, Wingcrafter, Wu Scout, Looter il-Kor" %}
 
@@ -108,19 +108,19 @@ If you go the combo route (and I think the Magmakin combo fits very naturally he
 
 ### Double Strike
 
-Since we're winning through combat-damage-enabled strategy, double strike doubles the blast each time we connect — turning a 10-damage output into 20 per turn.
+Since we're winning through combat-damage-enabled strategy, double strike gives us two combat damage triggers each time we connect — turning a 10-damage output into 20 per turn from the ring, drawing off of our curiosity effects, or getting additional triggers from Goggles of Night or Hidden Strings.
 
 {% include card-grid.html cards="Assault Strobe, Tunnel of Hate, Psychotic Fury, Temur Battle Rage, Raking Claws" %}
 
 ### Control Pieces
 
-Fill your deck with your favorite and preferred counterspells and removal. It takes time to win with temptation, so controlling the game and preventing opponents from winning buys the time to close it out.
+Fill your deck with your favorite and preferred counterspells and removal. It takes time to win with temptation triggers, so controlling the game and preventing opponents from winning buys the time to close it out.
 
 {% include card-grid.html cards="Whoosh, Blink of an Eye, Counterspell, Dispel, Deprive" %}
 
 ### Additional Combat Damage Effects
 
-Since we're using evasion to get damage through, why not stack more effects on those hits? The curiosity effects above apply to this section too. Also worth considering here: effects that grant the initiative or the monarchy, which our evasive attackers can reliably get back from our opponents.
+Since we're using evasion to get damage through, why not stack more effects from our combat damage? The curiosity effects above apply to this section too. Also worth considering here: effects that grant the initiative or the monarchy, which our evasive attackers can reliably get back from our opponents.
 
 {% include card-grid.html cards="Hidden Strings, Goggles of Night, Aarakocra Sneak, Fall from Favor" %}
 

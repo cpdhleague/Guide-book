@@ -1,5 +1,5 @@
 ---
-title: "Bilbo, Retired Burglar: A cPDH Deck Tech of Temptation"
+title: "Bilbo, Retired Burglar: Let the Ring Tempt You"
 
 # DATE: Update to actual publish date
 date: 2026-07-16
@@ -80,7 +80,7 @@ We run these to easily land the fourth temptation trigger. When they're not avai
 
 ## Pick and Choose
 
-Here's the mix-and-match section. Take the packages that fit the version you want to pilot.
+Here's the mix-and-match section. Take the packages that fit the version you want to pilot. Part of the choice you need to make is how many slots of each effect/category to fill. I've recently decided to go way more focused on the combat damage, throwing more double strike and combat damage effects into the deck. Maybe you want the best double strike, but not all eight cards that I've elected to run. Reflect on exactly how you want to win with your version of the deck and pick the cards that best support your plan. 
 
 ### Evasive Creatures
 
@@ -127,6 +127,16 @@ Since we're using evasion to get damage through, why not stack more effects from
 ## Playing Against This Deck
 
 Bilbo is very creature-focused and will suffer against heavy control decks or strong board wipe decks (hello [[Crypt Rats]]). One of the things that makes it resilient, however, is how sticky the Ring Emblem is once it's on the battlefield. There's no way to remove it. This makes the focus of the deck pretty difficult to interact with. The deck requires the commander to be available to flicker or cast to declare a ring-bearer. 
+
+<img src="/assets/images/cpdh-bilbo-list.png" alt="Bilbo full decklist" style="width:100%; display:block; margin:2em auto;">
+
+## Conclusion
+
+I've had a great deal of fun with this deck and I'm finally back to trying to refine the list to its best, most effective version. It's a slower, unique deck and I'm excited to keep playing this deck until I can top 4 with it again. 
+
+I hope you check it out, and if you're tempted to try Bilbo, Retired Burglar out for yourself, you can use the link below to purchase the deck straight from Manapool. Happy Hobbiting!
+
+<a href="https://manapool.com/add-deck?deck=MSBBZXRoZXIgU3BlbGxib21iCjEgQXJjYW5lIERlbmlhbAoxIEFyY2FuZSBTaWduZXQKMSBBc2ggQmFycmVucwoxIEFzc2F1bHQgU3Ryb2JlCjEgQmlydGhkYXkgRXNjYXBlCjEgQmxpbmsgb2YgYW4gRXllCjEgQmx1cgoxIEJyYXNzIEtudWNrbGVzCjEgQ2Fwc2l6ZQoxIENvbW1hbmQgVG93ZXIKMSBDb25mb3VuZAoxIENvdW50ZXJzcGVsbAoxIENyeW9nZW4gUmVsaWMKMSBEYXJrc3RlZWwgQ2l0YWRlbAoxIERlcHJpdmUKMSBEaXNwZWwKMSBEaXNwbGFjZQoxIERpc3J1cHQKMSBEaXNydXB0aW9uIFByb3RvY29sCjEgRHJpZnQgb2YgUGhhbnRhc21zCjEgRWNob2luZyBUcnV0aAoxIEVzc2VuY2UgRmx1eAoxIEZhZXJpZSBTZWVyCjEgRmVsbHdhciBTdG9uZQoxIEdob3N0bHkgRmxpY2tlcgoxIEdpbmdlcmJydXRlCjEgR29nZ2xlcyBvZiBOaWdodAoxIEdvbGRob3VuZAoxIEdyZWF0IEZ1cm5hY2UKMSBIaWRkZW4gU3RyaW5ncwoxIEluZmlsdHJhdG9yIGlsLUtvcgoxIEluaGVyaXRlZCBFbnZlbG9wZQoxIEludG8gdGhlIFJvaWwKMTUgSXNsYW5kCjEgSXp6ZXQgQm9pbGVyd29ya3MKMSBJenpldCBTaWduZXQKMSBMb290ZXIgaWwtS29yCjEgTMOzcmllbiBSZXZlYWxlZAoxIE1lbnRhbCBKb3VybmV5CjEgTWV0YWxsaWMgUmVidWtlCjEgTWlzdC1DbG9ha2VkIEhlcmFsZAoxIE1pc3RibGFkZSBTaGlub2JpCjEgTW9sdGVuIFRyaWJ1dGFyeQoxIE1vb24tQ2lyY3VpdCBIYWNrZXIKMSBNb29uc25hcmUgUHJvdG90eXBlCjcgTW91bnRhaW4KMSBNdWRkbGUgdGhlIE1peHR1cmUKMSBNdWxsZHJpZnRlcgoxIE5lZ2F0ZQoxIE5pbmphIG9mIHRoZSBEZWVwIEhvdXJzCjEgUGxhbmFyIEluY2lzaW9uCjEgUHN5Y2hvdGljIEZ1cnkKMSBSYWtpbmcgQ2xhd3MKMSBSZXBlYWwKMSBSdW4gQXdheSBUb2dldGhlcgoxIFNlYWwgb2YgUmVtb3ZhbAoxIFNlYXQgb2YgdGhlIFN5bm9kCjEgU2lyZW4ncyBSdXNlCjEgU2t5IERpYW1vbmQKMSBTbGl0aGVyIEJsYWRlCjEgd2hvb3NoCjEgU29vdGhpbmcgb2YgU23DqWFnb2wKMSBTcGFjZXNoaWZ0CjEgU3ByaW5nbGVhZiBEcnVtCjEgU3RhciBDb21wYXNzCjEgU3RvaWMgUmVidXR0YWwKMSBTd29yZCBDb2FzdCBTZXJwZW50CjEgVGFsYXMgRXhwbG9yZXIKMSBUZWZlcmkncyBUaW1lIFR3aXN0CjEgVGVtdXIgQmF0dGxlIFJhZ2UKMSBUaG91Z2h0IFZlc3NlbAoxIFRob3VnaHRjYXN0CjEgVGlja2V0IEJvb3RoL1R1bm5lbCBvZiBIYXRlCjEgVHJlYXN1cmUgQ3J1aXNlCjEgVW5jYWdlZCBGdXJ5CjEgV2luZ2NyYWZ0ZXIKMSBXdSBTY291dAoxIFlvdSBGaW5kIHRoZSBWaWxsYWlucycgTGFpcgoKMSBCaWxibywgUmV0aXJlZCBCdXJnbGFy&ref=cpdhguide" class="btn btn--primary btn--large" target="_blank" rel="noopener">Purchase on Manapool</a>
 
 {% include deck-tech-cta.html %}
 {% include author-card.html %}

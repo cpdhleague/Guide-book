@@ -5,6 +5,8 @@ cd guide
 
 git pull origin master
 
+**make all changes*
+
 git add .
 git commit -m "describe updates"
 git push origin master

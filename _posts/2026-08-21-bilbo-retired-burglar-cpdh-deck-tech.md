@@ -2,7 +2,7 @@
 title: "Bilbo, Retired Burglar: Let the Ring Tempt You"
 
 # DATE: Update to actual publish date
-date: 2026-07-16
+date: 2026-08-21
 
 layout: splash
 classes: wide

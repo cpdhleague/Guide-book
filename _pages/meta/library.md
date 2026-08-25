@@ -70,7 +70,115 @@ header:
         </tr>
       </thead>
       <tbody>
-     <tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/8yugAUNGf3aUit_mX2pnAw" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Ley Weaver // Lore Weaver</td>
+        <td>Burn Book Brawl</td>
+        <td>PlumbingSpoon74</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260822">2026-08-22</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/-CugAUazb3yuJB0KpQzzlg" target="_blank" class="btn-decklist">View</a></td>
+        <td>Scholar of the Ages</td>
+        <td>Burn Book Brawl</td>
+        <td>GatorbaitTV</td>
+        <td>Blue</td>
+        <td>Combo</td>
+        <td data-sort="20260822">2026-08-22</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/9yugAdkhnHOGlsUdvuEErg" target="_blank" class="btn-decklist">View</a></td>
+        <td>Guidelight Pathmaker</td>
+        <td>Burn Book Brawl</td>
+        <td>Ginger Persolus</td>
+        <td>Azorius</td>
+        <td>Combo</td>
+        <td data-sort="20260822">2026-08-22</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/Jy54QOZ05U-8VTSlemBOTA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Dionus, Elvish Archdruid</td>
+        <td>Burn Book Brawl</td>
+        <td>Fies</td>
+        <td>Green</td>
+        <td>Aggro</td>
+        <td data-sort="20260822">2026-08-22</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/kCGgAffojX-eU3Un5lgfuA" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Disciple of Deceit</td>
+        <td>CPDH: Signet Showdown</td>
+        <td>Jeff Rieck</td>
+        <td>Dimir</td>
+        <td>Combo</td>
+        <td data-sort="20260816">2026-08-16</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/UJzmg8I6wkiAOzk2seKx7g" target="_blank" class="btn-decklist">View</a></td>
+        <td>Erinis, Gloom Stalker // Street Urchin</td>
+        <td>CPDH: Signet Showdown</td>
+        <td>GrahamPro</td>
+        <td>Gruul</td>
+        <td>Control</td>
+        <td data-sort="20260816">2026-08-16</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/pCGgAShQAXaJV9vgeFIFOw" target="_blank" class="btn-decklist">View</a></td>
+        <td>Gut, True Soul Zealot // Inspiring Leader</td>
+        <td>CPDH: Signet Showdown</td>
+        <td>Fearthainne</td>
+        <td>Boros</td>
+        <td>Aggro</td>
+        <td data-sort="20260816">2026-08-16</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/5qbctoeHqE-mbyI96nbk1w" target="_blank" class="btn-decklist">View</a></td>
+        <td>Third Path Iconoclast</td>
+        <td>CPDH: Signet Showdown</td>
+        <td>Matt M</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td data-sort="20260816">2026-08-16</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/dtbBBGSxbUWGzkvye1lnSA" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Hawkeye, Young Avenger</td>
+        <td>Summer's End Jam</td>
+        <td>Ken Cockriel</td>
+        <td>Red</td>
+        <td>Midrange</td>
+        <td data-sort="20260725">2026-07-25</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/8CugAeffWnG8HAzkHehwBA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Kediss, Emberclaw Familiar // Malcolm, Keen-Eyed Navigator</td>
+        <td>Summer's End Jam</td>
+        <td>Koosh</td>
+        <td>Izzet</td>
+        <td>Combo</td>
+        <td data-sort="20260725">2026-07-25</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/O3YxZnKWd0GUMwEJJeB8hA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Ley Weaver // Lore Weaver</td>
+        <td>Summer's End Jam</td>
+        <td>Nicholas Reedy</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort="20260725">2026-07-25</td>
+    </tr>
+        <tr>
+        <td><a href="https://moxfield.com/decks/YkTQF0GL7ESmZufjpIcGWQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Zada, Hedron Grinder</td>
+        <td>Summer's End Jam</td>
+        <td>Alkadron</td>
+        <td>Red</td>
+        <td>Combo</td>
+        <td data-sort="20260725">2026-07-25</td>
+    </tr>
+    <tr>
         <td><a href="https://moxfield.com/decks/bJ-v3BCkV02JUDxgo8PunA" target="_blank" class="btn-decklist">View</a></td>
         <td>👑 Hawkeye, Young Avenger</td>
         <td>Cloudy Commons Cup IV</td>

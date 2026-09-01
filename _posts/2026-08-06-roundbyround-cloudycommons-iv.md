@@ -74,10 +74,10 @@ The tournament was won by Ken Cockriel, piloting Hawkeye, Young Avenger. You can
 ## Round 2
 
 <div class="responsive-video">
-  <iframe src="https://www.youtube.com/watch?v=4D0PWoxCA9o" title="Cloudy Commons Cup IV — Pod 1, Round 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/4D0PWoxCA9o" title="Cloudy Commons Cup IV — Pod 1, Round 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-[Watch Round 2 on YouTube](https://www.youtube.com/watch?v=4D0PWoxCA9o)
+[Watch Round 2 on YouTube](https://youtu.be/4D0PWoxCA9o)
 
 ## Round 3
 
@@ -90,14 +90,18 @@ The tournament was won by Ken Cockriel, piloting Hawkeye, Young Avenger. You can
 ## Round 4
 
 <div class="responsive-video">
-  <iframe src="https://youtu.be/2Xsn5dT0OdE?is=LarKQqRO0ro2dvlA" title="Cloudy Commons Cup IV — Round 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/2Xsn5dT0OdE" title="Cloudy Commons Cup IV — Round 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-[Watch Round 4 on YouTube](https://youtu.be/2Xsn5dT0OdE?is=LarKQqRO0ro2dvlA)
+[Watch Round 4 on YouTube](https://youtu.be/2Xsn5dT0OdE)
 
 ## Cut to Top 10
 
-*Coming soon — this recording will be added once it is live on YouTube.*
+<div class="responsive-video">
+  <iframe src="https://www.youtube.com/embed/RQ5lMmjVmVc" title="Cloudy Commons Cup IV — Cut to Top 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Watch the Top 10 on YouTube](https://youtu.be/RQ5lMmjVmVc)
 
 ## Finals
 

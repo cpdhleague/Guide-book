@@ -1,5 +1,5 @@
 ---
-title: "The Zeta Set Arrives: A Competitive Look at PDH's Newest Legal Cards"
+title: "Zeta Set Review"
 
 date: 2026-09-05
 
@@ -7,7 +7,7 @@ creator: guide
 author: ginger
 
 categories:
-  - Game Guides
+  - Set Review
 
 front_page: true
 hidden: false
@@ -22,7 +22,7 @@ header:
   overlay_filter: 0.5
   teaser: /assets/images/header2025-1.png
 
-excerpt: "Twelve cards hit common for the first time and eight legends dropped to uncommon. Here's what the Zeta Set means for competitive Pauper Commander — the new commanders worth brewing and the commons that will actually make decks."
+excerpt: ""
 
 # reddit_text: ""  # Uncomment and fill in to enable Reddit posting
 

@@ -34,7 +34,7 @@ Wizards and the Pauper Format Panel initially ruled the downshifts wouldn't affe
 
 The PDH Rules Committee does its best to align with rulings from both the Pauper and Commander formats to keep PDH accessible to those arriving from other areas of the Magic ecosystem. To stay in alignment, the committee has decided to implement all of the cards from the Zeta set to be legal in PDH, both commons and uncommons. They have not yet announced whether these inclusions will be arriving with any bans. They have communicated that they are still in discussion and review of these cards and have asked the community to give them time while they give these surprise inclusions due consideration before making any definitive announcements. Nothing here should be read as a prediction of what they'll decide. These are hypothetical competitive observations, not petitions.
 
-This article is going to look at the strongest of these cards and their potential impact competitively. We're only covering cards we expect to see competitive play, so if your favorite Zeta card isn't here, that's not a knock on it. It's very cool that the iconic [[Serra Angel]] is now legal in the 99 of our decks, but it won't be seeing a ton of competitive play.
+This article is going to look at the strongest of these cards and their potential impact competitively. We're only covering cards we expect to see competitive play, so if your favorite Zeta card isn't here, that's not a knock on it. It's very cool that the iconic [[Serra Angel]] is now legal in the 99 of our decks, but it won't be seeing a ton of tournament play.
 
 {% include divider.html %}
 
@@ -46,15 +46,15 @@ Eight creatures came down to uncommon for the first time in this set. Four of th
 
 {% include card-grid.html cards="Obeka, Brute Chronologist;" %}
 
-[[Obeka, Brute Chronologist]] is a favorite of mine in EDH, but the port to PDH doesn't bring the splashier effects from non-common cards that Obeka usually uses to get infinite turns or make obscene numbers of tokens. The fun part of Obeka is that ending the turn wipes the stack and skips every delayed trigger that was waiting for end of combat or end of turn. PDH is full of cool effects, but some really strong ones have drawbacks. Obeka gets rid of the drawbacks.
+[[Obeka, Brute Chronologist]] is a favorite of mine in EDH, but the port to PDH doesn't bring the splashier effects from non-common cards in the 99 that Obeka usually relies on to get infinite turns or acrue obscene value. The fun part of Obeka is that ending the turn wipes the stack and skips every delayed trigger that was waiting for end of combat or end of turn. Obeka eliminates these delayed triggers meant to be drawbacks, enjoying only the extra value the downside was meant to balance against. PDH has some of these effects, but not the full showing out that can be found at higher rarities. 
 
 Here's what that opens up, roughly in order of how excited I am about it.
 
-**Myriad** is the headliner, and it might be the best thing Obeka does in this format. Myriad tokens are exiled at end of combat — unless the turn simply ends first, in which case they stick around permanently. The tokens are copies, which means they have myriad too. That's exponential growth each turn! Unfortunately there are only two myriad creatures in Grixis.
+**Myriad** is the headliner, and it might be the best thing Obeka does in this format. Myriad tokens are exiled at end of combat — unless the turn simply ends first, in which case they stick around permanently. The tokens are copies, which means they have myriad too. That's exponential growth each turn! Unfortunately there are only two myriad creatures in Grixis at common.
 
 **Token production with a sacrifice clause** works the same way. Mobilize gives you creatures that leave at end of combat; [[Mordor Trebuchet]] does something similar if you're attacking with a Goblin or Orc.
 
-**Temporary creatures become permanent ones.** Warp, Unearth, Encore, Evoke, Blitz, Dash, and Decayed all lend you something with the intent that it'll only be temporary, but Obeka can break the designs of these mechanics and keep the creatures around a little longer. 
+**Temporary creatures become permanent ones.** Warp, Unearth, Encore, Evoke, Blitz, Dash, and Decayed all lend you something with the intent that it'll only be temporary, but Obeka can break the designs of these mechanics and keep the creatures around. 
 
 **Entry costs and upkeep costs go away.** Bouncelands want to return a land to your hand; [[Command Bridge]], [[Ruptured Spire]], and [[Gateway Plaza]] want a payment or a sacrifice. Those are all triggers, and triggers on the stack cease to exist when the turn ends suddenly.
 
@@ -64,7 +64,7 @@ One idea worth checking out might be self-milling until we can cast [[Dragon's A
 
 {% include card-grid.html cards="Dragon's Approach; Tiamat's Fanatics; Ideas Unbound;" %}
 
-I'll be building Obeka because she's fun and there are some terrific ways to abuse her abilities. I don't suspect we'll be seeing a lot of her at any tournaments, however. 
+I'll be building Obeka because she's fun and there are some terrific ways to abuse her abilities. I don't suspect we'll be seeing a lot of her at any tournaments, however. The fun interactions with her ablities are limited to midrange value generation. Not fast enough to out-aggro Gut, not strong enough to 
 
 
 ### 3. The Jolly Balloon Man
@@ -73,21 +73,21 @@ I'll be building Obeka because she's fun and there are some terrific ways to abu
 
 In EDH, [[The Jolly Balloon Man]] is a combo engine — roughly twelve thousand decks on EDHREC, and Commander Spellbook lists over a thousand distinct combos involving it. Give it a way to untap and you get infinite hasty token copies, infinite ETB triggers, infinite everything.
 
-There are known combos here that can be put together. The cleanest one: Jolly Balloon Man plus [[Village Bell-Ringer]] plus any creature that taps for a mana. Tap your mana creature, use the Balloon Man to copy the Bell-Ringer, and the token's enter trigger untaps your whole board — including the Balloon Man and the mana creature. Do it again. That's infinite hasty creatures, infinite enter-the-battlefield triggers, and infinite untaps, off three commons. Throw an [[Impact Tremors]] into the mix and you've got yourself a win. 
+There are known combos in PDH that can be put together. The cleanest one: Jolly Balloon Man plus [[Village Bell-Ringer]] plus any creature that taps for a mana. Tap your mana creature, use the Balloon Man to copy the Bell-Ringer, and the token's enter trigger untaps your whole board — including the Balloon Man and the mana creature. Do it again. That's infinite hasty creatures, infinite enter-the-battlefield triggers, and infinite untaps, off three commons. Throw an [[Impact Tremors]] into the mix and you've got yourself a win. 
 
-The problem here isn't the combo. It's that we don't have the tutors or the resources to find those pieces consistently enough to reliably close out games before our opponents can. Jolly Balloon Man has the potential to be very strong, but it would have to use its copying ability in some way that stalls the game or draws cards to reliably close out matches.
+The problem here isn't the combo. It's that we don't have the tutors or the resources to find those pieces consistently enough to close out games before our opponents can. Jolly Balloon Man has the potential to be very strong, but it would have to use its copying ability in some way that stalls the game or draws cards to reliably close out matches.
 
-It's like we have the perfect starting point, and the perfect destination to arrive at, but no road leading from point A to point B. Kudos to the brewers that figure out how to stall or dig deep enough to make lots of happy balloons (don't mind their rubbery balloon faces).
+It's like we have the perfect starting point to depart, and the perfect destination to arrive at, but no road leading from point A to point B. Kudos to the brewers that figure out how to stall or dig deep enough to make lots of happy balloons (don't mind their rubbery balloon faces).
 
 ### 2. Garth One-Eye
 
 {% include card-grid.html cards="Garth One-Eye;" %}
 
-[[Garth One-Eye]] has made his rounds in EDH and cEDH — the "make a Black Lotus" commander has appeal both to casual players who want to play with copies of the banned card and combo players ready to make infinite mana to win their games. Competitive builds lean on blink and haste effects to reuse his ability, generating infinite mana off repeated Lotuses. [[Displacer Kitten]], [[Deadeye Navigator]], and haste enablers are the usual suspects.
+[[Garth One-Eye]] has made his rounds in EDH and cEDH — the "make a [[Black Lotus]]" commander has appeal both to casual players who want to play with copies of the banned card and combo players ready to make infinite mana. Competitive builds lean on blink and haste effects to reuse his ability, generating infinite mana off repeated Lotuses. [[Displacer Kitten]], [[Deadeye Navigator]], and haste enablers are the usual suspects.
 
 Brewers in our Discord are already circling Garth, and I understand the excitement. In addition to the sparkling black lotus, Garth offers a wealth of control pieces and value at instant speed, and as a five-color commander he has access to every common in the format. That last part is no small thing. Garth might not need to combo at all. Because he offers so much raw utility, we may see our first real five-color good-stuff deck — a list that functions entirely without its commander, with Garth in the command zone as a mixed bag of support pieces instead of being a driving engine.
 
-What you have to contend with is having a five CMC commander with five different pips. There are plenty of lines that can be run here, but they're convoluted. Convoluted can sometimes mean losing to the deck that's already pushing for a win on turn four or five because they simplified and refined.
+What you have to contend with is having a five CMC commander with five different pips. There are plenty of lines that can be run here, but they're convoluted. Convoluted can sometimes mean losing to the deck that's already pushing for a win on turn four or five because they simplified and streamlined their path to victory.
 
 More likely I think Garth will need to play a control plan for the early-to-mid game until it has the mana and resources to tutor for its pieces and win. Will he be able to do it all in time, or hold off his opponents while he does so? Let's find out. 
 
@@ -95,7 +95,7 @@ More likely I think Garth will need to play a control plan for the early-to-mid 
 
 {% include card-grid.html cards="Raffine, Scheming Seer;" %}
 
-[[Raffine, Scheming Seer]] was a genuine powerhouse in Standard and carved out significant roles in Duel Commander, EDH, and Historic Brawl. Where it didn't land was the faster eternal formats — Pioneer and Modern largely passed on it, because three distinct color pips and a plan that wants a board are hard asks when those formats are trying to kill you on turn three.
+[[Raffine, Scheming Seer]] was a powerhouse in Standard and carved out significant roles in Duel Commander, EDH, and Historic Brawl. Where it didn't land was the faster eternal formats — Pioneer and Modern largely passed on it, because three distinct color pips and a plan that wants a board are hard asks when those formats are trying to kill you on turn three.
 
 PDH sits in a friendlier spot. Even competitive PDH gives you more room than Modern does (most of the time), and Raffine's connive triggers will likely find a quick home here.
 

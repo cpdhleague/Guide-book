@@ -3,6 +3,9 @@ title: "Zeta Set Review"
 
 date: 2026-09-10
 
+layout: splash
+classes: wide
+
 creator: guide
 author: ginger
 

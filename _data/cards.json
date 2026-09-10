@@ -91,9 +91,101 @@
     "image": "https://cards.scryfall.io/normal/front/e/8/e8510205-4baa-4f1c-bf64-5d931e2ddf48.jpg?1783904155",
     "name": "Ash Barrens"
   },
+  "ashnod": {
+    "image": "https://cards.scryfall.io/normal/front/0/4/046f2416-c206-4344-aa39-ec42585e0d64.jpg?1783946775",
+    "name": "Ashnod"
+  },
+  "ashnod's altar": {
+    "image": "https://cards.scryfall.io/normal/front/3/c/3c0f7157-a375-499c-92c7-d47d2e95dbad.jpg?1783915605",
+    "name": "Ashnod's Altar"
+  },
+  "ashnods altar": {
+    "image": "https://cards.scryfall.io/normal/front/3/c/3c0f7157-a375-499c-92c7-d47d2e95dbad.jpg?1783915605",
+    "name": "Ashnod's Altar"
+  },
+  "assault strobe": {
+    "image": "https://cards.scryfall.io/normal/front/9/b/9b505c78-5dbd-483d-92bb-5144060e962f.jpg?1783941727",
+    "name": "Assault Strobe"
+  },
+  "attuma atlantean warlord": {
+    "image": "https://cards.scryfall.io/normal/front/c/3/c3d5add1-0d0e-414b-a964-8da326472d35.jpg?1783902962",
+    "name": "Attuma, Atlantean Warlord"
+  },
+  "augur of bolas": {
+    "image": "https://cards.scryfall.io/normal/front/d/1/d19fbfe6-69bb-452a-be3c-b9c625e23193.jpg?1783933469",
+    "name": "Augur of Bolas"
+  },
+  "avenging hunter": {
+    "image": "https://cards.scryfall.io/normal/front/f/4/f4072640-0f9b-4f0a-84cc-eda415cc92e7.jpg?1783922721",
+    "name": "Avenging Hunter"
+  },
+  "azorius chancery": {
+    "image": "https://cards.scryfall.io/normal/front/5/0/50ef0ac3-e911-4d67-a751-8d86160ae843.jpg?1783909580",
+    "name": "Azorius Chancery"
+  },
+  "banishing knack": {
+    "image": "https://cards.scryfall.io/normal/front/3/7/371a769a-ddae-47f6-b2c2-957de5c18417.jpg?1783942692",
+    "name": "Banishing Knack"
+  },
+  "battered golem": {
+    "image": "https://cards.scryfall.io/normal/front/f/6/f69add35-c529-4b30-8e64-f09b8308432f.jpg?1783944386",
+    "name": "Battered Golem"
+  },
+  "battle hymn": {
+    "image": "https://cards.scryfall.io/normal/front/4/3/43b5d46e-7054-44f8-9a14-b412f2f0ab86.jpg?1783940689",
+    "name": "Battle Hymn"
+  },
+  "beacon behemoth": {
+    "image": "https://cards.scryfall.io/normal/front/0/c/0cc42e33-7489-4a32-bb30-adc80ec13521.jpg?1783942476",
+    "name": "Beacon Behemoth"
+  },
+  "bender's waterskin": {
+    "image": "https://cards.scryfall.io/normal/front/6/d/6d4a1712-d19e-4475-9614-a0b1af4da610.jpg?1783904915",
+    "name": "Bender's Waterskin"
+  },
+  "big score": {
+    "image": "https://cards.scryfall.io/normal/front/3/3/3383a939-4ab3-4546-9995-6c65cd3f4441.jpg?1783903010",
+    "name": "Big Score"
+  },
+  "bilbo retired burglar": {
+    "image": "https://cards.scryfall.io/normal/front/5/2/527df93e-cc2b-4216-909a-4ada1abcbfd3.jpg?1783916260",
+    "name": "Bilbo, Retired Burglar"
+  },
+  "bilbo, retired burglar": {
+    "image": "https://cards.scryfall.io/normal/front/5/2/527df93e-cc2b-4216-909a-4ada1abcbfd3.jpg?1783916260",
+    "name": "Bilbo, Retired Burglar"
+  },
+  "birthday escape": {
+    "image": "https://cards.scryfall.io/normal/front/4/2/42db2313-b13d-4292-bef2-bf86f989d32f.jpg?1783916321",
+    "name": "Birthday Escape"
+  },
+  "black lotus": {
+    "image": "https://cards.scryfall.io/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1783939332",
+    "name": "Black Lotus"
+  },
+  "black widow double agent": {
+    "image": "https://cards.scryfall.io/normal/front/a/a/aa8dbbb9-36a5-48e0-9e30-aeed0fb5d522.jpg?1783902905",
+    "name": "Black Widow, Double Agent"
+  },
   "blink of an eye": {
     "image": "https://cards.scryfall.io/normal/front/a/b/ab830392-4d7e-4b45-93cf-35ed1e935228.jpg?1783935030",
     "name": "Blink of an Eye"
+  },
+  "blisterspit gremlin": {
+    "image": "https://cards.scryfall.io/normal/front/4/e/4ec65b97-d5c0-4609-8a60-3c4daa3e59c1.jpg?1783931053",
+    "name": "Blisterspit Gremlin"
+  },
+  "blood artist": {
+    "image": "https://cards.scryfall.io/normal/front/b/5/b5275d76-2947-4219-be21-614c7421614a.jpg?1783903786",
+    "name": "Blood Artist"
+  },
+  "bloodrite invoker": {
+    "image": "https://cards.scryfall.io/normal/front/9/4/94ebd19f-c3ec-41de-bde0-3118b34b76a4.jpg?1783938244",
+    "name": "Bloodrite Invoker"
+  },
+  "blue marvel adam brashear": {
+    "image": "https://cards.scryfall.io/normal/front/d/e/de5c8482-462a-49ee-ae4d-1e0e8e0a4b97.jpg?1783903104",
+    "name": "Blue Marvel, Adam Brashear"
   },
   "burning prophet": {
     "image": "https://cards.scryfall.io/normal/front/f/d/fdc5436b-9655-4fd4-bb1e-9d6a30dfeb81.jpg?1783913316",

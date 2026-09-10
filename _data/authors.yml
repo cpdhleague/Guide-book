@@ -4,9 +4,9 @@
 
 ginger:
   name: "Ginger Persolus"
-  photo: "/assets/images/patrik-bio.png"
-  bio: "Co-owner and Data Architect of CPDH.guide and Wanderer's PDH League, Patrik enjoys deckbuilding and analysis of both individual games and the larger cPDH meta."
-  page: "/articles/?author=patrik"
+  photo: "/assets/images/ginger-bio.jpg"
+  bio: "Co-owner and Lead Developer of CPDH.guide and Wanderer's PDH League, Ginger is currently enjoying the life of a digital nomad. He is also an incredible enthusiast of the format and is proud to be serving as a community leader and organizer. Watch his play videos online or ask him questions on the CPDH.guide Discord!"
+  page: "/articles/?author=ginger"
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"
@@ -15,9 +15,9 @@ ginger:
 
 patrik:
   name: "Patrik Siljestam"
-  photo: "/assets/images/ginger-bio.jpg"
-  bio: "Co-owner and Lead Developer of CPDH.guide and Wanderer's PDH League, Ginger is currently enjoying the life of a digital nomad. He is also an incredible enthusiast of the format and is proud to be serving as a community leader and organizer. Watch his play videos online or ask him questions on the CPDH.guide Discord!"
-  page: "/articles/?author=ginger"
+  photo: "/assets/images/patrik-bio.png"
+  bio: "Co-owner and Data Architect of CPDH.guide and Wanderer's PDH League, Patrik enjoys deckbuilding and analysis of both individual games and the larger cPDH meta."
+  page: "/articles/?author=patrik"
   links:
     - label: "Discord"
       url: "https://discord.com/invite/UtgN272kpq"

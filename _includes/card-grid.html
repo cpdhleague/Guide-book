@@ -23,8 +23,24 @@
     {% assign opt = "" %}
     {% if parts.size > 1 %}{% assign opt = parts[1] | strip | downcase %}{% endif %}
     {% if card_name != "" %}
+      {% comment %}
+        Look the card up in the build-time cache (_data/cards.json, populated by
+        _scripts/resolve_cards.py). A hit means we emit the direct Scryfall CDN
+        URL and the browser makes no API call at all. A miss falls back to the
+        Worker so a brand-new card still renders before the next build.
+      {% endcomment %}
+      {% if opt != "" %}
+        {% assign cache_key = card_name | downcase | append: "|" | append: opt %}
+      {% else %}
+        {% assign cache_key = card_name | downcase %}
+      {% endif %}
+      {% assign cached = site.data.cards[cache_key] %}
     <figure class="gallery-item">
+      {% if cached and cached.image %}
+      <img src="{{ cached.image }}" alt="{{ cached.name | default: card_name }}" loading="lazy">
+      {% else %}
       <img src="https://cards.cpdh.guide/card-image?name={{ card_name | url_encode }}{% if opt == 'back' %}&face=back{% elsif opt == 'token' %}&token=true{% endif %}" alt="{{ card_name }}" loading="lazy">
+      {% endif %}
     </figure>
     {% endif %}
   {% endfor %}

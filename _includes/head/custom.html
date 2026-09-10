@@ -211,6 +211,30 @@ document.addEventListener('DOMContentLoaded', function() {
   //    Handles both normal cards and double-faced cards (DFCs)
   // ----------------------------------------------------------------
   var cardCache = {};
+  var bulkCache = null;      // build-time cache, loaded once per page
+  var bulkPending = [];     // callbacks waiting on that load
+  var bulkState = 'idle';   // idle | loading | ready | failed
+
+  function loadBulkCache(done) {
+    if (bulkState === 'ready' || bulkState === 'failed') { done(); return; }
+    bulkPending.push(done);
+    if (bulkState === 'loading') return;
+    bulkState = 'loading';
+    fetch('/assets/data/cards.json')
+      .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function(data) {
+        bulkCache = data;
+        bulkState = 'ready';
+      })
+      .catch(function() {
+        bulkState = 'failed';
+      })
+      .then(function() {
+        var waiting = bulkPending;
+        bulkPending = [];
+        waiting.forEach(function(cb) { cb(); });
+      });
+  }
 
   function fetchCardImage(name, callback) {
     var key = name.toLowerCase();
@@ -218,18 +242,27 @@ document.addEventListener('DOMContentLoaded', function() {
       callback(cardCache[key]);
       return;
     }
-    // Fetch via our Cloudflare Worker cache (90-day edge cache, one Scryfall hit per card ever)
-    fetch('https://cards.cpdh.guide/card?name=' + encodeURIComponent(name))
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        var url = data.image || null;
-        cardCache[key] = url;
-        callback(url);
-      })
-      .catch(function() {
-        cardCache[key] = null; // cache the miss so we don't retry
-        callback(null);
-      });
+
+    loadBulkCache(function() {
+      // Build-time cache hit — no network call needed
+      if (bulkCache && bulkCache[key] && bulkCache[key].image) {
+        cardCache[key] = bulkCache[key].image;
+        callback(cardCache[key]);
+        return;
+      }
+      // Miss (new card not yet resolved) — fall back to the Worker
+      fetch('https://cards.cpdh.guide/card?name=' + encodeURIComponent(name))
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          var url = data.image || null;
+          cardCache[key] = url;
+          callback(url);
+        })
+        .catch(function() {
+          cardCache[key] = null; // cache the miss so we don't retry
+          callback(null);
+        });
+    });
   }
 
   // ----------------------------------------------------------------

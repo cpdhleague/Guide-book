@@ -39,8 +39,6 @@ The PDH Rules Committee does its best to align with rulings from both the Pauper
 
 This article is going to look at the strongest of these cards and their potential impact competitively. We're only covering cards we expect to see competitive play, so if your favorite Zeta card isn't here, that's not a knock on it. It's very cool that the iconic [[Serra Angel]] is now legal in the 99 of our decks, but it won't be seeing a ton of tournament play.
 
-{% include divider.html %}
-
 ## The Commanders
 
 Eight creatures came down to uncommon for the first time in this set. Four of them are worth talking about competitively. They're ranked here from least to most likely to make a dent in cPDH.
@@ -80,7 +78,7 @@ There are known combos in PDH that can be put together. The cleanest one: Jolly 
 
 The problem here isn't the combo. It's that we don't have the tutors or the resources to find those pieces consistently enough to close out games before our opponents can. Jolly Balloon Man has the potential to be very strong, but it would have to use its copying ability in some way that stalls the game or draws cards to reliably close out matches.
 
-It's like we have the perfect starting point to depart, and the perfect destination to arrive at, but no road leading from point A to point B. There are many ways to use creature copies to control the board and even offer removal, allowing you to prolong the game and disrupt your opponents. The question remains to be seen if doing so also move the Jolly Balloon Man player closer to victory. Kudos to the brewers that figure out how to stall or dig deep enough to make lots of happy balloons (don't mind their rubbery balloon faces).
+It's like we have the perfect starting point to depart from, and the perfect destination to arrive at, but no road leading from point A to point B. There are many ways to use creature copies to control the board, allowing you to prolong the game and disrupt your opponents. The question remains to be seen if doing so also moves the Jolly Balloon Man player closer to victory. Kudos to the brewers that figure out how to stall or dig deep enough to make lots of happy balloons (don't mind their rubbery balloon faces).
 
 ### 2. Garth One-Eye
 
@@ -104,9 +102,7 @@ PDH sits in a friendlier spot. Even competitive PDH gives you more room than Mod
 
 What makes Raffine dangerous is that it allows a variety of approaches to winning games. You can go wide. You can Voltron. Or, because you're cycling through so many cards, you can find combo pieces the way [[Horrid Shadowspinner]] does. Speaking of which, if the RC leaves Raffine to enter the format untouched, Horrid Shadowspinner may have seen its last days. With an additional color, built in evasion, and minor protection, there's a lot going for Raffine.
 
-This is the one most likely to go nuts right away. It comes ready-made in some ways, with so much research done on Horrid Shadowspinner to support the gameplan. I'd be surprised not to see Raffine appearing at tournaments pretty soon and coming ready to dominate.
-
-{% include divider.html %}
+This is the one most likely to go nuts right away. It comes ready-made in some ways, with so much research done on Horrid Shadowspinner to support the gameplan. Raffine will be appearing at tournaments pretty soon and coming ready to dominate.
 
 ## The Commons
 
@@ -144,7 +140,7 @@ Graveyard decks like [[Hollow Marauder]] have lived with comparable hate for a w
 
 Even outside of artifact strats, artifact ramp is abundant. Non-green decks lean on artifact mana to reach expensive commanders and bigger spells. Vandalblast doesn't invalidate artifact ramp, but it adds a real sense of risk to it. Not every deck running artifacts will have blue to be able to interact with Vandalblast on the stack. 
 
-Vandalblast often doesn't further a player's own gameplan, so many of our faster decks may not be inclined to include it. It's also difficult to tutor — the most consistent route is [[Dizzy Spell]], which means being in Izzet colors. So it may be that we don't actually see a lot of it in cPDH, where combo is currently outpacing most other strategies. It may be that the card is simply too inconsistently available to truly shut down abundant ramp or artifact-based gameplans.
+Vandalblast often doesn't further a player's own gameplan, so many of our faster decks may not be inclined to include it. It's also difficult to tutor — the most consistent route is [[Dizzy Spell]], which means being in Izzet colors. You also need to spend five mana on using your artifact wipe. It's a lot of resources to dedicate to one card which may not even be relevant in some games. So it may be that we don't actually see a lot of it in cPDH, where faster combos are currently outpacing most other strategies. It may be that the card is simply too inconsistently available to truly shut down abundant ramp or artifact-based gameplans.
 
 Healthy shake-up or limitation to artifact strategies? I don't know. That's the kind of thing you find out by playing it. Casual is its own conversation, and I suspect this won't be a welcome card in those circumstances.
 
@@ -161,8 +157,6 @@ I don't think there's a great concern for the power level of the card, but I am 
 I want people brewing weird stuff. That's most of the appeal of cPDH for me. A card that adds risk to an otherwise very measured and efficient mana base doesn't seem ideal.
 
 It's a strong card, and it requires very little build-around from the pilots bringing it to the table. It'll be interesting to discover whether it makes a big impact on existing decks or has an impact on manabase considerations for multi-color decks — since they'd also need to weigh the chance of getting exploded for big damage out of nowhere.
-
-{% include divider.html %}
 
 ## What Happens Next
 

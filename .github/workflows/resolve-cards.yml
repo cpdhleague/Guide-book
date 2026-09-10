@@ -1,0 +1,67 @@
+# =============================================================
+# resolve-cards.yml
+# =============================================================
+# Runs whenever an article changes. Resolves any new [[Card Name]] or
+# card-grid references to direct Scryfall image URLs and commits the
+# result to _data/cards.json + assets/data/cards.json.
+#
+# Jekyll then bakes those URLs straight into the HTML, so visitors'
+# browsers never call the Scryfall API and images can't fail to load.
+#
+# Only NEW cards are looked up — the cache is committed to the repo, so
+# a typical run resolves a handful of cards in a couple of seconds.
+# =============================================================
+
+name: Resolve Card Images
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '_posts/**'
+      - '_previews/**'
+      - '_pages/meta/library.md'
+      - '_scripts/resolve_cards.py'
+  workflow_dispatch:
+
+# Prevent two runs racing to commit the same file
+concurrency:
+  group: resolve-cards
+  cancel-in-progress: false
+
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Resolve card images
+        id: resolve
+        run: python _scripts/resolve_cards.py
+
+      - name: Commit updated card cache
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/cards.json assets/data/cards.json
+          if git diff --staged --quiet; then
+            echo "No new cards to cache."
+          else
+            git commit -m "Cache card images (${{ steps.resolve.outputs.resolved }} new)"
+            git pull --rebase origin master
+            git push origin master
+          fi
+
+      - name: Warn about unresolved card names
+        if: steps.resolve.outputs.failed_count != '0'
+        run: |
+          echo "::warning::Scryfall could not resolve: ${{ steps.resolve.outputs.failed_list }}"

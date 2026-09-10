@@ -47,7 +47,7 @@ header:
 # SECTION 4: EXCERPT
 # ===========================================================================
 
-excerpt: "Ginger breaks down the full pilot's guide for Guidelight Pathmaker — the Vehicle commander that just won Wanderer's Type Hype 2026, and why it's ready for the broader competitive meta."  # Required for GNews — fill this in before publishing to Google News
+excerpt: ""  # Required for GNews — fill this in before publishing to Google News
 
 # ===========================================================================
 # SECTION 5: REDDIT POSTING

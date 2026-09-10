@@ -105,9 +105,11 @@ The tournament was won by Ken Cockriel, piloting Hawkeye, Young Avenger. You can
 
 ## Finals
 
-*Coming soon — this recording will be added once it is live on YouTube.*
+<div class="responsive-video">
+  <iframe src="https://www.youtube.com/embed/poOH5t6nADs" title="Cloudy Commons Cup IV — Cut to Top 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
- Additional rounds will be added to this page as they are released.
+[Watch the Top 10 on YouTube](https://www.youtube.com/watch?v=poOH5t6nADs)
 
 {% include author-card.html %}
 {% include article-nav.html %}

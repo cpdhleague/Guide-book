@@ -271,9 +271,101 @@
     "image": "https://cards.scryfall.io/normal/front/0/5/0548fb60-c843-4f8f-a029-6f10efc63a41.jpg?1783903206",
     "name": "Command Tower"
   },
+  "counterspell": {
+    "image": "https://cards.scryfall.io/normal/front/4/f/4f616706-ec97-4923-bb1e-11a69fbaa1f8.jpg?1783909630",
+    "name": "Counterspell"
+  },
+  "criminal past": {
+    "image": "https://cards.scryfall.io/normal/front/6/4/6410a2a2-48d9-4032-b585-4eaa5bc06581.jpg?1783922765",
+    "name": "Criminal Past"
+  },
+  "crypt rats": {
+    "image": "https://cards.scryfall.io/normal/front/9/6/96916db2-5121-4ff1-880c-369744f11ecf.jpg?1783933130",
+    "name": "Crypt Rats"
+  },
+  "cultivate": {
+    "image": "https://cards.scryfall.io/normal/front/e/6/e60deb92-f7dd-4f4e-9036-e47dd586f985.jpg?1783903229",
+    "name": "Cultivate"
+  },
+  "cut down": {
+    "image": "https://cards.scryfall.io/normal/front/7/5/753db072-5d6a-4f37-8f7d-255572ecd3bd.jpg?1783921335",
+    "name": "Cut Down"
+  },
+  "cyberman patrol": {
+    "image": "https://cards.scryfall.io/normal/front/5/6/566ae475-48cd-42d0-8d96-168529b2180d.jpg?1783914617",
+    "name": "Cyberman Patrol"
+  },
+  "daemogoth woe-eater": {
+    "image": "https://cards.scryfall.io/normal/front/c/9/c965cbe3-50e5-41bb-bdb9-e65d97aab716.jpg?1783927318",
+    "name": "Daemogoth Woe-Eater"
+  },
+  "dangerous wager": {
+    "image": "https://cards.scryfall.io/normal/front/6/3/636c4042-703f-4548-9a0f-cb550c468bf9.jpg?1783940687",
+    "name": "Dangerous Wager"
+  },
+  "dargo": {
+    "image": "https://cards.scryfall.io/normal/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1783928817",
+    "name": "Dargo, the Shipwrecker"
+  },
+  "dargo the shipwrecker": {
+    "image": "https://cards.scryfall.io/normal/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1783928817",
+    "name": "Dargo, the Shipwrecker"
+  },
+  "dargo, the shipwrecker": {
+    "image": "https://cards.scryfall.io/normal/front/5/c/5cd87cf8-4d5d-4aba-8dfa-800b1fb3799b.jpg?1783928817",
+    "name": "Dargo, the Shipwrecker"
+  },
+  "dark ritual": {
+    "image": "https://cards.scryfall.io/normal/front/1/1/11e12a84-e7be-4afc-a230-c2e644743fa8.jpg?1783903013",
+    "name": "Dark Ritual"
+  },
+  "deadeye navigator": {
+    "image": "https://cards.scryfall.io/normal/front/4/f/4f0791b5-fdb4-4378-8fd3-7e7367ffc05c.jpg?1783908166",
+    "name": "Deadeye Navigator"
+  },
+  "deprive": {
+    "image": "https://cards.scryfall.io/normal/front/2/e/2efecdd9-bd3a-4b79-92da-6485589d5bde.jpg?1783941998",
+    "name": "Deprive"
+  },
+  "desperate ritual": {
+    "image": "https://cards.scryfall.io/normal/front/3/8/3825b85d-07df-43b9-a8d8-930863262d83.jpg?1783933809",
+    "name": "Desperate Ritual"
+  },
+  "dionus, elvish archdruid": {
+    "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
+    "name": "Dionus, Elvish Archdruid"
+  },
+  "disciple of deceit": {
+    "image": "https://cards.scryfall.io/normal/front/f/b/fbfe88fd-9bb9-42af-8134-96fd264b8405.jpg?1783939405",
+    "name": "Disciple of Deceit"
+  },
+  "dismissive denial": {
+    "image": "https://cards.scryfall.io/normal/front/1/5/155dcbd3-346d-4c30-91b3-95197b376ec5.jpg?1783903075",
+    "name": "Dismissive Denial"
+  },
+  "dispatch": {
+    "image": "https://cards.scryfall.io/normal/front/9/9/99d30a21-b003-4a17-a4c5-97811f230896.jpg?1783903251",
+    "name": "Dispatch"
+  },
   "dispel": {
     "image": "https://cards.scryfall.io/normal/front/b/c/bceab6b3-6b64-4964-a501-ce806a6c13ad.jpg?1783938209",
     "name": "Dispel"
+  },
+  "displacer kitten": {
+    "image": "https://cards.scryfall.io/normal/front/c/7/c7a401b8-29fb-46ef-a663-427f66724d5c.jpg?1783922795",
+    "name": "Displacer Kitten"
+  },
+  "dive down": {
+    "image": "https://cards.scryfall.io/normal/front/6/5/65d5cff9-a3ec-432d-9ce5-68949e524279.jpg?1783908935",
+    "name": "Dive Down"
+  },
+  "diviner spirit": {
+    "image": "https://cards.scryfall.io/normal/front/e/8/e86df81e-83d6-4522-82ad-2b1f2d8de623.jpg?1783936295",
+    "name": "Diviner Spirit"
+  },
+  "dizzy spell": {
+    "image": "https://cards.scryfall.io/normal/front/6/e/6e0db10d-fb6d-44df-9ff2-6f1e0e8f8209.jpg?1783943689",
+    "name": "Dizzy Spell"
   },
   "downhill charge": {
     "image": "https://cards.scryfall.io/normal/front/8/d/8d7ef860-f248-4b14-8080-592121983d83.jpg?1783940758",

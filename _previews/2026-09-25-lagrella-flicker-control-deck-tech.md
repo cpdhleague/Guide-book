@@ -3,7 +3,7 @@
 # CPDH.GUIDE — ARTICLE TEMPLATE
 # ===========================================================================
 
-title: "Lagrella, the Magpie cPDH Deck Tech: Flicker Control"
+title: "Lagrella, the Magpie cPDH Deck Tech - Flicker Control"
 
 # DATE: Update to actual publish date
 date: 2026-09-25
@@ -35,12 +35,12 @@ gnews: false
 # ===========================================================================
 # TODO: Replace placeholder with a real image once available.
 
-image: /assets/images/lagrella-decktech.png
+image: /assets/images/lagrella-deck-tech.png
 
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/lagrella-decktech.png
+  teaser: /assets/images/lagrella-deck-tech.png
 
 # ===========================================================================
 # SECTION 4: EXCERPT

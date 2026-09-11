@@ -5,8 +5,10 @@
 
 title: "Lagrella, the Magpie cPDH Deck Tech - Flicker Control"
 
-# DATE: Update to actual publish date
-date: 2026-09-25
+# DATE: Must be today or earlier while in _previews/ — Jekyll will not build
+# future-dated documents, and the preview will 404. Set the real publish date
+# when you move this file into _posts/.
+date: 2026-09-10
 
 layout: splash
 classes: wide

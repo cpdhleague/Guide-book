@@ -19,8 +19,6 @@ baseurl: ""
 title: "CPDH.guide"
 email:
 description: "CPDH.guide offers clear data and resources for Pauper Commander (cPDH) to help you build better decks."
-twitter_username: username
-github_username: username
 minimal_mistakes_skin: dark
 favicon: /assets/images/logo-final.png
 logo: /assets/images/logo-final.png
@@ -90,10 +88,10 @@ footer:
       url: "https://discord.com/invite/UtgN272kpq"
     - label: "Reddit"
       icon: "fab fa-fw fa-reddit-alien"
-      url: "https://www.reddit.com/r/competitivepauperedh/"
+      url: "https://www.reddit.com/r/PauperEDH/"
     - label: "Moxfield"
       icon: "fas fa-fw fa-fire"
-      url: "https://moxfield.com/users/cPDHguide"
+      url: "https://moxfield.com/users/cpdhlists"
 
 defaults:
   # _posts

@@ -851,9 +851,97 @@
     "image": "https://cards.scryfall.io/normal/front/7/0/7083c77c-166f-4c6f-a2ca-dd1b877ff5f7.jpg?1783915695",
     "name": "Looter il-Kor"
   },
+  "lore weaver": {
+    "image": "https://cards.scryfall.io/normal/front/f/3/f3366998-5ea0-4dcd-bf2a-f654b1c68e93.jpg?1783934871",
+    "name": "Lore Weaver"
+  },
   "lost mine of phandelver": {
     "image": "https://cards.scryfall.io/normal/front/5/9/59b11ff8-f118-4978-87dd-509dc0c8c932.jpg?1783926340",
     "name": "Lost Mine of Phandelver"
+  },
+  "lotus petal": {
+    "image": "https://cards.scryfall.io/normal/front/f/8/f85ab5f9-508e-45de-8fa1-ce1f16552ffc.jpg?1783938446",
+    "name": "Lotus Petal"
+  },
+  "lotus petals": {
+    "image": "https://cards.scryfall.io/normal/front/6/c/6c877da3-68fa-41d0-8a24-8c79fcd8ecc1.jpg?1783946602",
+    "name": "Lotus Petal"
+  },
+  "lumberknot": {
+    "image": "https://cards.scryfall.io/normal/front/0/7/07eae396-ee57-485e-8360-962a1310ca31.jpg?1783908094",
+    "name": "Lumberknot"
+  },
+  "lórien revealed": {
+    "image": "https://cards.scryfall.io/normal/front/2/0/209204c7-aae5-4768-91b8-89c8c4d4a97f.jpg?1785497454",
+    "name": "Lórien Revealed"
+  },
+  "maelstrom colossus": {
+    "image": "https://cards.scryfall.io/normal/front/3/2/322491d2-d082-4d38-8d81-8588c011e725.jpg?1783928754",
+    "name": "Maelstrom Colossus"
+  },
+  "magmakin artillerist": {
+    "image": "https://cards.scryfall.io/normal/front/2/a/2ac26341-a100-424d-be84-33fbbf1b4078.jpg?1783907878",
+    "name": "Magmakin Artillerist"
+  },
+  "malcolm, keen-eyed navigator": {
+    "image": "https://cards.scryfall.io/normal/front/5/1/51187cdb-85ee-4f68-9e29-d84d296f0825.jpg?1783913885",
+    "name": "Malcolm, Keen-Eyed Navigator"
+  },
+  "marauding mako": {
+    "image": "https://cards.scryfall.io/normal/front/9/e/9efbfd67-e0f5-43e0-9fff-1eb4a2bed0d8.jpg?1783907879",
+    "name": "Marauding Mako"
+  },
+  "martyrdom": {
+    "image": "https://cards.scryfall.io/normal/front/6/a/6ab5775a-7138-4526-83fe-350127695224.jpg?1783947201",
+    "name": "Martyrdom"
+  },
+  "marvelous melee": {
+    "image": "https://cards.scryfall.io/normal/front/1/6/16c69bbf-7cae-481f-9984-8c8cac68c3e3.jpg?1783903099",
+    "name": "Marvelous Melee"
+  },
+  "meeting of the minds": {
+    "image": "https://cards.scryfall.io/normal/front/5/0/508b8650-c283-4e54-abdc-32ec2fb1ee34.jpg?1783917031",
+    "name": "Meeting of Minds"
+  },
+  "melek, izzet paragon": {
+    "image": "https://cards.scryfall.io/normal/front/6/6/66011fe8-8c5d-4990-a324-5839515dcacb.jpg?1783915613",
+    "name": "Melek, Izzet Paragon"
+  },
+  "mica, reader of ruins": {
+    "image": "https://cards.scryfall.io/normal/front/9/4/949ad3ff-9e80-493c-a3ae-146b919bfcd7.jpg?1783903666",
+    "name": "Mica, Reader of Ruins"
+  },
+  "mind stone": {
+    "image": "https://cards.scryfall.io/normal/front/b/3/b30a8f92-ce42-4b27-a893-bcf97fde228d.jpg?1785759375",
+    "name": "Mind Stone"
+  },
+  "mirran spy": {
+    "image": "https://cards.scryfall.io/normal/front/5/0/50e576ad-3e03-424c-8857-88ec8898a92e.jpg?1783941389",
+    "name": "Mirran Spy"
+  },
+  "mirrorshell crab": {
+    "image": "https://cards.scryfall.io/normal/front/0/3/0394c8df-2e8a-4477-93b7-569934d7b936.jpg?1783923900",
+    "name": "Mirrorshell Crab"
+  },
+  "mister fantastic reed richards": {
+    "image": "https://cards.scryfall.io/normal/front/1/7/17ef068b-61fc-443d-97b0-1e41f2622425.jpg?1783902954",
+    "name": "Mister Fantastic, Reed Richards"
+  },
+  "mocking sprite": {
+    "image": "https://cards.scryfall.io/normal/front/d/5/d52d16be-c74b-4e40-94f9-2ffa497b6337.jpg?1787563031",
+    "name": "Mocking Sprite"
+  },
+  "mogg war marshal": {
+    "image": "https://cards.scryfall.io/normal/front/4/e/4ebce261-3a53-48f2-a173-0d98c68aff2c.jpg?1783903460",
+    "name": "Mogg War Marshal"
+  },
+  "molten monstrosity": {
+    "image": "https://cards.scryfall.io/normal/front/2/4/240957e5-ab0a-443f-92de-ae999b08c44f.jpg?1783921312",
+    "name": "Molten Monstrosity"
+  },
+  "moment's peace": {
+    "image": "https://cards.scryfall.io/normal/front/4/0/40ebe935-ccf9-435e-8fe8-53bcbf3526e7.jpg?1783945215",
+    "name": "Moment's Peace"
   },
   "pestilence": {
     "image": "https://cards.scryfall.io/normal/front/2/9/29d852c4-bd53-4a3b-b1e2-896917cbc27f.jpg?1783946180",

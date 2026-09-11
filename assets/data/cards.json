@@ -535,6 +535,10 @@
     "image": "https://cards.scryfall.io/normal/front/e/3/e3825798-f673-4d8a-9997-ccb73681cbf2.jpg?1783935298",
     "name": "Frilled Deathspitter"
   },
+  "furnace hellkite": {
+    "image": "https://cards.scryfall.io/normal/front/1/f/1f9d91b5-7c09-4a9c-9dc8-fdd4c049009c.jpg?1783911271",
+    "name": "Furnace Hellkite"
+  },
   "fynn, the fangbearer": {
     "image": "https://cards.scryfall.io/normal/front/6/9/699efb9e-2649-432b-8b2d-10775114c314.jpg?1783908919",
     "name": "Fynn, the Fangbearer"
@@ -1211,6 +1215,10 @@
     "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
     "name": "Sailors' Bane"
   },
+  "sailors' bane": {
+    "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
+    "name": "Sailors' Bane"
+  },
   "sanar unfinished genius": {
     "image": "https://cards.scryfall.io/normal/front/1/7/173157aa-712d-44f2-89ba-dd2511a07f26.jpg?1783903631",
     "name": "Sanar, Unfinished Genius // Wild Idea"
@@ -1486,6 +1494,10 @@
   "temur battle rage": {
     "image": "https://cards.scryfall.io/normal/front/3/7/375bc646-942e-4bf5-9c71-2c5471828e35.jpg?1783915640",
     "name": "Temur Battle Rage"
+  },
+  "tenth district legionnaire": {
+    "image": "https://cards.scryfall.io/normal/front/c/d/cd0c8d75-fb20-49f2-9a03-35411f06c1a7.jpg?1783921801",
+    "name": "Tenth District Legionnaire"
   },
   "terravore": {
     "image": "https://cards.scryfall.io/normal/front/b/7/b70fbe1c-d3f4-4e28-a830-2072dee1b7b5.jpg?1783918435",

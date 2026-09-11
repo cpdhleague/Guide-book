@@ -515,13 +515,93 @@
     "image": "https://cards.scryfall.io/normal/front/3/c/3c520263-6bad-4521-ba9e-192ca8223b07.jpg?1783915442",
     "name": "Flux Channeler"
   },
+  "forum necroscribe": {
+    "image": "https://cards.scryfall.io/normal/front/6/7/67504a12-7414-4209-bf1c-624b4db19d52.jpg?1783903680",
+    "name": "Forum Necroscribe"
+  },
+  "frantic search": {
+    "image": "https://cards.scryfall.io/normal/front/d/8/d8c5e52d-57ae-464b-8860-7dd39ebfef64.jpg?1783904806",
+    "name": "Frantic Search"
+  },
+  "freed from the real": {
+    "image": "https://cards.scryfall.io/normal/front/c/4/c47ee6f6-50c1-4f56-b9ce-4c309bfb92ca.jpg?1783935178",
+    "name": "Freed from the Real"
+  },
+  "frilled deathspitter": {
+    "image": "https://cards.scryfall.io/normal/front/e/3/e3825798-f673-4d8a-9997-ccb73681cbf2.jpg?1783935298",
+    "name": "Frilled Deathspitter"
+  },
+  "fynn, the fangbearer": {
+    "image": "https://cards.scryfall.io/normal/front/6/9/699efb9e-2649-432b-8b2d-10775114c314.jpg?1783908919",
+    "name": "Fynn, the Fangbearer"
+  },
+  "ganax, astral hunter": {
+    "image": "https://cards.scryfall.io/normal/front/9/f/9f5bb319-29b2-4a7c-82e9-f8b5e47909a1.jpg?1783922742",
+    "name": "Ganax, Astral Hunter"
+  },
+  "garth one-eye": {
+    "image": "https://cards.scryfall.io/normal/front/2/3/23774462-9f17-4b50-a2ac-b2edd706bbfe.jpg?1783926818",
+    "name": "Garth One-Eye"
+  },
   "gateway plaza": {
     "image": "https://cards.scryfall.io/normal/front/8/1/81d69cf2-8643-4926-857e-febbd54d870f.jpg?1783933367",
     "name": "Gateway Plaza"
   },
+  "generous ent": {
+    "image": "https://cards.scryfall.io/normal/front/8/5/85d22d5d-3875-42ff-b51e-c6e21db201f5.jpg?1783916266",
+    "name": "Generous Ent"
+  },
+  "generous stray": {
+    "image": "https://cards.scryfall.io/normal/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg?1783934152",
+    "name": "Generous Stray"
+  },
+  "geyser drake": {
+    "image": "https://cards.scryfall.io/normal/front/b/2/b270377b-33eb-4e5e-9d14-0da2876da74f.jpg?1783911845",
+    "name": "Geyser Drake"
+  },
+  "ghost of ramirez depietro": {
+    "image": "https://cards.scryfall.io/normal/front/1/5/15e649e1-dcb3-41d9-8055-cf3c98e25b1e.jpg?1783913885",
+    "name": "Ghost of Ramirez DePietro"
+  },
+  "ghostly flicker": {
+    "image": "https://cards.scryfall.io/normal/front/d/c/dc143ba3-2a58-4980-9fa0-a05a9e9ed082.jpg?1783915697",
+    "name": "Ghostly Flicker"
+  },
+  "gilanra, caller of wirewood": {
+    "image": "https://cards.scryfall.io/normal/front/7/4/745d297d-4bb4-40cf-bb9c-99dac04e5069.jpg?1783928793",
+    "name": "Gilanra, Caller of Wirewood"
+  },
+  "glaring fleshraker": {
+    "image": "https://cards.scryfall.io/normal/front/8/0/80c2a3c7-1486-4ff9-88ec-79ec67a437f8.jpg?1783911308",
+    "name": "Glaring Fleshraker"
+  },
+  "glimpse the impossible": {
+    "image": "https://cards.scryfall.io/normal/front/1/3/133ad0dd-5b61-4c38-9264-0b0e75b95d95.jpg?1783911271",
+    "name": "Glimpse the Impossible"
+  },
   "glorious gale": {
     "image": "https://cards.scryfall.io/normal/front/6/e/6e1057de-5710-415c-9a51-1d8bd86021a3.jpg?1783916317",
     "name": "Glorious Gale"
+  },
+  "goblin chirurgeon": {
+    "image": "https://cards.scryfall.io/normal/front/6/d/6da90318-4db4-4f03-ae2f-b1faeca46f57.jpg?1783942945",
+    "name": "Goblin Chirurgeon"
+  },
+  "goblin surprise": {
+    "image": "https://cards.scryfall.io/normal/front/5/2/527dd5d4-5f72-40bb-8a9d-1f5ac3f81e2e.jpg?1783909066",
+    "name": "Goblin Surprise"
+  },
+  "goggles of night": {
+    "image": "https://cards.scryfall.io/normal/front/d/e/deb2aa14-4b8d-4f33-856d-296bc59a0ade.jpg?1783922787",
+    "name": "Goggles of Night"
+  },
+  "goreclaw, terror of qal sisma": {
+    "image": "https://cards.scryfall.io/normal/front/e/e/ee47f23a-3ba9-4615-b170-c89d8ab99d78.jpg?1783915630",
+    "name": "Goreclaw, Terror of Qal Sisma"
+  },
+  "grapeshot": {
+    "image": "https://cards.scryfall.io/normal/front/e/3/e3e2d90a-3557-49d5-9986-cb50fd31f396.jpg?1783903011",
+    "name": "Grapeshot"
   },
   "hollow marauder": {
     "image": "https://cards.scryfall.io/normal/front/d/f/df2913d5-57c7-4f9b-bc96-8a46beef2563.jpg?1783911832",

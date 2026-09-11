@@ -1738,5 +1738,49 @@
   "👑 kediss, emberclaw familiar": {
     "image": "https://cards.scryfall.io/normal/front/f/6/f606ebf1-483d-4331-b16a-9fb6f591a39f.jpg?1783928811",
     "name": "Kediss, Emberclaw Familiar"
+  },
+  "👑 ley weaver": {
+    "image": "https://cards.scryfall.io/normal/front/2/c/2c7e9d68-d419-4ec5-97e9-2478ecb7007f.jpg?1783934871",
+    "name": "Ley Weaver"
+  },
+  "👑 lorehold apprentice": {
+    "image": "https://cards.scryfall.io/normal/front/0/4/048157c6-4626-4881-ba19-deddd13622dc.jpg?1783927307",
+    "name": "Lorehold Apprentice"
+  },
+  "👑 loyal apprentice": {
+    "image": "https://cards.scryfall.io/normal/front/d/4/d4d469ea-824b-4eff-82e8-2a0b9b4c0e2d.jpg?1783907066",
+    "name": "Loyal Apprentice"
+  },
+  "👑 patchwork automaton": {
+    "image": "https://cards.scryfall.io/normal/front/7/a/7a4e1580-dd26-4f4b-ac98-3e6fa7b879d5.jpg?1783923821",
+    "name": "Patchwork Automaton"
+  },
+  "👑 scholar of the ages": {
+    "image": "https://cards.scryfall.io/normal/front/8/b/8bfa31b5-8a4f-4766-9606-648cb8ee2916.jpg?1783928851",
+    "name": "Scholar of the Ages"
+  },
+  "👑 sphinx summoner": {
+    "image": "https://cards.scryfall.io/normal/front/a/d/ad955c4d-248b-4468-a975-abad97cf84a4.jpg?1783930124",
+    "name": "Sphinx Summoner"
+  },
+  "👑 sprite dragon": {
+    "image": "https://cards.scryfall.io/normal/front/3/6/361385d8-d9c7-4de8-a5c8-683e682779f4.jpg?1783922395",
+    "name": "Sprite Dragon"
+  },
+  "👑 third path iconoclast": {
+    "image": "https://cards.scryfall.io/normal/front/c/a/ca29f373-7051-4cbe-bda8-e711fda4f9bb.jpg?1783907016",
+    "name": "Third Path Iconoclast"
+  },
+  "👑 veteran beastrider": {
+    "image": "https://cards.scryfall.io/normal/front/c/a/cab38f35-b60c-464c-a0b5-9d5f2dc6de7f.jpg?1783907850",
+    "name": "Veteran Beastrider"
+  },
+  "👑 vhal, candlekeep researcher": {
+    "image": "https://cards.scryfall.io/normal/front/4/6/46738fb3-ab5e-486c-b66a-1526ba1cdfa8.jpg?1783922773",
+    "name": "Vhal, Candlekeep Researcher"
+  },
+  "👑 zada, hedron grinder": {
+    "image": "https://cards.scryfall.io/normal/front/4/5/4520cdcc-a10f-4b39-9c6f-ba86f6aa2c87.jpg?1783915638",
+    "name": "Zada, Hedron Grinder"
   }
 }

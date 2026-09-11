@@ -1135,9 +1135,89 @@
     "image": "https://cards.scryfall.io/normal/front/5/b/5bca43d8-7c69-47f4-8f82-48dd2b6a7cba.jpg?1785981560",
     "name": "Reckless Impulse"
   },
+  "red hulk": {
+    "image": "https://cards.scryfall.io/normal/front/e/2/e25468e2-17c6-47b2-8eb6-fcb8ae6f4c17.jpg?1783902924",
+    "name": "Red Hulk"
+  },
+  "relic of progenitus": {
+    "image": "https://cards.scryfall.io/normal/front/4/3/436cd66c-0622-43cd-8748-af4d21a2db3f.jpg?1783937543",
+    "name": "Relic of Progenitus"
+  },
+  "retraction helix": {
+    "image": "https://cards.scryfall.io/normal/front/7/a/7aa3fdd0-34d8-47b3-9753-d2929838732e.jpg?1783935172",
+    "name": "Retraction Helix"
+  },
+  "rilsa rael, kingpin": {
+    "image": "https://cards.scryfall.io/normal/front/5/4/54484439-6f8a-47f1-8d62-4689af7f00c2.jpg?1783922687",
+    "name": "Rilsa Rael, Kingpin"
+  },
+  "risen reef": {
+    "image": "https://cards.scryfall.io/normal/front/7/1/715ad2ff-7eae-42f1-bb3c-a3afc2c9b82a.jpg?1783904536",
+    "name": "Risen Reef"
+  },
+  "rite of flame": {
+    "image": "https://cards.scryfall.io/normal/front/c/0/c062caf7-f0eb-44db-9f74-e6711a13fada.jpg?1783943336",
+    "name": "Rite of Flame"
+  },
+  "rocco, cabaretti caterer": {
+    "image": "https://cards.scryfall.io/normal/front/b/6/b6cf8b35-2a81-40fd-b383-becb81bef806.jpg?1783923072",
+    "name": "Rocco, Cabaretti Caterer"
+  },
+  "rocketeer boostbuggy": {
+    "image": "https://cards.scryfall.io/normal/front/4/c/4c80c91e-dd3d-4c7b-89e4-bfb253eeaee2.jpg?1783907853",
+    "name": "Rocketeer Boostbuggy"
+  },
+  "romantic rendezvous": {
+    "image": "https://cards.scryfall.io/normal/front/e/d/ede080dd-7df6-474b-b481-de842fec3139.jpg?1783903008",
+    "name": "Romantic Rendezvous"
+  },
+  "ronin shadow stalker": {
+    "image": "https://cards.scryfall.io/normal/front/f/7/f74b9794-946e-4ddc-93b2-5a321fc51fd0.jpg?1783902939",
+    "name": "Ronin, Shadow Stalker"
+  },
+  "rootcoil creeper": {
+    "image": "https://cards.scryfall.io/normal/front/3/7/3743cf9c-226f-43a3-b385-375a25414792.jpg?1783925554",
+    "name": "Rootcoil Creeper"
+  },
+  "roxxon brutes": {
+    "image": "https://cards.scryfall.io/normal/front/6/6/66550490-74e1-4bf1-8741-1266dfab3a03.jpg?1783902938",
+    "name": "Roxxon Brutes"
+  },
+  "rubble rouser": {
+    "image": "https://cards.scryfall.io/normal/front/a/f/afe61957-a9bb-42b0-98e8-b5fa418cbaff.jpg?1783903665",
+    "name": "Rubble Rouser"
+  },
+  "ruby daring tracker": {
+    "image": "https://cards.scryfall.io/normal/front/f/e/fe3e7dd2-b66d-4218-9fde-f84bec26b7bf.jpg?1783909051",
+    "name": "Ruby, Daring Tracker"
+  },
+  "ruby, daring tracker": {
+    "image": "https://cards.scryfall.io/normal/front/f/e/fe3e7dd2-b66d-4218-9fde-f84bec26b7bf.jpg?1783909051",
+    "name": "Ruby, Daring Tracker"
+  },
+  "ruptured spire": {
+    "image": "https://cards.scryfall.io/normal/front/c/7/c7ef4b15-efab-4255-ac2d-7794f253aa52.jpg?1783928740",
+    "name": "Rupture Spire"
+  },
+  "sailor's bane": {
+    "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
+    "name": "Sailors' Bane"
+  },
+  "sanar unfinished genius": {
+    "image": "https://cards.scryfall.io/normal/front/1/7/173157aa-712d-44f2-89ba-dd2511a07f26.jpg?1783903631",
+    "name": "Sanar, Unfinished Genius // Wild Idea"
+  },
   "sanar, unfinished genius": {
     "image": "https://cards.scryfall.io/normal/front/1/7/173157aa-712d-44f2-89ba-dd2511a07f26.jpg?1783903631",
     "name": "Sanar, Unfinished Genius // Wild Idea"
+  },
+  "satyr": {
+    "image": "https://cards.scryfall.io/normal/front/4/9/49bdae00-bcbd-4238-87d6-7e12ff7ffd83.jpg?1783915253",
+    "name": "Satyr"
+  },
+  "satyr enchanter": {
+    "image": "https://cards.scryfall.io/normal/front/d/f/df83d28d-bb0b-4f3d-a16f-8ee8bf452e10.jpg?1783915411",
+    "name": "Satyr Enchanter"
   },
   "scour from existence": {
     "image": "https://cards.scryfall.io/normal/front/6/e/6e47edb2-e43d-479f-a911-e72b67a06c3b.jpg?1783938222",
@@ -1146,6 +1226,10 @@
   "scrollshift": {
     "image": "https://cards.scryfall.io/normal/front/6/f/6fc278d1-2ea4-4fbc-95cd-a9cd48c3c630.jpg?1783917051",
     "name": "Scrollshift"
+  },
+  "sp//dr, piloted by peni": {
+    "image": "https://cards.scryfall.io/normal/front/c/4/c47c1d83-e76d-4939-9ed6-05a9e709dea1.jpg?1783905311",
+    "name": "SP//dr, Piloted by Peni"
   },
   "springbloom druid": {
     "image": "https://cards.scryfall.io/normal/front/1/7/17d67b88-3f76-401f-b04a-f2bcaab4aa97.jpg?1787562486",

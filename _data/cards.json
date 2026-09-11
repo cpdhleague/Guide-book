@@ -1,4 +1,8 @@
 {
+  "_____ goblin": {
+    "image": "https://cards.scryfall.io/normal/front/5/8/5819e3f3-da49-4003-88ce-f3b7bb495787.jpg?1784072707",
+    "name": "_____ Goblin"
+  },
   "a.i.m. scientists": {
     "image": "https://cards.scryfall.io/normal/front/a/b/ab96b656-100e-491a-a8c9-94dbb9482c4d.jpg?1783902962",
     "name": "A.I.M. Scientists"
@@ -1674,5 +1678,65 @@
   "workshop assistant": {
     "image": "https://cards.scryfall.io/normal/front/e/9/e9387e8f-0e72-4212-81c8-e64050700c52.jpg?1783928743",
     "name": "Workshop Assistant"
+  },
+  "wrecking beast": {
+    "image": "https://cards.scryfall.io/normal/front/7/4/74e6f7be-4493-4081-ac67-d782ab2b3723.jpg?1783933660",
+    "name": "Wrecking Beast"
+  },
+  "writhing chrysalis": {
+    "image": "https://cards.scryfall.io/normal/front/f/5/f54dbeb1-51f8-40e2-912a-ec25457de5a2.jpg?1783911244",
+    "name": "Writhing Chrysalis"
+  },
+  "wu scout": {
+    "image": "https://cards.scryfall.io/normal/front/8/d/8d13330f-6e07-451f-b17a-4e1606a74c3f.jpg?1783946119",
+    "name": "Wu Scout"
+  },
+  "young pyromancer": {
+    "image": "https://cards.scryfall.io/normal/front/c/0/c0d74ecd-a595-4012-81b4-083264b40c94.jpg?1783907139",
+    "name": "Young Pyromancer"
+  },
+  "zada, hedron grinder": {
+    "image": "https://cards.scryfall.io/normal/front/4/5/4520cdcc-a10f-4b39-9c6f-ba86f6aa2c87.jpg?1783915638",
+    "name": "Zada, Hedron Grinder"
+  },
+  "zhur-taa swine": {
+    "image": "https://cards.scryfall.io/normal/front/c/e/cef93050-2f24-4c85-a00b-796e53868ac1.jpg?1783940097",
+    "name": "Zhur-Taa Swine"
+  },
+  "zuko": {
+    "image": "https://cards.scryfall.io/normal/front/9/7/97610fa5-4f5d-4395-88bb-8d4c775cebc1.jpg?1783905013",
+    "name": "Zuko"
+  },
+  "👑 abdel adrian, gorion’s ward": {
+    "image": "https://cards.scryfall.io/normal/front/3/9/396f9198-67b6-45d8-91b4-dc853bff9623.jpg?1783922823",
+    "name": "Abdel Adrian, Gorion's Ward"
+  },
+  "👑 akiri, fearless voyager": {
+    "image": "https://cards.scryfall.io/normal/front/f/a/fa135775-abcd-4a21-abb7-3aeb5a39df28.jpg?1783915617",
+    "name": "Akiri, Fearless Voyager"
+  },
+  "👑 disciple of deceit": {
+    "image": "https://cards.scryfall.io/normal/front/f/b/fbfe88fd-9bb9-42af-8134-96fd264b8405.jpg?1783939405",
+    "name": "Disciple of Deceit"
+  },
+  "👑 gretchen titchwillow": {
+    "image": "https://cards.scryfall.io/normal/front/3/c/3c8b248e-1460-4650-9721-85c134c21b89.jpg?1783926448",
+    "name": "Gretchen Titchwillow"
+  },
+  "👑 guidelight pathmaker": {
+    "image": "https://cards.scryfall.io/normal/front/b/2/b2e00cd7-925e-4bab-b064-c96aa2935f8c.jpg?1783907857",
+    "name": "Guidelight Pathmaker"
+  },
+  "👑 hawkeye, young avenger": {
+    "image": "https://cards.scryfall.io/normal/front/3/c/3cebccbb-dde2-41fe-bfdc-0a46ee185749.jpg?1783902930",
+    "name": "Hawkeye, Young Avenger"
+  },
+  "👑 hollow marauder": {
+    "image": "https://cards.scryfall.io/normal/front/d/f/df2913d5-57c7-4f9b-bc96-8a46beef2563.jpg?1783911832",
+    "name": "Hollow Marauder"
+  },
+  "👑 kediss, emberclaw familiar": {
+    "image": "https://cards.scryfall.io/normal/front/f/6/f606ebf1-483d-4331-b16a-9fb6f591a39f.jpg?1783928811",
+    "name": "Kediss, Emberclaw Familiar"
   }
 }

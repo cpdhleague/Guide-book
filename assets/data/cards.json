@@ -1375,9 +1375,17 @@
     "image": "https://cards.scryfall.io/normal/front/e/0/e040b456-9853-4e94-9bf8-9374888168bb.jpg?1783902897",
     "name": "Speedball, New Warrior"
   },
+  "sphinx of the guildpact": {
+    "image": "https://cards.scryfall.io/normal/front/f/3/f31cab5f-c05e-4688-b300-33ab0dd98598.jpg?1783930095",
+    "name": "Sphinx of the Guildpact"
+  },
   "sphinx summoner": {
     "image": "https://cards.scryfall.io/normal/front/a/d/ad955c4d-248b-4468-a975-abad97cf84a4.jpg?1783930124",
     "name": "Sphinx Summoner"
+  },
+  "spider-woman, secret agent": {
+    "image": "https://cards.scryfall.io/normal/front/a/0/a0325cb5-4c43-418a-8f1b-cf5bf29e74d7.jpg?1783902897",
+    "name": "Spider-Woman, Secret Agent"
   },
   "springbloom druid": {
     "image": "https://cards.scryfall.io/normal/front/1/7/17d67b88-3f76-401f-b04a-f2bcaab4aa97.jpg?1787562486",
@@ -1458,5 +1466,69 @@
   "tectonic hazard": {
     "image": "https://cards.scryfall.io/normal/front/5/2/5204c781-f568-4c7f-b3f7-ce4dd678689b.jpg?1783913754",
     "name": "Tectonic Hazard"
+  },
+  "teferi": {
+    "image": "https://cards.scryfall.io/normal/front/c/f/cf979a25-629e-4e92-8e52-87f6a078c724.jpg?1783930754",
+    "name": "Teferi"
+  },
+  "temur battle rage": {
+    "image": "https://cards.scryfall.io/normal/front/3/7/375bc646-942e-4bf5-9c71-2c5471828e35.jpg?1783915640",
+    "name": "Temur Battle Rage"
+  },
+  "terravore": {
+    "image": "https://cards.scryfall.io/normal/front/b/7/b70fbe1c-d3f4-4e28-a830-2072dee1b7b5.jpg?1783918435",
+    "name": "Terravore"
+  },
+  "teshar, ancestor’s apostle": {
+    "image": "https://cards.scryfall.io/normal/front/6/e/6e80198c-cfae-46f9-84cb-584d091014c5.jpg?1783903797",
+    "name": "Teshar, Ancestor's Apostle"
+  },
+  "the brute": {
+    "image": "https://cards.scryfall.io/normal/front/d/3/d3ded8fa-facf-4196-8964-56ebc6424be1.jpg?1783946903",
+    "name": "The Brute"
+  },
+  "the emperor of palamecia": {
+    "image": "https://cards.scryfall.io/normal/front/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg?1783906579",
+    "name": "The Emperor of Palamecia // The Lord Master of Hell"
+  },
+  "the jolly balloon man": {
+    "image": "https://cards.scryfall.io/normal/front/a/3/a3c4e2e0-1c0e-475d-a0f4-1be4216c2bad.jpg?1783909444",
+    "name": "The Jolly Balloon Man"
+  },
+  "the lord master of hell": {
+    "image": "https://cards.scryfall.io/normal/front/3/d/3d75e8fd-6139-4b10-9ce3-195b47d72e0c.jpg?1783906579",
+    "name": "The Emperor of Palamecia // The Lord Master of Hell"
+  },
+  "the ring": {
+    "image": "https://cards.scryfall.io/normal/front/7/2/7215460e-8c06-47d0-94e5-d1832d0218af.jpg?1783916050",
+    "name": "The Ring // The Ring Tempts You"
+  },
+  "thermo-alchemist": {
+    "image": "https://cards.scryfall.io/normal/front/7/8/78b194b3-108a-4152-bd37-52c302e25ad6.jpg?1783908110",
+    "name": "Thermo-Alchemist"
+  },
+  "third path iconoclast": {
+    "image": "https://cards.scryfall.io/normal/front/c/a/ca29f373-7051-4cbe-bda8-e711fda4f9bb.jpg?1783907016",
+    "name": "Third Path Iconoclast"
+  },
+  "thor odinson": {
+    "image": "https://cards.scryfall.io/normal/front/0/e/0e06f730-ae30-4ef2-88b1-073e02afdb25.jpg?1783902895",
+    "name": "Thor Odinson"
+  },
+  "thrill of possibility": {
+    "image": "https://cards.scryfall.io/normal/front/8/8/882b348c-076b-41d8-b505-063480636669.jpg?1783909062",
+    "name": "Thrill of Possibility"
+  },
+  "thunderclap": {
+    "image": "https://cards.scryfall.io/normal/front/b/3/b3f8c5ee-2179-4c05-adc9-0b66d02b59ad.jpg?1783945932",
+    "name": "Thunderclap"
+  },
+  "tiamat's fanatics": {
+    "image": "https://cards.scryfall.io/normal/front/2/7/279c2ec3-abfc-4054-bdd9-3c8fa7d8b426.jpg?1783922728",
+    "name": "Tiamat's Fanatics"
+  },
+  "tinybones pocket nuisance": {
+    "image": "https://cards.scryfall.io/normal/front/2/f/2f47ddf7-35b6-4205-8045-f057914c5f64.jpg?1788329294",
+    "name": "Tinybones, Pocket Nuisance"
   }
 }

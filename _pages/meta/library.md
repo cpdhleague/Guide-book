@@ -71,6 +71,78 @@ header:
       </thead>
       <tbody>
     <tr>
+        <td><a href="https://moxfield.com/decks/yN3MTRw0DEqUtxLO6oktHA" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Dionus, Elvish Archdruid</td>
+        <td>Tryhard Brawl</td>
+        <td>Fies</td>
+        <td>Green</td>
+        <td>Aggro</td>
+        <td data-sort=20260919>2026-09-19</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/PkQNuMRXPESjlT08kVyORQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Vohar, Vodalian Desecrator</td>
+        <td>Tryhard Brawl</td>
+        <td>southlakesvibes</td>
+        <td>Dimir</td>
+        <td>Combo</td>
+        <td data-sort=20260919>2026-09-19</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/bClpiKV4pEWF1nVlL--J5Q" target="_blank" class="btn-decklist">View</a></td>
+        <td>Moritte of the Frost</td>
+        <td>Tryhard Brawl</td>
+        <td>Dukeslayer</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort=20260919>2026-09-19</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/M1ha8GQAe0eiSqxWu38nKA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Esior, Wardwing Familiar // Keleth, Sunmane Familiar</td>
+        <td>Tryhard Brawl</td>
+        <td>Alkadron</td>
+        <td>Azorius</td>
+        <td>Voltron</td>
+        <td data-sort=20260919>2026-09-19</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/YWRSgNbfpUab7I84JaXU9w" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Glaring Fleshraker</td>
+        <td>Hudson Valley PauperEDH 1K II</td>
+        <td>Josh Levine</td>
+        <td>Colorless</td>
+        <td>Combo</td>
+        <td data-sort=20260906>2026-09-06</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/mO1oNur1sUOhNpj09P7mDA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Longshot, Rebel Bowman</td>
+        <td>Hudson Valley PauperEDH 1K II</td>
+        <td>Cody Bologna</td>
+        <td>Red</td>
+        <td>Combo</td>
+        <td data-sort=20260906>2026-09-06</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/KWGfc9jy2UiAeKIC7Eng0g" target="_blank" class="btn-decklist">View</a></td>
+        <td>Third Path Iconoclast</td>
+        <td>Hudson Valley PauperEDH 1K II</td>
+        <td>PurplePenguinJo</td>
+        <td>Izzet</td>
+        <td>Midrange</td>
+        <td data-sort=20260906>2026-09-06</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/o2rymG5DZUyD6FKBMGPTUQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Abdel Adrian, Gorion's Ward // Street Urchin</td>
+        <td>Hudson Valley PauperEDH 1K II</td>
+        <td>Shakur Williams</td>
+        <td>Boros</td>
+        <td>Combo</td>
+        <td data-sort=20260906>2026-09-06</td>
+    </tr>
+    <tr>
         <td><a href="https://moxfield.com/decks/8yugAUNGf3aUit_mX2pnAw" target="_blank" class="btn-decklist">View</a></td>
         <td>👑 Ley Weaver // Lore Weaver</td>
         <td>Burn Book Brawl</td>

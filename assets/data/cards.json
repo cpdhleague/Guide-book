@@ -431,6 +431,10 @@
     "image": "https://cards.scryfall.io/normal/front/b/6/b6a7d041-957a-4b19-9517-214689dadd45.jpg?1783922714",
     "name": "Erinis, Gloom Stalker"
   },
+  "esior, wardwing familiar": {
+    "image": "https://cards.scryfall.io/normal/front/8/6/86958821-76eb-43a5-974b-7c945e826a66.jpg?1783928863",
+    "name": "Esior, Wardwing Familiar"
+  },
   "essence flux": {
     "image": "https://cards.scryfall.io/normal/front/c/9/c94b37df-aaa5-4981-be3b-c934a7971123.jpg?1783908166",
     "name": "Essence Flux"
@@ -782,6 +786,10 @@
   "keen-eyed navigator": {
     "image": "https://cards.scryfall.io/normal/front/5/1/51187cdb-85ee-4f68-9e29-d84d296f0825.jpg?1783913885",
     "name": "Malcolm, Keen-Eyed Navigator"
+  },
+  "keleth, sunmane familiar": {
+    "image": "https://cards.scryfall.io/normal/front/f/c/fc95324a-9a7f-4ed9-a3da-36a3eca91936.jpg?1783915720",
+    "name": "Keleth, Sunmane Familiar"
   },
   "keskit": {
     "image": "https://cards.scryfall.io/normal/front/a/9/a9ecbf55-1f85-4877-a1ea-bf0d90dd9979.jpg?1783917159",
@@ -1639,6 +1647,10 @@
     "image": "https://cards.scryfall.io/normal/front/d/f/dfdce9d1-a163-40e1-a70a-1f09cf400a6c.jpg?1783935509",
     "name": "Vizkopa Guildmage"
   },
+  "vohar, vodalian desecrator": {
+    "image": "https://cards.scryfall.io/normal/front/8/0/807c7812-c108-45a7-a5b2-08cc693bc500.jpg?1783921272",
+    "name": "Vohar, Vodalian Desecrator"
+  },
   "voracious brood": {
     "image": "https://cards.scryfall.io/normal/front/c/4/c441ade4-8a3a-4758-b891-22fd37c97267.jpg?1783903033",
     "name": "Voracious Brood"
@@ -1731,9 +1743,17 @@
     "image": "https://cards.scryfall.io/normal/front/f/a/fa135775-abcd-4a21-abb7-3aeb5a39df28.jpg?1783915617",
     "name": "Akiri, Fearless Voyager"
   },
+  "👑 dionus, elvish archdruid": {
+    "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
+    "name": "Dionus, Elvish Archdruid"
+  },
   "👑 disciple of deceit": {
     "image": "https://cards.scryfall.io/normal/front/f/b/fbfe88fd-9bb9-42af-8134-96fd264b8405.jpg?1783939405",
     "name": "Disciple of Deceit"
+  },
+  "👑 glaring fleshraker": {
+    "image": "https://cards.scryfall.io/normal/front/8/0/80c2a3c7-1486-4ff9-88ec-79ec67a437f8.jpg?1783911308",
+    "name": "Glaring Fleshraker"
   },
   "👑 gretchen titchwillow": {
     "image": "https://cards.scryfall.io/normal/front/3/c/3c8b248e-1460-4650-9721-85c134c21b89.jpg?1783926448",

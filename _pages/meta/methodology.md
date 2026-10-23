@@ -48,7 +48,7 @@ The table below shows what your rating would be based on your win rate against s
 We believe in transparency. You can view the raw data we use on our backend at the link below.
 
 <div style="text-align: center; margin: 2em 0;">
-  <a href="https://docs.google.com/spreadsheets/d/1URtAdCkQXfT7Jk_YEVtPLY3n11ciBCLhKu_7x-9VNu4/edit?usp=sharing" class="btn btn--primary btn--large" target="_blank">📂 Access Raw Data Sheet</a>
+  <a href="https://docs.google.com/spreadsheets/d/1URtAdCkQXfT7Jk_YEVtPLY3n11ciBCLhKu_7x-9VNu4/edit?usp=sharing" class="btn btn--primary btn--large" target="_blank">Access Raw Data Sheet</a>
 </div>
 
 ---

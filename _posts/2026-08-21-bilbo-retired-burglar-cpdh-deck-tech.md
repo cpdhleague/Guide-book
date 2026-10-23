@@ -19,12 +19,12 @@ archive_only: false
 gnews: false
 
 # TODO: Replace with a real image (Bilbo card art or deck photo)
-image: /assets/images/bilbo-decktech.png
+image: /assets/images/bilbo-decktech.jpg
 
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/bilbo-decktech.png
+  teaser: /assets/images/bilbo-decktech.jpg
 
 excerpt: ""  # Required for GNews
 

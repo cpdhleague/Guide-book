@@ -1,13 +1,44 @@
-<!-- Google Fonts — Rajdhani (display), Outfit (body), JetBrains Mono (code) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Fonts are self-hosted. The @font-face rules live in assets/css/main.scss
+     and the files in assets/fonts/. Nothing is fetched from Google any more,
+     so the two preconnects that used to sit here are gone.
 
-<!-- Mana Font — MTG mana symbols for inline use in articles -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mana-font@latest/css/mana.min.css">
+     These three faces are used on every page, so we preload them: the download
+     starts immediately rather than waiting for the browser to parse the
+     stylesheet and discover them. Paired with font-display: optional, that is
+     what removes the flash of wrong-looking text without ever blocking paint.
 
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/png" href="/assets/images/logo-final.png">
+     JetBrains Mono is deliberately NOT preloaded — it is only used on pages
+     with monospaced text, and those pages fetch it on demand.
+
+     crossorigin is required on font preloads even for same-origin files;
+     without it the browser fetches the file twice. -->
+<link rel="preload" href="/assets/fonts/outfit-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/rajdhani-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/rajdhani-700.woff2" as="font" type="font/woff2" crossorigin>
+<!-- Mana Font — MTG mana symbols for inline use in articles.
+
+     Loaded only where mana symbols can appear. It is 46KB of CSS plus its own
+     font files from a third domain, and the homepage, events and resources
+     pages render no mana symbols at all — they were paying for it anyway.
+
+     Posts and previews get it automatically. Any other page that needs it can
+     opt in with `mana: true` in its front matter.
+
+     Pinned to an exact version. On @latest, jsDelivr would serve whatever ships
+     next, whenever that happens, with no warning and no way to roll back. -->
+{% if page.collection == 'posts' or page.collection == 'previews' or page.mana %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mana-font@1.18.0/css/mana.min.css">
+{% endif %}
+
+<!-- Favicon.
+     This used to point at logo-final.png — 812x850 and 1.2MB — which every
+     browser downloaded in full to draw a 16-pixel tab icon, on every page.
+     favicon.ico is 15KB and packs 16/32/48/64 into one file so each device
+     takes the size it needs. logo-final.png is untouched and still used
+     wherever the full-size mark belongs. -->
+<link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/images/favicon-64.png" sizes="64x64">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
 {% if page.collection == 'previews' or page.noindex %}
 <!-- Draft preview — keep out of search engines -->
@@ -420,6 +451,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 </script>
+
+<!-- Link usage tracking — see _includes/click-tracking.html -->
+{% include click-tracking.html %}
 
 <!-- Cloudflare Web Analytics -->
 <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7616fb8f1cbc4a2caea8bdb6774527ec"}'></script>

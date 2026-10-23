@@ -35,11 +35,27 @@
         {% assign cache_key = card_name | downcase %}
       {% endif %}
       {% assign cached = site.data.cards[cache_key] %}
+    {% comment %}
+      width/height are the intrinsic size of a Scryfall "normal" scan. They
+      reserve the right box before the image arrives, so the article stops
+      reflowing as each card loads. CSS still sets the displayed size.
+
+      onerror covers the case where a cached Scryfall URL has gone stale
+      (a reprint changes the id, and the old URL 404s). Rather than leaving a
+      broken image, the browser retries once through our Worker, which
+      re-resolves the name against Scryfall. That is the usual reason a card
+      or two would fail while the rest of the page was fine.
+    {% endcomment %}
+    {% capture worker_url %}https://cards.cpdh.guide/card-image?name={{ card_name | url_encode }}{% if opt == 'back' %}&face=back{% elsif opt == 'token' %}&token=true{% endif %}{% endcapture %}
     <figure class="gallery-item">
       {% if cached and cached.image %}
-      <img src="{{ cached.image }}" alt="{{ cached.name | default: card_name }}" loading="lazy">
+      <img src="{{ cached.image }}" alt="{{ cached.name | default: card_name }}"
+           loading="lazy" decoding="async" width="488" height="680"
+           data-fallback="{{ worker_url }}"
+           onerror="if(!this.dataset.retried){this.dataset.retried=1;this.src=this.dataset.fallback;}">
       {% else %}
-      <img src="https://cards.cpdh.guide/card-image?name={{ card_name | url_encode }}{% if opt == 'back' %}&face=back{% elsif opt == 'token' %}&token=true{% endif %}" alt="{{ card_name }}" loading="lazy">
+      <img src="{{ worker_url }}" alt="{{ card_name }}"
+           loading="lazy" decoding="async" width="488" height="680">
       {% endif %}
     </figure>
     {% endif %}
@@ -48,5 +64,5 @@
 
 <style>
 .gallery { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.gallery-item img { max-width: 200px; border-radius: 4.75% / 3.5%; }
+.gallery-item img { max-width: 200px; height: auto; border-radius: 4.75% / 3.5%; }
 </style>

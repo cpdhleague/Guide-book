@@ -36,12 +36,12 @@ gnews: false
 # TODO: Replace placeholder with a real image once available.
 # A card image or tournament photo of Guidelight Pathmaker would work well.
 
-image: /assets/images/pathmaker-decktech.png
+image: /assets/images/pathmaker-decktech.jpg
 
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/pathmaker-decktech.png
+  teaser: /assets/images/pathmaker-decktech.jpg
 
 # ===========================================================================
 # SECTION 4: EXCERPT

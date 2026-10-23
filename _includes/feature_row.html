@@ -24,10 +24,22 @@
         {% if item.image_path %}
           <div class="feature__item-image">
             <a href="{{ item.url | relative_url }}" class="feature__item-image-link">
+              {% comment %}
+                width/height let the browser reserve the 16:9 box before the
+                image arrives, so the cards below stop jumping as each one
+                loads. The CSS still controls the rendered size — these are
+                only the intrinsic ratio. The first card is the largest thing
+                in the viewport on load, so it stays eager; everything after
+                it waits until it is nearly on screen.
+              {% endcomment %}
               <img
                 src="{{ item.image_path | relative_url }}"
                 alt="{{ item.alt | escape }}"
                 class="feature__item-image"
+                width="1200"
+                height="675"
+                decoding="async"
+                {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
               >
             </a>
           </div>

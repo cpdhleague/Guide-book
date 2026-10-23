@@ -66,4 +66,100 @@
   link: "https://topdeck.gg/event/wanderers-pdh-league-finals-year-2"
   description: "By invitation only. The top 16 performers from Wanderer's PDH League Year 2 (2026) will be invited to compete for cash prizes, trophies, and glory."
 
-# Add your next event below this line:
+- title: "Rule Break Month Event - Creatures on the Back"
+  date: 2027-01-09
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Free Rule Break Month event! Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier I"
+  date: 2027-02-13
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier II"
+  date: 2027-03-13
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Pauper Duel Commander Tournament"
+  date: 2027-04-10
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Free event in Pauper Duel Commander, one of PDH's adjacent formats. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier III"
+  date: 2027-05-08
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier IV"
+  date: 2027-06-12
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Rule Break Month Event - All Rules Are Broken"
+  date: 2027-07-10
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Free Rule Break Month event! Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier V"
+  date: 2027-08-14
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier VI"
+  date: 2027-09-11
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Pauper Oathbreaker Tournament"
+  date: 2027-10-09
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Free event in Pauper Oathbreaker, one of PDH's adjacent formats. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's cPDH Tournament - Qualifier VII"
+  date: 2027-11-13
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's Commander Clash 2027 - Qualifier VIII"
+  date: 2027-12-11
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Season 3 qualifier. For our end of year event, each commander must have seen its first printing in 2027. The winner earns a seat at the Wanderer's League Invitational Finals. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Rule Break Month Event"
+  date: 2028-01-08
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "Free Rule Break Month event. Starts 9:00 AM US Central. Details on Topdeck.gg."
+
+- title: "Wanderer's PDH League - Season 3 Finals"
+  date: 2028-01-15
+  location: "CPDH.guide Discord Server"
+  online: true
+  link: ""
+  description: "By invitation only. The top 8 from the Season 3 leaderboard and the winners of the season's eight qualifying tournaments compete for cash prizes, trophies, and glory. Details on Topdeck.gg."

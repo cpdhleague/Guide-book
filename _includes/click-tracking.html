@@ -1,0 +1,79 @@
+<!-- ===========================================================================
+     LINK USAGE TRACKING
+
+     Counts clicks on a small, explicit list of links so we can decide at the
+     end of the year whether they earn their keep. Right now that is the five
+     footer social icons (which cost ~344KB of Font Awesome between them) and
+     the masthead logo.
+
+     Why it works this way:
+
+     - One listener on <document>, matching links by href. The footer and
+       masthead are rendered by the Minimal Mistakes theme, so we cannot add
+       attributes to them without forking those templates. Matching on href
+       keeps the theme untouched.
+
+     - navigator.sendBeacon, not fetch. These are outbound links: the page is
+       being torn down as the request goes out, and a normal fetch gets
+       cancelled. sendBeacon is queued by the browser and survives navigation.
+
+     - The body is sent as text/plain. An application/json beacon would trigger
+       a CORS preflight, and a preflight cannot complete during unload.
+
+     - We send a label and the page path. No identifiers, no cookies, nothing
+       about the visitor. Do Not Track is honoured.
+
+     To stop tracking something, delete its line from TRACKED.
+     To track something new, add a line: [match, label].
+     =========================================================================== */ -->
+<script>
+(function () {
+  'use strict';
+
+  if (navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
+
+  var ENDPOINT = 'https://cards.cpdh.guide/click';
+
+  // [substring to look for in the href, label stored in the database]
+  // Order matters: the first match wins.
+  var TRACKED = [
+    ['youtube.com/@cPDH',            'footer-youtube'],
+    ['discord.com/invite',           'footer-discord'],
+    ['reddit.com/r/PauperEDH',       'footer-reddit'],
+    ['moxfield.com/users/cpdhlists', 'footer-moxfield'],
+    ['/feed.xml',                    'footer-rss']
+  ];
+
+  function labelFor(a) {
+    // The masthead has two separate links to the homepage: a.site-logo wraps
+    // the logo-final.png image, a.site-title is the CPDH.guide wordmark. They
+    // are counted apart so we can tell whether the image is doing any work or
+    // whether people only ever click the text.
+    if (a.closest) {
+      if (a.closest('.site-logo'))  return 'masthead-logo';
+      if (a.closest('.site-title')) return 'masthead-wordmark';
+    }
+
+    var href = a.getAttribute('href') || '';
+    for (var i = 0; i < TRACKED.length; i++) {
+      if (href.indexOf(TRACKED[i][0]) !== -1) return TRACKED[i][1];
+    }
+    return null;
+  }
+
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+
+    var label = labelFor(a);
+    if (!label) return;
+
+    try {
+      var body = JSON.stringify({ label: label, path: location.pathname });
+      navigator.sendBeacon(ENDPOINT, new Blob([body], { type: 'text/plain' }));
+    } catch (err) {
+      // Tracking must never interfere with the click itself.
+    }
+  }, true);
+})();
+</script>

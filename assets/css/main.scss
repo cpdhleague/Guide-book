@@ -6,6 +6,72 @@
 @import "minimal-mistakes";
 
 /* ===========================================================================
+   SELF-HOSTED WEBFONTS
+   Served from our own origin instead of fonts.googleapis.com. That removes
+   two third-party connections and a dependent chain: the browser used to
+   fetch Google's CSS, parse it, and only then discover that the font files
+   lived on a third domain it had not yet reached.
+
+   font-display: optional means the browser waits about 100ms for a face and
+   then gives up for that pageview rather than repainting text in a different
+   font partway through. That repaint was the flash of wrong-looking type.
+
+   Outfit and JetBrains Mono are variable fonts, so one file covers the whole
+   weight range below. Rajdhani is not, so each weight is a separate file and
+   we ship only the two that this stylesheet actually uses.
+
+   A family declared here costs nothing until a rule asks for it, so
+   JetBrains Mono is not downloaded on pages with no monospaced text.
+
+   unicode-range is the Latin subset only, matching the files we ship.
+
+   All three families are under the SIL Open Font License 1.1.
+   See assets/fonts/OFL.txt.
+   =========================================================================== */
+
+$latin: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+
+/* Outfit — body text */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: optional;
+  src: url('/assets/fonts/outfit-variable.woff2') format('woff2');
+  unicode-range: $latin;
+}
+
+/* Rajdhani — headings, nav, buttons */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+  src: url('/assets/fonts/rajdhani-600.woff2') format('woff2');
+  unicode-range: $latin;
+}
+
+/* Rajdhani — hero titles, section labels */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url('/assets/fonts/rajdhani-700.woff2') format('woff2');
+  unicode-range: $latin;
+}
+
+/* JetBrains Mono — code and tabular data */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: optional;
+  src: url('/assets/fonts/jetbrains-mono-variable.woff2') format('woff2');
+  unicode-range: $latin;
+}
+
+/* ===========================================================================
    CPDH.GUIDE — "ARCANE EDITION" DESIGN SYSTEM
    Mirrors the app.cpdh.guide design system (Tailwind) but with:
      - Primary: arcane (purple) instead of ember (orange)
@@ -117,16 +183,19 @@ body::before {
     linear-gradient(to right, rgba(124,58,237,0.07), transparent);
 }
 
+/* Mirrors the left gutter. This used to be ember-tinted, which was the only
+   place the orange secondary appeared at full width — now both sides use the
+   same arcane purple. */
 body::after {
   right: 0;
   background:
     repeating-linear-gradient(
       45deg,
       transparent, transparent 8px,
-      rgba(255,107,53,0.03) 8px,
-      rgba(255,107,53,0.03) 9px
+      rgba(124,58,237,0.04) 8px,
+      rgba(124,58,237,0.04) 9px
     ),
-    linear-gradient(to left, rgba(255,107,53,0.05), transparent);
+    linear-gradient(to left, rgba(124,58,237,0.07), transparent);
 }
 
 /* z-index stacking */
@@ -435,7 +504,7 @@ img.feature__item-image {
   content: '';
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, var(--border-accent), transparent);
+  background: var(--primary);
 }
 
 
@@ -454,13 +523,13 @@ img.feature__item-image {
   overflow: hidden;
 }
 
-/* Gradient top bar: arcane → ember (the text-gradient swap) */
+/* Accent bar across the top of the welcome panel. */
 .home-welcome::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
   height: 3px;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: var(--primary);
 }
 
 .home-welcome h2 {
@@ -470,11 +539,11 @@ img.feature__item-image {
   font-weight: 700;
   margin-top: 0;
   border-bottom: none;
-  /* text-gradient: arcane → ember */
-  background: linear-gradient(135deg, var(--primary-glow), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* Flat accent purple. Uses --primary-glow rather than --primary because
+     #7c3aed on the panel's dark fill is too low-contrast to read as a
+     heading; --primary-glow is the same purple the section labels and link
+     text already use. */
+  color: var(--primary-glow);
 }
 
 
@@ -536,26 +605,23 @@ img.feature__item-image {
 
 
 /* ===================================================================
-   TEXT GRADIENT
-   App: ember → gold. Guide: arcane → ember.
+   ACCENT TEXT
+   Was a clipped arcane → ember gradient. Now flat accent purple.
+   The class name is kept so existing markup keeps working.
    =================================================================== */
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-glow);
 }
 
 
 /* ===================================================================
    READING PROGRESS BAR
-   Arcane → ember gradient
    =================================================================== */
 .reading-progress {
   position: fixed;
   top: 0; left: 0;
   height: 3px;
-  background: linear-gradient(to right, var(--primary), var(--secondary));
+  background: var(--primary);
   z-index: 9999;
   transition: width 0.1s linear;
 }
@@ -977,6 +1043,38 @@ table.library-table tbody td {
   background: var(--primary-dim);
   border: 1px solid var(--border-accent);
   color: var(--primary-glow);
+}
+
+
+/* ===================================================================
+   INLINE ICONS
+   SVGs live in _includes/icons/ and are pasted into the page at build
+   time with {% include icons/<name>.svg %}. No webfont, no extra
+   request. Sized in em so an icon tracks the text it sits beside, and
+   filled with currentColor so it takes that text's colour.
+   =================================================================== */
+.ico {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  vertical-align: -0.2em;
+  margin-right: 0.35em;
+  flex-shrink: 0;
+}
+.ico svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* Brand marks belong to someone else, so they keep their own colours
+   instead of inheriting ours. Same metrics as .ico so they line up. */
+.ico--brand {
+  height: 1.15em;
+  width: auto;
+  vertical-align: -0.2em;
+  margin-right: 0.35em;
 }
 
 

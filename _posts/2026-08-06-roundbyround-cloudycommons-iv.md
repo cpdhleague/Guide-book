@@ -35,12 +35,12 @@ gnews: false
 # ===========================================================================
 # TODO: Confirm image path once the thumbnail from Ethan is uploaded to /assets/images/.
 
-image: /assets/images/ccciv.png
+image: /assets/images/ccciv.jpg
 
 header:
   overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
-  teaser: /assets/images/ccciv.png
+  teaser: /assets/images/ccciv.jpg
 
 # ===========================================================================
 # SECTION 4: EXCERPT

@@ -49,10 +49,10 @@ header:
 </style>
 
 <nav class="cpdh-nav">
-  <a href="{{ '/meta/' | relative_url }}">📊 Meta</a>
-  <a href="{{ '/library/' | relative_url }}" class="active">🏆 Decklist Library</a>
-  <a href="{{ '/meta/top10timeline/' | relative_url }}">📈 Timelines</a>
-  <a href="{{ '/meta/seeyourstats/' | relative_url }}">🔎 Player Data</a>
+  <a href="{{ '/meta/' | relative_url }}">Meta</a>
+  <a href="{{ '/library/' | relative_url }}" class="active">Decklist Library</a>
+  <a href="{{ '/meta/top10timeline/' | relative_url }}">Timelines</a>
+  <a href="{{ '/meta/seeyourstats/' | relative_url }}">Player Data</a>
 </nav>
 
 <div class="library-wrapper">

@@ -40,17 +40,19 @@ header:
       <h3 class="event-card__title">{{ event.title }}</h3>
       <div class="event-card__location">
         {% if event.online %}
-          <span class="event-badge event-badge--online">🖥 Online</span>
+          <span class="event-badge event-badge--online"><span class="ico">{% include icons/online.svg %}</span>Online</span>
           {{ event.location }}
         {% else %}
-          <span class="event-badge event-badge--local">📍</span>
+          <span class="event-badge event-badge--local"><span class="ico" style="margin-right:0">{% include icons/location.svg %}</span></span>
           {{ event.location }}
         {% endif %}
       </div>
       {% if event.description %}
         <p class="event-card__desc">{{ event.description }}</p>
       {% endif %}
-      {% if event.link %}
+      {% comment %} Empty strings are truthy in Liquid, so a placeholder link: ""
+         would render a button pointing at nothing. Test for both. {% endcomment %}
+      {% if event.link and event.link != "" %}
         <a href="{{ event.link }}" class="btn btn--primary" target="_blank" rel="noopener">Details / Info</a>
       {% endif %}
     </div>
@@ -79,12 +81,12 @@ header:
       <h3 class="event-card__title">{{ event.title }}</h3>
       <div class="event-card__location">
         {% if event.online %}
-          🖥 Online — {{ event.location }}
+          <span class="ico">{% include icons/online.svg %}</span>Online &mdash; {{ event.location }}
         {% else %}
-          📍 {{ event.location }}
+          <span class="ico">{% include icons/location.svg %}</span>{{ event.location }}
         {% endif %}
       </div>
-      {% if event.link %}
+      {% if event.link and event.link != "" %}
         <a href="{{ event.link }}" class="btn btn--inverse" target="_blank" rel="noopener">View Details</a>
       {% endif %}
     </div>

@@ -2,9 +2,14 @@
 
 Drop downloaded `.svg` files here, one icon per file.
 
-Jekyll inlines them into the page at build time:
+Jekyll inlines them into the page at build time. Wrap an include tag naming
+the file in a `span.ico`, the way the resources cards in `_pages/resources.md`
+do — copy the markup from there.
 
-    <span class="ico">{% include icons/trophy.svg %}</span>
+The tag is deliberately not written out in this file. `_config.yml`
+force-publishes `_includes/`, so this README can end up being rendered, and a
+Liquid include tag inside a fenced code block is still executed. That breaks
+the build.
 
 The `.ico` wrapper (defined in `assets/css/main.scss`) sizes the icon in
 `em` so it tracks the text beside it, and the SVG's `fill="currentColor"`

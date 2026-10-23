@@ -1049,9 +1049,12 @@ table.library-table tbody td {
 /* ===================================================================
    INLINE ICONS
    SVGs live in _includes/icons/ and are pasted into the page at build
-   time with {% include icons/<name>.svg %}. No webfont, no extra
-   request. Sized in em so an icon tracks the text it sits beside, and
-   filled with currentColor so it takes that text's colour.
+   time by an include tag naming the file. No webfont, no extra request.
+   Sized in em so an icon tracks the text it sits beside, and filled with
+   currentColor so it takes that text's colour. See _includes/icons/README.md
+   for the exact syntax — it cannot be written here, because this file has
+   front matter and Jekyll runs Liquid over it, so an include tag in a CSS
+   comment is still executed.
    =================================================================== */
 .ico {
   display: inline-block;

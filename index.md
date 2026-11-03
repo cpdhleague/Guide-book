@@ -80,14 +80,10 @@ header:
 
 <h2>Welcome to CPDH.guide</h2>
 
-Compete in the ultimate Pauper Commander experience. Our year-long, ELO-based league
-is designed for agility — dynamic ranking means new challengers can storm the
-leaderboard at any time. Beyond the ladder, level up your game with our expert
-articles and live data, or connect with fellow brewers in our Discord. Whether
-you're here to study the meta or join the fray, the path to victory is open.
+Founded in 2020, cPDH.guide has gone through a few iterations. While our name may have changed, our goal to gather and disseminate detailed information for the betterment of the Pauper Commander format and its communities. In recent years, we have expanded our goals to facilitating events in addition to tracking external tournaments results. If this is your first time here, we hope you'll join in the fray. 
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5em;">
-  <a href="https://app.cpdh.guide" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Join the League</a>
+  <a href="https://app.cpdh.guide" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Join our League</a>
   <a href="/meta/" class="btn btn--inverse">Explore the Meta</a>
   <a href="/articles/" class="btn btn--inverse">Read Articles</a>
   <a href="/resources/" class="btn btn--inverse">Resources</a>

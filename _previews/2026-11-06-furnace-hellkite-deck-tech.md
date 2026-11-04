@@ -5,7 +5,10 @@
 
 title: "Furnace Hellkite - cPDH Deck Tech"
 
-date: 2026-11-06
+# DATE: Must be today or earlier while in _previews/ — Jekyll will not build
+# future-dated documents, and the preview will 404. Set the real publish date
+# (2026-11-06) when you move this file into _posts/.
+date: 2026-11-04
 
 layout: splash
 classes: wide
@@ -115,8 +118,6 @@ We want our commander down on turn three, and if it has to come down on turn fou
 ## Card Considerations
 
 I keep [[Pyroblast]] and [[Red Elemental Blast]] in the deckbox for competitive events where blue is more prevalent — I'd recommend them for any tournament setting.
-
-I've recently taken <!-- TODO: this sentence is unfinished -->
 
 There's probably a way to build this deck that's even slower and can lean even more into value artifacts, especially over time as more artifacts that better fit the deck come out. I've built the deck with very specific goals in mind, and I'm curious to see how it varies in the hands of differently-minded brewers.
 

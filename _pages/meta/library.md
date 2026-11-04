@@ -71,6 +71,42 @@ header:
       </thead>
       <tbody>
     <tr>
+        <td><a href="https://moxfield.com/decks/hqShAaRdY3m7Je_dKe4s0A" target="_blank" class="btn-decklist">View</a></td>
+        <td>👑 Rocco, Cabaretti Caterer</td>
+        <td>Enola Classic VI</td>
+        <td>Dadgic</td>
+        <td>Naya</td>
+        <td>Combo</td>
+        <td data-sort=20261025>2026-10-25</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/KAFJ45bj6kqVV7YW1IO_JA" target="_blank" class="btn-decklist">View</a></td>
+        <td>Karolina Dean, Runaway</td>
+        <td>Enola Classic VI</td>
+        <td>Kevin W</td>
+        <td>WUBRG</td>
+        <td>Combo</td>
+        <td data-sort=20261025>2026-10-25</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/j6ShARDESne89ypaTiCj1g" target="_blank" class="btn-decklist">View</a></td>
+        <td>Gretchen Titchwillow</td>
+        <td>Enola Classic VI</td>
+        <td>Milan K</td>
+        <td>Simic</td>
+        <td>Combo</td>
+        <td data-sort=20261025>2026-10-25</td>
+    </tr>
+    <tr>
+        <td><a href="https://moxfield.com/decks/j6ShAa1b5nmqgU5eiCimUQ" target="_blank" class="btn-decklist">View</a></td>
+        <td>Alexios, Deimos of Kosmos</td>
+        <td>Enola Classic VI</td>
+        <td>benlivinlife</td>
+        <td>Red</td>
+        <td>Voltron</td>
+        <td data-sort=20261025>2026-10-25</td>
+    </tr>
+    <tr>
         <td><a href="https://moxfield.com/decks/yN3MTRw0DEqUtxLO6oktHA" target="_blank" class="btn-decklist">View</a></td>
         <td>👑 Dionus, Elvish Archdruid</td>
         <td>Tryhard Brawl</td>

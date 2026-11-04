@@ -80,13 +80,13 @@ header:
 
 <h2>Welcome to CPDH.guide</h2>
 
-Founded in 2020, cPDH.guide has gone through a few iterations. While our name may have changed, our goal to gather and disseminate detailed information for the betterment of the Pauper Commander format and its communities. In recent years, we have expanded our goals to facilitating events in addition to tracking external tournaments results. If this is your first time here, we hope you'll join in the fray. 
+Founded in 2020, cPDH.guide has gone through a few iterations. While our name may have changed, our goal has remained the gathering and dissemination of competitive data for the betterment of the Pauper Commander format and its communities. In recent years, we have expanded our goals to facilitating events in addition to tracking external tournaments. We hope to see you on the battlefield at one of our events soon!
 
 <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5em;">
   <a href="https://app.cpdh.guide" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Join our League</a>
   <a href="/meta/" class="btn btn--inverse">Explore the Meta</a>
   <a href="/articles/" class="btn btn--inverse">Read Articles</a>
-  <a href="/resources/" class="btn btn--inverse">Resources</a>
+  <a href="/events/" class="btn btn--inverse">View Upcoming Events</a>
 </div>
 
 </div>

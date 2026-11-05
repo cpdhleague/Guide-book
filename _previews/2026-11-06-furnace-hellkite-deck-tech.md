@@ -107,7 +107,7 @@ Lastly, we have some trample enablers. Trample really isn't that important, so w
 
 ## Opening Hands
 
-We want our commander down on turn three, and if it has to come down on turn four, try to ensure it has haste. Select your opening hand based on this pathway.
+We want our commander down on turn three. If it has to come down on turn four, try to ensure it has haste. Mulligan for your opening hand based on how quickly you can get Furnace Hellkite on the battlefield.
 
 ## Card Considerations
 

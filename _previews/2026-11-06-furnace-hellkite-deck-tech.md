@@ -75,8 +75,6 @@ Part of what makes Hellkite successful is how many deck slots we can preserve th
 
 **Firebreathing** means we don't run pump spells — it's already built in!
 
-{% include card-grid.html cards="Myr Enforcer; Sojourner's Companion; Darksteel Citadel; Great Furnace" %}
-
 ## Deck Composition
 
 ### 1. Artifacts
@@ -99,7 +97,7 @@ Double strike is very strong and helps us take a player out in a single turn, bu
 
 Lastly, we have some trample enablers. Trample really isn't that important, so we only run it incidentally — such as [[Lightning Spear]], which is also removal. I will highlight [[Barge In]] here, which is an underrated card with midrange/aggro decks in your pod. You don't have to use this on your own creatures, and being able to help another player push damage on one of your opponents can create unexpected scenarios where the non-red deck suddenly has a board full of tramplers.
 
-{% include card-grid.html cards="Carnelian Orb of Dragonkind; Dragon Breath; Crystal Slipper; Brass Knuckles; Lightning Spear; Barge In" %}
+{% include card-grid.html cards="Carnelian Orb of Dragonkind; Dragon Breath; Brass Knuckles; Lightning Spear; Barge In" %}
 
 ## Gameplay Pattern Notes
 
@@ -112,8 +110,6 @@ Lastly, we have some trample enablers. Trample really isn't that important, so w
 ## Opening Hands
 
 We want our commander down on turn three, and if it has to come down on turn four, try to ensure it has haste. Select your opening hand based on this pathway.
-
-{% include card-grid.html cards="Darksteel Citadel; Great Furnace; Arcane Signet" %}
 
 ## Card Considerations
 

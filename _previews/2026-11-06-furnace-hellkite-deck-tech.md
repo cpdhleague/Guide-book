@@ -40,7 +40,7 @@ gnews: false
 image: /assets/images/hellkite-deck-tech.png
 
 header:
-  overlay_image: /assets/images/hellkite-deck-tech.png
+  overlay_image: /assets/images/header2025-1.png
   overlay_filter: 0.5
   teaser: /assets/images/hellkite-deck-tech.png
 

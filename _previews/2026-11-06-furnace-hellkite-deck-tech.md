@@ -105,8 +105,6 @@ Lastly, we have some trample enablers. Trample really isn't that important, so w
 
 **Don't try to kill everyone quickly.** Part of why the turbo-voltron decks I mentioned in the intro don't work is that it takes at least three turns to kill all of your opponents, and that's assuming no interaction with your commander. The math doesn't reward it. We know it's going to take a little time, so sit back and allow other players to develop without trying to stop everything — only prevent wins and game-ending combos. You're also more likely to land your double strike spells the turn after a big counterspell war, so waiting for the opportune moments to take out your opponents is wise.
 
-{% include card-grid.html cards="Prized Statue; Impulsive Pilferer; Unexpected Windfall" %}
-
 ## Opening Hands
 
 We want our commander down on turn three, and if it has to come down on turn four, try to ensure it has haste. Select your opening hand based on this pathway.

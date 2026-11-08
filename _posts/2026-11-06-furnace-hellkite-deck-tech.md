@@ -79,7 +79,7 @@ Part of what makes Hellkite successful is how many deck slots we can preserve th
 
 ### 1. Artifacts
 
-This is our build-around category. Since we rely on artifacts to discount our commander and keep it affordable throughout the game, I firmly believe at least half of the cards in the deck should either be artifacts or create artifacts. There are also a few artifact generators we can run in red — [[Beamtown Beatstick]], [[Hoarding Ogre]], [[Goldvein Pick]], [[Shiny Impetus]] — to help us stockpile.
+This is our primary build-around category. Since we rely on artifacts to discount our commander and keep it affordable throughout the game, I firmly believe at least half of the cards in the deck should either be artifacts or create artifacts. There are also a few artifact generators we can run in red — [[Beamtown Beatstick]], [[Hoarding Ogre]], [[Goldvein Pick]], [[Shiny Impetus]] — to help us stockpile.
 
 {% include card-grid.html cards="Beamtown Beatstick; Hoarding Ogre; Goldvein Pick; Shiny Impetus" %}
 
@@ -91,7 +91,7 @@ We have a preference for the artifacts with removal on them. They come in early 
 
 ### 3. Voltron Pieces
 
-Haste is most of it. As life points dwindle, players are going to have many a reason to remove your Dragon, and haste lets us get right back in the action. Most of our haste is stapled to artifacts so it feeds affinity. The two best don't cost us anything at all: [[Carnelian Orb of Dragonkind]] and [[Dragon Breath]].
+Haste is probably the most Voltron piece to have in your opening hand. As life points dwindle, players are going to have many a reason to remove your Dragon, and haste lets us get right back in the action. Most of our haste is stapled to artifacts so it feeds affinity. The two best haste enablers don't require any additional costs to be paid on the turns Hellkite enters the battlefield: [[Carnelian Orb of Dragonkind]] and [[Dragon Breath]].
 
 Double strike is very strong and helps us take a player out in a single turn, but we only have a handful of spells that provide this buff. Most of the time our voltron kills will be more drawn out over a few turns.
 

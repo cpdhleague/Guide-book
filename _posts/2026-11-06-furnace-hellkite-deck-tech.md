@@ -8,7 +8,7 @@ title: "Furnace Hellkite - cPDH Deck Tech"
 # DATE: Must be today or earlier while in _previews/ — Jekyll will not build
 # future-dated documents, and the preview will 404. Set the real publish date
 # (2026-11-06) when you move this file into _posts/.
-date: 2026-11-04
+date: 2026-11-06
 
 layout: splash
 classes: wide
@@ -101,7 +101,7 @@ Lastly, we have some trample enablers. Trample really isn't that important, so w
 
 ## Gameplay Pattern Notes
 
-**Stockpile Treasure.** It may be tempting to spend it early for tempo, but it keeps your commander cheap early in the game by simply existing, and you can save it for the late game to pay the heftier costs on your artifact abilities — or for dire situations when someone attempts to win.
+**Stockpile Treasure.** It may be tempting to spend it early for tempo, but it keeps your commander cheap early in the game by simply existing, and you can save it for the late game to pay the heftier costs on your artifact abilities.
 
 {% include card-grid.html cards="Prized Statue; Impulsive Pilferer; Unexpected Windfall" %}
 

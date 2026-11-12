@@ -255,9 +255,17 @@
     "image": "https://cards.scryfall.io/normal/front/2/7/27924c2f-756c-42af-9830-18a5a2735137.jpg?1783902977",
     "name": "Captain Mar-Vell, Space-Born"
   },
+  "careful study": {
+    "image": "https://cards.scryfall.io/normal/front/d/e/dea15b53-2940-40e7-8d48-8ec11341da83.jpg?1783945264",
+    "name": "Careful Study"
+  },
   "carnelian orb of dragonkind": {
     "image": "https://cards.scryfall.io/normal/front/6/d/6db2741d-2722-4eb7-b09d-0d81649c7ca2.jpg?1787562802",
     "name": "Carnelian Orb of Dragonkind"
+  },
+  "cartouche of knowledge": {
+    "image": "https://cards.scryfall.io/normal/front/d/6/d68158bf-07c1-43a6-b6e9-bf5f5614b95f.jpg?1783908775",
+    "name": "Cartouche of Knowledge"
   },
   "channel": {
     "image": "https://cards.scryfall.io/normal/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1783935522",
@@ -306,6 +314,10 @@
   "crypt rats": {
     "image": "https://cards.scryfall.io/normal/front/9/6/96916db2-5121-4ff1-880c-369744f11ecf.jpg?1783933130",
     "name": "Crypt Rats"
+  },
+  "cryptic serpent": {
+    "image": "https://cards.scryfall.io/normal/front/7/f/7f1af32a-dba2-4c2f-b0ee-9c83849fda53.jpg?1783915703",
+    "name": "Cryptic Serpent"
   },
   "crystal slipper": {
     "image": "https://cards.scryfall.io/normal/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg?1783932626",
@@ -363,6 +375,10 @@
     "image": "https://cards.scryfall.io/normal/front/3/8/3825b85d-07df-43b9-a8d8-930863262d83.jpg?1783933809",
     "name": "Desperate Ritual"
   },
+  "dionus elvish archdruid": {
+    "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
+    "name": "Dionus, Elvish Archdruid"
+  },
   "dionus, elvish archdruid": {
     "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
     "name": "Dionus, Elvish Archdruid"
@@ -386,6 +402,10 @@
   "displacer kitten": {
     "image": "https://cards.scryfall.io/normal/front/c/7/c7a401b8-29fb-46ef-a663-427f66724d5c.jpg?1783922795",
     "name": "Displacer Kitten"
+  },
+  "distortion strike": {
+    "image": "https://cards.scryfall.io/normal/front/5/7/57556595-8ede-4a35-b3a4-0e6f8bfc4d9d.jpg?1783935548",
+    "name": "Distortion Strike"
   },
   "dive down": {
     "image": "https://cards.scryfall.io/normal/front/6/5/65d5cff9-a3ec-432d-9ce5-68949e524279.jpg?1783908935",
@@ -426,6 +446,10 @@
   "echo perceptive prodigy": {
     "image": "https://cards.scryfall.io/normal/front/c/d/cd9b9be6-0143-467c-8a2a-937ecafe0473.jpg?1783902961",
     "name": "Echo, Perceptive Prodigy"
+  },
+  "echoing truth": {
+    "image": "https://cards.scryfall.io/normal/front/5/d/5d987d26-c8e8-4edf-8ac0-6a2980265710.jpg?1783921434",
+    "name": "Echoing Truth"
   },
   "electric revelation": {
     "image": "https://cards.scryfall.io/normal/front/d/0/d06023c5-8cb8-4d67-bba6-8dd5201a25dd.jpg?1783911921",
@@ -555,6 +579,10 @@
     "image": "https://cards.scryfall.io/normal/front/3/c/3c520263-6bad-4521-ba9e-192ca8223b07.jpg?1783915442",
     "name": "Flux Channeler"
   },
+  "foresight": {
+    "image": "https://cards.scryfall.io/normal/front/a/1/a12e624c-8879-4e60-a1be-286abc5e0106.jpg?1783947195",
+    "name": "Foresight"
+  },
   "forum necroscribe": {
     "image": "https://cards.scryfall.io/normal/front/6/7/67504a12-7414-4209-bf1c-624b4db19d52.jpg?1783903680",
     "name": "Forum Necroscribe"
@@ -618,6 +646,10 @@
   "gilanra, caller of wirewood": {
     "image": "https://cards.scryfall.io/normal/front/7/4/745d297d-4bb4-40cf-bb9c-99dac04e5069.jpg?1783928793",
     "name": "Gilanra, Caller of Wirewood"
+  },
+  "gitaxian probe": {
+    "image": "https://cards.scryfall.io/normal/front/9/9/995486ce-58bb-4753-a812-0ca73ef1a235.jpg?1783941320",
+    "name": "Gitaxian Probe"
   },
   "glaring fleshraker": {
     "image": "https://cards.scryfall.io/normal/front/8/0/80c2a3c7-1486-4ff9-88ec-79ec67a437f8.jpg?1783911308",
@@ -915,6 +947,10 @@
     "image": "https://cards.scryfall.io/normal/front/f/7/f72fcda4-feb4-46e4-87d9-88bd95474fe9.jpg?1783926842",
     "name": "Lightning Spear"
   },
+  "logic knot": {
+    "image": "https://cards.scryfall.io/normal/front/6/2/624feb0e-f683-4eb6-a63b-7872d0e28f1f.jpg?1783927845",
+    "name": "Logic Knot"
+  },
   "long feng, grand secretariat": {
     "image": "https://cards.scryfall.io/normal/front/a/3/a3eb92fe-bc59-4472-9028-f368bd015609.jpg?1783904924",
     "name": "Long Feng, Grand Secretariat"
@@ -979,6 +1015,10 @@
     "image": "https://cards.scryfall.io/normal/front/1/6/16c69bbf-7cae-481f-9984-8c8cac68c3e3.jpg?1783903099",
     "name": "Marvelous Melee"
   },
+  "maximize altitude": {
+    "image": "https://cards.scryfall.io/normal/front/3/b/3b5a08a0-b002-4bfe-9cac-d2bf96175f8e.jpg?1783934187",
+    "name": "Maximize Altitude"
+  },
   "meeting of the minds": {
     "image": "https://cards.scryfall.io/normal/front/5/0/508b8650-c283-4e54-abdc-32ec2fb1ee34.jpg?1783917031",
     "name": "Meeting of Minds"
@@ -986,6 +1026,10 @@
   "melek, izzet paragon": {
     "image": "https://cards.scryfall.io/normal/front/6/6/66011fe8-8c5d-4990-a324-5839515dcacb.jpg?1783915613",
     "name": "Melek, Izzet Paragon"
+  },
+  "memory lapse": {
+    "image": "https://cards.scryfall.io/normal/front/3/0/30202613-d05f-4f47-af97-d0b75ccac293.jpg?1783937610",
+    "name": "Memory Lapse"
   },
   "mica, reader of ruins": {
     "image": "https://cards.scryfall.io/normal/front/9/4/949ad3ff-9e80-493c-a3ae-146b919bfcd7.jpg?1783903666",
@@ -1079,6 +1123,10 @@
     "image": "https://cards.scryfall.io/normal/front/1/8/187ebb67-1bdd-4a9c-aeeb-554e7580ce24.jpg?1783918428",
     "name": "Mystic Enforcer"
   },
+  "mystic sanctuary": {
+    "image": "https://cards.scryfall.io/normal/front/4/c/4cd86997-d7b9-4b5b-9488-11f5c679e4d3.jpg?1783903726",
+    "name": "Mystic Sanctuary"
+  },
   "naiad of hidden coves": {
     "image": "https://cards.scryfall.io/normal/front/d/c/dc6ae489-658b-4c12-b204-f7b58ce84375.jpg?1783931582",
     "name": "Naiad of Hidden Coves"
@@ -1114,6 +1162,14 @@
   "oliphaunt": {
     "image": "https://cards.scryfall.io/normal/front/2/8/28b60f0b-6dd5-4e57-98ff-28effe8fcd55.jpg?1785497570",
     "name": "Oliphaunt"
+  },
+  "one with the wind": {
+    "image": "https://cards.scryfall.io/normal/front/2/c/2c00f8bf-0088-44ad-b40b-26a2951a2428.jpg?1783935779",
+    "name": "One With the Wind"
+  },
+  "opal palace": {
+    "image": "https://cards.scryfall.io/normal/front/9/1/912553e7-1e67-4045-84fd-0a791754cf6c.jpg?1783903726",
+    "name": "Opal Palace"
   },
   "ophidian eye": {
     "image": "https://cards.scryfall.io/normal/front/2/6/26836ff5-b3c3-4b10-af1e-df3658781cb2.jpg?1783943242",
@@ -1295,6 +1351,10 @@
     "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
     "name": "Sailors' Bane"
   },
+  "sailors": {
+    "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
+    "name": "Sailors' Bane"
+  },
   "sailors' bane": {
     "image": "https://cards.scryfall.io/normal/front/d/1/d175a716-5b69-401b-9902-684a30810288.jpg?1783922779",
     "name": "Sailors' Bane"
@@ -1347,6 +1407,10 @@
     "image": "https://cards.scryfall.io/normal/front/3/1/3191e400-aa4e-4955-aca0-ecbe63ea240f.jpg?1783926508",
     "name": "Secret Door"
   },
+  "security bypass": {
+    "image": "https://cards.scryfall.io/normal/front/5/c/5c155be9-8432-4e35-b586-96b6339d27ae.jpg?1783923140",
+    "name": "Security Bypass"
+  },
   "seething song": {
     "image": "https://cards.scryfall.io/normal/front/f/4/f493ce26-005c-4ddc-80f0-47bea4fd013a.jpg?1783927539",
     "name": "Seething Song"
@@ -1382,6 +1446,10 @@
   "shire terrace": {
     "image": "https://cards.scryfall.io/normal/front/2/5/25932483-58cd-4ae5-82bf-ab455177d117.jpg?1783916230",
     "name": "Shire Terrace"
+  },
+  "shriekhorn": {
+    "image": "https://cards.scryfall.io/normal/front/b/b/bb41269f-007d-43ba-a682-d3929cc69696.jpg?1783941363",
+    "name": "Shriekhorn"
   },
   "shrine steward": {
     "image": "https://cards.scryfall.io/normal/front/7/5/75e8d71c-3a0b-4042-a0f7-e99e92a79dc2.jpg?1783923820",

@@ -3,7 +3,7 @@
 # CPDH.GUIDE — ARTICLE TEMPLATE
 # ===========================================================================
 
-title: "Guidelight Pathmaker cPDH Deck Tech: Winning with a Truck"
+title: "Guidelight Pathmaker: Winning with a Truck - cPDH Deck Tech"
 
 # DATE: Update to actual publish date
 date: 2026-06-28

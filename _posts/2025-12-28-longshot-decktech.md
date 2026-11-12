@@ -1,5 +1,5 @@
 ---
-title: "Longshot, Rebel Bowman cPDH Deck Tech"
+title: "Longshot, Rebel Bowman - cPDH Deck Tech"
 date: 2025-12-28
 layout: splash
 classes: wide

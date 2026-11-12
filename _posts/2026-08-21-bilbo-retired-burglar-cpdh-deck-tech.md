@@ -1,5 +1,5 @@
 ---
-title: "Bilbo, Retired Burglar: Let the Ring Tempt You"
+title: "Bilbo, Retired Burglar: Let the Ring Tempt You - cPDH Deck Tech"
 
 # DATE: Update to actual publish date
 date: 2026-08-21

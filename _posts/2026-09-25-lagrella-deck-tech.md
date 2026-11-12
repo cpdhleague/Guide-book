@@ -3,7 +3,7 @@
 # CPDH.GUIDE — ARTICLE TEMPLATE
 # ===========================================================================
 
-title: "Lagrella, the Magpie - Flicker Control Deck Tech"
+title: "Lagrella, the Magpie: Flicker Control - cPDH Deck Tech"
 
 # DATE: Must be today or earlier while in _previews/ — Jekyll will not build
 # future-dated documents, and the preview will 404. Set the real publish date

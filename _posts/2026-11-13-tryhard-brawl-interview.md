@@ -57,11 +57,12 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 ---
 
 
-The Tryhard Brawl, hosted by us here at cPDH.guide, was won by an unexpected contender on September 19th! It was a webcam tournament played online. Navigating through combo decks, meta decks like Weavers and Gretchen, and many other competitors, Jerry O'Donnel (username Fies) was able to win the event playing Elf Ball. It was great fun playing against Jerry, watching the finals, and seeing an underdog commander take a top spot. 
+The Tryhard Brawl, hosted by us here at cPDH.guide, was won by an unexpected contender on September 19th! It was a webcam tournament played online. Navigating through combo decks, meta decks like Weavers and Gretchen, and many other competitors, Jerry O'Donnel (username Fies) was able to win the event playing Elf Ball. It was great fun playing against Jerry, watching the finals, and seeing an underdog commander take a top spot.
+
+{% include card-grid.html cards="Dionus Elvish Archdruid" %}
 
 In the sitdown I had with Jerry, I got to ask him about his experience while also running my own version of Dionus by him to see what he thought. To hear it all, watch below! I'd been looking at Dionus off and on for a while but had never gotten around to sitting down with it and playing it. I'm so happy that Fies paved the way so that I could give it another go. I'll definitely be playing more of this elf because of him, and I hope others will begin considering it too. 
 
-{% include card-grid.html cards="Dionus Elvish Archdruid" %}
 
 <div class="responsive-video">
   <iframe src="https://www.youtube.com/embed/Oa_tyziXqY4" title="Dionus wins Tryhard Brawl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

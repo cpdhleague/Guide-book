@@ -59,63 +59,63 @@ excerpt: ""  # Required for GNews — fill this in before publishing to Google N
 
 Welcome to the long-awaited [Furnace Hellkite](https://moxfield.com/decks/AB-q4oT6n0OIbnF6BhTNEA) cPDH deck tech! This has been one of my most requested decklists, in part because Hellkite sits in the top 10 of our [meta rankings](/meta/) but has no decklist in our [decklist library](/library/).
 
-Unfortunately, the tournament in which Hellkite Top 4'd was later discovered to have someone else in the Top 4 with a flexible understanding of the rules of Magic: the Gathering. We've decided to keep all elements of that tournament out of our data to prevent inaccuracies, leading to this gap. But we're here to fill it today and talk about one of my favorite commanders.
+The tournament in which Hellkite Top 4'd was later discovered to have someone else in the Top 4 with a flexible understanding of the rules of Magic: the Gathering. We've decided to keep all elements of that tournament out of our data to prevent inaccuracies, leading to this gap. But we're here to fill it today and talk about one of my favorite commanders.
 
 {% include card-grid.html cards="Furnace Hellkite" %}
 
 ## Abstract
 
-Furnace Hellkite is best played as a voltron-control deck. Most lists I've found online focus pretty exclusively on turboing out voltron elements. I built those lists and played with them — I don't find them to be effective. What's worked for me is treating Hellkite as a cheap, resilient clock that you can deploy early to push damage, while our 99 is dedicated to preventing our opponents from winning.
+Furnace Hellkite is best played as a voltron-control deck. Most lists I've found online put all their focus on turboing out voltron elements. I built those lists and played with them — I don't find them to be effective. What's worked for me is treating Hellkite as a cheap, resilient clock that you can deploy in the first turns to push damage, while my 99 is dedicated to preventing my opponents from winning.
 
-Part of what makes Hellkite successful is how many deck slots we can preserve thanks to its keywords, allowing more room for interaction:
+Part of what makes Hellkite successful is how many deck slots I can preserve thanks to its keywords, which gives me more room for interaction:
 
-**Affinity for artifacts** means we don't need commander protection. The affinity discount also applies to commander tax. With a deck loaded with artifacts, that means Hellkite will rarely cost more than {R}{R} in the mid- to late-game. Pair that with an assortment of haste enablers and our commander presents a threat straight from the command zone.
+**Affinity for artifacts** means I don't need commander protection. The affinity discount also applies to commander tax. With a deck loaded with artifacts, that means Hellkite will almost always cost {R}{R} or less in the mid- to late-game. Pair that with an assortment of haste enablers and my commander presents a threat straight from the command zone.
 
-**Flying** means we don't need evasion cards. We do have a few trample spells to help us against our opponents' reach and flying, but even those are not of major concern.
+**Flying** means I don't need evasion cards. I do run a few trample spells to help me against my opponents' reach and flying, but even those are not of major concern.
 
-**Firebreathing** means we don't run pump spells — it's already built in!
+**Firebreathing** means I don't run pump spells — it's already built in!
 
 ## Deck Composition
 
 ### 1. Artifacts
 
-This is our primary build-around category. Since we rely on artifacts to discount our commander and keep it affordable throughout the game, I firmly believe at least half of the cards in the deck should either be artifacts or create artifacts. There are also a few artifact generators we can run in red — [[Beamtown Beatstick]], [[Hoarding Ogre]], [[Goldvein Pick]], [[Shiny Impetus]] — to help us stockpile.
+This is my primary build-around category. Since I rely on artifacts to discount my commander and keep it affordable throughout the game, I believe at least half of the cards in the deck should either be artifacts or create artifacts. There are also a few artifact generators I can run in red — [[Beamtown Beatstick]], [[Hoarding Ogre]], [[Goldvein Pick]], [[Shiny Impetus]] — to help me stockpile.
 
 {% include card-grid.html cards="Beamtown Beatstick; Hoarding Ogre; Goldvein Pick; Shiny Impetus" %}
 
 ### 2. Interaction
 
-We have a preference for the artifacts with removal on them. They come in early to discount our commander, but are extremely relevant in the late game to remove crucial threats. Several of these effects are "target permanent" without the nonland clause, allowing us to effectively challenge Simic combo decks like [[Gretchen Titchwillow]] by hitting their enchantment-loaded lands. We also run some of the best instants available to us. Many of them deal damage, meaning we can always save them to blast a player out of the game, especially in the 1v1 endgame.
+I prefer the artifacts with removal on them. They come down in the first turns to discount my commander, but are very relevant in the late game to remove crucial threats. Several of these effects are "target permanent" without the nonland clause, allowing me to challenge Simic combo decks like [[Gretchen Titchwillow]] by hitting their enchantment-loaded lands. I also run some of the best instants available to me. Many of them deal damage, meaning I can save them to blast a player out of the game, most of all in the 1v1 endgame.
 
 {% include card-grid.html cards="Goblin Firebomb; Unstable Obelisk; Giant's Boulder; Lightning Bolt; Galvanic Blast" %}
 
 ### 3. Voltron Pieces
 
-Haste is probably the most Voltron piece to have in your opening hand. As life points dwindle, players are going to have many a reason to remove your Dragon, and haste lets us get right back in the action. Most of our haste is stapled to artifacts so it feeds affinity. The two best haste enablers don't require any additional costs to be paid on the turns Hellkite enters the battlefield: [[Carnelian Orb of Dragonkind]] and [[Dragon Breath]].
+I believe haste is the most Voltron piece to have in your opening hand. As life points dwindle, players are going to have many a reason to remove your Dragon, and haste lets me get right back in the action. Most of my haste is stapled to artifacts so it feeds affinity. The two best haste enablers don't require any additional costs to be paid on the turns Hellkite enters the battlefield: [[Carnelian Orb of Dragonkind]] and [[Dragon Breath]].
 
-Double strike is very strong and helps us take a player out in a single turn, but we only have a handful of spells that provide this buff. Most of the time our voltron kills will be more drawn out over a few turns.
+Double strike is very strong and helps me take a player out in a single turn, but I run just a handful of spells that provide this buff. Most of the time my voltron kills are drawn out over a few turns.
 
-Lastly, we have some trample enablers. Trample really isn't that important, so we only run it incidentally — such as [[Lightning Spear]], which is also removal. I will highlight [[Barge In]] here, which is an underrated card with midrange/aggro decks in your pod. You don't have to use this on your own creatures, and being able to help another player push damage on one of your opponents can create unexpected scenarios where the non-red deck suddenly has a board full of tramplers.
+Last, I have some trample enablers. Trample isn't that important to me, so I run it as a bonus — such as [[Lightning Spear]], which is also removal. I will highlight [[Barge In]] here, which is an underrated card with midrange/aggro decks in your pod. You don't have to use this on your own creatures, and being able to help another player push damage on one of your opponents can create unexpected scenarios where the non-red deck suddenly has a board full of tramplers.
 
 {% include card-grid.html cards="Carnelian Orb of Dragonkind; Dragon Breath; Brass Knuckles; Lightning Spear; Barge In" %}
 
 ## Gameplay Pattern Notes
 
-**Stockpile Treasure.** It may be tempting to spend it early for tempo, but it keeps your commander cheap early in the game by simply existing, and you can save it for the late game to pay the heftier costs on your artifact abilities.
+**Stockpile Treasure.** It may be tempting to spend it for tempo right away, but it keeps your commander cheap in the first turns by just existing, and you can save it for the late game to pay the heftier costs on your artifact abilities.
 
 {% include card-grid.html cards="Prized Statue; Impulsive Pilferer; Unexpected Windfall" %}
 
-**Don't try to kill everyone quickly.** Part of why the turbo-voltron decks I mentioned in the intro don't work is that it takes at least three turns to kill all of your opponents, and that's assuming no interaction with your commander. The math doesn't reward it. We know it's going to take a little time, so sit back and allow other players to develop without trying to stop everything — only prevent wins and game-ending combos. You're also more likely to land your double strike spells the turn after a big counterspell war, so waiting for the opportune moments to take out your opponents is wise.
+**Don't try to kill everyone fast.** Part of why the turbo-voltron decks I mentioned in the intro don't work is that it takes at least three turns to kill all of your opponents, and that's assuming no interaction with your commander. The math doesn't reward it. I know it's going to take a little time, so I sit back and allow other players to develop without trying to stop everything — I prevent wins and game-ending combos and nothing else. You also have a better shot at landing your double strike spells the turn after a big counterspell war, so waiting for the opportune moments to take out your opponents is wise.
 
 ## Opening Hands
 
-We want our commander down on turn three. If it has to come down on turn four, try to ensure it has haste. Mulligan for your opening hand based on how quickly you can get Furnace Hellkite on the battlefield.
+I want my commander down on turn three. If it has to come down on turn four, I try to ensure it has haste. Mulligan for your opening hand based on how fast you can get Furnace Hellkite on the battlefield.
 
 ## Card Considerations
 
 I keep [[Pyroblast]] and [[Red Elemental Blast]] in the deckbox for competitive events where blue is more prevalent — I'd recommend them for any tournament setting.
 
-There's probably a way to build this deck that's even slower and can lean even more into value artifacts, especially over time as more artifacts that better fit the deck come out. I've built the deck with very specific goals in mind, and I'm curious to see how it varies in the hands of differently-minded brewers.
+There may be a way to build this deck that's even slower and can lean even more into value artifacts, especially over time as more artifacts that better fit the deck come out. I've built the deck with very specific goals in mind, and I'm curious to see how it varies in the hands of brewers with a different mindset.
 
 {% include card-grid.html cards="Pyroblast; Red Elemental Blast" %}
 

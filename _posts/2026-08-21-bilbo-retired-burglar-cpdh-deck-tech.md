@@ -40,23 +40,23 @@ With that in mind, I decided to revisit one of my favorite characters from The H
 
 ## The Gameplan
 
-Because Bilbo tempts you on both entering and leaving the battlefield, it's fairly simple to flicker him and get fully tempted quickly. The unique gameplan for Bilbo is to then use that full temptation to push damage across the whole table, having our opponents lose 3 life each time our ring-bearer connects with any one opponent.
+Because Bilbo tempts you on both entering and leaving the battlefield, it's simple to flicker him and reach full temptation in just a few turns. The unique gameplan for Bilbo is to then use that full temptation to push damage across the whole table, having my opponents lose 3 life each time my ring-bearer connects with any one opponent.
 
 {% include card-grid.html cards="The Ring" %}
 
-We already run the flicker cards, and in theory you could build a version of this deck that aims to flicker combo with those same pieces, giving you two pathways to victory. But there are already so many commanders better suited to flicker combo. Bilbo's much better off focusing on what it does best - the temptation mechanic.
+I already run the flicker cards, and in theory you could build a version of this deck that aims to flicker combo with those same pieces, giving you two pathways to victory. But there are already so many commanders better suited to flicker combo. Bilbo's much better off focusing on what it does best - the temptation mechanic.
 
-Bilbo himself brings a Batman utility belt of tools to our gameplan. Printed on his card, he ramps us with a Treasure each turn. On top of that, the Ring grants skulk (temptation level 1), looting to cycle into the cards we want (temptation level 2), and a 9 lost life across the board on each instance of combat damage from our ring bearer (temptation level 4). He's quite nifty in providing all of these at once.
+Bilbo himself brings a Batman utility belt of tools to my gameplan. Printed on his card, he ramps me with a Treasure each turn. On top of that, the Ring grants skulk (temptation level 1), looting to cycle into the cards I want (temptation level 2), and a 9 lost life across the board on each instance of combat damage from my ring bearer (temptation level 4). He's very nifty in providing all of these at once.
 
 {% include divider.html %}
 
 ## How This Guide Works
 
-Some commanders have a clear, linear path to optimization — versions that are simply better, cards that are simply stronger. Bilbo is not one of them. There is no clearly best version of this deck.
+Some commanders have a clear, linear path to optimization — versions that are just better, cards that are just stronger. Bilbo is not one of them. There is no single best version of this deck.
 
 So this guide splits into an exploration of packages: the core every build needs, then a mix-and-match section where you choose the elements you want most and assemble them your way. You can lean into combat damage synergies, pingers, or control.
 
-For context: my initial decklist was heavy on pingers and control pieces — I prefer the controlling version, since it takes time to get repeated pinger damage through. My current list has shifted quite a bit, reducing pingers to focus on the temptation mechanic while keeping a strong emphasis on control.
+For context: my initial decklist was heavy on pingers and control pieces — I prefer the controlling version, since it takes time to get repeated pinger damage through. My current list has shifted a lot, reducing pingers to focus on the temptation mechanic while keeping a strong emphasis on control.
 
 {% include divider.html %}
 
@@ -66,13 +66,13 @@ These two packages are non-negotiable — every Bilbo build runs them.
 
 ### Flicker
 
-Bilbo gets our first temptation trigger on cast. Flicker gets us the next two. In addition, ninjutsu cards are pretty neat here, letting us return Bilbo to hand for additional triggers on return and on re-cast. We can later use these cards to quickly switch our ring-bearers mid-combat to sneakily push damage later. 
+Bilbo gets me my first temptation trigger on cast. Flicker gets me the next two. In addition, ninjutsu cards are pretty neat here, letting me return Bilbo to hand for additional triggers on return and on re-cast. I can later use these cards to swap my ring-bearers mid-combat and sneak damage through. 
 
 {% include card-grid.html cards="Ghostly Flicker, Essence Flux, Planar Incision, Ninja of the Deep Hours, Blur" %}
 
 ### Temptation
 
-We run these to easily land the fourth temptation trigger. When they're not available, we can always flicker Bilbo again.
+I run these to land the fourth temptation trigger with ease. When they're not available, I can always flicker Bilbo again.
 
 {% include card-grid.html cards="Inherited Envelope, Birthday Escape, Soothing of Sméagol, Glorious Gale" %}
 
@@ -80,17 +80,17 @@ We run these to easily land the fourth temptation trigger. When they're not avai
 
 ## Pick and Choose
 
-Here's the mix-and-match section. Take the packages that fit the version you want to pilot. Part of the choice you need to make is how many slots of each effect/category to fill. I've recently decided to go way more focused on the combat damage, throwing more double strike and combat damage effects into the deck. Maybe you want the best double strike, but not all eight cards that I've elected to run. Reflect on exactly how you want to win with your version of the deck and pick the cards that best support your plan. 
+Here's the mix-and-match section. Take the packages that fit the version you want to pilot. Part of the choice you need to make is how many slots of each effect/category to fill. Of late, I've decided to go way more focused on the combat damage, throwing more double strike and combat damage effects into the deck. Maybe you want the best double strike, but not all eight cards that I've elected to run. Reflect on how you want to win with your version of the deck and pick the cards that best support your plan. 
 
 ### Evasive Creatures
 
-With skulk available from our commander, you don't *need* small evasive creatures — but I still run about a dozen of my favorites so I don't have to rely on Bilbo entirely. Several of these creatures offer small buffs along the way, like scrying or peeking effects to inform our play. 
+With skulk available from my commander, you don't *need* small evasive creatures — but I still run about a dozen of my favorites so I don't have to depend on Bilbo alone. Several of these creatures offer small buffs along the way, like scrying or peeking effects to inform my play. 
 
 {% include card-grid.html cards="Faerie Seer, Slither Blade, Wingcrafter, Wu Scout, Looter il-Kor" %}
 
 ### Pingers
 
-My early build leaned on noncreature control spells plus a stack of pingers, letting my control spells also push the game toward an end state through pinged damage. You can run a whole bunch of pingers alongside Bilbo to damage the table constantly, pushing your opponents continually toward death. I think this is a great idea — and if you love pingers, you should really consider the curiosity package below.
+My first build leaned on noncreature control spells plus a stack of pingers, letting my control spells also push the game toward an end state through pinged damage. You can run a whole bunch of pingers alongside Bilbo to damage the table nonstop, pushing your opponents toward death turn after turn. I think this is a great idea — and if you love pingers, you should consider the curiosity package below.
 
 {% include card-grid.html cards="Blisterspit Gremlin, Kessig Flamebreather, Reckless Fireweaver, Mysidian Elder, Magmakin Artillerist" %}
 
@@ -102,13 +102,13 @@ These are super strong with pingers, and the ones that draw cards can flat-out w
 
 ### Tutors
 
-If you go the combo route (and I think the Magmakin combo fits very naturally here), tutors find your pieces faster — and your utility pieces in a pinch.
+If you go the combo route (and I think the Magmakin combo fits very well here), tutors find your pieces faster — and your utility pieces in a pinch.
 
 {% include card-grid.html cards="Shrine Steward, Drift of Phantasms, Muddle the Mixture, Dizzy Spell" %}
 
 ### Double Strike
 
-Since we're winning through combat-damage-enabled strategy, double strike gives us two combat damage triggers each time we connect — turning a 10-damage output into 20 per turn from the ring, drawing off of our curiosity effects, or getting additional triggers from Goggles of Night or Hidden Strings.
+Since I'm winning through a combat-damage-enabled strategy, double strike gives me two combat damage triggers each time I connect — turning a 10-damage output into 20 per turn from the ring, drawing off of my curiosity effects, or getting additional triggers from Goggles of Night or Hidden Strings.
 
 {% include card-grid.html cards="Assault Strobe, Tunnel of Hate, Psychotic Fury, Temur Battle Rage, Raking Claws" %}
 
@@ -120,7 +120,7 @@ Fill your deck with your favorite and preferred counterspells and removal. It ta
 
 ### Additional Combat Damage Effects
 
-Since we're using evasion to get damage through, why not stack more effects from our combat damage? The curiosity effects above apply to this section too. Also worth considering here: effects that grant the initiative or the monarchy, which our evasive attackers can reliably get back from our opponents.
+Since I'm using evasion to get damage through, why not stack more effects from my combat damage? The curiosity effects above apply to this section too. Also worth considering here: effects that grant the initiative or the monarchy, which my evasive attackers can take back from my opponents time and again.
 
 {% include card-grid.html cards="Hidden Strings, Goggles of Night, Aarakocra Sneak, Fall from Favor" %}
 
@@ -132,7 +132,7 @@ Bilbo is very creature-focused and will suffer against heavy control decks or st
 
 ## Conclusion
 
-I've had a great deal of fun with this deck and I'm finally back to trying to refine the list to its best, most effective version. It's a slower, unique deck and I'm excited to keep playing this deck until I can top 4 with it again. 
+I've had a great deal of fun with this deck and I'm back to trying to refine the list to its best, most effective version. It's a slower, unique deck and I'm excited to keep playing this deck until I can top 4 with it again. 
 
 I hope you check it out, and if you're tempted to try Bilbo, Retired Burglar out for yourself, you can use the link below to purchase the deck straight from Manapool. Happy Hobbiting!
 

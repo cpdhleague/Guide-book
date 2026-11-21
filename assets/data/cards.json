@@ -71,6 +71,10 @@
     "image": "https://cards.scryfall.io/normal/front/f/6/f683d5a1-b8bf-446f-9fe3-88a4398bf3cf.jpg?1783909446",
     "name": "Arabella, Abandoned Doll"
   },
+  "arbor elf": {
+    "image": "https://cards.scryfall.io/normal/front/4/b/4b81165e-f091-4211-8b47-5ea6868b0d4c.jpg?1783935136",
+    "name": "Arbor Elf"
+  },
   "arcane signet": {
     "image": "https://cards.scryfall.io/normal/front/1/c/1cad1bd2-7c56-4ce0-99a6-b2a49c1288dd.jpg?1783903222",
     "name": "Arcane Signet"
@@ -151,6 +155,10 @@
     "image": "https://cards.scryfall.io/normal/front/2/4/2443cb94-b27e-4a96-93cb-ac7880149bcc.jpg?1783916998",
     "name": "Beamtown Beatstick"
   },
+  "beast hunt": {
+    "image": "https://cards.scryfall.io/normal/front/4/6/46465b5f-26fa-4a07-9dc9-55486edee31a.jpg?1783942137",
+    "name": "Beast Hunt"
+  },
   "bender's waterskin": {
     "image": "https://cards.scryfall.io/normal/front/6/d/6d4a1712-d19e-4475-9614-a0b1af4da610.jpg?1783904915",
     "name": "Bender's Waterskin"
@@ -166,6 +174,10 @@
   "bilbo, retired burglar": {
     "image": "https://cards.scryfall.io/normal/front/5/2/527df93e-cc2b-4216-909a-4ada1abcbfd3.jpg?1783916260",
     "name": "Bilbo, Retired Burglar"
+  },
+  "birchlore rangers": {
+    "image": "https://cards.scryfall.io/normal/front/8/c/8ce3a3a1-3569-4909-a604-f78d4888781e.jpg?1783945045",
+    "name": "Birchlore Rangers"
   },
   "birthday escape": {
     "image": "https://cards.scryfall.io/normal/front/4/2/42db2313-b13d-4292-bef2-bf86f989d32f.jpg?1783916321",
@@ -223,6 +235,10 @@
     "image": "https://cards.scryfall.io/normal/front/6/3/63f4448c-a946-45a3-9bce-0d82105e7cc1.jpg?1783915603",
     "name": "Brass Knuckles"
   },
+  "breath weapon": {
+    "image": "https://cards.scryfall.io/normal/front/0/1/0174e40a-0ef5-4439-91e6-3fc39f482520.jpg?1783922743",
+    "name": "Breath Weapon"
+  },
   "breeches, brazen plunderer": {
     "image": "https://cards.scryfall.io/normal/front/f/b/fb6dc94e-9b57-4161-a835-15e46c3bb13a.jpg?1783913866",
     "name": "Breeches, Brazen Plunderer"
@@ -271,6 +287,10 @@
     "image": "https://cards.scryfall.io/normal/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1783935522",
     "name": "Channel"
   },
+  "citanul stalwart": {
+    "image": "https://cards.scryfall.io/normal/front/a/8/a842a945-21d9-432c-b970-6da65b16f309.jpg?1783920048",
+    "name": "Citanul Stalwart"
+  },
   "cloakwood hermit": {
     "image": "https://cards.scryfall.io/normal/front/4/b/4bd8689d-a0c1-4041-bead-7b512fe25663.jpg?1783922718",
     "name": "Cloakwood Hermit"
@@ -302,6 +322,10 @@
   "commander's sphere": {
     "image": "https://cards.scryfall.io/normal/front/a/0/a0d50603-e31f-4cd7-b4b6-49847d99eb2e.jpg?1783904531",
     "name": "Commander's Sphere"
+  },
+  "cosmic hunger": {
+    "image": "https://cards.scryfall.io/normal/front/b/8/b8eef541-6851-4312-ad2b-74f45c7ede6c.jpg?1783916972",
+    "name": "Cosmic Hunger"
   },
   "counterspell": {
     "image": "https://cards.scryfall.io/normal/front/4/f/4f616706-ec97-4923-bb1e-11a69fbaa1f8.jpg?1783909630",
@@ -375,6 +399,10 @@
     "image": "https://cards.scryfall.io/normal/front/3/8/3825b85d-07df-43b9-a8d8-930863262d83.jpg?1783933809",
     "name": "Desperate Ritual"
   },
+  "dionus": {
+    "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
+    "name": "Dionus, Elvish Archdruid"
+  },
   "dionus elvish archdruid": {
     "image": "https://cards.scryfall.io/normal/front/5/a/5a3dfd71-9ec0-4842-b99d-c1833679f0c5.jpg?1783908855",
     "name": "Dionus, Elvish Archdruid"
@@ -439,6 +467,10 @@
     "image": "https://cards.scryfall.io/normal/front/d/7/d722c22d-3cab-48b5-96cd-0874060ac9a4.jpg?1783913338",
     "name": "Drift of Phantasms"
   },
+  "duskshell crawler": {
+    "image": "https://cards.scryfall.io/normal/front/6/6/66a3918e-978e-4bfb-ba83-6519704dee92.jpg?1783908645",
+    "name": "Duskshell Crawler"
+  },
   "dwarven mine": {
     "image": "https://cards.scryfall.io/normal/front/5/c/5c83074d-0c9b-4b58-94ca-d75240485579.jpg?1783932578",
     "name": "Dwarven Mine"
@@ -466,6 +498,14 @@
   "elves of deep shadow": {
     "image": "https://cards.scryfall.io/normal/front/6/0/6040ba5e-7042-4095-9000-89bcb8ce1ea6.jpg?1783940403",
     "name": "Elves of Deep Shadow"
+  },
+  "elvish archdruid": {
+    "image": "https://cards.scryfall.io/normal/front/0/0/006ff5a3-355b-4a7d-b402-bb3c8d32a585.jpg?1785497593",
+    "name": "Elvish Archdruid"
+  },
+  "elvish mystic": {
+    "image": "https://cards.scryfall.io/normal/front/0/8/08b9a296-3b76-4f8f-9d71-7c9af92bb3b4.jpg?1785647413",
+    "name": "Elvish Mystic"
   },
   "empty the warrens": {
     "image": "https://cards.scryfall.io/normal/front/e/9/e9116aa0-1993-4f4a-9a1d-0561d0fbcba9.jpg?1787679719",
@@ -546,6 +586,10 @@
   "fellwar stone": {
     "image": "https://cards.scryfall.io/normal/front/3/e/3ef87948-0ad9-4757-a692-2262c8e24367.jpg?1785759354",
     "name": "Fellwar Stone"
+  },
+  "ferocious werefox": {
+    "image": "https://cards.scryfall.io/normal/front/a/c/ac1907e8-0713-47dd-ac42-bf1323c5bec0.jpg?1783915082",
+    "name": "Ferocious Werefox // Guard Change"
   },
   "feywild visitor": {
     "image": "https://cards.scryfall.io/normal/front/8/8/88e833a9-d82f-4942-a488-67d9c02817db.jpg?1783922789",
@@ -662,6 +706,10 @@
   "glorious gale": {
     "image": "https://cards.scryfall.io/normal/front/6/e/6e1057de-5710-415c-9a51-1d8bd86021a3.jpg?1783916317",
     "name": "Glorious Gale"
+  },
+  "gnarlid colony": {
+    "image": "https://cards.scryfall.io/normal/front/4/7/47565d10-96bf-4fb0-820f-f20a44a76b6f.jpg?1783909061",
+    "name": "Gnarlid Colony"
   },
   "goblin chirurgeon": {
     "image": "https://cards.scryfall.io/normal/front/6/d/6da90318-4db4-4f03-ae2f-b1faeca46f57.jpg?1783942945",
@@ -931,6 +979,10 @@
     "image": "https://cards.scryfall.io/normal/front/0/0/00293326-3eb2-492c-b565-7abafa037d8c.jpg?1783911790",
     "name": "Lazav, Familiar Stranger"
   },
+  "lead the stampede": {
+    "image": "https://cards.scryfall.io/normal/front/9/e/9e76b676-c7a3-4de6-a78d-3059a0df83f2.jpg?1783931034",
+    "name": "Lead the Stampede"
+  },
   "ley weaver": {
     "image": "https://cards.scryfall.io/normal/front/2/c/2c7e9d68-d419-4ec5-97e9-2478ecb7007f.jpg?1783934871",
     "name": "Ley Weaver"
@@ -1103,6 +1155,10 @@
     "image": "https://cards.scryfall.io/normal/front/e/7/e70b3b78-9bdc-449b-82a9-c2fc3dd7f120.jpg?1783929322",
     "name": "Murasa Rootgrazer"
   },
+  "mutant": {
+    "image": "https://cards.scryfall.io/normal/front/6/f/6fa61fa5-f0ca-4933-ac57-9db95f891889.jpg?1783914715",
+    "name": "Mutant"
+  },
   "mycosynth wellspring": {
     "image": "https://cards.scryfall.io/normal/front/c/1/c11c16ff-1786-4426-86b0-d7beb7a71798.jpg?1783927508",
     "name": "Mycosynth Wellspring"
@@ -1147,6 +1203,10 @@
     "image": "https://cards.scryfall.io/normal/front/2/c/2cf2b6be-80a8-4464-a909-8cc658196a14.jpg?1783931533",
     "name": "Nylea's Forerunner"
   },
+  "nyxborn hydra": {
+    "image": "https://cards.scryfall.io/normal/front/9/0/902a969e-9f22-4e92-93eb-9d4536ca82e5.jpg?1783911257",
+    "name": "Nyxborn Hydra"
+  },
   "oakgnarl warrior": {
     "image": "https://cards.scryfall.io/normal/front/7/e/7ee2eb87-d70e-49d7-b429-5df70a71c143.jpg?1783937270",
     "name": "Oakgnarl Warrior"
@@ -1183,6 +1243,10 @@
     "image": "https://cards.scryfall.io/normal/front/1/8/18bbdc6c-b6c9-4f89-8f0a-6266e53c1fb9.jpg?1783915400",
     "name": "Ornithopter of Paradise"
   },
+  "otherworldly gaze": {
+    "image": "https://cards.scryfall.io/normal/front/4/0/40bafd2b-acd4-46f0-abb2-139e2918ae99.jpg?1783909625",
+    "name": "Otherworldly Gaze"
+  },
   "otherworldly journey": {
     "image": "https://cards.scryfall.io/normal/front/5/c/5cd220e4-2e2a-437e-aa4e-1007247c8e4d.jpg?1783938424",
     "name": "Otherworldly Journey"
@@ -1218,6 +1282,14 @@
   "price of progress": {
     "image": "https://cards.scryfall.io/normal/front/b/1/b1342144-7a15-438b-a848-3196238a79e8.jpg?1788525462",
     "name": "Price of Progress"
+  },
+  "pridemalkin": {
+    "image": "https://cards.scryfall.io/normal/front/9/1/91a3ef02-a5d6-4282-ae00-2f58d956c94f.jpg?1783908628",
+    "name": "Pridemalkin"
+  },
+  "priest of titania": {
+    "image": "https://cards.scryfall.io/normal/front/e/b/eb11921b-1b28-483f-a707-4de21a6daa31.jpg?1783911212",
+    "name": "Priest of Titania"
   },
   "prismatic strands": {
     "image": "https://cards.scryfall.io/normal/front/e/f/efd85985-abc1-430a-9210-63109c90a82d.jpg?1783932788",
@@ -1266,6 +1338,10 @@
   "raking claws": {
     "image": "https://cards.scryfall.io/normal/front/6/e/6eb0d9a2-f9bb-4d8e-a1ca-896c42f8ad56.jpg?1783931044",
     "name": "Raking Claws"
+  },
+  "ram through": {
+    "image": "https://cards.scryfall.io/normal/front/4/4/44063a90-e4cf-4bcd-a128-792de15371a7.jpg?1783915623",
+    "name": "Ram Through"
   },
   "ray of command": {
     "image": "https://cards.scryfall.io/normal/front/7/c/7ca8a427-5c20-4650-bbb5-9895e4f2c009.jpg?1783939491",
@@ -1375,6 +1451,10 @@
     "image": "https://cards.scryfall.io/normal/front/d/f/df83d28d-bb0b-4f3d-a16f-8ee8bf452e10.jpg?1783915411",
     "name": "Satyr Enchanter"
   },
+  "savaen elves": {
+    "image": "https://cards.scryfall.io/normal/front/3/8/38fb3014-f631-4a75-92cd-7e626b13a4c3.jpg?1783947930",
+    "name": "Savaen Elves"
+  },
   "savage land dinosaur": {
     "image": "https://cards.scryfall.io/normal/front/5/6/562bd376-3fba-4de0-b9fc-183004b03732.jpg?1783902912",
     "name": "Savage Land Dinosaur"
@@ -1382,6 +1462,10 @@
   "scarlet witch, wanda maximoff": {
     "image": "https://cards.scryfall.io/normal/front/0/f/0ff25079-f930-47cd-a77a-bd1c32024559.jpg?1783902991",
     "name": "Scarlet Witch, Wanda Maximoff"
+  },
+  "scattershot archer": {
+    "image": "https://cards.scryfall.io/normal/front/d/7/d74d6cdb-a087-4b3d-bf25-509200ed6d93.jpg?1783942473",
+    "name": "Scattershot Archer"
   },
   "scholar of the ages": {
     "image": "https://cards.scryfall.io/normal/front/8/b/8bfa31b5-8a4f-4766-9606-648cb8ee2916.jpg?1783928851",
@@ -1511,6 +1595,14 @@
     "image": "https://cards.scryfall.io/normal/front/8/5/859e5ca5-c184-47ee-a2ea-8075847f46d9.jpg?1783911937",
     "name": "Slither Blade"
   },
+  "snap": {
+    "image": "https://cards.scryfall.io/normal/front/f/1/f13406c6-f208-402a-94d3-a94a24f03563.jpg?1783918488",
+    "name": "Snap"
+  },
+  "snapback": {
+    "image": "https://cards.scryfall.io/normal/front/3/6/367d46d1-fa7a-403d-8949-b478a1f83f46.jpg?1783927836",
+    "name": "Snapback"
+  },
   "soothing of sméagol": {
     "image": "https://cards.scryfall.io/normal/front/b/e/be6400e8-7f99-4005-9a92-ffbc359d3871.jpg?1783916309",
     "name": "Soothing of Sméagol"
@@ -1530,6 +1622,10 @@
   "sp//dr, piloted by peni": {
     "image": "https://cards.scryfall.io/normal/front/c/4/c47c1d83-e76d-4939-9ed6-05a9e709dea1.jpg?1783905311",
     "name": "SP//dr, Piloted by Peni"
+  },
+  "spectral flight": {
+    "image": "https://cards.scryfall.io/normal/front/f/7/f7149f2a-6917-4ad7-8035-c7a1babd4d4b.jpg?1783940964",
+    "name": "Spectral Flight"
   },
   "spectral hunt-caller": {
     "image": "https://cards.scryfall.io/normal/front/3/5/358fc99b-b2e5-4967-ba5a-ab2caee1751c.jpg?1783919178",
@@ -1567,6 +1663,10 @@
     "image": "https://cards.scryfall.io/normal/front/e/1/e15ab0aa-4059-4923-9816-6f7a9e5b5a18.jpg?1783904399",
     "name": "Springleaf Drum"
   },
+  "sprout swarm": {
+    "image": "https://cards.scryfall.io/normal/front/0/b/0b915355-4e98-44df-81bd-961a3d3c86b8.jpg?1783943098",
+    "name": "Sprout Swarm"
+  },
   "step through": {
     "image": "https://cards.scryfall.io/normal/front/7/1/716534cb-aa89-4de7-9aa5-8d8aa4422a6a.jpg?1783926869",
     "name": "Step Through"
@@ -1578,6 +1678,10 @@
   "stonehorn dignitary": {
     "image": "https://cards.scryfall.io/normal/front/c/3/c3797f7f-489d-4735-af56-6359e0fa0a6b.jpg?1783941097",
     "name": "Stonehorn Dignitary"
+  },
+  "stream of thought": {
+    "image": "https://cards.scryfall.io/normal/front/8/b/8b75bef5-a039-4edf-8e43-56b8d089605e.jpg?1783933137",
+    "name": "Stream of Thought"
   },
   "street urchin": {
     "image": "https://cards.scryfall.io/normal/front/f/6/f6d5249c-52b6-4349-adcd-dafdc21f572b.jpg?1783922729",
@@ -1630,6 +1734,10 @@
   "tangled islet": {
     "image": "https://cards.scryfall.io/normal/front/b/b/bb1920f1-aab3-4066-8be9-029102886d03.jpg?1783903717",
     "name": "Tangled Islet"
+  },
+  "tapping at the window": {
+    "image": "https://cards.scryfall.io/normal/front/b/a/ba75dc52-7ab2-43ec-afac-0a9bcf24cde9.jpg?1783925573",
+    "name": "Tapping at the Window"
   },
   "tatyova, benthic druid": {
     "image": "https://cards.scryfall.io/normal/front/e/a/eabc978a-0666-472d-bdc6-d4b29d29eca4.jpg?1783909051",
@@ -1714,6 +1822,18 @@
   "titania rugged rumbler": {
     "image": "https://cards.scryfall.io/normal/front/c/2/c281e0ee-155b-4022-b921-ebc391535aad.jpg?1783902896",
     "name": "Titania, Rugged Rumbler"
+  },
+  "titanic brawl": {
+    "image": "https://cards.scryfall.io/normal/front/e/5/e58e5661-cfc8-4266-a0ce-38af9a698773.jpg?1783913298",
+    "name": "Titanic Brawl"
+  },
+  "tolarian winds": {
+    "image": "https://cards.scryfall.io/normal/front/3/f/3fdd9981-bb5e-450d-90c3-4405a7097939.jpg?1783945524",
+    "name": "Tolarian Winds"
+  },
+  "tome scour": {
+    "image": "https://cards.scryfall.io/normal/front/a/e/aed4cfec-5cea-4987-890e-825b2802e9f9.jpg?1783939929",
+    "name": "Tome Scour"
   },
   "tormod, the desecrator": {
     "image": "https://cards.scryfall.io/normal/front/8/9/89903d5e-241f-477e-a336-2abe0232c04a.jpg?1783928826",
@@ -1835,9 +1955,17 @@
     "image": "https://cards.scryfall.io/normal/front/6/f/6f210b47-e265-43ed-a336-538170c722af.jpg?1783903098",
     "name": "Wiccan, Young Avenger"
   },
+  "wildheart invoker": {
+    "image": "https://cards.scryfall.io/normal/front/6/0/60f42969-bb5c-4183-8bd3-ba87f008391d.jpg?1783908944",
+    "name": "Wildheart Invoker"
+  },
   "wilson, refined grizzly": {
     "image": "https://cards.scryfall.io/normal/front/d/f/dfe0daf8-43da-484b-baa1-76f8313c5a0c.jpg?1783922700",
     "name": "Wilson, Refined Grizzly"
+  },
+  "winding way": {
+    "image": "https://cards.scryfall.io/normal/front/d/3/d3340062-3071-4d8e-98f8-fd3343a011ad.jpg?1783911907",
+    "name": "Winding Way"
   },
   "wingcrafter": {
     "image": "https://cards.scryfall.io/normal/front/0/b/0b79a71b-568f-4700-9b1d-e7965159da0a.jpg?1783936661",
@@ -1870,6 +1998,10 @@
   "wu scout": {
     "image": "https://cards.scryfall.io/normal/front/8/d/8d13330f-6e07-451f-b17a-4e1606a74c3f.jpg?1783946119",
     "name": "Wu Scout"
+  },
+  "you meet in a tavern": {
+    "image": "https://cards.scryfall.io/normal/front/9/f/9fddbd7a-799c-4432-810c-d839c5c354b9.jpg?1783922699",
+    "name": "You Meet in a Tavern"
   },
   "young pyromancer": {
     "image": "https://cards.scryfall.io/normal/front/c/0/c0d74ecd-a595-4012-81b4-083264b40c94.jpg?1783907139",
